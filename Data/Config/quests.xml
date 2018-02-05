@@ -1,0 +1,1045 @@
+<!--
+	Quest format description:
+
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >
+
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+	offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+
+-->
+
+<quests>
+	<!-- Basic Survival 1 - Craft a Bedroll /> -->
+	<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival1" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_map_bed" category_key="quest" difficulty="veryeasy" offer_key="quest_BasicSurvival_offer">
+		<action type="ShowTip" value="tutorialTipQuest02" />
+		<action type="TrackQuest" />
+
+		<objective type="FetchKeep" id="yuccaFibers" value="20" />
+		<objective type="Craft" id="bedroll" value="1" />
+		<objective type="BlockPlace" id="bedroll" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival8" />
+    </quest>
+
+	<!-- Basic Survival chain
+    <quest id="classtrainingcivilian1" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle="Craft a Stone Axe" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_BasicSurvival_offer" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="2" />
+		<objective type="FetchKeep" id="wood" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="4" />
+
+		<objective type="Craft" id="stoneAxe" value="1" />
+		<reward type="Quest" id="quest_BasicSurvival3" />
+
+    </quest>
+
+	"Basic Survival 3 - Craft Plant Fiber Clothing"
+	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="yuccaFibers" value="35" />
+		<objective type="Craft" id="plantFiberPants" value="1" />
+		<objective type="Craft" id="plantFiberShirt" value="1" />
+		<objective type="Craft" id="plantFiberHood" value="1" />
+		<objective type="Craft" id="plantFiberShoes" value="1" />
+		<objective type="Craft" id="plantFiberGloves" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival4" />
+    </quest>
+
+	"Basic Survival 4 - Wear Plant Fiber Clothing />"
+	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_shirt" category_key="quest" difficulty="veryeasy">
+		<objective type="Wear" id="plantFiberPants" />
+		<objective type="Wear" id="plantFiberShirt" />
+		<objective type="Wear" id="plantFiberHood" />
+		<objective type="Wear" id="plantFiberShoes" />
+		<objective type="Wear" id="plantFiberGloves" />
+
+		<reward type="Quest" id="quest_BasicSurvival5" />
+    </quest>
+
+	"Basic Survival 5 - Craft a Wooden Club />"
+	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_club" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="6" />
+		<objective type="Craft" id="clubWood" value="1" />
+
+		<reward type="Quest" id="quest_BasicSurvival6" />
+    </quest>
+
+	"Basic Survival 6 - Craft Bow & Arrows />"
+	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_archery" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="10" />
+		<objective type="FetchKeep" id="yuccaFibers" value="3" />
+		<objective type="FetchKeep" id="feather" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="Craft" id="woodenBow" value="1" />
+		<objective type="Craft" id="arrow" value="2" />
+
+		<reward type="Quest" id="quest_BasicSurvival7" />
+    </quest>
+
+	"Basic Survival 7 - Start a Base />"
+	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_house" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="wood" value="18" />
+		<objective type="Craft" id="woodFrameBlock" value="3" />
+		<objective type="BlockPlace" id="woodFrameBlock" value="3" />
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="3" />
+
+		<reward type="Quest" id="quest_BasicSurvival8" />
+    </quest> -->
+
+	<!-- Basic Survival 8 - Build a Campfire /> -->
+	<quest id="quest_BasicSurvival8" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival8" subtitle_key="quest_BasicSurvival8_subtitle" description_key="quest_BasicSurvival8_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
+		<objective type="FetchKeep" id="rockSmall" value="8" />
+		<objective type="Craft" id="campfire" value="1" />
+		<objective type="BlockPlace" id="campfire" value="1" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
+    </quest>
+
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
+		<objective type="Goto" id="trader" value="5" />
+
+		<reward type="SkillPoints" value="5" />
+		<reward type="Item" id="ClassPaper"/>
+    </quest>
+
+	<!-- CHALLENGES -->
+	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie"
+	repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane" >
+		<objective type="Time" value="1200" optional="true" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_drunkanddisorderly" name_key="challenge_drunkanddisorderly" subtitle_key="challenge_drunkanddisorderly_subtitle" description_key="challenge_drunkanddisorderly_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_drunkanddisorderly_offer" difficulty="medium">
+		<objective type="Time" value="600" optional="true" />
+		<objective type="ZombieKill" value="2"  />
+		<requirement type="Holding" id="" />
+
+		<requirement type="Group" value="OR">
+			<requirement type="Buff" id="Drunk" />
+			<requirement type="Buff" id="SickDrunk" />
+		</requirement>
+
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_nurseyoubacktohealth" name_key="challenge_nurseyoubacktohealth" subtitle_key="challenge_nurseyoubacktohealth_subtitle" description_key="challenge_nurseyoubacktohealth_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_nurseyoubacktohealth_offer" difficulty="medium" >
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="2" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_dogdaysareover" name_key="challenge_dogdaysareover" subtitle_key="challenge_dogdaysareover_subtitle" description_key="challenge_dogdaysareover_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_dogdaysareover_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="animalZombieDog" value="4" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_itsybitsyspider" name_key="challenge_itsybitsyspider" subtitle_key="challenge_itsybitsyspider_subtitle" description_key="challenge_itsybitsyspider_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_itsybitsyspider_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="3" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieArlene,zombieArleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene,zombieDarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene,zombieMarleneFeral" value="1" />
+		<objective type="ZombieKill" id="zombieNurse,zombieNurseFeral" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+
+	<quest id="challenge_maneater" name_key="challenge_maneater" subtitle_key="challenge_maneater_subtitle" description_key="challenge_maneater_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_maneater_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieBoe,zombieBoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieJoe,zombieJoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieMoe,zombieMoeFeral" value="1" />
+		<objective type="ZombieKill" id="zombieYo,zombieYoFeral" value="1" />
+		<objective type="ZombieKill" id="zombieSteve,zombieSteveFeral" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_yournothingspecial" name_key="challenge_yournothingspecial" subtitle_key="challenge_yournothingspecial_subtitle" description_key="challenge_yournothingspecial_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
+		<objective type="Time" value="1800" optional="true" />
+		<objective type="ZombieKill" id="zombieSpider,zombieSpiderFeral,zombieSpiderFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieFatCop,zombieFatCopFeral,zombieFatCopFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieWightFeral,zombieWightFeralRadiated" value="1" />
+		<objective type="ZombieKill" id="zombieScreamer,zombieScreamerFeral" value="1" />
+		<objective type="ZombieKill" id="zombieBurnt" value="1" />
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+	<quest id="challenge_imalumberjackandimokay" name_key="challenge_imalumberjackandimokay" subtitle_key="challenge_imalumberjackandimokay_subtitle" description_key="challenge_imalumberjackandimokay_offer" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
+
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
+
+		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
+			<requirement type="Holding" id="fireaxeIron" />
+			<requirement type="Holding" id="fireaxeSteel" />
+		</requirement>
+
+		<reward type="SkillPoints" value="2" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+
+
+	<quest id="challenge_killthewabbit" name_key="challenge_killthewabbit" subtitle_key="challenge_killthewabbit_subtitle" description_key="challenge_killthewabbit_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_killthewabbit_offer" difficulty="medium">
+
+		<objective type="AnimalKill" id="animalRabbit" value="5"  />
+
+		<requirement type="Group" id="requirementGroupShotgun" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_nailsomechicks" name_key="challenge_nailsomechicks" subtitle_key="challenge_nailsomechicks_subtitle" description_key="challenge_nailsomechicks_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_nailsomechicks_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalChicken" value="5"  />
+
+		<requirement type="Holding" id="nailgun" />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_thatlldopig" name_key="challenge_thatlldopig" subtitle_key="challenge_thatlldopig_subtitle" description_key="challenge_thatlldopig_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_thatlldopig_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalBoar" value="5"  />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_stagparty" name_key="challenge_stagparty" subtitle_key="challenge_stagparty_subtitle" description_key="challenge_stagparty_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_stagparty_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalStag" value="5"  />
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
+		<objective type="AnimalKill" id="animalBear" value="3"  />
+
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="challenge_buythefarm" name_key="challenge_buythefarm" subtitle_key="challenge_buythefarm_subtitle" description_key="challenge_buythefarm_offer" icon="ui_game_symbol_knife"
+	repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalRabbit" value="1"  />
+		<objective type="AnimalKill" id="animalChicken" value="1"  />
+		<objective type="AnimalKill" id="animalBoar" value="1"  />
+		<objective type="AnimalKill" id="animalStag" value="1"  />
+		<objective type="AnimalKill" id="animalBear" value="1"  />
+
+
+		<reward type="SkillPoints" value="2" />
+	</quest>
+
+	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+
+	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure"
+	repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
+
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	
+	<!-- Workaround to grant +1 skill point from a book -->
+	
+	<quest id="quest_skillGenericBook" name_key="quest_skillGenericBook" subtitle_key="quest_skillGenericBook_subtitle" description_key="quest_skillGenericBook_offer" icon="ui_game_symbol_skills"
+	repeatable="true" category_key="quest" offer_key="quest_skillGenericBook_offer" difficulty="easy">
+
+		<reward type="SkillPoints" value="1" />
+	</quest>
+
+	<!-- Civilian Class Quest Chain -->
+	
+	<quest id="quest_classtrainingcivilian1" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian1" subtitle="Craft a Stone Axe" subtitle_key="quest_classtrainingcivilian1_subtitle" description_key="quest_classtrainingcivilian1_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="2" />
+		<objective type="FetchKeep" id="wood" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="4" />
+
+		<objective type="Craft" id="stoneAxe" value="1" />
+		
+		<reward type="Item" id="suitPantsBlack" value="50" />
+		<reward type="Item" id="suitJacketBlack" value="50" />
+		<reward type="Item" id="dressShoesBlack" value="50" />
+		<reward type="Quest" id="quest_classtrainingcivilian2" />
+    </quest>
+	
+	<quest id="quest_classtrainingcivilian2" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian2" subtitle="Gather Duke's Casino Tokens" subtitle_key="quest_classtrainingcivilian2_subtitle" description_key="quest_classtrainingcivilian2_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="FetchKeep" id="casinoCoin" value="500" />
+
+		<reward type="Quest" id="quest_classtrainingcivilian3" />
+		<reward type="Item" id="canMurkyWater" value="2" />
+		<reward type="Item" id="rawMeat" value="2" />
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<quest id="quest_classtrainingcivilian3" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian3" subtitle="Craft Boiled Water and Charred Meat" subtitle_key="quest_classtrainingcivilian3_subtitle" description_key="quest_classtrainingcivilian3_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="Craft" id="canBoiledWater" value="2" />
+		<objective type="Craft" id="charredMeat" value="2" />
+
+		<reward type="Quest" id="quest_classtrainingcivilian4" />
+		<reward type="Item" id="painkillers" value="1" />
+		<reward type="Item" id="bandage" value="1" />
+    </quest>
+	
+	<quest id="quest_classtrainingcivilian4" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian4" subtitle="Gather Wood and Craft Wood Frames" subtitle_key="quest_classtrainingcivilian4_subtitle" description_key="quest_classtrainingcivilian4_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="FetchKeep" id="wood" value="1000" />
+		<objective type="Craft" id="woodFrameBlock" value="150" />
+		<objective type="BlockPlace" id="woodFrameBlock" value="100" />
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
+
+		<reward type="Quest" id="quest_classtrainingcivilian5" />
+		<reward type="Item" id="flashlight02" value="50" />
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<quest id="quest_classtrainingcivilian5" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian5" subtitle="Craft a Secure Wood Door and Secure Storage Chest" subtitle_key="quest_classtrainingcivilian5_subtitle" description_key="quest_classtrainingcivilian5_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="FetchKeep" id="wood" value="14" />
+		<objective type="Craft" id="secureDoorWooden" value="1" />
+		<objective type="Craft" id="cntSecureStorageChest" value="1" />
+		<objective type="BlockPlace" id="secureDoorWooden" value="1" />
+		<objective type="BlockPlace" id="cntSecureStorageChest" value="1" />
+
+		<reward type="Quest" id="quest_classtrainingcivilian6" />
+		<reward type="Item" id="painkillers" value="1" />
+		<reward type="Item" id="bandage" value="1" />
+    </quest>
+	
+	<quest id="quest_classtrainingcivilian6" group_name_key="quest_classtrainingcivilian" name_key="quest_classtrainingcivilian6" subtitle="Craft Basic Weapons" subtitle_key="quest_classtrainingcivilian6_subtitle" description_key="quest_classtrainingcivilian6_description"
+	icon="ui_game_symbol_players" category_key="quest" offer_key="quest_classtrainingcivilian_offer" >
+
+		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="yuccaFibers" value="3" />
+		<objective type="FetchKeep" id="feather" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="Craft" id="clubWood" value="1" />
+		<objective type="Craft" id="woodenBow" value="1" />
+		<objective type="Craft" id="arrow" value="2" />
+		
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<!-- Construction Class Quest Chain -->
+	
+	<quest id="quest_classtrainingconstruction1" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction1" subtitle="Gather Resources" subtitle_key="quest_classtrainingconstruction1_subtitle" description_key="quest_classtrainingconstruction1_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="FetchKeep" id="wood" value="600" />
+		<objective type="FetchKeep" id="rockSmall" value="400" />
+		<objective type="FetchKeep" id="clayLump" value="400" />
+		
+		<reward type="Item" id="tshirtWhite" value="50" />
+		<reward type="Item" id="brownDenimPants" value="50" />
+		<reward type="Item" id="wornBoots" value="50" />
+		<reward type="Item" id="miningHelmet" value="50" />
+		<reward type="Quest" id="quest_classtrainingconstruction2" />
+    </quest>
+	
+	<quest id="quest_classtrainingconstruction2" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction2" subtitle="Craft Wood Frames and Flagstone Blocks" subtitle_key="quest_classtrainingconstruction2_subtitle" description_key="quest_classtrainingconstruction2_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="Craft" id="woodFrameBlock" value="200" />
+		<objective type="BlockPlace" id="woodFrameBlock" value="100" />
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
+		<objective type="Craft" id="flagstoneBlock" value="100" />
+		<objective type="BlockPlace" id="flagstoneBlock" value="50" />
+
+		<reward type="Quest" id="quest_classtrainingconstruction3" />
+		<reward type="Recipe" id="fireaxeScrap"/>
+		<reward type="Recipe" id="pickaxeScrap"/>
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canBeef" value="2" />
+    </quest>
+	
+	<quest id="quest_classtrainingconstruction3" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction3" subtitle="Craft Scrap Iron Tools" subtitle_key="quest_classtrainingconstruction3_subtitle" description_key="quest_classtrainingconstruction3_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="FetchKeep" id="scrapIron" value="200" />
+		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="leather" value="10" />
+		<objective type="Craft" id="fireaxeScrap" value="1" />
+		<objective type="Craft" id="pickaxeScrap" value="1" />
+
+		<reward type="Quest" id="quest_classtrainingconstruction4" />
+		<reward type="Item" id="firstAidBandage" value="2" />
+    </quest>
+	
+	<quest id="quest_classtrainingconstruction4" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction4" subtitle="Gather More Resources" subtitle_key="quest_classtrainingconstruction4_subtitle" description_key="quest_classtrainingconstruction4_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="FetchKeep" id="rockSmall" value="50" />
+		<objective type="FetchKeep" id="clayLump" value="50" />
+		<objective type="FetchKeep" id="leather" value="20" />
+		<objective type="FetchKeep" id="wood" value="6" />
+		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
+
+		<reward type="Quest" id="quest_classtrainingconstruction5" />
+		<reward type="Recipe" id="bellows"/>
+		<reward type="Recipe" id="forge"/>
+    </quest>
+	
+	<quest id="quest_classtrainingconstruction5" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction5" subtitle="Craft a Forge" subtitle_key="quest_classtrainingconstruction5_subtitle" description_key="quest_classtrainingconstruction5_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="Craft" id="bellows" value="1" />
+		<objective type="Craft" id="forge" value="1" />
+		<objective type="BlockPlace" id="forge" value="1" />
+
+		<reward type="Quest" id="quest_classtrainingconstruction6" />
+    </quest>
+	
+	<quest id="quest_classtrainingconstruction6" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction6" subtitle="Craft a Barbed Club" subtitle_key="quest_classtrainingconstruction6_subtitle" description_key="quest_classtrainingconstruction6_description"
+	icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_classtrainingconstruction_offer" >
+
+		<objective type="FetchKeep" id="forgedIron" value="16" />
+		<objective type="FetchKeep" id="wood" value="10" />
+		<objective type="Craft" id="clubBarbed" value="1" />
+		
+		<reward type="Recipe" id="hoeScrap"/>
+		<reward type="Recipe" id="shovelScrap"/>
+    </quest>
+	
+	<!-- Hunter Class Quest Chain -->
+	
+	<quest id="quest_classtraininghunter1" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter1" subtitle="Craft A Barbed Club" subtitle_key="quest_classtraininghunter1_subtitle" description_key="quest_classtraininghunter1_description"
+	icon="ui_game_symbol_rifle" category_key="quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="FetchKeep" id="scrapIron" value="100" />
+		<objective type="FetchKeep" id="wood" value="10" />
+		<objective type="Craft" id="clubIron" value="1" />
+		
+		<reward type="Item" id="tshirtBlack" value="50" />
+		<reward type="Item" id="blackDenimPants" value="50" />
+		<reward type="Item" id="wornBoots" value="50" />
+		<reward type="Quest" id="quest_classtraininghunter2" />
+
+    </quest>
+	
+	<quest id="quest_classtraininghunter2" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter2" subtitle="Kill 5 Zombies with the barbed club" subtitle_key="quest_classtraininghunter2_subtitle" description_key="quest_classtraininghunter2_description"
+	icon="ui_game_symbol_rifle" category_key="quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="ZombieKill" value="5" />
+			<requirement type="Holding" id="clubIron" />
+
+		<reward type="Quest" id="quest_classtraininghunter3" />
+		<reward type="Recipe" id="huntingKnife"/>
+		<reward type="Recipe" id="leather"/>
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canChicken" value="2" />
+
+    </quest>
+	
+	<quest id="quest_classtraininghunter3" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter3" subtitle="Craft Scrap Iron Tools" subtitle_key="quest_classtraininghunter3_subtitle" description_key="quest_classtraininghunter3_description"
+	icon="ui_game_symbol_rifle" category_key="quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="FetchKeep" id="femur" value="1" />
+		<objective type="Craft" id="boneShiv" value="1" />
+
+		<reward type="Quest" id="quest_classtraininghunter4" />
+		<reward type="Item" id="firstAidBandage" value="2" />
+		
+    </quest>
+	
+	<quest id="quest_classtraininghunter4" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter4" subtitle="Gather More Resources" subtitle_key="quest_classtraininghunter4_subtitle" description_key="quest_classtraininghunter4_description"
+	icon="ui_game_symbol_rifle" category_key="quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="AnimalKill" value="5" />
+		<objective type="FetchKeep" id="rawMeat" value="5" />
+		<objective type="FetchKeep" id="animalHide" value="35" />
+
+		<reward type="Quest" id="quest_classtraininghunter5" />
+		<reward type="Recipe" id="leatherBoots"/>
+		<reward type="Recipe" id="leatherGloves"/>
+		<reward type="Recipe" id="leatherHood"/>
+		<reward type="Recipe" id="leatherJacket"/>
+		<reward type="Recipe" id="leatherPants"/>
+		<reward type="Item" id="huntingKnife" value="50" />
+
+    </quest>
+	
+	<quest id="quest_classtraininghunter5" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter5" subtitle="Craft a Forge" subtitle_key="quest_classtraininghunter5_subtitle" description_key="quest_classtraininghunter5_description"
+	icon="ui_game_symbol_rifle" category_key=".quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="FetchKeep" id="leatherHood" value="1" />
+		<objective type="FetchKeep" id="leatherJacket" value="1" />
+		<objective type="FetchKeep" id="leatherGloves" value="1" />
+		<objective type="FetchKeep" id="leatherPants" value="1" />
+		<objective type="FetchKeep" id="leatherBoots" value="1" />
+
+		<reward type="Quest" id="quest_classtraininghunter6" />
+		<reward type="Item" id="gunHuntingRifle" value="50" />
+		<reward type="Item" id="762mmBullet" value="75" />
+
+    </quest>
+	
+	<quest id="quest_classtraininghunter6" group_name_key="quest_classtraininghunter" name_key="quest_classtraininghunter6" subtitle="Craft a Barbed Club" subtitle_key="quest_classtraininghunter6_subtitle" description_key="quest_classtraininghunter6_description"
+	icon="ui_game_symbol_rifle" category_key="quest" offer_key="quest_classtraininghunter_offer" >
+
+		<objective type="ZombieKill" value="10" />
+			<requirement type="Holding" id="gunHuntingRifle" />
+		
+		<objective type="AnimalKill" value="5" />
+			<requirement type="Holding" id="gunHuntingRifle" />
+				
+		<reward type="Recipe" id="gunHuntingRifle"/>
+		<reward type="Recipe" id="762mmBullet"/>
+
+    </quest>
+	
+	<!-- Farmer Class Quest Chain -->
+	
+	<quest id="quest_classtrainingfarmer1" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer1" subtitle="Gather Plants and Craft Seeds" subtitle_key="quest_classtrainingfarmer1_subtitle" description_key="quest_classtrainingfarmer1_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="FetchKeep" id="goldenrodPlant" value="10" />
+		<objective type="FetchKeep" id="foodYuccaFruit" value="10" />
+		<objective type="Craft" id="plantedGoldenrod1" value="5" />
+		<objective type="Craft" id="plantedYucca1" value="5" />
+		
+		<reward type="Item" id="blackCowboyHat" value="50" />
+		<reward type="Item" id="tshirtRed" value="50" />
+		<reward type="Item" id="denimPants" value="50" />
+		<reward type="Item" id="cowboyBootsBlack" value="50" /> 
+		<reward type="Quest" id="quest_classtrainingfarmer2" />
+    </quest>
+	
+	<quest id="quest_classtrainingfarmer2" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer2" subtitle="Gather Resources" subtitle_key="quest_classtrainingfarmer2_subtitle" description_key="quest_classtrainingfarmer2_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="FetchKeep" id="scrapIron" value="80"/>
+		<objective type="FetchKeep" id="wood" value="10"/>
+		<objective type="FetchKeep" id="leather" value="5"/>
+
+		<reward type="Quest" id="quest_classtrainingfarmer3" />
+		<reward type="Recipe" id="hoeScrap"/>
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canBeef" value="2" />
+	</quest>
+	
+	<quest id="quest_classtrainingfarmer3" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer3" subtitle="Craft Scrap Iron Hoe and Plant Seeds" subtitle_key="quest_classtrainingfarmer3_subtitle" description_key="quest_classtrainingfarmer3_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="Craft" id="hoeScrap" value="1" />
+		<objective type="BlockPlace" id="plantedGoldenrod1" value="5" />
+		<objective type="BlockPlace" id="plantedYucca1" value="5" />
+
+		<reward type="Quest" id="quest_classtrainingfarmer4" />
+		<reward type="Recipe" id="plantedChrysanthemum1"/>
+		<reward type="Recipe" id="plantedCorn1"/>
+		<reward type="Recipe" id="waterBarrel1"/>
+		<reward type="Item" id="firstAidBandage" value="2" />
+    </quest>
+	
+	<quest id="quest_classtrainingfarmer4" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer4" subtitle="Gather More Resources" subtitle_key="quest_classtrainingfarmer4_subtitle" description_key="quest_classtrainingfarmer4_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="FetchKeep" id="chrysanthemumPlant" value="10" />
+		<objective type="FetchKeep" id="corn" value="10" />
+		<objective type="Craft" id="plantedChrysanthemum1" value="5" />
+		<objective type="Craft" id="plantedCorn1" value="5" />	
+
+		<reward type="Quest" id="quest_classtrainingfarmer5" />
+		<reward type="Recipe" id="animalFeed" unlock_level="1"/> 
+		<reward type="Recipe" id="animalSnare" unlock_level="1"/> 
+		<reward type="Recipe" id="chickenCoop" unlock_level="1"/>
+    </quest>
+	
+	<quest id="quest_classtrainingfarmer5" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer5" subtitle="Craft an Animal Snare and Coop" subtitle_key="quest_classtrainingfarmer5_subtitle" description_key="quest_classtrainingfarmer5_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="Craft" id="animalFeed" value="4" />
+		<objective type="Craft" id="animalSnare" value="1" />
+		<objective type="Craft" id="chickenCoop" value="1" />
+		<objective type="BlockPlace" id="animalSnare" value="1" />
+		<objective type="BlockPlace" id="chickenCoop" value="1" />
+
+		<reward type="Quest" id="quest_classtrainingfarmer6" />
+
+		<reward type="Recipe" id="PandM" unlock_level="1"/>
+		<reward type="Recipe" id="plantedCoffee1" unlock_level="1"/>
+		<reward type="Item" id="gunSawedOffPumpShotgun" value="50" />
+		<reward type="Item" id="shotgunShell" value="50" />
+    </quest>
+	
+	<quest id="quest_classtrainingfarmer6" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer6" subtitle="Craft a Mortar and Pestle" subtitle_key="quest_classtrainingfarmer6_subtitle" description_key="quest_classtrainingfarmer6_description"
+	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
+
+		<objective type="Craft" id="PandM" value="1" />
+		<objective type="BlockPlace" id="PandM" value="1" />
+				
+		<reward type="Recipe" id="plantedBlueberry1" unlock_level="1"/>
+		<reward type="Recipe" id="plantedMushroom1" unlock_level="1"/>
+		<reward type="Recipe" id="plantedAloe1" unlock_level="1"/>
+		<reward type="Recipe" id="seedWheat" unlock_level="1"/>
+    </quest>
+	
+	<!-- Miner Class Quest -->
+	
+	<quest id="quest_classtrainingminer1" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer1" subtitle="Craft A Stone Axe And Shovel" subtitle_key="quest_classtrainingminer1_subtitle" description_key="quest_classtrainingminer1_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="5" />
+		<objective type="FetchKeep" id="wood" value="5" />
+		<objective type="FetchKeep" id="rockSmall" value="9" />
+		<objective type="Craft" id="stoneAxe" value="1" />
+		<objective type="Craft" id="stoneShovel" value="1" />
+		
+		<reward type="Item" id="tshirtBrown" value="50" />
+		<reward type="Item" id="denimPants" value="50" />
+		<reward type="Item" id="wornBoots" value="50" />
+		<reward type="Item" id="miningHelmet" value="50" />
+		<reward type="Quest" id="quest_classtrainingminer2" />
+    </quest>
+	
+	<quest id="quest_classtrainingminer2" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer2" subtitle="Gather Resources" subtitle_key="quest_classtrainingminer2_subtitle" description_key="quest_classtrainingminer2_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+	
+		<objective type="FetchKeep" id="rockSmall" value="100" />
+		<objective type="FetchKeep" id="clayLump" value="100" />
+		<objective type="FetchKeep" id="ironFragment" value="50" />
+		<objective type="FetchKeep" id="coal" value="50" />
+	
+		<reward type="Recipe" id="shovelScrap"/>
+		<reward type="Recipe" id="pickaxeScrap"/>
+		<reward type="Item" id="firstAidBandage" value="2" />
+		<reward type="Quest" id="quest_classtrainingminer3" />		
+	</quest>
+	
+	<quest id="quest_classtrainingminer3" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer3" subtitle="Craft Scrap Iron Pickaxe And Shovel" subtitle_key="quest_classtrainingminer3_subtitle" description_key="quest_classtrainingminer3_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+
+		<objective type="Craft" id="shovelScrap" value="1" />
+		<objective type="Craft" id="pickaxeScrap" value="1" />
+		
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canBeef" value="2" />
+		<reward type="Quest" id="quest_classtrainingminer4" />
+    </quest>
+	
+	<quest id="quest_classtrainingminer4" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer4" subtitle="Gather More Resources" subtitle_key="quest_classtrainingminer4_subtitle" description_key="quest_classtrainingminer4_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+
+		<objective type="FetchKeep" id="wood" value="100" />
+		<objective type="FetchKeep" id="leather" value="20" />
+		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
+
+		<reward type="Recipe" id="bellows"/>
+		<reward type="Recipe" id="forge"/>
+		<reward type="Quest" id="quest_classtrainingminer5" />
+    </quest>
+	
+	<quest id="quest_classtrainingminer5" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer5" subtitle="Craft a Forge" subtitle_key="quest_classtrainingminer5_subtitle" description_key="quest_classtrainingminer5_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+
+		<objective type="Craft" id="bellows" value="1" />
+		<objective type="Craft" id="forge" value="1" />
+		<objective type="BlockPlace" id="forge" value="1" />
+
+		<reward type="Recipe" id="leatherStrips"/>
+		<reward type="Quest" id="quest_classtrainingminer6" />
+    </quest>
+	
+	<quest id="quest_classtrainingminer6" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer6" subtitle="Craft a Barbed Club" subtitle_key="quest_classtrainingminer6_subtitle" description_key="quest_classtrainingminer6_description"
+	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
+
+		<objective type="FetchKeep" id="forgedIron" value="40" />
+		<objective type="FetchKeep" id="leatherStrips" value="10" />
+		<objective type="Craft" id="clubBarbed" value="1" />
+		
+		<reward type="Recipe" id="shovelIron"/>
+		<reward type="Recipe" id="pickaxeIron"/>
+    </quest>
+	
+	<!-- Mechanic Class Quest Chain -->
+	
+	<quest id="quest_classtrainingmechanic1" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic1" subtitle="Craft A Stone Axe" subtitle_key="quest_classtrainingmechanic1_subtitle" description_key="quest_classtrainingmechanic1_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+
+		<objective type="FetchKeep" id="yuccaFibers" value="2" />
+		<objective type="FetchKeep" id="wood" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="4" />
+
+		<objective type="Craft" id="stoneAxe" value="1" />
+		
+		<reward type="Item" id="tshirtZUWhite" value="50" />
+		<reward type="Item" id="overalls" value="50" />
+		<reward type="Item" id="wornBoots" value="50" />
+		<reward type="Item" id="ballCap" value="50" />
+		<reward type="Quest" id="quest_classtrainingmechanic2" />
+    </quest>
+	
+	<quest id="quest_classtrainingmechanic2" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic2" subtitle="Take Apart A Car" subtitle_key="quest_classtrainingmechanic2_subtitle" description_key="quest_classtrainingmechanic2_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+
+		<objective type="FetchKeep" id="gasCan" value="100"/>
+		<objective type="FetchKeep" id="scrapIron" value="40"/>
+	
+		<reward type="Recipe" id="wrench"/>
+		<reward type="Item" id="firstAidBandage" value="2" />
+		<reward type="Quest" id="quest_classtrainingmechanic3" />		
+	</quest>
+	
+	<quest id="quest_classtrainingmechanic3" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic3" subtitle="Take Apart Several Cars" subtitle_key="quest_classtrainingmechanic3_subtitle" description_key="quest_classtrainingmechanic3_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+		
+		<objective type="FetchKeep" id="gasCan" value="600"/>
+		
+		<reward type="Item" id="wrench" value="100" />
+		<reward type="Quest" id="quest_classtrainingmechanic4" />
+    </quest>
+	
+	<quest id="quest_classtrainingmechanic4" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic4" subtitle="Find a battery and engine" subtitle_key="quest_classtrainingmechanic4_subtitle" description_key="quest_classtrainingmechanic4_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+		
+		<objective type="FetchKeep" id="carBattery" value="1"/>
+		<objective type="FetchKeep" id="smallEngine" value="1"/>
+		
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canChicken" value="2" />
+		<reward type="Recipe" id="gasCan"/>
+		<reward type="Quest" id="quest_classtrainingmechanic5" />
+    </quest>
+	
+	<quest id="quest_classtrainingmechanic5" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic5" subtitle="Repair The Wrench" subtitle_key="quest_classtrainingmechanic5_subtitle" description_key="quest_classtrainingmechanic5_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+
+		<objective type="Repair" id="wrench" value="1" />
+
+		<reward type="Quest" id="quest_classtrainingmechanic6" />
+    </quest>
+	
+	<quest id="quest_classtrainingmechanic6" group_name_key="quest_classtrainingmechanic" name_key="quest_classtrainingmechanic6" subtitle="Gather Lots Of Parts" subtitle_key="quest_classtrainingmechanic6_subtitle" description_key="quest_classtrainingmechanic6_description"
+	icon="ui_game_symbol_wrench" category_key="quest" offer_key="quest_classtrainingmechanic_offer" >
+
+		<objective type="FetchKeep" id="mechanicalParts" value="20"/>
+		<objective type="FetchKeep" id="electricParts" value="20"/>
+		<objective type="FetchKeep" id="electronicParts" value="20"/>
+		
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<!-- Scientist Class Quest Chain -->
+	
+	<quest id="quest_classtrainingscientist1" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist1" subtitle="Craft A Splint" subtitle_key="quest_classtrainingscientist1_subtitle" description_key="quest_classtrainingscientist1_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+
+		<objective type="FetchKeep" id="cottonPlant" value="4"/>
+		<objective type="FetchKeep" id="wood" value="2"/>
+		<objective type="FetchKeep" id="ductTape" value="1"/>
+		<objective type="Craft" id="splint" value="1" />
+		
+		<reward type="Item" id="jacketWhite" value="50" />
+		<reward type="Item" id="tshirtBlack" value="50" />
+		<reward type="Item" id="suitPantsBlack" value="50" />		
+		<reward type="Item" id="dressShoesBlack" value="50" />
+		
+		<reward type="Quest" id="quest_classtrainingscientist2" />
+    </quest>
+	
+	<quest id="quest_classtrainingscientist2" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist2" subtitle="Gather Cotton and Aloe" subtitle_key="quest_classtrainingscientist2_subtitle" description_key="quest_classtrainingscientist2_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+
+		<objective type="FetchKeep" id="aloePlant" value="16"/>
+		<objective type="FetchKeep" id="cottonPlant" value="16"/>
+	
+		<reward type="Recipe" id="firstAidBandage"/>
+		<reward type="Recipe" id="aloeCream"/>
+		<reward type="Quest" id="quest_classtrainingscientist3" />		
+	</quest>
+	
+	<quest id="quest_classtrainingscientist3" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist3" subtitle="Craft Some Bandages" subtitle_key="quest_classtrainingscientist3_subtitle" description_key="quest_classtrainingscientist3_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+		
+		<objective type="Craft" id="cloth" value="4" />
+		<objective type="Craft" id="bandage" value="2" />
+
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canChicken" value="2" />
+		<reward type="Quest" id="quest_classtrainingscientist4" />
+    </quest>
+	
+	<quest id="quest_classtrainingscientist4" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist4" subtitle="Craft First Aid Bandages" subtitle_key="quest_classtrainingscientist4_subtitle" description_key="quest_classtrainingscientist4_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+
+		<objective type="Craft" id="cloth" value="4" />
+		<objective type="Craft" id="aloeCream" value="2" />
+		<objective type="Craft" id="firstAidBandage" value="2" />
+
+		<reward type="Item" id="huntingKnife" value="50" />
+		<reward type="Quest" id="quest_classtrainingscientist5" />
+    </quest>
+	
+	<quest id="quest_classtrainingscientist5" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist5" subtitle="Find Painkillers And Honey" subtitle_key="quest_classtrainingscientist5_subtitle" description_key="quest_classtrainingscientist5_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+
+		<objective type="FetchKeep" id="painkillers" value="2"/>
+		<objective type="FetchKeep" id="foodHoney" value="1"/>
+	
+		<reward type="Recipe" id="plantedAloe1"/>
+		<reward type="Recipe" id="PandM"/>
+		<reward type="Quest" id="quest_classtrainingscientist6" />
+    </quest>
+	
+	<quest id="quest_classtrainingscientist6" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist6" subtitle="Craft a Mortar and Pestle" subtitle_key="quest_classtrainingscientist6_subtitle" description_key="quest_classtrainingscientist6_description"
+	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
+
+		<objective type="Craft" id="PandM" value="1" />
+		<objective type="BlockPlace" id="PandM" value="1" />
+		
+		<reward type="Recipe" id="antibiotics"/>
+    </quest> 
+	
+	<!-- Security Class Quest Chain -->
+	
+	<quest id="quest_classtrainingsecurity1" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity1" subtitle="Craft A Club" subtitle_key="quest_classtrainingsecurity1_subtitle" description_key="quest_classtrainingsecurity1_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="FetchKeep" id="wood" value="6" />
+		<objective type="Craft" id="clubWood" value="1" />
+			
+		<reward type="Item" id="armyPants" value="50" />
+		<reward type="Item" id="armyShirt" value="50" />
+		<reward type="Item" id="wornBoots" value="50" />
+		<reward type="Item" id="ballCap" value="50" />
+		<reward type="Quest" id="quest_classtrainingsecurity2" />
+    </quest>
+	
+	<quest id="quest_classtrainingsecurity2" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity2" subtitle="Craft Animal Hide Armor" subtitle_key="quest_classtrainingsecurity2_subtitle" description_key="quest_classtrainingsecurity2_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="FetchKeep" id="animalHide" value="30" />
+		<objective type="Craft" id="animalHideLegArmor" value="1" />
+		<objective type="Craft" id="animalHideChestArmor" value="1" />
+		<objective type="Craft" id="animalHideGloves" value="1" />
+		<objective type="Craft" id="animalHideBoots" value="1" />
+		
+		<reward type="Item" id="pistolBook" value="1" />
+		<reward type="Quest" id="quest_classtrainingsecurity3" />		
+	</quest>
+	
+	<quest id="quest_classtrainingsecurity3" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity3" subtitle="Kill Some Zombies" subtitle_key="quest_classtrainingsecurity3_subtitle" description_key="quest_classtrainingsecurity3_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="ZombieKill" value="5" />
+			<requirement type="Holding" id="clubWood" />
+		
+		<reward type="Item" id="canBoiledWater" value="2" />
+		<reward type="Item" id="canChicken" value="2" />
+		<reward type="Quest" id="quest_classtrainingsecurity4" />
+    </quest>
+	
+	<quest id="quest_classtrainingsecurity4" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity4" subtitle="Find A Pistol" subtitle_key="quest_classtrainingsecurity4_subtitle" description_key="quest_classtrainingsecurity4_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="FetchKeep" id="gunPistol" value="1" />
+		<objective type="FetchKeep" id="9mmBullet" value="50" />
+
+		<reward type="Quest" id="quest_classtrainingsecurity5" />
+    </quest>
+	
+	<quest id="quest_classtrainingsecurity5" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity5" subtitle="Craft an Animal Snare and Coop" subtitle_key="quest_classtrainingsecurity5_subtitle" description_key="quest_classtrainingsecurity5_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="ZombieKill" value="10" />
+			<requirement type="Holding" id="gunPistol" />
+
+		<reward type="Item" id="firstAidBandage" value="2" />
+		<reward type="Quest" id="quest_classtrainingsecurity6" />
+    </quest>
+	
+	<quest id="quest_classtrainingsecurity6" group_name_key="quest_classtrainingsecurity" name_key="quest_classtrainingsecurity6" subtitle="Craft a Mortar and Pestle" subtitle_key="quest_classtrainingsecurity6_subtitle" description_key="quest_classtrainingsecurity6_description"
+	icon="ui_game_symbol_armor_iron" category_key="quest" offer_key="quest_classtrainingsecurity_offer" >
+
+		<objective type="FetchKeep" id="scrapIron" value="100" />
+		<objective type="FetchKeep" id="wood" value="10" />
+		<objective type="Craft" id="clubIron" value="1" />
+		<objective type="ZombieKill" value="10" />
+		
+		<reward type="SkillPoints" value="5" />
+    </quest> 
+	
+	<!-- Survivalist Class Quest Chain -->
+	
+	<quest id="quest_classtrainingsurvivalist1" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist1" subtitle="Craft A Wooden Bow And Club" subtitle_key="quest_classtrainingsurvivalist1_subtitle" description_key="quest_classtrainingsurvivalist1_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="yuccaFibers" value="3" />
+		<objective type="FetchKeep" id="feather" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="Craft" id="clubWood" value="1" />
+		<objective type="Craft" id="woodenBow" value="1" />
+		<objective type="Craft" id="arrow" value="2" />
+		
+		<reward type="Item" id="blackCowboyHat" value="50" />
+		<reward type="Item" id="tshirtBlack" value="50" />
+		<reward type="Item" id="armyPants" value="50" />
+		<reward type="Item" id="cowboyBootsBlack" value="50" /> 
+		
+		<reward type="Quest" id="quest_classtrainingsurvivalist2" />
+    </quest>
+	
+	<quest id="quest_classtrainingsurvivalist2" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist2" subtitle="Craft A Shiv" subtitle_key="quest_classtrainingsurvivalist2_subtitle" description_key="quest_classtrainingsurvivalist2_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="FetchKeep" id="femur" value="1" />
+		<objective type="Craft" id="boneShiv" value="1" />
+		
+		<reward type="Item" id="canEmpty" value="2" />
+		<reward type="Item" id="canBeef" value="2" />
+		<reward type="Recipe" id="leather"/>
+		<reward type="Recipe" id="leatherStrips"/>
+		<reward type="Quest" id="quest_classtrainingsurvivalist3" />		
+	</quest>
+	
+	<quest id="quest_classtrainingsurvivalist3" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist3" subtitle="Craft Food And Water" subtitle_key="quest_classtrainingsurvivalist3_subtitle" description_key="quest_classtrainingsurvivalist3_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="Craft" id="canBoiledWater" value="2" />
+		<objective type="Craft" id="charredMeat" value="2" />
+
+		<reward type="Item" id="firstAidBandage" value="2" />
+		<reward type="Quest" id="quest_classtrainingsurvivalist4" />
+    </quest>
+	
+	<quest id="quest_classtrainingsurvivalist4" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist4" subtitle="Craft Animal Hide Armor" subtitle_key="quest_classtrainingsurvivalist4_subtitle" description_key="quest_classtrainingsurvivalist4_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="FetchKeep" id="animalHide" value="45" />
+		<objective type="Craft" id="animalHideLegArmor" value="1" />
+		<objective type="Craft" id="animalHideChestArmor" value="1" />
+		<objective type="Craft" id="animalHideGloves" value="1" />
+		<objective type="Craft" id="animalHideBoots" value="1" />
+		<objective type="Craft" id="animalHideHood" value="1" />
+		
+		<reward type="Quest" id="quest_classtrainingsurvivalist5" />
+    </quest>
+	
+	<quest id="quest_classtrainingsurvivalist5" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist5" subtitle="Gather Resources" subtitle_key="quest_classtrainingsurvivalist5_subtitle" description_key="quest_classtrainingsurvivalist5_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="FetchKeep" id="scrapIron" value="200"/>
+		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="leather" value="10" />
+
+		<reward type="Recipe" id="fireaxeScrap"/>
+		<reward type="Recipe" id="pickaxeScrap"/>
+		<reward type="Quest" id="quest_classtrainingsurvivalist6" />
+    </quest>
+	
+	<quest id="quest_classtrainingsurvivalist6" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist6" subtitle="Craft Scrap Iron Tools" subtitle_key="quest_classtrainingsurvivalist6_subtitle" description_key="quest_classtrainingsurvivalist6_description"
+	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
+
+		<objective type="FetchKeep" id="fireaxeScrap" value="1"/>
+		<objective type="FetchKeep" id="pickaxeScrap" value="1" />
+		
+		<reward type="Recipe" id="crossbow"/>
+    </quest> 
+
+</quests>
