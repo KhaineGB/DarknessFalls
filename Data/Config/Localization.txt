@@ -5214,6 +5214,13 @@ FishTrapCapturedDesc,blocks,Traps,,You caught something!,,
 Maggots,items,Item,KgNone,Maggots,,,,
 MaggotsDesc,items,Item,KgNone,"Disgusting little creatures, but handy for fishing... or you can eat them if you really want.",,,,
 
+Fish,items,Item,KgNone,Fish,,,,
+FishDesc,items,Item,KgNone,Fresh fish caught from a local lake.,,,,
+grilledFish,items,Item,KgNone,Grilled Fish,,,,
+grilledFishDesc,items,Item,KgNone,Fresh fish grilled in the campfire. Tasty and good for you!,,,,
+fishPie,items,Item,KgNone,Fish Pie,,,,
+fishPieDesc,items,Item,KgNone,Made with mashed potatoes. A great way to combine veggies and fish.,,,,
+
 waterBarrel1,blocks,Traps,,Empty Water Butt,,
 waterBarrelDesc,blocks,Traps,,"An empty water butt for collecting rain water. Can be collected by punching, or with tools, once you cannot pick it up anymore.",,
 waterBarrel2,blocks,Traps,,Partially Filled Water Butt,,

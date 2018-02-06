@@ -11651,6 +11651,7 @@ Mesh files no longer used:
 
 <item id="2010" name="Fish">
 	<property name="CustomIcon" value="Fish" />
+	<property name="DescriptionKey" value="FishDesc"/>
     <property name="Meshfile" value="Items/Food/meat_pork" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="21" />
@@ -11674,8 +11675,9 @@ Mesh files no longer used:
 	<property name="ActionExp" value="3" />
 </item>
 
-<item id="2011" name="FishGrilled">
+<item id="2011" name="grilledFish">
 	<property name="CustomIcon" value="grilledFish" />
+	<property name="DescriptionKey" value="grilledFishDesc"/>
     <property name="Meshfile" value="Items/Misc/parcel" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="31" />
@@ -11687,7 +11689,7 @@ Mesh files no longer used:
 		<property name="Gain_water" value="-4" />
 		<property name="Gain_stamina" value="5" />
 		<property name="Gain_health" value="7" />
-		<property name="Gain_wellness" value="0.45" />
+		<property name="Gain_wellness" value="0.5" />
 		<property name="Buff" value="eatFood_10_Trigger" />
 		<property name="Sound_start" value="UseActions/player_eating" />
     </property>
@@ -11698,28 +11700,26 @@ Mesh files no longer used:
 	<property name="ActionExp" value="3" />
 </item>
 
-<item id="2012" name="FishStew">
-	<property name="CustomIcon" value="FishStew" />
-    <property name="Meshfile" value="Items/Food/venison_stew" />
+<item id="2012" name="fishPie">
+	<property name="CustomIcon" value="fishPie" />
+	<property name="DescriptionKey" value="fishPieDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcel" />
     <property name="Material" value="organic" />
-    <property name="HoldType" value="23" />
-    <property class="Action1">
-		<property name="Class" value="Eat" />
-		<property name="Delay" value="1.0" />
-		<property name="Use_time" value="0" />
-		<property name="Gain_food" value="16" />
-		<property name="Gain_water" value="0" />
-		<property name="Gain_stamina" value="10" />
-		<property name="Gain_health" value="12" />
-		<property name="Gain_wellness" value="1.45" />
-		<property name="Buff" value="stewWarming,eatFood_20_Trigger" />
-		<property name="Sound_start" value="UseActions/player_drinking" />
-    </property>
-    <property name="Smell" value="mediumSmell" />
-    <property name="Group" value="Food/Cooking" />
-	<property name="CraftingSkillGroup" value="craftSkillScience" />
-	<property name="ActionSkillGroup" value="craftSkillScience" />
-	<property name="ActionExp" value="3" />
+    <property name="HoldType" value="31" />
+	<property name="Stacknumber" value="15"/> <!-- STK food -->
+	<property name="EconomicValue" value="60"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="8"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="2"/>
+		<property name="Gain_wellness" value="0.8"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
 </item>
 
 <item id="2013" name="FishingBook">
@@ -11746,7 +11746,6 @@ Mesh files no longer used:
 		<property name="Class" value="PlaceAsBlock"/>
 		<property name="Delay" value="0.5"/>
 		<property name="Blockname" value="waterSource8"/>
-		<!-- <property name="Change_item_to" value="bucket"/> -->
 		<property name="Sound_start" value="bucketplace_water"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -11767,6 +11766,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2016" name="npcgunPistol">
+	<property name="CustomIcon" value="gunPistol" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
@@ -11827,6 +11827,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2017" name="npcgunHuntingRifle">
+	<property name="CustomIcon" value="gunHuntingRifle" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
@@ -11884,6 +11885,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2018" name="npccrossbow">
+	<property name="CustomIcon" value="crossbow" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="forgedIron"/>
@@ -11931,6 +11933,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2019" name="npcgunAK47">
+	<property name="CustomIcon" value="gunAK47" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
@@ -12114,6 +12117,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2022" name="npc9mmBullet">
+	<property name="CustomIcon" value="9mmBullet" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
@@ -12124,6 +12128,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2023" name="npc762mmBullet">
+	<property name="CustomIcon" value="762mmBullet" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
@@ -12134,6 +12139,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2024" name="npcironCrossbowBolt">
+	<property name="CustomIcon" value="ironCrossbowBolt" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab"/>
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab"/>

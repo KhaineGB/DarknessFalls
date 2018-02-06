@@ -3997,6 +3997,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rockSmall" count="4"/>
 </recipe>
 
+<recipe name="grilledFish" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="Fish" count="2"/>
+</recipe>
+
+<recipe name="grilledFish" count="1" craft_area="oven">
+	<ingredient name="Fish" count="1"/>
+</recipe>
+
+<recipe name="fishPie" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Fish" count="4"/>
+	<ingredient name="potato" count="4"/>
+</recipe>
+
+<recipe name="fishPie" count="1" craft_area="oven">
+	<ingredient name="Fish" count="2"/>
+	<ingredient name="potato" count="2"/>
+</recipe>
+
 <!-- Water Butt Recipe -->
 
 <recipe name="waterBarrel1" count="1">
