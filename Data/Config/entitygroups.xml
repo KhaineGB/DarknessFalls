@@ -484,7 +484,7 @@
 	</entitygroup>
 
 	<entitygroup name="BanditGroup">
-		<entity name="invisibleBandit" prob="8"/>
+		<entity name="invisibleBandit" prob="50"/>
 		<entity name="BanditMelee"/>
 		<entity name="BanditMelee2"/>
 		<entity name="BanditMelee3"/>
@@ -508,7 +508,7 @@
 	</entitygroup>
 	
 	<entitygroup name="SurvivorGroup">
-		<entity name="invisibleBandit" prob="7"/>
+		<entity name="invisibleBandit" prob="50"/>
 		<entity name="SurvivorMaleMelee1"/>
 		<entity name="SurvivorMaleMelee2"/>
 		<entity name="SurvivorMaleMelee3"/>

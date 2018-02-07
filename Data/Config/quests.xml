@@ -118,7 +118,7 @@
 		<objective type="Goto" id="trader" value="5" />
 
 		<reward type="SkillPoints" value="5" />
-		<reward type="Item" id="ClassPaper"/>
+		<!-- <reward type="Item" id="ClassPaper"/> -->
     </quest>
 
 	<!-- CHALLENGES -->

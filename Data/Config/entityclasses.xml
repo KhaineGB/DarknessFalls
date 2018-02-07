@@ -48,8 +48,8 @@
 	<property name="MapIcon" value="ui_game_symbol_map_player_arrow"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="keystoneBlock"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="keystoneBlock,ClassPaper"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="keystoneBlock,ClassPaper"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
