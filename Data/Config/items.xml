@@ -11793,7 +11793,7 @@ Mesh files no longer used:
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
 	<property name="Magazine_size" value="15"/>
-	<property name="Magazine_items" value="npc9mmBullet, Unload"/>
+	<property name="Magazine_items" value="npc9mmBullet"/>
 	<property name="Magazine_item_ray_counts" value="1"/>
 	<property name="Magazine_item_ray_spreads" value="0.85"/>
 	<!-- .85 -->
@@ -11852,9 +11852,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="npc762mmBullet, 762mmBulletHP, Unload"/>
-		<property name="Magazine_item_ray_counts" value="1, 1"/>
-		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Magazine_items" value="npc762mmBullet"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.66"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="hunting_rifle_fire"/>
@@ -11906,7 +11906,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="npcironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="npcironCrossbowBolt"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -11958,9 +11958,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
 		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="npc762mmBullet, 762mmBulletHP, Unload"/>
-		<property name="Magazine_item_ray_counts" value="1, 1"/>
-		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Magazine_items" value="npc762mmBullet"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="3.9"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="ak47_fire_start"/>
@@ -12024,9 +12024,9 @@ Mesh files no longer used:
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
 	<property name="Magazine_size" value="20"/>
-	<property name="Magazine_items" value="npc9mmBullet, npc9mmBulletHP, Unload"/>
-	<property name="Magazine_item_ray_counts" value="1, 1"/>
-	<property name="Magazine_item_ray_spreads" value="0.4, 0.4"/>
+	<property name="Magazine_items" value="npc9mmBulletHP"/>
+	<property name="Magazine_item_ray_counts" value="1"/>
+	<property name="Magazine_item_ray_spreads" value="0.4"/>
 	<!-- .85 -->
 	<property name="Reload_time" value="2"/>
 	<property name="Bullet_icon" value="pistol"/>
@@ -12084,9 +12084,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="15"/>
-		<property name="Magazine_items" value="44MagBullet, npc44MagBulletHP, Unload"/>
-		<property name="Magazine_item_ray_counts" value="1, 1"/>
-		<property name="Magazine_item_ray_spreads" value="0, 0"/>
+		<property name="Magazine_items" value="npc44MagBulletHP"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Reload_time" value="2.66"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="hunting_rifle_fire"/>
