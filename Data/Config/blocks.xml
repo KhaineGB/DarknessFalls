@@ -16495,7 +16495,7 @@ kind of free
 <!-- Water Butt Mod -->
 
 <block id="2028" name="waterBarrel1">
-	<property name="CustomIcon" value="oilBarrel" />
+	<property name="CustomIcon" value="waterButt" />
 	<property name="DescriptionKey" value="waterBarrelDesc"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="CanPickup" value="true"/>
@@ -16515,7 +16515,7 @@ kind of free
 </block>
 
 <block id="2029" name="waterBarrel2">
-	<property name="CustomIcon" value="oilBarrel" />
+	<property name="CustomIcon" value="waterButt" />
 	<property name="DescriptionKey" value="waterBarrel2Desc"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="CanPickup" value="true"/>
