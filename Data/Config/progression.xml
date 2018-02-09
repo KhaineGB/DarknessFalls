@@ -3,12 +3,13 @@
 <progression>
 <player
 	max_level="200"
-	exp_to_level="9545"
+	exp_to_level="10250"
 	experience_multiplier="1.0149"
 	skill_points_per_level="5"
 	skill_point_multiplier="0"/>
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 	<!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
+	<!-- Darkness Falls: 10250 XP for level 1, 1MXP = level 60. 13MXP total for level 200 -->
 
 <skills
 	max_level="100"
