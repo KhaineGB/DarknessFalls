@@ -16545,5 +16545,31 @@ kind of free
 	<drop event="Harvest" name="bucketRain" count="1" />
 	<property name="MaxDamage" value="40" />
 </block>
+
+<!-- Guard NPC's for Traders -->
+
+<block id="2031" name="spawnGuardMale">
+	<property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRamp"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="npcMaleGuard1,npcMaleGuard2,npcMaleGuard3,npcMaleGuard4,npcMaleGuard5"/>
+</block>
+
+<block id="2032" name="spawnGuardFemale">
+	<property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRamp"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="npcFemaleGuard1,npcFemaleGuard2,npcFemaleGuard3,npcFemaleGuard4,npcFemaleGuard5"/>
+</block>
+
+<!-- <block id="2033" name="spawnGuardCaptain">
+	<property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+	<property name="CustomIcon" value="metalTrussingRamp"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="npcFemaleCaptain,npcMaleCaptain"/>
+</block> -->
 	
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

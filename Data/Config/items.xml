@@ -11766,6 +11766,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2016" name="npcgunPistol">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="gunPistol" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
 	<property name="Material" value="metal"/>
@@ -11777,10 +11778,10 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsPistol_grip"/>
-		<property name="Receiver" value="partsPistol_receiver"/>
-		<property name="Pump" value="partsPistol_parts"/>
-		<property name="Barrel" value="partsPistol_barrel"/>
+		<property name="Stock" value="npcpartsPistol_grip"/>
+		<property name="Receiver" value="npcpartsPistol_receiver"/>
+		<property name="Pump" value="npcpartsPistol_parts"/>
+		<property name="Barrel" value="npcpartsPistol_barrel"/>
 	</property>
 	<property name="Sound_Sight_In" value="pistol_sight_in"/>
 	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
@@ -11827,6 +11828,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2017" name="npcgunHuntingRifle">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="gunHuntingRifle" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
 	<property name="Material" value="metal"/>
@@ -11839,10 +11841,10 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsHuntingRifle_stock"/>
-		<property name="Receiver" value="partsHuntingRifle_receiver"/>
-		<property name="Pump" value="partsHuntingRifle_parts"/>
-		<property name="Barrel" value="partsHuntingRifle_barrel"/>
+		<property name="Stock" value="npcpartsHuntingRifle_stock"/>
+		<property name="Receiver" value="npcpartsHuntingRifle_receiver"/>
+		<property name="Pump" value="npcpartsHuntingRifle_parts"/>
+		<property name="Barrel" value="npcpartsHuntingRifle_barrel"/>
 	</property>
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
@@ -11885,6 +11887,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2018" name="npccrossbow">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="crossbow" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab"/>
 	<property name="Material" value="metal"/>
@@ -11933,6 +11936,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2019" name="npcgunAK47">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="gunAK47" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab"/>
 	<property name="Material" value="metal"/>
@@ -11944,10 +11948,10 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsAK47_stock"/>
-		<property name="Receiver" value="partsAK47_receiver"/>
-		<property name="Pump" value="partsAK47_parts"/>
-		<property name="Barrel" value="partsAK47_barrel"/>
+		<property name="Stock" value="npcpartsAK47_stock"/>
+		<property name="Receiver" value="npcpartsAK47_receiver"/>
+		<property name="Pump" value="npcpartsAK47_parts"/>
+		<property name="Barrel" value="npcpartsAK47_barrel"/>
 	</property>
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
@@ -11996,6 +12000,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2020" name="npcgunP225">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="gunP225" />
 	<property name="DescriptionKey" value="gunP225Desc"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
@@ -12008,10 +12013,10 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsP225_grip"/>
-		<property name="Receiver" value="partsP225_receiver"/>
-		<property name="Pump" value="partsP225_parts"/>
-		<property name="Barrel" value="partsP225_barrel"/>
+		<property name="Stock" value="npcpartsP225_grip"/>
+		<property name="Receiver" value="npcpartsP225_receiver"/>
+		<property name="Pump" value="npcpartsP225_parts"/>
+		<property name="Barrel" value="npcpartsP225_barrel"/>
 	</property>
 	<property name="Sound_Sight_In" value="pistol_sight_in"/>
 	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
@@ -12058,6 +12063,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2021" name="npcgunWinchesterRifle">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="gunWinchesterRifle" />
 	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
@@ -12071,10 +12077,10 @@ Mesh files no longer used:
 	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
 	<property class="Parts">
-		<property name="Stock" value="partsWinchesterRifle_stock"/>
-		<property name="Receiver" value="partsWinchesterRifle_receiver"/>
-		<property name="Pump" value="partsWinchesterRifle_parts"/>
-		<property name="Barrel" value="partsWinchesterRifle_barrel"/>
+		<property name="Stock" value="npcpartsWinchesterRifle_stock"/>
+		<property name="Receiver" value="npcpartsWinchesterRifle_receiver"/>
+		<property name="Pump" value="npcpartsWinchesterRifle_parts"/>
+		<property name="Barrel" value="npcpartsWinchesterRifle_barrel"/>
 	</property>
 	<property name="Sound_Sight_In" value="rifle_sight_in"/>
 	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
@@ -12117,6 +12123,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2022" name="npc9mmBullet">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="9mmBullet" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
@@ -12128,6 +12135,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2023" name="npc762mmBullet">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="762mmBullet" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
 	<property name="Material" value="brass"/>
@@ -12139,6 +12147,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2024" name="npcironCrossbowBolt">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="ironCrossbowBolt" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab"/>
@@ -12174,6 +12183,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2025" name="npc9mmBulletHP">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="9mmBulletHP" />
 	<property name="DescriptionKey" value="9mmBulletHPDesc"/>
 	<property name="Extends" value="9mmBullet"/>
@@ -12186,6 +12196,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2026" name="npc44MagBulletHP">
+	<property name="Candrop" value="false"/>
 	<property name="CustomIcon" value="44MagBulletHP" />
 	<property name="DescriptionKey" value="44MagBulletHPDesc"/>
 	<property name="Extends" value="44MagBullet"/>
@@ -12195,6 +12206,276 @@ Mesh files no longer used:
 		<property name="BlockDamage" value="5,7"/>
 		<property name="ApplyBuff" value="0.7,0.7" param1="stunned"/>
 	</property>
+</item>
+
+<item id="2027" name="npcpartsPistol_grip">
+	<property name="CustomIcon" value="partsPistol_grip" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="10,10"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="412"/>
+</item>
+
+<item id="2028" name="npcpartsPistol_receiver">
+	<property name="CustomIcon" value="partsPistol_receiver" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="22,50"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="412"/>
+</item>
+
+<item id="2029" name="npcpartsPistol_parts">
+	<property name="CustomIcon" value="partsPistol_parts" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<!-- <property name="Accuracy" value="1,0.01"/> -->
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="412"/>
+</item>
+
+<item id="2030" name="npcpartsPistol_barrel">
+	<property name="CustomIcon" value="partsPistol_barrel" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="13,19"/>
+		<property name="BlockDamage" value="7,13"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="412"/>
+</item>
+
+<item id="2031" name="npcpartsAK47_stock">
+	<property name="CustomIcon" value="partsAK47_stock" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="12,16"/>
+		<property name="DegradationMax" value="5600,14000"/>
+		<property name="DismembermentBaseChance" value="-0.2,-0.1"/>
+	</property>
+	<property name="EconomicValue" value="1500"/>
+</item>
+
+<item id="2032" name="npcpartsAK47_receiver">
+	<property name="CustomIcon" value="partsAK47_receiver" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="54,90"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1500"/>
+</item>
+
+<item id="2033" name="npcpartsAK47_parts">
+	<property name="CustomIcon" value="partsAK47_parts" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="7,7"/> <!-- 14.5 -->
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1500"/>
+</item>
+
+<item id="2034" name="npcpartsAK47_barrel">
+	<property name="CustomIcon" value="partsAK47_barrel" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_barrel"/> <!-- xxx -->
+	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="42,70"/>
+		<property name="BlockDamage" value="5,9.5"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="1500"/>
+</item>
+
+<item id="2035" name="npcpartsHuntingRifle_stock">
+	<property name="CustomIcon" value="partsHuntingRifle_stock" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Material" value="wood"/>
+	<property name="Weight" value="20"/>
+	<property name="FuelValue" value="40"/>
+	<property class="Attributes">
+		<property name="DismembermentBaseChance" value="0.01,0.05"/>
+		<property name="DegradationRate" value="10,15"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2036" name="npcpartsHuntingRifle_receiver">
+	<property name="CustomIcon" value="partsHuntingRifle_receiver" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="96,160"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2037" name="npcpartsHuntingRifle_parts">
+	<property name="CustomIcon" value="partsHuntingRifle_parts" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_parts"/> <!-- xxx -->
+	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="11,11"/> <!-- 29 -->
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2038" name="npcpartsHuntingRifle_barrel">
+	<property name="CustomIcon" value="partsHuntingRifle_barrel" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="45,75"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2039" name="npcpartsWinchesterRifle_stock">
+	<property name="CustomIcon" value="partsWinchesterRifle_stock" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsWinchesterRifleGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Material" value="wood"/>
+	<property name="Weight" value="20"/>
+	<property name="FuelValue" value="40"/>
+	<property class="Attributes">
+		<property name="DismembermentBaseChance" value="0.01,0.05"/>
+		<property name="DegradationRate" value="10,15"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+	<property name="EconomicValue" value="625"/>
+</item>
+
+<item id="2040" name="npcpartsWinchesterRifle_receiver">
+	<property name="CustomIcon" value="partsWinchesterRifle_receiver" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsWinchesterRifleGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="96,160"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+	<property name="EconomicValue" value="625"/>
+</item>
+
+<item id="2041" name="npcpartsWinchesterRifle_parts">
+	<property name="CustomIcon" value="partsWinchesterRifle_parts" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="partsPistol_parts"/>
+	<property name="DescriptionKey" value="partsWinchesterRifleGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="11,11"/> <!-- 29 -->
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+	<property name="EconomicValue" value="775"/>
+</item>
+
+<item id="2042" name="npcpartsWinchesterRifle_barrel">
+	<property name="CustomIcon" value="partsWinchesterRifle_barrel" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsWinchesterRifleGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="45,75"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+	<property name="EconomicValue" value="775"/>
+</item>
+
+<item id="2043" name="npcpartsP225_grip">
+	<property name="CustomIcon" value="partsP225_grip" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsP225GroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="10,10"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2044" name="npcpartsP225_receiver">
+	<property name="CustomIcon" value="partsP225_receiver" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsP225GroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="22,50"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2045" name="npcpartsP225_parts">
+	<property name="CustomIcon" value="partsP225_parts" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsP225GroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2046" name="npcpartsP225_barrel">
+	<property name="CustomIcon" value="partsP225_barrel" />
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsP225GroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="13,19"/>
+		<property name="BlockDamage" value="7,13"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
 </item>
 
 <!-- Hornet Mod 
