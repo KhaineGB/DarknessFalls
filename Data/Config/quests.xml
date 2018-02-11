@@ -1048,7 +1048,7 @@
 
 		<objective type="ZombieKill" value="5" />
 
-		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="casinoCoin" value="300" />
 		<reward type="Item" id="scrapSkill" value="1" />
     </quest>
 	
@@ -1057,7 +1057,7 @@
 		<objective type="ZombieKill" value="10"  />
 		<requirement type="Holding" id="clubWood" />
 
-		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="casinoCoin" value="350" />
 		<reward type="Item" id="scrapSkill" value="3" />
 	</quest>
 	
@@ -1066,7 +1066,7 @@
 		<objective type="ZombieKill" value="20"  />
 		<requirement type="Holding" id="" />
 
-		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="casinoCoin" value="400" />
 		<reward type="Item" id="scrapSkill" value="5" />
 	</quest>
 

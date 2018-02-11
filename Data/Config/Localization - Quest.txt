@@ -430,3 +430,16 @@ quest_classtrainingsurvivalist5_description,,Quest Info,Reordered,"Scavenging an
 quest_classtrainingsurvivalist6,,Quest Info,Reordered,Class Quest - Survivalist 6/6,,,,
 quest_classtrainingsurvivalist6_subtitle,,Quest Info,Reordered,Craft Scrap Iron Tools,,,,.
 quest_classtrainingsurvivalist6_description,,Quest Info,Reordered,"Now you have all those resources it is time to make yourself some better tools. Craft Scrap Iron Tools.",,,,
+
+quest_Trader1,,Quest Info,KgNone,Trader Defense (Easy),,,,
+quest_Trader1_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world.\n\nGet out there and kill some zombies!",,,,
+quest_Trader1_subtitle,,Quest Info,Reordered,Kill Some Zombies,,,,.
+quest_Trader1_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies.",,,,
+quest_Trader2,,Quest Info,KgNone,Trader Defense (Medium),,,,
+quest_Trader2_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world. Ammo is hard to come by, so get some practice in with a basic club.\n\nGet out there and kill some zombies!",,,,
+quest_Trader2_subtitle,,Quest Info,Reordered,Kill Some Zombies With A Wooden Club,,,,.
+quest_Trader2_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies With A Wooden Club.",,,,
+quest_Trader3,,Quest Info,KgNone,Trader Defense (Hard),,,,
+quest_Trader3_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world. Sometimes it's best not to rely on weapons other than your fists.\n\nGet out there and kill some zombies!",,,,
+quest_Trader3_subtitle,,Quest Info,Reordered,Kill Some Zombies Barehanded,,,,.
+quest_Trader3_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies Barehanded.",,,,

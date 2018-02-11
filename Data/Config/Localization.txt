@@ -5228,6 +5228,16 @@ waterBarrel2Desc,blocks,Traps,,This water butt has some water in it. You should 
 bucketRain,items,Item,KgNone,Collected Rain Water,,
 bucketRainDesc,items,Item,KgNone,Rain water collected by the water butt. Can be emptied and creates a water source block.,,
 
+npcGCMale,entityclasses,Entity,KgNone,Guard Captain,,,,
+npcGCFemale,entityclasses,Entity,KgNone,Guard Captain,,,,
+
+questTrader1,items,Quest Note,KgNone,Trader Defense (Easy),,,,
+questTrader1Desc,items,Quest Note,KgNone,Help defend the trader for some rewards.,,,,
+questTrader2,items,Quest Note,KgNone,Trader Defense (Medium),,,,
+questTrader2Desc,items,Quest Note,KgNone,Help defend the trader for some rewards.,,,,
+questTrader3,items,Quest Note,KgNone,Trader Defense (Hard),,,,
+questTrader3Desc,items,Quest Note,KgNone,Help defend the trader for some rewards.,,,,
+
 ZUMABadGirl,entityclasses,Entity,KgNone,Skater Punk Zombie,,,,
 ZUMABadGirlFeral,entityclasses,Entity,KgNone,Feral Skater Punk,,,,
 ZUMADoctorMale,entityclasses,Entity,KgNone,Former Doctor,,,,
