@@ -1041,5 +1041,33 @@
 		
 		<reward type="Recipe" id="crossbow"/>
     </quest> 
+	
+<!-- Trader Guard Captain Quests -->
+
+	<quest id="quest_Trader1" name_key="quest_Trader1" subtitle="Defend the Trader (Easy)" subtitle_key="quest_Trader1_subtitle" description_key="quest_Trader1_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader1_offer" repeatable="true" difficulty="easy">
+
+		<objective type="ZombieKill" value="5" />
+
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="scrapSkill" value="1" />
+    </quest>
+	
+	<quest id="quest_Trader2" name_key="quest_Trader2" subtitle="Defend the Trader (Medium)" subtitle_key="quest_Trader2_subtitle" description_key="quest_Trader2_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader2_offer" repeatable="true" difficulty="medium">
+
+		<objective type="ZombieKill" value="10"  />
+		<requirement type="Holding" id="clubWood" />
+
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="scrapSkill" value="3" />
+	</quest>
+	
+	<quest id="quest_Trader3" name_key="quest_Trader3" subtitle="Defend the Trader (Hard)" subtitle_key="quest_Trader3_subtitle" description_key="quest_Trader3_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader3_offer" repeatable="true" difficulty="hard">
+
+		<objective type="ZombieKill" value="20"  />
+		<requirement type="Holding" id="" />
+
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="scrapSkill" value="5" />
+	</quest>
 
 </quests>

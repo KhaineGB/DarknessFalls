@@ -12478,6 +12478,50 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="512"/>
 </item>
 
+<!-- Trader Guard Captain Quests -->
+
+<item id="2047" name="questTrader1">
+	<property name="CreativeMode" value="None"/>
+	<property name="Meshfile" value="Items/Misc/Book"/>
+	<property name="Material" value="paper"/>
+	<property name="HoldType" value="21"/>
+	<property name="CustomIcon" value="questMaster"/>
+	<property name="DescriptionKey" value="questTrader1Desc"/>
+	<property name="Stacknumber" value="50"/> <!-- STK book -->
+	<property name="EconomicValue" value="200"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_Trader1"/>
+		<property name="Delay" value="0"/>
+	</property>
+	<property name="FuelValue" value="2"/>
+	<property name="Weight" value="2"/>
+	<property name="Group" value="Special Items"/>
+</item>
+
+<item id="2048" name="questTrader2">
+	<property name="Extends" value="questTrader1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="questTrader2Desc"/>
+	<property class="Action1">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_Trader2"/>
+		<property name="Delay" value="0"/>
+	</property>
+</item>
+
+<item id="2049" name="questTrader3">
+	<property name="Extends" value="questTrader1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="DescriptionKey" value="questTrader3Desc"/>
+	<property class="Action1">
+		<property name="Class" value="Quest"/>
+		<property name="QuestGiven" value="quest_Trader3"/>
+		<property name="Delay" value="0"/>
+	</property>
+</item>
+
 <!-- Hornet Mod 
 
 <item id="1959" name="stingHornet">

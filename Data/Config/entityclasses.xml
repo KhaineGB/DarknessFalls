@@ -2794,6 +2794,68 @@
 	<property name="Archetype" value="SurvivorFemale5"/>
 </entity_class>
 
+<!-- Trader Guard Captains -->
+
+<entity_class name="npcGuardCaptainTemplate">
+	<property name="EntityType" value="Player"/>
+	<property name="Faction" value="trader"/>
+	<property name="Mesh" value="Player/Male/player_maleRagdoll"/>
+	<property name="AvatarController" value="AvatarUMAController"/>
+	<property name="ModelType" value="NpcUMA"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="Prefab" value="NPC"/>
+	<property name="Class" value="EntityNPC"/>
+	<property name="Parent" value="Players"/>
+	<property name="PhysicsBody" value="Player"/>
+	<property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityAlive"/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityAlive"/>
+	<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
+	<property name="MaxHealth" value="150"/>
+	<property name="MaxViewAngle" value="180"/>
+	<property name="Weight" value="70"/>
+	<property name="WanderSpeed" value="0.75"/>
+	<property name="ApproachSpeed" value="1.15"/>
+	<property name="NightWanderSpeed" value="0.75"/>
+	<property name="NightApproachSpeed" value="1.15"/>
+	<property name="PanicSpeed" value="1.35"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="IsEnemyEntity" value="true"/>
+	<property name="LootListAlive" value="62"/>
+	<property name="SurfaceCategory" value="organic"/>
+	<property name="WalkType" value="7"/>
+	<property name="ParticleOnDeath" value="blood_death"/>
+	<property name="SoundRandomTime" value="200.0"/>
+	<property name="Archetype" value="Trader Joel"/>
+	<property name="SoundHurt" value="Player_Male/player1painlg"/>
+	<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
+	<property name="SoundDeath" value="Player_Male/player1death"/>
+	<property name="SoundStamina" value="Player_Male/player1stamina"/>
+	<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
+	<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
+	<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
+	<property name="SoundJump" value="Player_Male/player1Jump"/>
+	<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
+	<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
+	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+	<property name="TimeStayAfterDeath" value="45"/>
+	<property name="LootListOnDeath" value="15"/>
+	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
+	<property name="CorpseBlockChance" value="1"/>
+	<property name="ExperienceGain" value="173"/>
+	<property name="DeadBodyHitPoints" value="350"/>
+	<property name="HasDeathAnim" value="true"/>
+</entity_class>
+
+<entity_class name="npcGCMale" extends="npcGuardCaptainTemplate">
+	<property name="Archetype" value="Clint"/>
+	<property name="NPCID" value="GuardCaptainMale"/>
+</entity_class>
+
+<entity_class name="npcGCFemale" extends="npcGuardCaptainTemplate">
+	<property name="Archetype" value="TraderCaitlin"/>
+	<property name="NPCID" value="GuardCaptainFemale"/>
+</entity_class>
+
 <!-- New UMA Zombies -->
 
 <entity_class name="ZUMABuisnesswoman" extends="zombieUMATemplateFemale" >

@@ -8,9 +8,6 @@
     <property name="AllowedTownships" value="city,town,rural,wilderness" />
     <property name="AllowedBiomes" value="snow" />
     <property name="TraderArea" value="False" />
-    <!-- <property name="TraderAreaProtect" value="20,0,20" />
-    <property name="TraderAreaTeleportSize" value="44, 30, 48" />
-    <property name="TraderAreaTeleportCenter" value="1, 0, 0" /> -->
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
 </prefab>
