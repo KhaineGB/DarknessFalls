@@ -344,7 +344,7 @@
 		<recipe name="concreteMix" unlock_level="1"/>
 	</perk>
 	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="8"/>
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="7"/>
 		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="4"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="forgeCrucible" unlock_level="1"/>
@@ -585,9 +585,10 @@
 			<multiply skill_level="9,10" value="0.0086,0.0068"/>
 		</effect>
 	</perk>
-	<perk name="macheteCraftingPerk" icon="knife" description_key="macheteCraftingDesc" title_key="macheteCraftingName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
+	<perk name="macheteCraftingPerk" icon="knife" description_key="macheteCraftingDesc" title_key="macheteCraftingName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="7"/>
 		<recipe name="macheteBlade" unlock_level="1"/>
+		<recipe name="titaniumMacheteBlade" unlock_level="2"/>
 	</perk>
 
 	<perk name="craftSkillTools" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
@@ -1342,12 +1343,29 @@
 	<!-- Steel Armour Mod -->
 	
 	<perk name="Steel Armor" icon="armor_iron" description_key="steelArmorPerkDesc" title_key="SteelArmorTitle" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillArmor" required_skill_level="8"/>
+		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="1"/>
 		<recipe name="steelBoots" unlock_level="1"/>
 		<recipe name="steelHelmet" unlock_level="2"/>
 		<recipe name="steelGloves" unlock_level="3"/>
 		<recipe name="steelLegs" unlock_level="4"/>
 		<recipe name="steelChestplate" unlock_level="5"/>
+	</perk>
+	
+	<!-- Titanium Mod -->
+	
+	<perk name="Titanium Smithing" icon="resource" description_key="titaniumSmithingDesc" title_key="titaniumSmithing" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="9"/>
+		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="4"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
+		<recipe name="forgedTitanium" unlock_level="1"/>
+		<recipe name="fireaxeTitanium" unlock_level="1"/>
+		<recipe name="pickaxeTitanium" unlock_level="1"/>
+		<recipe name="shovelTitanium" unlock_level="1"/>
+		<recipe name="clubTitanium" unlock_level="2"/>
+		<recipe name="clubTitaniumBarbed" unlock_level="2"/>
+		<recipe name="titaniumArrowHead" unlock_level="3"/>
+		<recipe name="titaniumArrow" unlock_level="3"/>
+		<recipe name="titaniumCrossbowBolt" unlock_level="3"/>
 	</perk>
 
 <!--

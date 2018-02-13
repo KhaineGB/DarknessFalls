@@ -1794,62 +1794,77 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="ClassPaper" count="1">
 	<ingredient name="scrapSkill" count="120"/>
+	<ingredient name="paper" count="120"/>
 </recipe>
 
 <recipe name="skillGenericBook" count="1">
 	<ingredient name="scrapSkill" count="60"/>
+	<ingredient name="paper" count="60"/>
 </recipe>
 
 <recipe name="skillBarterBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillArcheryBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillAthleticsBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillBladesBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillBluntBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillCloth-ArmorBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillConstructionBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillMedicineBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillMiningBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillPistolBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillRifleBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillScavengingBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillShotgunBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="30"/>
 </recipe>
 
 <!-- Sticks and Sharp Stone Recipes -->
@@ -4027,6 +4042,102 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="scrapSkill" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
+	
+<!-- Titanium Stuff -->
+
+<recipe name="scrapTitanium" count="1" tooltip="ttScrapMetalBrass" >
+	<wildcard_forge_category />
+</recipe>
+
+<recipe name="scrapTitanium" count="1" craft_area="advforge" material_based="true" craft_time = "1" craft_exp_gain="0">
+     <ingredient name="unit_titanium" count="1"/>
+</recipe>
+
+<recipe name="forgedTitanium" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
+	<ingredient name="unit_titanium" count="15"/>
+	<ingredient name="unit_iron" count="5"/>
+	<ingredient name="unit_clay" count="10"/>
+</recipe>
+
+<recipe name="clubTitanium" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="scrapTitanium" count="100"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="clubTitaniumBarbed" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="forgedTitanium" count="15"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="clubTitaniumSpiked" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="forgedTitanium" count="25"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="titaniumSledgehammer" count="1" craft_area="workbench" craft_tool="wrench">
+	<ingredient name="forgedTitanium" count="30"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="titaniumHuntingKnife" count="1" craft_area="workbench" craft_tool="wrench">
+	<ingredient name="forgedTitanium" count="8"/>
+	<ingredient name="wood" count="4"/>
+</recipe>
+
+<recipe name="titaniumMacheteBlade" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
+	<ingredient name="unit_iron" count="200"/>
+	<ingredient name="unit_clay" count="40"/>
+</recipe>
+
+<recipe name="titaniumMachete" count="1" craft_area="workbench" craft_time="60">
+	<ingredient name="titaniumMacheteBlade" count="1"/>
+	<ingredient name="leather" count="1"/>
+</recipe>
+
+<recipe name="titaniumArrowHead" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
+	<ingredient name="unit_titanium" count="4"/>
+	<ingredient name="unit_iron" count="1"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="titaniumArrow" count="1" craft_area="workstationMetal">
+	<ingredient name="titaniumArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="titaniumArrow" count="1" craft_area="workstationMetal">
+	<ingredient name="titaniumArrowHead" count="1"/>
+	<ingredient name="stick" count="1"/>
+	<ingredient name="cloth" count="1"/>
+</recipe>
+
+<recipe name="titaniumCrossbowBolt" count="1" craft_area="workstationMetal">
+	<ingredient name="titaniumArrowHead" count="1"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="titaniumCrossbowBolt" count="1" craft_area="workstationMetal">
+	<ingredient name="titaniumArrowHead" count="1"/>
+	<ingredient name="stick" count="1"/>
+	<ingredient name="cloth" count="1"/>
+</recipe>
+
+<recipe name="fireaxeTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="pickaxeTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="shovelTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
 
 </recipes>
 

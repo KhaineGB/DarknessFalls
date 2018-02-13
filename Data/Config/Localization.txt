@@ -1649,7 +1649,7 @@ torchDesc,items,Item,EnChanged,This torch can be used as a light source or weapo
 trophy,items,Item,KgNone,Brass Trophy,Trophée en laiton,Messingtrophäe,,Trofeo de latón
 trophy2,items,Item,KgNone,Lead Trophy,Trophée en plomb,Bleitrophäe,,Trofeo de plomo
 trophy2Desc,items,Item,KgNone,Lead objects can be scrapped into scrap lead in your backpack or smelted in a forge as a core resource.,"Les objets en plomb peuvent être recyclés dans votre sac à dos pour obtenir du plomb recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Blei können in deinem Rucksack zerlegt werden, um Bleistücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de plomo se pueden despedazar para tener chatarra de plomo en tu mochila o fundir en la fragua para obtener recursos básicos.
-trophy3,items,Item,KgNone,Tungsten Trophy,Trophée en tungstène,Wolframtrophäe,,Trofeo de tungsteno
+trophy3,items,Item,KgNone,Titanium Trophy,,,,
 trophyDesc,items,Item,KgNone,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,"Les objets en laiton peuvent être recyclés dans votre sac à dos pour obtenir du laiton recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Messing können in deinem Rucksack zerlegt werden, um Messingstücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de latón se pueden despedazar para tener chatarra de latón en tu mochila o fundir en la fragua para obtener recursos básicos.
 turd,items,Item,KgNone,A human turd,Une crotte d'humain,Menschliche Scheiße,,Una mierda humana
 turdDesc,items,Item,KgNone,A disgusting turd. Only pick up on the clean end. It can be thrown at your friends or to distract zombies.,Une crotte dégoutante. À ramasser par le bout propre. Vous pouvez la jeter sur vos amis ou vous en servir pour distraire des zombies.,Ekelhafte Scheiße. Heb sie nur am sauberen Ende auf. Du kannst sie auf deine Freunde werfen oder damit Zombies ablenken.,,"Una mierda asquerosa. Recógela por la parte limpia. Se la puedes lanzar a tus amigos, o a los zombis para distraerlos."
@@ -5238,8 +5238,61 @@ questTrader2Desc,items,Quest Note,KgNone,Help defend the trader for some rewards
 questTrader3,items,Quest Note,KgNone,Trader Defense (Hard),,,,
 questTrader3Desc,items,Quest Note,KgNone,Help defend the trader for some rewards.,,,,
 
+titaniumFragment,items,Item,EnChanged KgNone,Raw Titanium,,,,
+titaniumFragmentDesc,items,Item,EnChanged KgNone,Raw titanium should be smelted in a forge but can also be scrapped at a loss.,,,,
+scrapTitanium,items,Item,KgNone,Titanium,,,,
+scrapTitaniumDesc,items,Item,KgNone,"The best raw resource you can get your hands on. Light, hard and durable.",,,,
+forgedTitanium,items,Item,KgNone,Forged Titanium,,,,
+forgedTitaniumDesc,items,Item,KgNone,"Can be crafted at the forge and be used to craft, repair and upgrade a variety of things.",,,,
+
+titaniumSmithing,progression,Skill,,Titanium Smithing,,
+titaniumSmithingDesc,progression,Skill,,Learn how to smelt titanium and craft items from this rare metal.,,
+
+clubTitanium,items,Melee,KgNone,Titanium Reinforced Club,,,,
+clubTitaniumDesc,items,Melee,KgNone,"Like an iron club, but more durable and does more damage.",,,,
+clubTitaniumBarbed,items,Melee,KgNone,Titanium Barbed Club,,,,
+clubTitaniumBarbedDesc,items,Melee,KgNone,A club with barbs. Added chance for bleeding.,,,,
+clubTitaniumSpiked,items,Melee,KgNone,Titanium Spiked Club,,,,
+clubTitaniumSpikedDesc,items,Melee,KgNone,A badass club with sharp spikes. Added chance for bleeding.,,,,
+
+titaniumHuntingKnife,items,Melee,KgNone,Titanium Hunting Knife,,,,
+titaniumHuntingKnifeDesc,items,Melee,KgNone,Great for slashing zombies and gutting animals for meat.,,,,
+titaniumMachete,items,Melee,KgNone,Titanium Machete,,,,
+titaniumMacheteDesc,items,Melee,KgNone,Great for chopping zombie limbs off and gutting animals for meat.,,,,
+titaniumMacheteBlade,items,Part,New,Titanium Machete Blade,,,,
+titaniumMacheteBladeDesc,items,Part,New,Used for crafting a titanium machete.,,,,
+titaniumSledgehammer,items,Melee,KgNone,Titanium Sledgehammer,,,,
+titaniumSledgehammerDesc,items,Melee,KgNone,The titanium sledgehammer is one of the best weapons for cracking skulls with a better chance to score a critical blow.,,,,
+
+titaniumArrowHead,items,Item,KgNone,Titanium Arrowhead,,,,
+titaniumArrowHeadDesc,items,Item,KgNone,A titanium arrowhead used to craft titanium-tipped arrows.,,,,
+titaniumArrow,items,Ammo,EnChanged,Titanium Arrow (Ammo),,,,
+titaniumArrowDesc,items,Ammo,KgNone,A titanium arrow does more damage than any of the non-flaming or exploding arrows. Hold reload to use alternate ammo.,,,,
+titaniumCrossbowBolt,items,Ammo,EnChanged,Titanium Crossbow Bolt (Ammo),,,,
+titaniumCrossbowBoltDesc,items,Ammo,KgNone,A titanium crossbow bolt does more damage than the iron and steel crossbow bolts. Hold reload to use alternate ammo.,,,,
+
+fireaxeTitanium,items,Tool,KgNone,Titanium Fireaxe,,,,
+fireaxeTitaniumDesc,items,Tool,KgNone,The fireaxe is good for harvesting wood and has a better chance to dismember than most weapons.,,,,
+pickaxeTitanium,items,Tool,KgNone,Titanium Pickaxe,,,
+pickaxeTitaniumDesc,items,Tool,KgNone,The titanium pickaxe is great for breaking stone and harvesting minerals.,,,,
+shovelTitanium,items,Tool,KgNone,Titanium Shovel,,,
+shovelTitaniumDesc,items,Tool,KgNone,"The titanium shovel is great for digging through earth, sand or snow.",,,,
+
+clubTitaniumSpikedSchematic,items,Book,New,Titanium Spiked Club Schematic,,,,
+clubTitaniumSpikedSchematicDesc,items,Book,New,Read this schematic to learn how to craft a titanium spiked club.,,,,
+titaniumHuntingKnifeSchematic,items,Book,New,Titanium Hunting Knife Schematic,,,,
+titaniumHuntingKnifeSchematicDesc,items,Book,New,Read this schematic to learn how to craft a titanium hunting knife.,,,,
+titaniumSledgehammerSchematic,items,Book,New,Titanium Sledgehammer Schematic,,,,
+titaniumSledgehammerSchematicDesc,items,Book,New,Read this schematic to learn how to craft a titanium sledgehammer.,,,,
+
+ZUMABuisnesswoman,entityclasses,Entity,KgNone,Zombie Businesswoman,,,,
+ZUMABuisnesswomanFeral,entityclasses,Entity,KgNone,Feral Zombie Businesswoman,,,,
+ZUMAMaleStripper,entityclasses,Entity,KgNone,Zombie Stripper,,,,
+ZUMAMaleStripperFeral,entityclasses,Entity,KgNone,Feral Zombie Stripper,,,,
 ZUMABadGirl,entityclasses,Entity,KgNone,Skater Punk Zombie,,,,
 ZUMABadGirlFeral,entityclasses,Entity,KgNone,Feral Skater Punk,,,,
+ZUMABikerFemale,entityclasses,Entity,KgNone,Zombie Biker,,,,
+ZUMABikerFemaleFeral,entityclasses,Entity,KgNone,Feral Zombie Biker,,,,
 ZUMADoctorMale,entityclasses,Entity,KgNone,Former Doctor,,,,
 ZUMADoctorFemale,entityclasses,Entity,KgNone,Former Doctor,,,,
 ZUMADoctorMaleFeral,entityclasses,Entity,KgNone,Feral Former Doctor,,,,

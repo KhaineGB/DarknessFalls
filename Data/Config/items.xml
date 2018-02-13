@@ -2144,7 +2144,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow"/>
+		<property name="Magazine_items" value="arrow,ironArrow"/>
 		<property name="Rays_spread" value="0.017"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2249,7 +2249,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow,flamingArrow"/>
+		<property name="Magazine_items" value="steelArrow,flamingArrow"/>
 		<property name="Rays_spread" value="0.011"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -9191,14 +9191,13 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
-<item id="1389" name="trophy3"> <!-- tungsten trophy -->
-	<property name="CreativeMode" value="Dev"/>
+<item id="1389" name="trophy3"> <!-- titanium trophy -->
 	<property name="Meshfile" value="Items/Crafting/trophy3Prefab"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="titanium"/>
 	<property name="HoldType" value="2"/>
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="5"/>
-	<property name="EconomicValue" value="5"/>
+	<property name="EconomicValue" value="55"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -12519,6 +12518,425 @@ Mesh files no longer used:
 		<property name="Class" value="Quest"/>
 		<property name="QuestGiven" value="quest_Trader3"/>
 		<property name="Delay" value="0"/>
+	</property>
+</item>
+
+<!-- Titanium Mod -->
+
+<item id="2050" name="titaniumFragment">
+	<property name="CustomIcon" value="titaniumFragment" />
+	<property name="DescriptionKey" value="titaniumFragmentDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="titanium" />
+	<property name="Weight" value="5" />
+	<property name="Stacknumber" value="10000" /> 
+	<property name="SellableToTrader" value="false" />
+	<property name="HoldType" value="45" />
+	<property name="DropScale" value="3" />
+	<property name="EconomicValue" value="50" />
+	<property name="EconomicBundleSize" value="5" />
+	<property name="Group" value="Resources" />
+</item>
+
+<item id="2051" name="forgedTitanium">
+	<property name="CustomIcon" value="ingotTitanium" />
+	<property name="DescriptionKey" value="forgedTitaniumDesc"/>
+	<property name="Meshfile" value="Items/Crafting/ingotIron" />
+	<property name="HoldType" value="21" />
+	<property name="Material" value="titanium" />
+	<property name="Stacknumber" value="1000" />
+	<property name="EconomicValue" value="64" />
+	<property name="Group" value="Resources" />
+	<property name="Weight" value="40" />
+	<property name="CraftingIngredientExp" value="15" />
+	<property name="CraftingIngredientTime" value="15" />
+	<property name="RepairTime" value="1" />
+	<property name="RepairAmount" value="400" />
+	<property name="CraftingSkillGroup" value="Construction" />
+</item>
+
+<item id="2052" name="unit_titanium">
+	<property name="Extends" value="unit_iron"/>
+	<property name="CustomIcon" value="scrapTitanium"/>
+	<property name="Material" value="titanium"/>
+	<property name="CreativeMode" value="None" />
+</item>
+
+<item id="2053" name="scrapTitanium">
+	<property name="CustomIcon" value="scrapTitanium" />
+	<property name="DescriptionKey" value="scrapTitaniumDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/scrapIronDroppedPrefab" />
+	<property name="HoldType" value="45" />
+	<property name="Material" value="titanium" />
+	<property name="Weight" value="1" />
+	<property name="Stacknumber" value="10000" /> 
+	<property name="EconomicValue" value="25" />
+	<property name="EconomicBundleSize" value="10" />
+	<property name="Group" value="Resources" />
+	<property name="RepairTime" value="0.75" />
+	<property name="RepairAmount" value="40" />
+	<property name="CraftingIngredientTime" value="0.3" />
+</item>
+
+<item id="2054" name="clubTitanium">
+	<property name="Extends" value="clubMaster"/>
+	<property name="CustomIcon" value="clubTitanium" />
+	<property name="DescriptionKey" value="clubTitaniumDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="EconomicValue" value="175"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="RepairTools" value="scrapTitanium"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property class="Action0">
+		<property name="Stamina_usage" value="6"/>
+		<property name="Buff" value="criticalBlunt"/>
+		<property name="Buff_chance" value="0.3"/>
+		<property name="DamageBonus.head" value="4"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="15,22"/>
+		<property name="BlockDamage" value="17,35"/>
+		<property name="DegradationMax" value="400,1200"/>
+	</property>
+	<property name="CritChance" value="0.2"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="clubIronDesc"/>
+</item>
+
+<item id="2055" name="clubTitaniumBarbed">
+	<property name="Extends" value="clubTitanium"/>
+	<property name="CustomIcon" value="clubTitaniumBarbed" />
+	<property name="DescriptionKey" value="clubTitaniumBarbedDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="4"/>
+		<property name="Delay" value="1.15"/>
+		<property name="Buff" value="bleeding,criticalBlunt"/>
+		<property name="Buff_chance" value="0.4,0.4"/>
+		<property name="DamageBonus.head" value="5"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="14,25"/>
+		<property name="BlockDamage" value="13,24"/>
+		<property name="DegradationMax" value="400,1200"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="CritChance" value="0.3"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="clubBarbedDesc"/>
+</item>
+
+<item id="2056" name="clubTitaniumSpiked">
+	<property name="Extends" value="clubTitanium"/>
+	<property name="CustomIcon" value="clubTitaniumSpiked" />
+	<property name="DescriptionKey" value="clubTitaniumSpikedDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="SellableToTrader" value="true"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="6"/>
+		<property name="Buff" value="bleeding,criticalBlunt"/>
+		<property name="Buff_chance" value="0.6,0.5"/>
+		<property name="DamageBonus.head" value="6"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,50"/>
+		<property name="BlockDamage" value="23,58"/>
+		<property name="DegradationMax" value="400,1200"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="CritChance" value="0.4"/>
+	<property name="DescriptionKey" value="clubSpikedDesc"/>
+</item>
+
+<item id="2057" name="titaniumSledgehammer">
+	<property name="CustomIcon" value="titaniumSledgehammer" />
+	<property name="DescriptionKey" value="titaniumSledgehammerDesc"/>
+	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="HoldType" value="33"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="30"/>
+	<property name="EconomicValue" value="700"/>
+	<property name="CritChance" value="0.4"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.5"/>
+		<property name="Range" value="2.4"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Block_range" value="4"/>
+		<property name="Sound_start" value="SlowSwoosh"/>
+		<property name="Stamina_usage" value="10"/>
+		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
+		<property name="Buff_chance" value="0.6,0.4,0.4"/>
+		<property name="DamageBonus.wood" value="0.6"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="2"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="30,60"/>
+		<property name="BlockDamage" value="92,216"/>
+		<property name="DegradationMax" value="600,2000"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0,0.05"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons,Tools/Traps"/>
+	<property name="ActionSkillGroup" value="Blunt Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
+<item id="2058" name="titaniumHuntingKnife">
+	<property name="CustomIcon" value="titaniumHuntingKnife" />
+	<property name="DescriptionKey" value="titaniumHuntingKnifeDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="HoldType" value="36"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="120"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="3"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="10"/>
+		<property name="ToolCategory.Butcher" value="1.2" param1="10"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="10,20"/>
+		<property name="BlockDamage" value="1,2"/>
+		<property name="DegradationMax" value="200,600"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.01,0.02"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2059" name="titaniumMacheteBlade">
+	<property name="CustomIcon" value="titaniumMachete"/> <property name="CustomIconTint" value="3399ff"/>
+	<property name="DescriptionKey" value="titaniumMacheteBladeDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
+<item id="2060" name="titaniumMachete">
+	<property name="CustomIcon" value="titaniumMachete" />
+	<property name="DescriptionKey" value="titaniumMacheteDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="HoldType" value="47"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Weight" value="200"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="6.51"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.leaves" value="25"/>
+		<property name="DamageBonus.organic" value="3"/>
+		<property name="ToolCategory.Butcher" value="1.2" param1="9"/>
+		<property name="Sound_harvesting" value="open_animal" param1="organic" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,30"/>
+		<property name="BlockDamage" value="4,10"/>
+		<property name="DegradationMax" value="200,800"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.01,0.03"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2061" name="titaniumArrowHead">
+	<property name="CustomIcon" value="steelArrowHead" />
+	<property name="CustomIconTint" value="3399ff"/>
+	<property name="DescriptionKey" value="titaniumArrowHeadDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="40"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Group" value="Resources,Ammo/Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+</item>
+
+<item id="2062" name="titaniumArrow">
+	<property name="CustomIcon" value="titaniumArrow" />
+	<property name="DescriptionKey" value="titaniumArrowDesc"/>
+	<property name="Extends" value="ironArrow"/>
+	<property name="Material" value="metal"/>
+	<property name="EconomicValue" value="65"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="75"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="30,50"/>
+		<property name="BlockDamage" value="7,10"/>
+		<property name="ApplyBuff" value="0.75,0.75" param1="arrowCriticalBleedout"/>
+	</property>
+</item>
+
+<item id="2063" name="titaniumCrossbowBolt">
+	<property name="CustomIcon" value="titaniumCrossbowBolt" />
+	<property name="DescriptionKey" value="titaniumCrossbowBoltDesc"/>
+	<property name="Extends" value="ironCrossbowBolt"/>
+	<property name="Material" value="metal"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab"/>
+	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab"/>
+	<property name="EconomicValue" value="65"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="85"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="40,60"/>
+		<property name="BlockDamage" value="8,13"/>
+		<property name="ApplyBuff" value="0.75,0.75" param1="arrowCriticalBleedout"/>
+	</property>
+</item>
+
+<item id="2064" name="fireaxeTitanium">
+	<property name="Extends" value="fireaxeIron"/>
+	<property name="CustomIcon" value="fireaxeIron"/>
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="fireaxeTitaniumDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="Action0">
+		<property name="Stamina_usage" value="10"/>
+		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,25"/>
+		<property name="BlockDamage" value="50,92"/>
+		<property name="DegradationMax" value="1000,2800"/>
+	</property>
+</item>
+
+<item id="2065" name="pickaxeTitanium">
+	<property name="Extends" value="pickaxeIron"/>
+	<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab"/>
+	<property name="CustomIcon" value="pickaxeSteel"/>
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="pickaxeTitaniumDesc"/>
+	<property name="HoldType" value="4"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="Action0">
+		<property name="Delay" value="1.2"/>
+		<property name="Stamina_usage" value="15"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="9,23"/>
+		<property name="BlockDamage" value="75,157"/>
+		<property name="DegradationMax" value="1000,2800"/>
+	</property>
+</item>
+
+<item id="2066" name="shovelTitanium">
+	<property name="Extends" value="shovelIron"/>
+	<property name="Meshfile" value="Items/Tools/shovel_steelPrefab"/>
+	<property name="CustomIcon" value="shovelIron"/>
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="shovelTitaniumDesc"/>
+	<property name="RepairTools" value="forgedTitanium"/>
+	<property name="EconomicValue" value="1200"/>
+	<property class="Action0">
+		<property name="Delay" value="1"/>
+		<property name="Stamina_usage" value="10"/>
+		<property name="DamageBonus.earth" value="3"/>
+		<property name="DamageBonus.organic" value="1"/>
+		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="15,28"/>
+		<property name="DegradationMax" value="1000,2800"/>
+	</property>
+</item>
+
+<item id="2067" name="clubTitaniumSpikedSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="titaniumSpikedClubSchematic"/>
+	<property name="DescriptionKey" value="clubTitaniumSpikedSchematicDesc"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="clubTitaniumSpiked"/>
+	</property>
+</item>
+
+<item id="2068" name="titaniumHuntingKnifeSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="titaniumHuntingKnifeSchematic"/>
+	<property name="DescriptionKey" value="titaniumHuntingKnifeSchematicDesc"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="titaniumHuntingKnife"/>
+	</property>
+</item>
+
+<item id="2069" name="titaniumSledgehammerSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="titaniumSledgehammerSchematic"/>
+	<property name="DescriptionKey" value="titaniumSledgehammerSchematicDesc"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="titaniumSledgehammer"/>
 	</property>
 </item>
 

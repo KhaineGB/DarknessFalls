@@ -2795,7 +2795,7 @@
 	
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
 	<window name="windowAdvForgeInput" width="228" height="229" panel="Right"
-		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
+		controller="WorkstationMaterialInputWindow" materials_accepted="iron,brass,lead,glass,stone,clay,titanium" valid_materials_color="[green]" invalid_materials_color="[red]" cursor_area="true" >
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_forge"/>
 			<label style="header.name" text="INPUT" text_key="xuiSmelting" />
@@ -2812,7 +2812,7 @@
 
 		<rect name="content2" depth="0" pos="78, -49" width="147" height="223">
 			<sprite depth="1" color="[mediumGrey]" type="sliced" on_press="true"/>
-			<grid rows="6" cols="1" pos="3,-3" cell_width="147" cell_height="37"  repeat_content="true">
+			<grid rows="7" cols="1" pos="3,-3" cell_width="147" cell_height="32"  repeat_content="true">
 				<forge_material name="0"/>
 			</grid>
 		</rect>
@@ -2847,16 +2847,6 @@
 				<sprite depth="2" name="flameIcon" style="icon32px" pos="5,0" sprite="ui_game_symbol_fire" />
 				<label depth="2" name="onoff" pos="0,-6" justify="center" text="TURN ON" text_key="xuiTurnOn" font_size="26" />
 			</rect>
-		</panel>
-	</window>
-
-	<window name="windowPowerCameraControlPreview" width="228" height="128" panel="Left" controller="CameraWindow" cursor_area="true">
-		<panel style="header.panel">
-			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_search"/>
-			<label style="header.name" text="Camera Preview" text_key="xuiCameraPreview" />
-		</panel>
-		<panel pos="0,-46" name="cameraClick" width="100%" height="100%" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="press" sound_play_on_press="false">
-			<texture depth="105" pos="3,-3" name="camera" material="Materials/Transparent Colored" width="222" height="122" globalopacity="false"/>
 		</panel>
 	</window>
 	

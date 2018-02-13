@@ -15937,7 +15937,7 @@ kind of free
 	<property class="Workstation">
 		<property name="CraftingAreaRecipes" value="advforge"/>
 		<property name="Modules" value="tools,output,material_input"/>
-		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+		<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay,titanium"/>
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="50"/>
@@ -16570,6 +16570,21 @@ kind of free
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="SpawnEntity"/>
 	<property name="SpawnClass" value="npcGCMale,npcGCFemale"/>
+</block>
+
+<!-- Titanium Ore -->
+
+<block id="2034" name="titaniumOre">
+	<property name="CustomIcon" value="titaniumOre"/>
+	<property name="Material" value="titanium"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="96"/>
+	<property name="DropScale" value="2"/>
+	<drop event="Harvest" name="titaniumFragment" count="25" tool_category="harvestingTools"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="titaniumFragment" count="24" prob="0.5" stick_chance="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
 </block>
 	
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

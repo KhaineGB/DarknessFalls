@@ -397,6 +397,15 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="theEnforcerMagazine"/>
 			<item name="compoundBowSchematic"/>
 			<item name="herbalAntibioticsRecipe" prob="0.5"/>
+			<item name="AR15Schematic"/>
+			<item name="CAWSShotgunSchematic"/>
+			<item name="WinchesterRifleSchematic"/>
+			<item name="clubTitaniumSpikedSchematic"/>
+			<item name="titaniumHuntingKnifeSchematic"/>
+			<item name="titaniumSledgehammerSchematic"/>
+			<item name="farmingBook2" prob="0.7"/>
+			<item name="farmingBook3" prob="0.7"/>
+			<item name="skillGenericBook" prob="0.03"/>
 			<!-- <item name="macDyverBook" prob="1.5"/> -->
 		</trader_item_group>
 
@@ -429,6 +438,10 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunMP5" prob="0.8"/>
 			<item name="gunSniperRifle" prob="1"/>
 			<item name="gunAK47" prob="0.6"/>
+			<item name="gunAR15" prob="0.6"/>
+			<item name="gunP225" prob="0.6"/>
+			<item name="gunWinchesterRifle" prob="0.6"/>
+			<item name="gunCAWSShotgun" prob="0.6"/>
 			<item name="gunRocketLauncher" prob="0.4"/>
 			<item name="nightvisionGoggles" prob="0.6"/>
 		</trader_item_group>
@@ -456,6 +469,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="steelArrow" count="20,60"/>
 			<item name="ironCrossbowBolt" count="20,60"/>
 			<item name="steelCrossbowBolt" count="20,60"/>
+			<item name="9mmBulletHP" count="40,120" prob="0.1"/>
+			<item name="762mmBulletHP" count="20,80" prob="0.1"/>
+			<item name="44MagBulletHP" count="15,50" prob="0.1"/>
+			<item name="shotgunDBShell" count="6,18" prob="0.1"/>
+			<item name="titaniumArrow" count="20,60" prob="0.01"/>
+			<item name="titaniumCrossbowBolt" count="20,60" prob="0.01"/>
 		</trader_item_group>
 
 		<trader_item_group name="ammoSupplies">
@@ -465,7 +484,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunPowder" count="5,30"/> <!-- 10 -->
 			<item name="paper" count="10,30"/> <!-- 10 -->
 			<item name="ironArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
-			<item name="steelArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->>
+			<item name="steelArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
+			<item name="titaniumArrowHead" count="5,25" prob="0.005"/> <!-- 5 -->
 			<item name="feather" count="10,45"/> <!-- 5 -->
 		</trader_item_group>
 
