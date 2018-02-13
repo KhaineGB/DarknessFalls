@@ -3,7 +3,7 @@
 	<world ruleset="vanilla" />
 	
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2700" cell_offset="0" generation_distance="12500" terrain_generator="vanilla" biome_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="2500" cell_offset="0" generation_distance="12500" terrain_generator="vanilla" biome_generator="vanilla">
 			<cell_rule name="default" prob="1"/>
 			<cell_rule name="customHubTest" position="-200,-200" prob="1"/>
 		</ruleset>
@@ -627,7 +627,7 @@
 			
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="finalLand"/>
-				<property name="scale" value="200"/>
+				<property name="scale" value="210"/>
 			</module>
 
 			<output module="scaleBiasOutput"/>
