@@ -5,7 +5,7 @@
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="2500" cell_offset="0" generation_distance="12500" terrain_generator="vanilla" biome_generator="vanilla">
 			<cell_rule name="default" prob="1"/>
-			<cell_rule name="customHubTest" position="-200,-200" prob="1"/>
+			<cell_rule name="customHubTest" position="-100,-100" prob="1"/>
 		</ruleset>
 	</rulesets>
 	
@@ -30,7 +30,6 @@
 			<path_radius value="10" />
 			
 			<hub_rule name="cityLarge" prob="1"/>
-			<hub_rule name="citySmall" prob="2"/>
 			
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
@@ -58,7 +57,7 @@
 		</hub_rule>
 		
 		<hub_rule name="ruralLarge">
-			<hub_type value="city"/>
+			<hub_type value="rural"/>
 			<width value="250, 300" />
 			<height value="250, 300" />
 			<path_material value="asphalt" /> 
@@ -81,7 +80,7 @@
 			<hub_type value="town"/>
 			<width value="300, 400" />
 			<height value="300, 400" />
-			<path_material value="stone" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
@@ -98,10 +97,10 @@
 		</hub_rule>
 		
 		<hub_rule name="townLarge">
-			<hub_type value="city"/>
+			<hub_type value="town"/>
 			<width value="400, 600" />
 			<height value="400, 600" />
-			<path_material value="stone" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
@@ -139,11 +138,11 @@
 		
 		<hub_rule name="cityLarge">
 			<hub_type value="city"/>
-			<width value="5000, 5000" />
-			<height value="5000, 5000" />
+			<width value="1000, 1000" />
+			<height value="1000, 1000" />
 			<path_material value="stone" /> 
 			<path_radius value="10" />
-			<downtown_zone_size_perc value="0.45"/>
+			<downtown_zone_size_perc value="0.5"/>
 			
 			<prefab_rule name="default"/>
 			
@@ -167,7 +166,7 @@
 	</hub_rules>
 	
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
+		<wilderness_rule name="wildernessDefault" spawn_min_max="25,35">
 			<path_material value="gravel" /> 
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
