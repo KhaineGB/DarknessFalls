@@ -640,9 +640,9 @@
 
 <lootgroup name="weaponsPistol+ammo" count="all">
 	<item name="9mmBullet" count="1,10"/>
-	<item name="9mmBulletHP" count="1,10"/>
+	<item name="9mmBulletHP" count="1,10" prob="0.05"/>
 	<item name="gunPistol" count="1"/>
-	<item name="gunP225" count="1"/>
+	<item name="gunP225" count="1" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="toiletLoot" count="1">
