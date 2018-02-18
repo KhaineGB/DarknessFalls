@@ -1176,9 +1176,9 @@
 	</player_skill>
 
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
-		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="40"/>
-		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="80"/>
-		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="120"/>
+		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="30"/>
+		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="60"/>
+		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="90"/>
 		<effect name="SecretStash">
 			<add skill_level="0" value="0"/>
 			<add skill_level="1" value="500"/>
