@@ -1176,9 +1176,9 @@
 	</player_skill>
 
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
-		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="40"/>
-		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="80"/>
-		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="120"/>
+		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="30"/>
+		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="60"/>
+		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="90"/>
 		<effect name="SecretStash">
 			<add skill_level="0" value="0"/>
 			<add skill_level="1" value="500"/>
@@ -1343,7 +1343,7 @@
 	<!-- Steel Armour Mod -->
 	
 	<perk name="Steel Armor" icon="armor_iron" description_key="steelArmorPerkDesc" title_key="SteelArmorTitle" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
-		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="1"/>
+		<requirement skill_level="1" required_skill_name="craftSkillArmor" required_skill_level="8"/>
 		<recipe name="steelBoots" unlock_level="1"/>
 		<recipe name="steelHelmet" unlock_level="2"/>
 		<recipe name="steelGloves" unlock_level="3"/>

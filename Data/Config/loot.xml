@@ -1242,8 +1242,6 @@
 	<item name="pickaxeSteel"/>
 	<item name="fireaxeSteel"/>
 	<item name="shovelSteel"/>
-	<item name="weldingTorch" />
-	<item name="calipers" prob="0.35"/>
 	<item name="toolAndDieSet" prob="0.09"/>
 	<item group="nailgun+parts"/>
 </lootgroup>
@@ -1260,6 +1258,8 @@
 	<item name="hoeIron"/>
 	<item name="clawHammer"/>
 	<item name="tanningRack" prob="0.7"/>
+	<item name="weldingTorch" />
+	<item name="calipers" prob="0.35"/>
 	<item name="wrench" prob="0.7"/>
 	<item name="repairKit" count="1,4"/>
 	<item group="nailgun+parts"/>
