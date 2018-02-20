@@ -2163,14 +2163,20 @@
 
 <entity_class name="BanditMelee2" extends="BanditMelee">
 	<property name="Archetype" value="BanditMelee2"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="sledgehammer"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="sledgehammer"/>
 </entity_class>
 
 <entity_class name="BanditMelee3" extends="BanditMelee">
 	<property name="Archetype" value="BanditMelee3"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubBarbed"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubBarbed"/>
 </entity_class>
 
 <entity_class name="BanditMelee4" extends="BanditMelee">
 	<property name="Archetype" value="BanditMelee4"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubIron"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubIron"/>
 </entity_class>
 
 <entity_class name="BanditFemaleMelee" extends="BanditTemplate">
@@ -2185,14 +2191,20 @@
 
 <entity_class name="BanditFemaleMelee2" extends="BanditFemaleMelee">
 	<property name="Archetype" value="BanditFemaleMelee2"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="sledgehammer"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="sledgehammer"/>
 </entity_class>
 
 <entity_class name="BanditFemaleMelee3" extends="BanditFemaleMelee">
 	<property name="Archetype" value="BanditFemaleMelee3"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubBarbed"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubBarbed"/>
 </entity_class>
 
 <entity_class name="BanditFemaleMelee4" extends="BanditFemaleMelee">
 	<property name="Archetype" value="BanditFemaleMelee4"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubIron"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubIron"/>
 </entity_class>
 
 <entity_class name="BanditRanged" extends="BanditTemplate">
@@ -2530,7 +2542,7 @@
 	<property name="Archetype" value="SurvivorFemale5"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="machete"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="machete"/>
-		<property name="AttackTimeoutDay" value="0.5"/>
+	<property name="AttackTimeoutDay" value="0.5"/>
 	<property name="AttackTimeoutNight" value="0.5"/>
 	<property name="SoundHurt" value="Player_Female/player2painlg"/>
 	<property name="SoundHurtSmall" value="Player_Female/player2painsm"/>

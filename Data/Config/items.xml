@@ -6997,8 +6997,8 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="60"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_food" value="25"/>
+		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="6"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
@@ -10500,7 +10500,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="15"/>
+		<property name="Gain_food" value="20"/>
 		<property name="Gain_water" value="5"/>
 		<property name="Gain_wellness" value="0.5"/>
 		<property name="Sound_start" value="player_drinking"/>
@@ -10620,7 +10620,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="40"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="1"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="TreeSapStaminaBoost"/>
 		<property name="Create_item" value="emptyBowl"/>
@@ -10645,7 +10645,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="40"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="1"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="TreeSapStaminaBoost"/>
 		<property name="Create_item" value="emptyJar"/>

@@ -5947,7 +5947,7 @@
 		</dna>
 	</archetype>
 	
-		<archetype name="BanditFemaleMelee2" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
+	<archetype name="BanditFemaleMelee2" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="female_base_face">
 				<texture name="female_head_old" color="skin"/>
@@ -6329,7 +6329,7 @@
 		</dna>
 	</archetype>
 	
-		<archetype name="BanditFemaleRanged2" male="false" hair_color="60,25,23" eye_color="70,80,70" skin_color="200,200,200" type="Zombie" stance="Like" voice_set="trader">
+	<archetype name="BanditFemaleRanged2" male="false" hair_color="60,25,23" eye_color="70,80,70" skin_color="200,200,200" type="Zombie" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="female_base_face">
 				<texture name="female_head" color="skin"/>
@@ -6839,7 +6839,7 @@
 		</dna>
 	</archetype>
 	
-		<archetype name="BanditMelee2" male="true" hair_color="200,200,200" eye_color="99,62,14" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
+	<archetype name="BanditMelee2" male="true" hair_color="200,200,200" eye_color="99,62,14" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
 				<texture name="male_head_old" color="skin"/>
@@ -7845,7 +7845,7 @@
 			<gene name="breastSize" value="0.5"/>
 		</dna>
 	</archetype>
-	<archetype name="BanditMafia" male="true" hair_color="100,100,100" eye_color="99,62,14" skin_color="200,200,200" type="Zombie" stance="Like" voice_set="trader">
+	<archetype name="BanditMafia" male="true" hair_color="100,100,100" eye_color="99,62,14" skin_color="200,200,200" type="None" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
 				<texture name="male_head_old" color="skin"/>
@@ -7965,7 +7965,7 @@
 		</dna>
 	</archetype>
 
-	<archetype name="LadyArmor" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
+	<archetype name="LadyArmor" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="None" stance="Like" voice_set="trader">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="female_base_face">
 				<texture name="female_head" color="skin"/>

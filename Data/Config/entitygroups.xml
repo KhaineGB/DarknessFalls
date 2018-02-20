@@ -507,6 +507,22 @@
 		<entity name="BanditFemaleLeader2" prob="0.002"/>
 	</entitygroup>
 	
+	<entitygroup name="BanditGroupHub">
+		<entity name="invisibleBandit" prob="50"/>
+		<entity name="BanditRanged" prob="0.5"/>
+		<entity name="BanditRanged2" prob="0.5"/>
+		<entity name="BanditRanged3" prob="0.5"/>
+		<entity name="BanditRanged4" prob="0.5"/>
+		<entity name="BanditFemaleRanged" prob="0.5"/>
+		<entity name="BanditFemaleRanged2" prob="0.5"/>
+		<entity name="BanditFemaleRanged3" prob="0.5"/>
+		<entity name="BanditFemaleRanged4" prob="0.5"/>
+		<entity name="BanditLeader" prob="0.002"/>
+		<entity name="BanditLeader2" prob="0.002"/>
+		<entity name="BanditFemaleLeader" prob="0.002"/>
+		<entity name="BanditFemaleLeader2" prob="0.002"/>
+	</entitygroup>
+	
 	<entitygroup name="SurvivorGroup">
 		<entity name="invisibleBandit" prob="50"/>
 		<entity name="SurvivorMaleMelee1"/>

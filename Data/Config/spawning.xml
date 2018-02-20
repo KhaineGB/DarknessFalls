@@ -20,8 +20,23 @@
         <spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
         <spawn maxcount="8" respawndelay="1" time="Night" entitygroup="ZombieFeralNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
+		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="BanditGroup" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+    </biome>
+	
+	<biome name="town">
+        <spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+        <spawn maxcount="8" respawndelay="1" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+		<spawn maxcount="4" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
+    </biome>
+	
+    <biome name="rural">
+        <spawn maxcount="6" respawndelay="4" time="Day"   entitygroup="ZombiesAll" />
+		<spawn maxcount="6" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="SurvivorGroup" />
+		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="BanditGroup" />
     </biome>
 <!-- Not Used anymore in Navezgane-->
     <biome name="city_wasteland">
@@ -45,7 +60,7 @@
       <spawn maxcount="10" respawndelay="1" time="Day" entitygroup="ZombieBadassGroup" />
       <spawn maxcount="10" respawndelay="1" time="Night" entitygroup="ZombieFeralRadiatedGroup" />
 	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
-	  <!-- <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="BanditGroup" /> -->
+	  <spawn maxcount="3" respawndelay="1" time="Any" entitygroup="BanditGroupHub" />
     </biome>
 
     <biome name="forest">
@@ -83,10 +98,7 @@
 
     <biome name="wasteland">
         <spawn maxcount="4" respawndelay="1" time="Day"   entitygroup="ZombiesAll" />
-        <spawn maxcount="2" respawndelay="1" time="Any"   entitygroup="EnemyAnimalsWasteland" spawnDeadChance="0" />
 		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombieFeralNight" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
-		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
     </biome>
 
     <biome name="burnt_forest">

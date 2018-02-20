@@ -991,8 +991,10 @@
 		<objective type="FetchKeep" id="femur" value="1" />
 		<objective type="Craft" id="boneShiv" value="1" />
 		
-		<reward type="Item" id="canEmpty" value="2" />
-		<reward type="Item" id="canBeef" value="2" />
+		<reward type="Item" id="canEmpty" value="1" />
+		<reward type="Item" id="canBeef" value="1" />
+		<reward type="Item" id="canMurkyWater" value="2" />
+
 		<reward type="Recipe" id="leather"/>
 		<reward type="Recipe" id="leatherStrips"/>
 		<reward type="Quest" id="quest_classtrainingsurvivalist3" />		
