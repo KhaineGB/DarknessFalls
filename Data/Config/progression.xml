@@ -1311,17 +1311,31 @@
 		<recipe name="crossbow" unlock_level="1"/>
 	</perk>
 
-	<perk name="Pistols" icon="pistol" description_key="pistolperkDesc" title_key="pistolperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+	<perk name="Pistolperk" icon="pistol" description_key="pistolperkDesc" title_key="pistolperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<recipe name="gunPistol" unlock_level="1"/>
+		<recipe name="partsPistol_grip" unlock_level="1"/>
+		<recipe name="partsPistol_receiver" unlock_level="1"/>
+		<recipe name="partsPistol_parts" unlock_level="1"/>
+		<recipe name="partsPistol_barrel" unlock_level="1"/>
 	</perk>
 
 	<perk name="Shotgun" icon="shotgun" description_key="shotgunperkDesc" title_key="shotgunperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<recipe name="gunSawedOffPumpShotgun" unlock_level="1"/>
 		<recipe name="gunPumpShotgun" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_stockShort" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_stock" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_receiver" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_parts" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_barrelShort" unlock_level="1"/>
+		<recipe name="partsPumpShotgun_barrel" unlock_level="1"/>
 	</perk>
 
 	<perk name="Hunting Rifle" icon="rifle" description_key="huntrifleperkDesc" title_key="huntrifleperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<recipe name="gunHuntingRifle" unlock_level="1"/>
+		<recipe name="partsHuntingRifle_stock" unlock_level="1"/>
+		<recipe name="partsHuntingRifle_receiver" unlock_level="1"/>
+		<recipe name="partsHuntingRifle_parts" unlock_level="1"/>
+		<recipe name="partsHuntingRifle_barrel" unlock_level="1"/>
 	</perk>
 
 	<perk name="Leather Armor" icon="armor_leather" description_key="leatherarmorperkDesc" title_key="leatherarmorperk" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">

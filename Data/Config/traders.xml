@@ -783,6 +783,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,3" prob="0.7"/>
+			<item name="cncMachine" prob="0.5"/>
 		</trader_item_group>
 
 	</trader_item_groups>

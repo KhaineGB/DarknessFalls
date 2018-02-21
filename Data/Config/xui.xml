@@ -304,7 +304,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<!-- <window name="windowCombine" /> -->
 		</window_group>	
 		
 		<window_group name="workstation_workstationTailor" controller="XUiC_WorkstationWindowGroup">
@@ -314,8 +313,16 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<!-- <window name="windowCombine" /> -->
 		</window_group>
+		
+		<window_group name="workstation_cncMachine" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsCNC" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
 		
 	</ruleset>
 </xui>

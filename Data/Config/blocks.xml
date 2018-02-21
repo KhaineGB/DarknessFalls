@@ -16586,5 +16586,45 @@ kind of free
 	<drop event="Fall" name="titaniumFragment" count="24" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 </block>
+
+<!-- CNC Workbench -->
+
+<block id="2035" name="cncMachine">
+	<property name="CustomIcon" value="controlPanelBase04" />
+	<property name="Class" value="Workstation"/>
+	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="1600"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Industrial/control_panel_base_04" param1="main_mesh"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="50"/>
+	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="cncMachine"/>
+	</property>
+	<property class="RepairItems">
+		<property name="forgedSteel" value="50"/>
+	</property>
+	<drop event="Harvest" name="shortMetalPipe" count="1" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="spring" count="1" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,5" prob="0.4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="20"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="Group" value="Basics,Building"/>
+	<property name="DescriptionKey" value="cncMachineDesc"/>
+	<property name="EconomicValue" value="500"/>
+</block>
 	
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

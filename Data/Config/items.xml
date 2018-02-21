@@ -455,7 +455,7 @@ Mesh files no longer used:
 	<property name="LightValue" value="0.45"/>
 </item>
 
-<item id="41" name="gunPistolSilenced">
+<item id="41" name="gunPistolSilencedOrig">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="gunPistol"/><property name="CustomIconTint" value="a0a0ff"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
@@ -7545,7 +7545,7 @@ Mesh files no longer used:
 <item id="921" name="pistolBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="Pistols"/>
+		<property name="Skills_to_gain" value="Pistolperk"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7554,20 +7554,10 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gun44Magnum"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
+		<property name="Recipes_to_learn" value="gun44Magnum,parts44Magnum_grip,parts44Magnum_cylinder,parts44Magnum_parts,parts44Magnum_frame"/>		
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
-
-<!-- <item id="923" name="sawedoffPumpShotgunSchematic">
-	<property name="Extends" value="schematicMaster"/>
-	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun"/>
-		<property name="Skills_to_gain" value="craftSkillGuns"/>
-	</property>
-	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
-</item> -->
 
 <item id="924" name="pumpShotgunSchematic">
 	<property name="Extends" value="schematicMaster"/>
@@ -7581,8 +7571,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunMP5"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
+		<property name="Recipes_to_learn" value="gunMP5,partsMP5_stock,partsMP5_receiver,partsMP5_parts,partsMP5_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7591,8 +7580,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunAK47"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
+		<property name="Recipes_to_learn" value="gunAK47,partsAK47_stock,partsAK47_receiver,partsAK47_parts,partsAK47_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -7609,8 +7597,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunSniperRifle"/>
-		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
+		<property name="Recipes_to_learn" value="gunSniperRifle,partsSniperRifle_stock,partsSniperRifle_receiver,partsSniperRifle_parts,partsSniperRifle_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -11198,7 +11185,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunP225"/>
+		<property name="Recipes_to_learn" value="gunP225,partsP225_grip,partsP225_receiver,partsP225_parts,partsP225_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -11209,7 +11196,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunAR15"/>
+		<property name="Recipes_to_learn" value="gunAR15,partsAR15_stock,partsAR15_receiver,partsAR15_parts,partsAR15_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -11220,7 +11207,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunCAWSShotgun"/>
+		<property name="Recipes_to_learn" value="gunCAWSShotgun,partsCAWSShotgun_stock,partsCAWSShotgun_receiver,partsCAWSShotgun_parts,partsCAWSShotgun_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -11231,7 +11218,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunWinchesterRifle"/>
+		<property name="Recipes_to_learn" value="gunWinchesterRifle,partsWinchesterRifle_stock,partsWinchesterRifle_receiver,partsWinchesterRifle_parts,partsWinchesterRifle_barrel"/>
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 </item>
@@ -12939,6 +12926,301 @@ Mesh files no longer used:
 		<property name="Recipes_to_learn" value="titaniumSledgehammer"/>
 	</property>
 </item>
+
+<!-- Scoped Guns Mod 
+
+<item id="2070" name="gunScope">
+	<property name="Extends" value="partsSniperRifle_receiver" />
+	<property name="CustomIcon" value="gunScope"/>
+	<property name="DescriptionKey" value="partsScopeDesc"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="70,250" />
+	</property>
+</item>
+
+<item id="2071" name="gunSilencerSniper">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="40"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="41.4,69"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="3500,8750"/>
+	</property>
+	<property name="EconomicValue" value="875"/>
+</item>
+
+<item id="2072" name="gunSilencerHunting">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="45,75"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2073" name="gunSilencerMagnum">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="52,88"/>
+		<property name="BlockDamage" value="14,24"/>
+		<property name="DegradationMax" value="4000,12500"/>
+	</property>
+	<property name="EconomicValue" value="1125"/>
+</item>
+
+<item id="2074" name="gunSilencerPistol">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="13,19"/>
+		<property name="BlockDamage" value="7,13"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="412"/>
+</item>
+
+<item id="2075" name="gunSilencerP225">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="10"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="13,19"/>
+		<property name="BlockDamage" value="7,13"/>
+		<property name="DegradationMax" value="2000,5000"/>
+	</property>
+	<property name="EconomicValue" value="512"/>
+</item>
+
+<item id="2076" name="gunSilencerWinchester">
+	<property name="Extends" value="partsMaster" />
+	<property name="CustomIcon" value="gunSilencer"/>
+	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="35"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="45,75"/>
+		<property name="BlockDamage" value="8,14"/>
+		<property name="DegradationMax" value="2500,6250"/>
+	</property>
+</item>
+
+<item id="2077" name="gunWinchesterRifleScope">
+	<property name="Extends" value="gunWinchesterRifle" />
+	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+		<property class="Parts">
+			<property name="Receiver" value="gunScope" />
+		</property>
+		<property class="Action0"> 
+			<property name="Class" value="Ranged"/>
+			<property name="Delay" value="0.34"/>
+			<property name="Crosshair_min_distance" value="30"/> 
+			<property name="Crosshair_max_distance" value="36"/>
+			<property name="Magazine_size" value="15"/>
+			<property name="Magazine_items" value="44MagBullet, 44MagBulletHP, Unload"/>
+			<property name="Magazine_item_ray_counts" value="1, 1"/>
+			<property name="Magazine_item_ray_spreads" value="0, 0"/>
+			<property name="Reload_time" value="2.66"/>
+			<property name="Bullet_icon" value="uzi"/>
+			<property name="Sound_start" value="hunting_rifle_fire"/>
+			<property name="Sound_repeat" value=""/>
+			<property name="Sound_end" value=""/>
+			<property name="Sound_empty" value="weapon_empty"/>
+			<property name="Sound_reload" value="hunting_rifle_reload"/>
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+			<property name="DamageBonus.head" value="4"/>
+			<property name="DamageBonus.wood" value="4"/>
+			<property name="DamageBonus.earth" value="0.2"/>
+			<property name="DamageBonus.glass" value="1"/>
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2078" name="gunWinchesterRifleSilenced">
+	<property name="Extends" value="gunWinchesterRifle" />
+	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerWinchester" />
+		</property>
+		<property class="Action0"> 
+			<property name="Class" value="Ranged"/>
+			<property name="Delay" value="0.34"/>
+			<property name="Crosshair_min_distance" value="30"/>
+			<property name="Crosshair_max_distance" value="36"/> 
+			<property name="Magazine_size" value="15"/>
+			<property name="Magazine_items" value="44MagBullet, 44MagBulletHP, Unload"/>
+			<property name="Magazine_item_ray_counts" value="1, 1"/>
+			<property name="Magazine_item_ray_spreads" value="0, 0"/>
+			<property name="Reload_time" value="2.66"/>
+			<property name="Bullet_icon" value="uzi"/>
+			<property name="Sound_start" value="metalhitcloth"/>
+			<property name="Sound_repeat" value=""/>
+			<property name="Sound_end" value=""/>
+			<property name="Sound_empty" value="weapon_empty"/>
+			<property name="Sound_reload" value="hunting_rifle_reload"/>
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+			<property name="DamageBonus.head" value="4"/>
+			<property name="DamageBonus.wood" value="4"/>
+			<property name="DamageBonus.earth" value="0.2"/>
+			<property name="DamageBonus.glass" value="1"/>
+		</property>
+</item>
+
+<item id="2079" name="gunWinchesterRifleScopeSilenced">
+	<property name="Extends" value="gunWinchesterRifle" />
+	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerWinchester" />
+			<property name="Receiver" value="gunScope" />
+		</property>
+		<property class="Action0">
+			<property name="Class" value="Ranged"/>
+			<property name="Delay" value="0.34"/>
+			<property name="Crosshair_min_distance" value="30"/>
+			<property name="Crosshair_max_distance" value="36"/> 
+			<property name="Magazine_size" value="15"/>
+			<property name="Magazine_items" value="44MagBullet, 44MagBulletHP, Unload"/>
+			<property name="Magazine_item_ray_counts" value="1, 1"/>
+			<property name="Magazine_item_ray_spreads" value="0, 0"/>
+			<property name="Reload_time" value="2.66"/>
+			<property name="Bullet_icon" value="uzi"/>
+			<property name="Sound_start" value="metalhitcloth"/>
+			<property name="Sound_repeat" value=""/>
+			<property name="Sound_end" value=""/>
+			<property name="Sound_empty" value="weapon_empty"/>
+			<property name="Sound_reload" value="hunting_rifle_reload"/>
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+			<property name="DamageBonus.head" value="4"/>
+			<property name="DamageBonus.wood" value="4"/>
+			<property name="DamageBonus.earth" value="0.2"/>
+			<property name="DamageBonus.glass" value="1"/>
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2080" name="gunHuntingRifleScope">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+		<property class="Parts">
+			<property name="Receiver" value="gunScope" />
+		</property>
+		<property class="Action0">
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2081" name="gunHuntingRifleSilenced">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerHunting" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+        </property>
+</item>
+
+<item id="2082" name="gunHuntingRifleScopeSilenced">
+	<property name="Extends" value="gunHuntingRifle" />
+	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerHunting" />
+			<property name="Receiver" value="gunScope" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2083" name="gunSniperRifleSilenced">
+	<property name="Extends" value="gunSniperRifle" />
+	<property name="DescriptionKey" value="gunSniperRifleDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerSniper" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+        </property>
+</item>
+
+<item id="2084" name="gunPistolSilenced">
+	<property name="Extends" value="gunPistol" />
+	<property name="DescriptionKey" value="gunPistolDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerPistol" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+        </property>
+</item>
+
+<item id="2085" name="gunP225Silenced">
+	<property name="Extends" value="gunP225" />
+	<property name="DescriptionKey" value="gunP225Desc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerP225" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+        </property>
+</item>
+
+<item id="2086" name="gun44MagnumSilenced">
+	<property name="Extends" value="gun44Magnum" />
+	<property name="DescriptionKey" value="gun44MagnumDesc"/>
+		<property class="Parts">
+			<property name="Barrel" value="gunSilencerMagnum" />
+		</property>
+        <property class="Action0">
+            <property name="Sound_start" value="metalhitcloth" />
+        </property>
+</item> -->
+
+<!-- Need to add AK47 and AR15 scoped but not silenced -->
+
 
 <!-- Hornet Mod 
 

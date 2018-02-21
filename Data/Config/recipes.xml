@@ -1794,77 +1794,62 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="ClassPaper" count="1">
 	<ingredient name="scrapSkill" count="120"/>
-	<ingredient name="paper" count="120"/>
 </recipe>
 
 <recipe name="skillGenericBook" count="1">
 	<ingredient name="scrapSkill" count="60"/>
-	<ingredient name="paper" count="60"/>
 </recipe>
 
 <recipe name="skillBarterBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillArcheryBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillAthleticsBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillBladesBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillBluntBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillCloth-ArmorBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillConstructionBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillMedicineBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillMiningBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillPistolBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillRifleBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillScavengingBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <recipe name="skillShotgunBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
-	<ingredient name="paper" count="30"/>
 </recipe>
 
 <!-- Sticks and Sharp Stone Recipes -->
@@ -4050,7 +4035,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="scrapTitanium" count="1" craft_area="advforge" material_based="true" craft_time = "1" craft_exp_gain="0">
-     <ingredient name="unit_titanium" count="1"/>
+     <ingredient name="unit_titanium" count="5"/>
 </recipe>
 
 <recipe name="forgedTitanium" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
@@ -4138,6 +4123,276 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedTitanium" count="20"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
+
+<!-- CNC Gun Recipes. Recipes need adjusting -->
+
+<recipe name="partsWinchesterRifle_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsWinchesterRifle_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsWinchesterRifle_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsWinchesterRifle_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="4"/>
+</recipe>
+
+<recipe name="partsPistol_grip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsPistol_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsPistol_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsPistol_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="parts44Magnum_grip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="parts44Magnum_cylinder" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="parts44Magnum_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="parts44Magnum_frame" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_stockShort" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_barrelShort" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsPumpShotgun_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsMP5_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsMP5_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsMP5_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsMP5_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsAK47_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsAK47_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsAK47_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsAK47_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsHuntingRifle_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsHuntingRifle_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsHuntingRifle_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsHuntingRifle_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsSniperRifle_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsSniperRifle_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsSniperRifle_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsSniperRifle_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsP225_grip" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsP225_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsP225_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsP225_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsAR15_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsAR15_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsAR15_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsAR15_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<recipe name="partsCAWSShotgun_stock" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="4"/>
+</recipe>
+
+<recipe name="partsCAWSShotgun_receiver" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsCAWSShotgun_parts" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="forgedSteel" count="10"/>
+	<ingredient name="mechanicalParts" count="8"/>
+</recipe>
+
+<recipe name="partsCAWSShotgun_barrel" count="1" craft_area="cncMachine" craft_tool="carBattery">
+	<ingredient name="shortMetalPipe" count="1"/>
+</recipe>
+
+<!-- Scoped And Silenced Guns Mod 
+
+<recipe name="gunScope" count="1" craft_area="advforge" craft_tool="toolAndDieSet" material_based="true">
+	<ingredient name="unit_iron" count="40"/>
+	<ingredient name="unit_clay" count="20"/>
+	<ingredient name="unit_glass" count="10"/>
+</recipe>
+
+<recipe name="gunSilencerSniper" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsSniperRifle_barrel" count="1"/>
+</recipe>
+
+<recipe name="gunSilencerHunting" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsHuntingRifle_barrel" count="1"/>
+</recipe>
+
+<recipe name="gunSilencerMagnum" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="parts44Magnum_frame" count="1"/>
+</recipe>
+
+<recipe name="gunSilencerPistol" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsPistol_barrel" count="1"/>
+</recipe>
+
+<recipe name="gunSilencerP225" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsP225_barrel" count="1"/>
+</recipe>
+
+<recipe name="gunSilencerWinchester" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsWinchesterRifle_barrel" count="1"/>
+</recipe>
+
+<recipe name="gunWinchesterRifleScope" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="partsWinchesterRifle_barrel" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="partsWinchesterRifle_parts" count="1"/>
+	<ingredient name="partsWinchesterRifle_stock" count="1"/>
+</recipe>
+
+<recipe name="gunWinchesterRifleSilenced" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="gunSilencerWinchester" count="1"/>
+	<ingredient name="partsWinchesterRifle_receiver" count="1"/>
+	<ingredient name="partsWinchesterRifle_parts" count="1"/>
+	<ingredient name="partsWinchesterRifle_stock" count="1"/>
+</recipe>
+
+<recipe name="gunWinchesterRifleScopeSilenced" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="gunSilencerWinchester" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="partsWinchesterRifle_parts" count="1"/>
+	<ingredient name="partsWinchesterRifle_stock" count="1"/>
+</recipe> -->
 
 </recipes>
 

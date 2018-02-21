@@ -5307,3 +5307,6 @@ ZUMAChildMale3,entityclasses,Entity,KgNone,Tough Teen,,,,
 ZUMAChildMaleFeral,entityclasses,Entity,KgNone,Feral Young Fan,,,,
 ZUMAChildMaleFeral2,entityclasses,Entity,KgNone,Feral Festering Kid,,,,
 ZUMAChildMaleFeral3,entityclasses,Entity,KgNone,Feral Tough Teen,,,,
+
+cncMachine,blocks,Workstation,KgNone,Portable CNC Machine,,,,
+cncMachineDesc,blocks,Workstation,EnChanged,"Portable is relative in this instance, because it's still huge. Used for making gun parts.",,,,
