@@ -9938,7 +9938,7 @@ Mesh files no longer used:
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,12"/>
-		<property name="BlockDamage" value="26,39"/>
+		<property name="BlockDamage" value="30,39"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0,0.05"/>
@@ -9980,7 +9980,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
-		<property name="BlockDamage" value="18,45"/>
+		<property name="BlockDamage" value="24,45"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0"/>
