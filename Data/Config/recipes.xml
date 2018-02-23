@@ -1380,7 +1380,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="stoneAxe" count="1">
-	<ingredient name="rockSmall" count="4"/>
+	<ingredient name="sharpRock" count="4"/>
 	<ingredient name="yuccaFibers" count="2"/>
 	<ingredient name="wood" count="2"/>
 </recipe>
@@ -4332,12 +4332,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="shortMetalPipe" count="1"/>
 </recipe>
 
-<!-- Scoped And Silenced Guns Mod 
+<!-- Scoped And Silenced Guns Mod -->
 
 <recipe name="gunScope" count="1" craft_area="advforge" craft_tool="toolAndDieSet" material_based="true">
 	<ingredient name="unit_iron" count="40"/>
 	<ingredient name="unit_clay" count="20"/>
 	<ingredient name="unit_glass" count="10"/>
+</recipe>
+
+<recipe name="gunChokeShort" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsPumpShotgun_barrelShort" count="1"/>
+</recipe>
+
+<recipe name="gunChokeLong" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="partsPumpShotgun_barrel" count="1"/>
 </recipe>
 
 <recipe name="gunSilencerSniper" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
@@ -4392,7 +4402,55 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gunScope" count="1"/>
 	<ingredient name="partsWinchesterRifle_parts" count="1"/>
 	<ingredient name="partsWinchesterRifle_stock" count="1"/>
-</recipe> -->
+</recipe> 
+
+<recipe name="gunAK47Scope" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="partsAK47_barrel" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="partsAK47_parts" count="1"/>
+	<ingredient name="partsAK47_stock" count="1"/>
+</recipe>
+
+<recipe name="gunAR15Scope" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="partsAR15_barrel" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="partsAR15_parts" count="1"/>
+	<ingredient name="partsAR15_stock" count="1"/>
+</recipe>
+
+<recipe name="gunSawedOffPumpShotgunChoke" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="gunChokeShort" count="1"/>
+	<ingredient name="partsPumpShotgun_receiver" count="1"/>
+	<ingredient name="partsPumpShotgun_parts" count="1"/>
+	<ingredient name="partsPumpShotgun_stockShort" count="1"/>
+</recipe>
+
+<recipe name="gunPumpShotgunChoke" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="gunChokeLong" count="1"/>
+	<ingredient name="partsPumpShotgun_receiver" count="1"/>
+	<ingredient name="partsPumpShotgun_parts" count="1"/>
+	<ingredient name="partsPumpShotgun_stock" count="1"/>
+</recipe>
+
+<recipe name="stoneSpear" count="1">
+	<ingredient name="sharpRock" count="1"/>
+	<ingredient name="wood" count="2"/>
+	<ingredient name="yuccaFibers" count="10"/>
+</recipe>
+
+<recipe name="ironSpear" count="1">
+	<ingredient name="ironArrowHead" count="1"/>
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="titaniumSpear" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="titaniumArrowHead" count="1"/>
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
 
 </recipes>
 

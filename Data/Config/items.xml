@@ -1535,7 +1535,7 @@ Mesh files no longer used:
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,15"/>
-		<property name="BlockDamage" value="30,48"/>
+		<property name="BlockDamage" value="30,53"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0,0.05"/>
@@ -1595,7 +1595,7 @@ Mesh files no longer used:
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
-		<property name="BlockDamage" value="24,60.5"/>
+		<property name="BlockDamage" value="35,70.5"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0"/>
@@ -7922,13 +7922,13 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="scrapArmorSchematicDesc"/>
 </item>
 
-<!-- <item id="1018" name="macDyverBook">
+<item id="1018" name="macDyverBook">
 	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="MacDyvers"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="scrapBoots,scrapLegArmor,scrapChestArmor,scrapHelmet,scrapGloves"/>
-		<property name="Skills_to_gain" value="craftSkillArmor"/>
+		<property name="Recipes_to_learn" value="gunScope,gunChokeShort,gunChokeLong,gunSilencerSniper,gunSilencerHunting,gunSilencerMagnum,gunSilencerPistol,gunSilencerP225,gunSilencerWinchester"/>
 	</property>
-</item>-->
+</item>
 
 <item id="1021" name="ironHelmetSchematic"> <!-- ironArmorSchematic -->
 	<property name="Extends" value="schematicMaster"/>
@@ -9939,7 +9939,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,12"/>
 		<property name="BlockDamage" value="30,39"/>
-		<property name="DegradationMax" value="200,1000"/>
+		<property name="DegradationMax" value="200,750"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
@@ -9981,7 +9981,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,15"/>
 		<property name="BlockDamage" value="24,45"/>
-		<property name="DegradationMax" value="200,1000"/>
+		<property name="DegradationMax" value="200,750"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0"/>
 	</property>
@@ -10024,7 +10024,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="7,15.5"/>
 		<property name="BlockDamage" value="16.5,36"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
-		<property name="DegradationMax" value="200,1000"/>
+		<property name="DegradationMax" value="200,750"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0.05"/>
 	</property>
@@ -10078,7 +10078,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12"/>
 		<property name="BlockDamage" value="5,10"/>
-		<property name="DegradationMax" value="200,1000"/>
+		<property name="DegradationMax" value="200,750"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.3,-0.15"/>
 	</property>
@@ -12927,21 +12927,12 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<!-- Scoped Guns Mod 
+<!-- Gun Mods -->
 
-<item id="2070" name="gunScope">
-	<property name="Extends" value="partsSniperRifle_receiver" />
-	<property name="CustomIcon" value="gunScope"/>
-	<property name="DescriptionKey" value="partsScopeDesc"/>
-	<property class="Attributes">
-		<property name="FalloffRange" value="70,250" />
-	</property>
-</item>
-
-<item id="2071" name="gunSilencerSniper">
+<item id="2070" name="gunSilencerSniper">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="40"/>
 	<property class="Attributes">
@@ -12952,10 +12943,10 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="875"/>
 </item>
 
-<item id="2072" name="gunSilencerHunting">
+<item id="2071" name="gunSilencerHunting">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="35"/>
 	<property class="Attributes">
@@ -12965,10 +12956,10 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="2073" name="gunSilencerMagnum">
+<item id="2072" name="gunSilencerMagnum">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="20"/>
 	<property class="Attributes">
@@ -12979,10 +12970,10 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1125"/>
 </item>
 
-<item id="2074" name="gunSilencerPistol">
+<item id="2073" name="gunSilencerPistol">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="10"/>
 	<property class="Attributes">
@@ -12993,10 +12984,10 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="412"/>
 </item>
 
-<item id="2075" name="gunSilencerP225">
+<item id="2074" name="gunSilencerP225">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="10"/>
 	<property class="Attributes">
@@ -13007,10 +12998,10 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="512"/>
 </item>
 
-<item id="2076" name="gunSilencerWinchester">
+<item id="2075" name="gunSilencerWinchester">
 	<property name="Extends" value="partsMaster" />
 	<property name="CustomIcon" value="gunSilencer"/>
-	<property name="DescriptionKey" value="partsSilencerDesc"/>
+	<property name="DescriptionKey" value="SilencerDesc"/>
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="35"/>
 	<property class="Attributes">
@@ -13020,9 +13011,10 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="2077" name="gunWinchesterRifleScope">
+<item id="2076" name="gunWinchesterRifleScope">
 	<property name="Extends" value="gunWinchesterRifle" />
-	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+	<property name="CustomIcon" value="gunWinchesterRifleScope"/>
+	<property name="DescriptionKey" value="gunWinchesterRifleScopeDesc"/>
 		<property class="Parts">
 			<property name="Receiver" value="gunScope" />
 		</property>
@@ -13058,9 +13050,10 @@ Mesh files no longer used:
 		</property>
 </item>
 
-<item id="2078" name="gunWinchesterRifleSilenced">
+<item id="2077" name="gunWinchesterRifleSilenced">
 	<property name="Extends" value="gunWinchesterRifle" />
-	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+	<property name="CustomIcon" value="gunWinchesterRifleSilenced"/>
+	<property name="DescriptionKey" value="gunWinchesterRifleSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerWinchester" />
 		</property>
@@ -13089,9 +13082,10 @@ Mesh files no longer used:
 		</property>
 </item>
 
-<item id="2079" name="gunWinchesterRifleScopeSilenced">
+<item id="2078" name="gunWinchesterRifleScopeSilenced">
 	<property name="Extends" value="gunWinchesterRifle" />
-	<property name="DescriptionKey" value="gunWinchesterRifleDesc"/>
+	<property name="CustomIcon" value="gunWinchesterRifleScopeSilenced"/>
+	<property name="DescriptionKey" value="gunWinchesterRifleScopeSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerWinchester" />
 			<property name="Receiver" value="gunScope" />
@@ -13128,9 +13122,10 @@ Mesh files no longer used:
 		</property>
 </item>
 
-<item id="2080" name="gunHuntingRifleScope">
+<item id="2079" name="gunHuntingRifleScope">
 	<property name="Extends" value="gunHuntingRifle" />
-	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+	<property name="CustomIcon" value="gunHuntingRifleScope"/>
+	<property name="DescriptionKey" value="gunHuntingRifleScopeDesc"/>
 		<property class="Parts">
 			<property name="Receiver" value="gunScope" />
 		</property>
@@ -13145,9 +13140,10 @@ Mesh files no longer used:
 		</property>
 </item>
 
-<item id="2081" name="gunHuntingRifleSilenced">
+<item id="2080" name="gunHuntingRifleSilenced">
 	<property name="Extends" value="gunHuntingRifle" />
-	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+	<property name="CustomIcon" value="gunHuntingRifleSilenced"/>
+	<property name="DescriptionKey" value="gunHuntingRifleSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerHunting" />
 		</property>
@@ -13156,9 +13152,10 @@ Mesh files no longer used:
         </property>
 </item>
 
-<item id="2082" name="gunHuntingRifleScopeSilenced">
+<item id="2081" name="gunHuntingRifleScopeSilenced">
 	<property name="Extends" value="gunHuntingRifle" />
-	<property name="DescriptionKey" value="gunHuntingRifleDesc"/>
+	<property name="CustomIcon" value="gunHuntingRifleScopeSilenced"/>
+	<property name="DescriptionKey" value="gunHuntingRifleScopeSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerHunting" />
 			<property name="Receiver" value="gunScope" />
@@ -13175,9 +13172,10 @@ Mesh files no longer used:
 		</property>
 </item>
 
-<item id="2083" name="gunSniperRifleSilenced">
+<item id="2082" name="gunSniperRifleSilenced">
 	<property name="Extends" value="gunSniperRifle" />
-	<property name="DescriptionKey" value="gunSniperRifleDesc"/>
+	<property name="CustomIcon" value="gunSniperRifleSilenced"/>
+	<property name="DescriptionKey" value="gunSniperRifleSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerSniper" />
 		</property>
@@ -13186,9 +13184,10 @@ Mesh files no longer used:
         </property>
 </item>
 
-<item id="2084" name="gunPistolSilenced">
+<item id="2083" name="gunPistolSilenced">
 	<property name="Extends" value="gunPistol" />
-	<property name="DescriptionKey" value="gunPistolDesc"/>
+	<property name="CustomIcon" value="gunPistolSilenced"/>
+	<property name="DescriptionKey" value="gunPistolSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerPistol" />
 		</property>
@@ -13197,9 +13196,10 @@ Mesh files no longer used:
         </property>
 </item>
 
-<item id="2085" name="gunP225Silenced">
+<item id="2084" name="gunP225Silenced">
 	<property name="Extends" value="gunP225" />
-	<property name="DescriptionKey" value="gunP225Desc"/>
+	<property name="CustomIcon" value="gunP225Silenced"/>
+	<property name="DescriptionKey" value="gunP225SilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerP225" />
 		</property>
@@ -13208,18 +13208,212 @@ Mesh files no longer used:
         </property>
 </item>
 
-<item id="2086" name="gun44MagnumSilenced">
+<item id="2085" name="gun44MagnumSilenced">
 	<property name="Extends" value="gun44Magnum" />
-	<property name="DescriptionKey" value="gun44MagnumDesc"/>
+	<property name="CustomIcon" value="gun44MagnumSilenced"/>
+	<property name="DescriptionKey" value="gun44MagnumSilencedDesc"/>
 		<property class="Parts">
 			<property name="Barrel" value="gunSilencerMagnum" />
 		</property>
         <property class="Action0">
             <property name="Sound_start" value="metalhitcloth" />
         </property>
-</item> -->
+</item> 
 
-<!-- Need to add AK47 and AR15 scoped but not silenced -->
+<item id="2086" name="gunScope">
+	<property name="Extends" value="partsSniperRifle_receiver" />
+	<property name="CustomIcon" value="gunScope"/>
+	<property name="DescriptionKey" value="gunScopeDesc"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="70,250" />
+	</property>
+</item> 
+
+<item id="2087" name="gunAK47Scope">
+	<property name="Extends" value="gunAK47" />
+	<property name="CustomIcon" value="gunAK47Scope"/>
+	<property name="DescriptionKey" value="gunAK47ScopeDesc"/>
+		<property class="Parts">
+			<property name="Receiver" value="gunScope" />
+		</property>
+		<property class="Action0">
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2088" name="gunAR15Scope">
+	<property name="Extends" value="gunAR15" />
+	<property name="CustomIcon" value="gunAR15Scope"/>
+	<property name="DescriptionKey" value="gunAR15ScopeDesc"/>
+		<property class="Parts">
+			<property name="Receiver" value="gunScope" />
+		</property>
+		<property class="Action0">
+			<property name="Range" value="300" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2089" name="gunChokeShort">
+	<property name="Extends" value="partsPumpShotgun_barrelShort" />
+	<property name="CustomIcon" value="gunChoke"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="20"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="1800,4500"/>
+	</property>
+	<property name="EconomicValue" value="525"/>
+	<property name="DescriptionKey" value="partsChokeDesc"/>
+</item>
+
+<item id="2090" name="gunChokeLong">
+	<property name="Extends" value="partsPumpShotgun_barrel" />
+	<property name="CustomIcon" value="gunChoke"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="30"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="1800,4500"/>
+	</property>
+	<property name="EconomicValue" value="675"/>
+	<property name="DescriptionKey" value="partsChokeDesc"/>
+</item>
+
+<item id="2091" name="gunSawedOffPumpShotgunChoke">
+	<property name="Extends" value="gunSawedOffPumpShotgun" />
+	<property name="CustomIcon" value="gunSawedOffPumpShotgunChoke"/>
+	<property name="DescriptionKey" value="gunSawedOffPumpShotgunChokeDesc"/>
+	<property class="Parts">
+		<property name="Barrel" value="gunChokeShort" />
+	</property>
+	<property class="Attributes">
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="1800,4500"/>
+	</property>
+</item>
+
+<item id="2092" name="gunPumpShotgunChoke">
+	<property name="Extends" value="gunPumpShotgun" />
+	<property name="CustomIcon" value="gunPumpShotgunChoke"/>
+	<property name="DescriptionKey" value="gunPumpShotgunChokeDesc"/>
+	<property class="Parts">
+		<property name="Barrel" value="gunChokeLong" />
+	</property>
+	<property class="Attributes">
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="1800,4500"/>
+	</property>
+</item>
+
+<!-- Spear Mod -->
+
+<item id="2093" name="stoneSpear">
+	<property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
+	<property name="Material" value="stone"/>
+	<property name="RepairTools" value="rockSmall"/>
+	<property name="HoldType" value="18"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="18"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.33"/>
+		<property name="Range" value="3"/>
+		<property name="Sphere" value="0.2"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="DamageBonus.head" value="4"/>
+		<property name="Stamina_usage" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="ActionExp" value="2"/>
+		<property name="ActionExpBonusMultiplier" value="10"/>
+		<property name="ToolCategory.Butcher" value="0" param1="10"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="8,14"/>
+		<property name="BlockDamage" value="4,13"/>
+		<property name="DegradationMax" value="200,600"/>
+		<property name="DegradationRate" value="3,1"/>
+	</property>
+	<property name="CritChance" value="0.10"/>
+	<property name="DescriptionKey" value="stoneSpearDesc"/>
+	<property name="CustomIcon" value="stoneSpear"/>
+	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property name="ActionSkillGroup" value="Blade Weapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2094" name="ironSpear">
+	<property name="Extends" value="stoneSpear"/>
+	<property name="Material" value="metal"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="RepairTools" value="scrapIron"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property class="Action0">
+		<property name="Stamina_usage" value="9"/>
+		<property name="DamageBonus.head" value="4"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,25"/>
+		<property name="BlockDamage" value="11.8,29.5"/>
+		<property name="DegradationMax" value="200,600"/>
+	</property>
+	<property name="CritChance" value="0.2"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="ironSpearDesc"/>
+	<property name="CustomIcon" value="ironSpear"/>
+</item>
+
+<item id="2095" name="titaniumSpear">
+	<property name="Extends" value="stoneSpear"/>
+	<property name="Material" value="metal"/>
+	<property name="EconomicValue" value="175"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="RepairTools" value="scrapTitanium"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property class="Action0">
+		<property name="Stamina_usage" value="7"/>
+		<property name="DamageBonus.head" value="4"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="18,35"/>
+		<property name="BlockDamage" value="17,35"/>
+		<property name="DegradationMax" value="400,1200"/>
+	</property>
+	<property name="CritChance" value="0.2"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="titaniumSpearDesc"/>
+	<property name="CustomIcon" value="titaniumSpear"/>
+</item>
+
+<item id="2096" name="titaniumSpearSchematic">
+	<property name="Extends" value="schematicMaster"/>
+	<property name="CustomIcon" value="titaniumSpearSchematic"/>
+	<property name="DescriptionKey" value="titaniumSpearSchematicDesc"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="titaniumSpear"/>
+	</property>
+</item>
 
 
 <!-- Hornet Mod 

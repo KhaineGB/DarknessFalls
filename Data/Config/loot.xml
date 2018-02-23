@@ -642,7 +642,7 @@
 	<item name="9mmBullet" count="1,10"/>
 	<item name="9mmBulletHP" count="1,10" prob="0.05"/>
 	<item name="gunPistol" count="1"/>
-	<item name="gunP225" count="1" prob="0.05"/>
+	<item name="gunP225" count="0,1" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="toiletLoot" count="1">
@@ -721,24 +721,30 @@
 	<item name="partsPistol_parts"/>
 	<item name="partsPistol_receiver"/>
 	<item name="partsPistol_grip"/>
+	<item name="gunSilencerPistol"/>
 	<item name="partsP225_barrel"/>
 	<item name="partsP225_parts"/>
 	<item name="partsP225_receiver"/>
 	<item name="partsP225_grip"/>
+	<item name="gunSilencerP225"/>
 	<item name="partsPumpShotgun_barrel"/>
 	<item name="partsPumpShotgun_parts"/>
 	<item name="partsPumpShotgun_barrelShort"/>
 	<item name="partsPumpShotgun_stockShort"/>
 	<item name="partsPumpShotgun_stock"/>
 	<item name="partsPumpShotgun_receiver"/>
+	<item name="gunChokeShort"/>
+	<item name="gunChokeLong"/>
 	<item name="partsHuntingRifle_barrel"/>
 	<item name="partsHuntingRifle_stock"/>
 	<item name="partsHuntingRifle_receiver"/>
 	<item name="partsHuntingRifle_parts"/>
+	<item name="gunSilencerHunting"/>
 	<item name="partsAR15_barrel"/>
 	<item name="partsAR15_stock"/>
 	<item name="partsAR15_receiver"/>
 	<item name="partsAR15_parts"/>
+	<item name="gunScope"/>
 </lootgroup>
 
 <lootgroup name="weaponsHuntingRifleParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
@@ -746,10 +752,12 @@
 	<item name="partsHuntingRifle_stock"/>
 	<item name="partsHuntingRifle_receiver"/>
 	<item name="partsHuntingRifle_parts"/>
+	<item name="gunSilencerHunting"/>
 	<item name="partsWinchesterRifle_stock"/>
 	<item name="partsWinchesterRifle_receiver"/>
 	<item name="partsWinchesterRifle_parts"/>
 	<item name="partsWinchesterRifle_barrel"/>
+	<item name="gunSilencerWinchester"/>
 </lootgroup>
 
 <lootgroup name="weaponsMilitaryParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
@@ -765,6 +773,7 @@
 	<item name="partsSniperRifle_stock"/>
 	<item name="partsSniperRifle_receiver"/>
 	<item name="partsSniperRifle_parts"/>
+	<item name="gunSilencerSniper"/>
 	<item name="partsRocketLauncher_barrel"/>
 	<item name="partsRocketLauncher_stock"/>
 	<item name="partsRocketLauncher_receiver"/>
@@ -902,13 +911,13 @@
 	<item name="clubTitaniumSpikedSchematic"/>
 	<item name="titaniumHuntingKnifeSchematic"/>
 	<item name="titaniumSledgehammerSchematic"/>
+	<item name="titaniumSpearSchematic"/>
 	<item name="farmingBook2" prob="0.7"/>
 	<item name="farmingBook3" prob="0.7"/>
 	<item name="skillGenericBook" prob="0.7"/>
 	<item group="questChallenge" count="1"/>
-	<!--
-	<item name="handleBarsSchematic"/>
 	<item name="macDyverBook" prob="1.5"/>
+	<!-- <item name="handleBarsSchematic"/>
 	<item name="theRiddleOfSteel"/>
 	<item name="setInConcrete"/>
 	<item name="10mmBulletSchematic"/>

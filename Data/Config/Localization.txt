@@ -1215,8 +1215,7 @@ leatherJacketSchematicDesc,items,Book,KgNone,Learn how to craft leather chest ar
 leatherPantsSchematic,items,Book,KgNone,Leather Leg Armor Schematic,Schéma de jambières en cuir,Bauplan – Lederbeinschienen,,Esquema de armadura de pierna de cuero
 leatherPantsSchematicDesc,items,Book,KgNone,Learn how to craft leather leg armor by reading this schematic.,Apprenez à fabriquer des jambières en cuir en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Lederbeinschienen gefertigt werden.",,Lee este esquema para aprender a fabricar una armadura de pierna de cuero.
 leatherTanning,items,Book,KgNone,Leather Tanning,Tanner le cuir,Leder gerben,,Curtido de cuero
-macDyverBook,items,Book,KgNone,MacDyvers Book,« Le livre de MacDyver »,Buch „MacDyver“,,El libro de MacDyver
-macDyverBookDesc,items,Book,KgNone,Learn MacDyver's secret to making scrap metal armor and more by reading this gem by the king of made-up stuff.,Apprenez les secrets de MacDyver sur la fabrication d'armures en métal recyclé et autres en lisant cette merveille écrite par le roi de la débrouille.,"Finde mit diesem einzigartigen Buch von MacDyver, dem Großmeister der Improvisation, heraus, wie, unter anderem, Rüstung aus Altmetall gefertigt wird.",,Lee esta joya y conoce los secretos de MacDyver para fabricar armaduras con chatarra de metal y mucho más de mano del rey de inventarse cosas.
+
 minibikesForDumbshits,items,Book,KgNone,Minibikes For Dumbshits,« La mini-moto pour les demeurés »,Taschenmotorrad für Vollidioten,,Minimotos para estúpidos
 minibikesForDumbshitsDesc,items,Book,KgNone,Even total dumbshits can build a minibike if they follow the steps in this simple guide...Varoom...varoom!,Même les demeurés finis peuvent construire une mini-moto en suivant les étapes présentées dans ce guide... Vroum... Vroum !,"Selbst komplette Vollidioten können ein Taschenmotorrad bauen, wenn sie dieser einfachen Anleitung folgen … Brumm, brumm!",,"Hasta el más idiota puede construir una minimoto si sigue los pasos de esta sencilla guía. ¡Brum, brum!"
 pistolBook,items,Book,KgNone,Pistol Book,« Le livre des pistolets »,Buch „Pistolen“,,Libro de la pistola
@@ -5113,8 +5112,8 @@ sugarRushTooltip,buffs,Buff,KgNone,A short-term boost of energy.,,,,
 
 gunP225,items,Item Gun,KgNone,P225 Pistol,,
 gunP225Desc,items,Item Gun,KgNone,Pistol that uses 9mm and 9mm HP ammo. More accurate than the standard pistol and has a larger magazine.,,
-gunAR15,items,Item Gun,KgNone,AR15 Semi-Auto Rifle,,
-gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets.,,
+gunAR15,items,Item Gun,KgNone,AR15 Semi-Auto Rifle,,,,
+gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets.,,,,
 gunCAWSShotgun,items,Item Gun,KgNone,CAWS Automatic Shotgun,,
 gunCAWSShotgunDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of shotgun slugs.,,
 gunWinchesterRifle,items,Item Gun,KgNone,Winchester .44 Rifle,,
@@ -5310,3 +5309,59 @@ ZUMAChildMaleFeral3,entityclasses,Entity,KgNone,Feral Tough Teen,,,,
 
 cncMachine,blocks,Workstation,KgNone,Portable CNC Machine,,,,
 cncMachineDesc,blocks,Workstation,EnChanged,"Portable is relative in this instance, because it's still huge. Used for making gun parts.",,,,
+macDyverBook,items,Book,KgNone,MacDyvers Book,« Le livre de MacDyver »,Buch „MacDyver“,,El libro de MacDyver
+macDyverBookDesc,items,Book,KgNone,Learn MacDyver's secret to making your own gun mods by reading this gem by the king of made-up stuff.,,,,
+gunSilencerSniper,items,Item,KgNone,Silencer (Sniper Rifle),,,,
+gunSilencerHunting,items,Item,KgNone,Silencer (Hunting Rifle),,,,
+gunSilencerMagnum,items,Item,KgNone,Silencer (Magnum),,,,
+gunSilencerPistol,items,Item,KgNone,Silencer (Pistol),,,,
+gunSilencerP225,items,Item,KgNone,Silencer (P225),,,,
+gunSilencerWinchester,items,Item,KgNone,Silencer (Winchester Rifle),,,,
+SilencerDesc,items,Item,KgNone,Silencers are used to muffle the sounds of gunfire. Good for stealth take-downs.,,,,
+
+gunWinchesterRifleScope,items,Item,KgNone,Winchester Rifle (Scoped),,,,
+gunWinchesterRifleScopeDesc,items,Item,KgNone,Greater stopping power than a standard rifle with a larger magazine and scope.,,,,
+gunWinchesterRifleSilenced,items,Item,KgNone,Winchester Rifle (Silenced),,,,
+gunWinchesterRifleSilencedDesc,items,Item,KgNone,Greater stopping power than a standard rifle with a larger magazine and silencer.,,,,
+gunWinchesterRifleScopeSilenced,items,Item,KgNone,Winchester Rifle (Silencer And Scope),,,,
+gunWinchesterRifleScopeSilencedDesc,items,Item,KgNone,"Greater stopping power than a standard rifle with a larger magazine, silencer and scope".,,,,
+
+gunHuntingRifleSilenced,items,Gun,KgNone,Hunting Rifle (Silenced),,,,
+gunHuntingRifleSilencedDesc,items,Gun,KgNone,"This common farmer's hunting rifle uses 7.62mm ammo. Can be assembled, repaired and augmented once you've read the schematic. This one has a silencer fitted",,,,
+gunHuntingRifleScope,items,Gun,KgNone,Hunting Rifle (Scoped),,,,
+gunHuntingRifleScopeDesc,items,Gun,KgNone,"This common farmer's hunting rifle uses 7.62mm ammo. Can be assembled, repaired and augmented once you've read the schematic. This one has a scope fitted.",,,,
+gunHuntingRifleScopeSilenced,items,Gun,KgNone,Hunting Rifle (Silencer and Scope),,,,
+gunHuntingRifleScopeSilencedDesc,items,Gun,KgNone,"This common farmer's hunting rifle uses 7.62mm ammo. Can be assembled, repaired and augmented once you've read the schematic. This one has a silencer and scope fitted.",,,,
+
+gunSniperRifleSilenced,items,Gun,KgNone,Sniper Rifle (Silenced),,,,
+gunSniperRifleSilencedDesc,items,Gun,KgNone,A sniper rifle uses 7.62mm ammo and has a scope for zooming. Can be re-assembled and repaired once you've read the schematic. This one is silenced.,,,,
+gunPistolSilenced,items,Gun,KgNone,Pistol (Silenced),,,,
+gunPistolSilencedDesc,items,Gun,KgNone,A basic pistol. Uses 9mm ammo. Can be re-assembled and repaired if you read the pistol book. This one is silenced.,,,,
+gunP225Silenced,items,Item Gun,KgNone,P225 Pistol (Silenced),,,,
+gunP225SilencedDesc,items,Item Gun,KgNone,Pistol that uses 9mm and 9mm HP ammo. More accurate than the standard pistol and has a larger magazine. This one is silenced.,,
+gun44MagnumSilenced,items,Gun,KgNone,.44 Magnum (Silenced),,,,
+gun44MagnumSilencedDesc,items,Gun,KgNone,The .44 Magnum is the king of handguns. It's the most powerful but makes the most noise. Wield this bad boy and make Clint proud. This one is silenced.,,,,
+
+gunScope,items,Item,KgNone,Scope,,,,
+gunScopeDesc,items,Item,KgNone,Scopes can be added to any rifle-style weapon. Handy for making your own sniper rifle.,,,,
+gunAK47Scope,items,Gun,KgNone,AK-47 Assault Rifle (Scoped),,,,
+gunAK47Desc,items,Gun,KgNone,This badass AK-47 Assault Rifle uses 7.62mm ammo. Can be re-assembled and repaired if you read the schematic. This one is scoped.,,,,
+gunAR15Scope,items,Item Gun,KgNone,AR15 Semi-Auto Rifle (Scoped),,,,
+gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. This one is scoped.,,,,
+
+gunChokeShort,items,Item,KgNone,Choke (Sawed-Off Shotgun),,,,
+gunChokeLong,items,Item,KgNone,Choke (Shotgun),,,,
+partsChokeDesc,items,Item,KgNone,Chokes reduce the spread of shotgun pellets thus making them more accurate.,,,,
+gunSawedOffPumpShotgunChoke,items,Gun,KgNone,Sawed-off Shotgun (With Choke),,,,
+gunSawedOffPumpShotgunChokeDesc,items,Gun,KgNone,A sawed-off shotgun fires shotgun shells. Can be re-assembled and repaired once you've read the schematic. This one has a choke installed.,,,,
+gunPumpShotgunChoke,items,Gun,KgNone,Shotgun (With Choke),,,,
+gunPumpShotgunChokeDesc,items,Gun,KgNone,A long-barreled shotgun uses shells for ammo. Can be re-assembled and repaired if you read the Shotgun Schematic. This one has a choke installed.,,,,
+
+stoneSpear,items,Melee,KgNone,Stone Spear,,,,
+stoneSpearDesc,items,Melee,KgNone,"Slightly better than a wooden club, with longer range but uses more stamina.",,,,
+ironSpear,items,Melee,KgNone,Iron Spear,,,,
+ironSpearDesc,items,Melee,KgNone,"Slightly better than a barbed club, with longer range but uses more stamina.",,,,
+titaniumSpear,items,Melee,KgNone,Titanium Spear,,,,
+titaniumSpearDesc,items,Melee,KgNone,"Slightly worse than a titanium club, but has a longer range.",,,,
+titaniumSpearSchematic,items,Book,New,Titanium Spear Schematic,,,,
+titaniumSpearSchematicDesc,items,Book,New,Read this schematic to learn how to craft a titanium spear.,,,,
