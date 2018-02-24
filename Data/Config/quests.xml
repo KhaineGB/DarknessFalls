@@ -230,8 +230,10 @@
 		<objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
 
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
+			<requirement type="Holding" id="fireaxeScrap" />
 			<requirement type="Holding" id="fireaxeIron" />
 			<requirement type="Holding" id="fireaxeSteel" />
+			<requirement type="Holding" id="fireaxeTitanium" />
 		</requirement>
 
 		<reward type="SkillPoints" value="2" />
