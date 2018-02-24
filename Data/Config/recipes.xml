@@ -1380,7 +1380,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="stoneAxe" count="1">
-	<ingredient name="sharpRock" count="4"/>
+	<ingredient name="sharpRock" count="1"/>
 	<ingredient name="yuccaFibers" count="2"/>
 	<ingredient name="wood" count="2"/>
 </recipe>
