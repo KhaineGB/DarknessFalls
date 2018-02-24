@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="Commercial,Industrial"/>
+    <property name="YOffset" value="-14"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town,wilderness"/>
+    <property name="SleeperVolumeStart" value="15,14,0#3,18,3#13,1,2#4,7,13#3,13,3"/>
+    <property name="SleeperVolumeSize" value="20,3,24#13,3,20#24,3,20#25,3,8#12,3,20"/>
+    <property name="SleeperVolumeGroup" value="S_LootRoom_L,S_ZomSoldier_Med,S_ZombieDogs_Med,S_BusinessMan_Med,S_Default_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False"/>
+</prefab>

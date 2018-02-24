@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="Zoning" value="DevOnly" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="YOffset" value="-4" />
+    <property name="AllowedTownships" value="cave" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="TraderArea" value="False" />
+</prefab>

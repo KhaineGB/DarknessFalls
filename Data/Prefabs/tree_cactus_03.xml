@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="ExcludeDistantPOIMesh" value="True" />
+	<property name="Zoning" value="NavOnly" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="TraderArea" value="False" />
+</prefab>

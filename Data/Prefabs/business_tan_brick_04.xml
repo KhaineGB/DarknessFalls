@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="Zoning" value="commercial,downtown" />
+    <property name="YOffset" value="-1" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="AllowedTownships" value="city,town,rural" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="20, 4, 22#20, 11, 22#10, 4, 9" />
+    <property name="SleeperVolumeStart" value="1, 1, 8#1, 5, 8#11, 1, 21" />
+    <property name="SleeperVolumeGroup" value="S_Default_S,S_Default_S,S_LootRoom_XS" />
+    <property name="SleeperVolumeGameStageAdjust" value=",,easy" />
+    <property name="SleeperIsLootVolume" value="False,False,True" />
+    <property name="DistantPOIYOffset" value="0" />
+</prefab>

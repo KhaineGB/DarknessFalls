@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="0"/>
+    <property name="YOffset" value="-18"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="Condition" value="Old"/>
+    <property name="Age" value="Old"/>
+    <property name="AllowedBiomes" value="plains,desert"/>
+    <property name="AllowedTownships" value="wilderness"/>
+    <property name="SleeperVolumeStart" value="16,8,14#20,9,15#17,9,14#22,18,24#14,18,16"/>
+    <property name="SleeperVolumeSize" value="8,3,8#3,3,3#3,3,3#5,3,6#9,3,8"/>
+    <property name="SleeperVolumeGroup" value="S_Default_Med,S_Badass_XL,S_ZomSoldier_L,S_ZombieDogs_Med,S_FeralZombies_S"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False"/>
+</prefab>

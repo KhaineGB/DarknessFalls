@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+	<property name="RotationToFaceNorth" value="0" />
+	<property name="YOffset" value="-2" />
+	<property name="Zoning" value="ResidentialOld,ResidentialNew,Commercial,downtown,industrial" />
+	<property name="AllowedTownships" value="city,town,rural,wilderness" />
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+	<property name="SleeperVolumeSize" value="9, 9, 9" />
+    <property name="SleeperVolumeStart" value="0, 0, 0" />
+    <property name="SleeperVolumeGroup" value="S_Default_XL" />
+    <property name="SleeperVolumeGameStageAdjust" value="medium" />
+    <property name="SleeperIsLootVolume" value="False" />
+    <property name="DistantPOIYOffset" value="0"/>
+		<!-- Zeds in mini mass grave -->
+</prefab>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="industrial" />
+    <property name="YOffset" value="-1" />
+    <property name="RotationToFaceNorth" value="1" />
+    <property name="AllowedTownships" value="city,town,rural" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="33, 12, 29#33, 20, 29#25, 12, 37#25, 19, 37" />
+    <property name="SleeperVolumeStart" value="25, 1, 42#25, 13, 42#33, 1, 5#33, 13, 5" />
+    <property name="SleeperVolumeGroup" value="S_ZomUtilityWorker_Med,S_ZomUtilityWorker_S,S_ZomUtilityWorker_Med,S_ZomUtilityWorker_S" />
+    <property name="SleeperVolumeGameStageAdjust" value=",,," />
+    <property name="SleeperIsLootVolume" value="False,False,False,False" />
+</prefab>

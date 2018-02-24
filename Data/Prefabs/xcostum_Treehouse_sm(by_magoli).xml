@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="ResidentialOld"/>
+    <property name="RotationToFaceNorth" value="2"/>
+    <property name="YOffset" value="-5"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="snow,pine_forest,forest"/>
+    <property name="SleeperVolumeStart" value="0,5,0"/>
+    <property name="SleeperVolumeSize" value="11,9,11"/>
+    <property name="SleeperVolumeGroup" value="S_LootRoom_XS"/>
+    <property name="SleeperVolumeGameStageAdjust" value=""/>
+    <property name="SleeperIsLootVolume" value="False"/>
+</prefab>

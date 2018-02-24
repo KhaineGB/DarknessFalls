@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-1" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="Zoning" value="downtown,residentialnew" />
+    <property name="AllowedTownships" value="city,town,rural" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="8, 6, 9#8, 6, 9#8, 6, 9#8, 6, 9#8, 6, 9#8, 6, 9#8, 6, 9#8, 6, 9#15, 6, 14#15, 6, 14#15, 6, 14#15, 6, 14#16, 6, 19#16, 6, 19#16, 6, 19#16, 6, 19#15, 6, 14#15, 6, 14#15, 6, 14#15, 6, 14#16, 6, 19#16, 6, 19#16, 6, 19#16, 6, 19#100, 7, 75#100, 12, 55" />
+    <property name="SleeperVolumeStart" value="1, 1, 31#1, 7, 31#1, 7, 52#1, 1, 52#91, 1, 31#91, 7, 31#91, 7, 52#91, 1, 52#76, 1, 26#76, 7, 26#76, 1, 52#76, 7, 52#60, 1, 52#60, 7, 52#60, 1, 21#60, 7, 21#9, 1, 26#9, 7, 26#9, 1, 52#9, 7, 52#24, 1, 52#24, 7, 52#24, 1, 21#24, 7, 21#0, 0, 0#0, 7, 18" />
+    <property name="SleeperVolumeGroup" value="S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_Med,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_XS,S_Default_L,S_Default_Med,S_Default_XS,S_Default_XL,S_Default_L" />
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,,,,,,,,,,medium,,,,,,,,hard,hard,,," />
+    <property name="SleeperIsLootVolume" value="True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,False,False" />
+</prefab>

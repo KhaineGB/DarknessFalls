@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True"/>
+    <property name="AllowTopSoilDecorations" value="False"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="Zoning" value="Commercial"/>
+    <property name="YOffset" value="-8"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="plains,pine_forest,forest,desert"/>
+    <property name="SleeperVolumeStart" value="4,1,23#3,7,17#36,11,5#19,16,17#38,16,33"/>
+    <property name="SleeperVolumeSize" value="99,3,30#33,3,44#88,5,55#18,3,41#49,3,19"/>
+    <property name="SleeperVolumeGroup" value="S_LootRoom_Med,S_Default_Med,S_BikerBar_Med,S_GhostTown_Med,S_Default_Med"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False"/>
+</prefab>

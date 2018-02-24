@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="TraderArea" value="False" />
+    <property name="AllowedTownships" value="city,town" />
+    <property name="Zoning" value="ResidentialNew" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="YOffset" value="-1" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="173, 20, 90#94, 11, 37#94, 20, 37#20, 19, 15" />
+    <property name="SleeperVolumeStart" value="0, 1, 47#49, 1, 10#49, 12, 10#86, 15, 16" />
+    <property name="SleeperVolumeGroup" value="S_FootballStadium_Med,S_FootballStadium_L,S_FootballStadium_Med,S_FootballStadium_Med" />
+    <property name="SleeperVolumeGameStageAdjust" value=",,,hard" />
+    <property name="SleeperIsLootVolume" value="False,False,False,True" />
+</prefab>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Commercial" />
+    <property name="AllowedTownships" value="town" />
+    <property name="AllowedBiomes" value="plains,pine_forest,forest,desert,snow" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="DistantPOIYOffset" value="0" />
+</prefab>

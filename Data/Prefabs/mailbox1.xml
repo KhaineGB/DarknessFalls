@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+	<property name="RotationToFaceNorth" value="2" />
+	<property name="Zoning" value="any" />
+	<property name="AllowedTownships" value="city,town,rural" />
+</prefab>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="NavOnly" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="TraderArea" value="False" />
+    <property name="SleeperVolumeSize" value="44, 4, 44" />
+    <property name="SleeperVolumeStart" value="-19, 0, -16" />
+    <property name="SleeperVolumeGroup" value="S_AbandonedHouse_1" />
+    <property name="SleeperVolumeGameStageAdjust" value="" />
+    <property name="SleeperIsLootVolume" value="False" />
+</prefab>

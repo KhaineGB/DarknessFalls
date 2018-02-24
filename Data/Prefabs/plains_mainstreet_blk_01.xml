@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="NavOnly" />
+    <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="13, 4, 20#13, 11, 20#9, 4, 20#9, 10, 20#12, 8, 20#12, 8, 20#12, 4, 20#12, 11, 20#12, 11, 20#9, 4, 20#9, 9, 20#12, 11, 20#19, 4, 20#19, 11, 20#20, 4, 11#20, 9, 11#20, 4, 20#20, 11, 20#20, 4, 11#20, 9, 11#11, 5, 13#20, 4, 14#20, 11, 14#20, 4, 11#20, 9, 11" />
+    <property name="SleeperVolumeStart" value="84, 1, 6#84, 5, 6#75, 1, 8#75, 5, 8#62, 1, 6#25, 1, 7#48, 1, 9#48, 5, 9#62, 9, 6#39, 1, 7#39, 5, 7#25, 9, 7#6, 1, 6#6, 5, 6#6, 1, 29#6, 5, 29#18, 1, 76#18, 5, 76#72, 1, 82#72, 5, 82#37, 1, 87#72, 1, 60#72, 5, 60#78, 1, 31#78, 5, 31" />
+    <property name="SleeperVolumeGroup" value="S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_S,S_Default_XS,S_Default_S,S_Default_S,S_Default_S,S_Default_S" />
+    <property name="SleeperVolumeGameStageAdjust" value="0,0,medium,,0,0,0,0,0,medium,,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
+    <property name="DistantPOIYOffset" value="-0.1" />
+</prefab>
