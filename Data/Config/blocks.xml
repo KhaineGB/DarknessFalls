@@ -143,6 +143,7 @@ tbnsew:
 	<property name="CanMobsSpawnOn" value="false"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="BuffsWhenWalkedOn" value="radiation"/>
 </block>
 
 <block id="6" name="potassiumNitrate">
@@ -16626,5 +16627,28 @@ kind of free
 	<property name="DescriptionKey" value="cncMachineDesc"/>
 	<property name="EconomicValue" value="500"/>
 </block>
+
+<!-- Titanium Test 
+
+<block id="2036" name="titaniumMaster">
+	<property name="Group" value="Building"/>
+	<property name="Material" value="titanium"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="267"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="RepairItems"> <property name="forgedTitanium" value="8"/> </property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<drop event="Harvest" name="scrapTitanium" count="15" prob="1"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="160"/>
+	<property name="DescriptionKey" value="steelBlockGroupDesc"/>
+</block>
+
+<block id="2037" name="titaniumBlock">
+	<property name="Extends" value="titaniumMaster"/>
+	<property name="RandomTintColor1" value="0,128,255"/>
+</block> -->
 	
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

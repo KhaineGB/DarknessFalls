@@ -197,7 +197,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="0" stat="speedmodifier" setValue="0.70"/>
 </buff>
 
-<buff id="Hangover" mutex="AlcoholPoisoning" duration="1500" type="staminadown"
+<buff id="Hangover" mutex="AlcoholPoisoning"  type="staminadown"
 	icon="ui_game_symbol_food_poisoning" name_key="hangover" description_key="hangoverDesc" tooltip_key="hangoverTooltip" >
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
@@ -473,7 +473,11 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-150" rate="1"/>
 </buff>
 
-<buff id="radiation" type="sickness" buffif="radiation greater 0" debuffif="radiation equals 0" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
+<buff id="radiation" duration="30" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
+	<modify id="0" stat="wellness" amount="-1" rate="10" />
+	<modify id="1" stat="health" amount="-1" rate="3"/>
+	<modify id="2" stat="stamina" amount="-10" rate="3"/>
+	<modify id="3" stat="water" amount="-1" rate="3"/>
 </buff>
 
 <buff id="bloodDrawTrigger" duration="1" actions="increment(BDKbloodLoss, 150, 1, 0, 0)" /> <!-- 1 default game hour = 150s -->
