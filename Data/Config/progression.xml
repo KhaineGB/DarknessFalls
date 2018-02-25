@@ -1190,13 +1190,13 @@
 	<!-- Forge Mod Stuff -->
 	
 	<perk name="Forge" icon="forge" description_key="forgeperkSkillDesc" title_key="forgeperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="1"/>
+		<!-- <requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="1"/> -->
 		<recipe name="bellows" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
 	</perk>
 	
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
-		<requirement skill_level="1" required_skill_name="craftSkillArmor" required_skill_level="1"/>
+		<!-- <requirement skill_level="1" required_skill_name="craftSkillArmor" required_skill_level="1"/> -->
 		<recipe name="leather" unlock_level="1"/>
 		<recipe name="leatherStrips" unlock_level="1"/>
 	</perk>
@@ -1234,7 +1234,7 @@
 	<!-- Farming Perk -->
 	
 	<perk name="Farming" icon="resource" description_key="farmingDesc" title_key="farming" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="crafting">
-		<requirement skill_level="1" required_skill_name="Scrap Iron Tools" required_skill_level="1"/>
+		<!-- <requirement skill_level="1" required_skill_name="Scrap Iron Tools" required_skill_level="1"/> -->
 		<recipe name="plantedChrysanthemum1" unlock_level="1"/>
 		<recipe name="plantedCorn1" unlock_level="1"/>
 		<recipe name="waterBarrel1" unlock_level="1"/>
