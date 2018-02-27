@@ -638,7 +638,7 @@
 	<item name="moldyBread"/>
 </lootgroup>
 
-<lootgroup name="weaponsPistol+ammo" count="all">
+<lootgroup name="weaponsPistol+ammo" count="2">
 	<item name="9mmBullet" count="1,10"/>
 	<item name="9mmBulletHP" count="1,10" prob="0.05"/>
 	<item name="gunPistol" count="1"/>
