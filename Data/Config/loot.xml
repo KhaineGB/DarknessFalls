@@ -850,18 +850,18 @@
 	<item name="crossbowSchematic"/>
 	<item name="huntingKnifeBook"/>
 	<item name="huntingRifleSchematic"/>
-	<item name="leatherBootsSchematic"/>
+	<!-- <item name="leatherBootsSchematic"/>
 	<item name="leatherGlovesSchematic"/>
 	<item name="leatherHoodSchematic"/>
+	<item name="leatherPantsSchematic"/> -->
 	<item name="leatherJacketSchematic"/>
-	<item name="leatherPantsSchematic"/>
 	<item name="pistolBook"/>
 	<item name="pumpShotgunSchematic"/>
-	<item name="scrapBootsSchematic" prob="0.7"/>
+	<!-- <item name="scrapBootsSchematic" prob="0.7"/>
 	<item name="scrapLegArmorSchematic" prob="0.7"/>
-	<item name="scrapChestArmorSchematic" prob="0.7"/>
 	<item name="scrapHelmetSchematic" prob="0.7"/>
-	<item name="scrapGlovesSchematic" prob="0.7"/>
+	<item name="scrapGlovesSchematic" prob="0.7"/> -->
+	<item name="scrapChestArmorSchematic" prob="0.7"/>
 	<item name="forgeAheadBook" prob="0.7"/>
 	<item name="leatherTanningBook" prob="0.7"/>
 	<item name="farmingBook" prob="0.7"/>
@@ -1296,7 +1296,7 @@
 	<item name="ironDoor1_v1"/>
 	<item name="sledgehammer"/>
 	<item group="nailgun+parts"/>
-	<!-- <item name="calipers" prob="0.67"/> -->
+	<item name="calipers" prob="0.67"/>
 	<item name="toolAndDieSet" prob="0.67"/>
 	<item group="rareTools"/>
 	<item group="automotive" prob="2"/>
