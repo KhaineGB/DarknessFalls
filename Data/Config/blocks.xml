@@ -16628,6 +16628,142 @@ kind of free
 	<property name="EconomicValue" value="500"/>
 </block>
 
+<!-- 1680-1774 are free -->
+
+<!-- NPC Corpses -->
+
+<block id="1045" name="GoreBlock2Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="107"/> <!-- dummy loot list, will be overridden by the zombie that died -->
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="1046" name="GoreBlock3Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="108"/>
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="1047" name="GoreBlock4Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="109"/>
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="1048" name="GoreBlock5Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="110"/>
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="1049" name="GoreBlock6Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="111"/>
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
+<block id="1050" name="GoreBlock7Prefab">
+	<property name="Class" value="Gore"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="organic"/>
+	<property name="MaxDamage" value="350"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Gore/gore_block1_Prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Tag" value="Gore"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="113"/>
+	<drop event="Harvest" name="rottingFlesh" count="1,3" prob="1" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
+	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
+	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
+</block>
+
 <!-- Titanium Test 
 
 <block id="2036" name="titaniumMaster">

@@ -11281,6 +11281,8 @@ Mesh files no longer used:
 
 <item id="1988" name="HollowTip">
 	<property name="Extends" value="bulletTip" />
+	<property name="CustomIcon" value="bulletTip" />
+	<property name="CustomIconTint" value="800000"/>
 	<property name="DescriptionKey" value="HollowTipDesc"/>
 </item>
 
