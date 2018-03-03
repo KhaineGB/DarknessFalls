@@ -2193,7 +2193,7 @@
 </lootcontainer>
 
 <!-- cntCollapsedForge -->
-<lootcontainer id="91" count="0,2" size="7,4" sound_open="forge_open" sound_close="forge_close" loot_quality_template="baseTemplate">
+<lootcontainer id="91" count="0,2" size="7,4" destroy_on_close="true" sound_open="forge_open" sound_close="forge_close" loot_quality_template="baseTemplate">
 	<item name="scrapIron" count="20,60" prob="2"/>
 	<item name="scrapBrass" count="10,30"/>
 	<item name="scrapLead" count="20,60"/>
@@ -2213,7 +2213,7 @@
 </lootcontainer>
 
 <!-- cntCollapsedWorkbench -->
-<lootcontainer id="92" count="0,2" size="7,4" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="baseTemplate">
+<lootcontainer id="92" count="0,2" size="7,4" destroy_on_close="true" sound_open="open_workbench" sound_close="close_workbench" loot_quality_template="baseTemplate">
 	<item name="scrapIron" count="10,20"/>
 	<item name="brokenGlass" count="3,8"/>
 	<item name="shortMetalPipe" count="5,10"/>
@@ -2245,7 +2245,7 @@
 </lootcontainer>
 
 <!-- cntCollapsedCementMixer -->
-<lootcontainer id="93" count="0,1" size="7,4" sound_open="cement_mixer_open" sound_close="cement_mixer_close" loot_quality_template="baseTemplate">
+<lootcontainer id="93" count="0,1" size="7,4" destroy_on_close="true" sound_open="cement_mixer_open" sound_close="cement_mixer_close" loot_quality_template="baseTemplate">
 	<item name="rockSmall" count="40,120"/>
 	<item name="clayLump" count="40,120"/>
 	<item name="rottingFlesh" count="5,12"/>
@@ -2259,7 +2259,7 @@
 </lootcontainer>
 
 <!-- cntCollapsedChemistryStation -->
-<lootcontainer id="94" count="0,1" size="7,4" sound_open="chem_station_open" sound_close="chem_station_close" loot_quality_template="baseTemplate">
+<lootcontainer id="94" count="0,1" size="7,4" destroy_on_close="true" sound_open="chem_station_open" sound_close="chem_station_close" loot_quality_template="baseTemplate">
 	<item group="labEquipment" count="1" prob="16"/>
 	<item name="wood" count="10,40" prob="2"/>
 	<item name="paint" count="15,40"/>
@@ -2289,13 +2289,13 @@
 </lootcontainer>
 
 <!-- cntCollapsedBatterybank -->
-<lootcontainer id="97" count="0,1" size="6,1" sound_open="open_vending" sound_close="close_vending" loot_quality_template="baseTemplate">
+<lootcontainer id="97" count="0,1" size="6,1" destroy_on_close="true" sound_open="open_vending" sound_close="close_vending" loot_quality_template="baseTemplate">
 	<item name="scrapLead" count="1,10" prob="19"/>
 	<item name="carBattery"/>
 </lootcontainer>
 
 <!-- cntCollapsedGeneratorbank -->
-<lootcontainer id="98" count="0,1" size="6,1" sound_open="open_vending" sound_close="close_vending" loot_quality_template="baseTemplate">
+<lootcontainer id="98" count="0,1" size="6,1" destroy_on_close="true" sound_open="open_vending" sound_close="close_vending" loot_quality_template="baseTemplate">
 	<item name="scrapIron" count="1,30" prob="19"/>
 	<item name="smallEngine"/>
 </lootcontainer>
@@ -2468,6 +2468,20 @@
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
 	<item group="junk" prob="0.5"/>
+</lootcontainer>
+
+<!-- Zombie Trader Drops -->
+
+<lootcontainer id="114" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item name="gunPistol" count="1,2" prob="0.15"/>
+	<item name="9mmBullet" count="10,20" prob="0.15"/>
+	<item name="casinoCoin" count="50,1000" prob="0.3"/>
+	<item name="oldCash" count="5,100" prob="0.5"/>
+	<item group="tools" prob="0.1"/>
+	<item group="medicine" prob="0.3"/>
+	<item group="clothes" prob="0.5"/>
+	<item group="warmClothes" prob="0.5"/>
+	<item group="hats" prob="0.5"/>
 </lootcontainer>
 
 </lootcontainers>

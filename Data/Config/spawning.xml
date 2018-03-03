@@ -104,7 +104,7 @@
     <biome name="burnt_forest">
         <spawn maxcount="4" respawndelay="4" time="Day"   entitygroup="ZombiesBurntForest" />
 		<spawn maxcount="2" respawndelay="7" time="Any"   entitygroup="EnemyAnimalsBurntForest" spawnDeadChance="0" />
-		<spawn maxcount="4" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="4" respawndelay="4" time="Night" entitygroup="ZombiesBurntForestNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="BanditGroup" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
 	</biome>
@@ -113,7 +113,7 @@
 		<spawn maxcount="2" respawndelay="4" time="Day" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="EnemyAnimalsSnow" spawnDeadChance="0" />
 		<spawn maxcount="2" respawndelay="7" time="Any" entitygroup="FriendlyAnimalsSnow" spawnDeadChance="0" />
-		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombieFeralNight" />
+		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="SnowZombiesNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
 	</biome>
 

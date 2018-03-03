@@ -603,7 +603,7 @@
 		</prefab_rule>
 		
 		<prefab_rule name="wildernessGroupWasteland">
-			<prefab rule="traderGroup" min_count="1" max_count="2"/>
+			<prefab rule="traderGroup" min_count="2" max_count="4"/>
 			<prefab rule="waterPois" min_count="5" max_count="7" prob="0.9"/>
 			<prefab name="cave_01" max_count="2"/>
 			<prefab name="cave_02" max_count="2"/>
@@ -1419,7 +1419,7 @@
 
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for cityCells) -->
 		<prefab_rule name="wildernessGroupCity">
-			<prefab rule="traderGroup" min_count="1" max_count="1"/>
+			<prefab rule="traderGroup" min_count="2" max_count="4"/>
 			<prefab rule="waterPois" min_count="2" max_count="3" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3"/>
 			<prefab name="cabin_02_sm" max_count="3"/>
@@ -1481,7 +1481,7 @@
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for townCells) -->
 		<prefab_rule name="wildernessGroupTown">
-			<prefab rule="traderGroup" min_count="1" max_count="1"/>
+			<prefab rule="traderGroup" min_count="2" max_count="4"/>
 			<prefab rule="waterPois" min_count="3" max_count="5" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3" prob="0.5"/>
 			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
@@ -1549,7 +1549,7 @@
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for ruralCells) -->
 		<prefab_rule name="wildernessGroupRural">
-			<prefab rule="traderGroup" min_count="1" max_count="1"/>
+			<prefab rule="traderGroup" min_count="2" max_count="4"/>
 			<prefab rule="waterPois" min_count="5" max_count="7" prob="0.9"/>
 			<prefab name="cabin_01" max_count="3" prob="0.5"/>
 			<prefab name="cabin_02_sm" max_count="3" prob="0.5"/>
@@ -1665,6 +1665,11 @@
 			<prefab name="settlement_trader_03" max_count="2"/>
 			<prefab name="settlement_trader_04" max_count="2"/>
 			<prefab name="settlement_trader_05" max_count="2"/>
+			<prefab name="DFalls_DestroyedTrader_01" max_count="1" prob="0.5"/>
+			<prefab name="DFalls_DestroyedTrader_02" max_count="1" prob="0.5"/>
+			<prefab name="DFalls_DestroyedTrader_03" max_count="1" prob="0.5"/>
+			<prefab name="DFalls_DestroyedTrader_04" max_count="1" prob="0.5"/>
+			<prefab name="DFalls_DestroyedTrader_05" max_count="1" prob="0.5"/>
 		</prefab_rule>
 		
 		<prefab_rule name="waterPois">

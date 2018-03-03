@@ -9,5 +9,5 @@
     <property name="TraderArea" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
-    <property name="AllowedBiomes" value="pine_forest" />
+    <property name="AllowedBiomes" value="pine_forest,forest" />
 </prefab>

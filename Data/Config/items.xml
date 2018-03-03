@@ -11508,14 +11508,14 @@ Mesh files no longer used:
 	<property name="HoldType" value="3" />
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
+	<property name="EconomicValue" value="1000"/>
 		<property class="Preview">
 		<property name="Zoom" value="28" />
 		<property name="Pos" value="0,-0.05" />
 		<property name="Rot" value="90,45,0" />
 	</property>
 </item>
-	
-<item id="2004" name="weldingTorch">
+<item id="2004" name="weldingTorch">	
 	<property name="CustomIcon" value="weldingTorch"/>
 	<property name="DescriptionKey" value="weldingTorchDesc"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -11524,6 +11524,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3" />
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
+	<property name="EconomicValue" value="2000"/>
 	<property class="Preview">
 		<property name="Zoom" value="28" />
 		<property name="Pos" value="0,-0.05" />
@@ -11540,6 +11541,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3" />
 	<property name="Stacknumber" value="1" />
 	<property name="Group" value="Resources" />
+	<property name="EconomicValue" value="1000"/>
 	<property class="Preview">
 		<property name="Zoom" value="28" />
 		<property name="Pos" value="0,-0.05" />
@@ -11557,6 +11559,7 @@ Mesh files no longer used:
 	<property name="Weight" value="5" />
 	<property name="Stacknumber" value="1" /> <!-- STK loot -->
 	<property name="Group" value="Resources" />
+	<property name="EconomicValue" value="2000"/>
 </item>
 
 <!-- Fishing Mod Stuff -->

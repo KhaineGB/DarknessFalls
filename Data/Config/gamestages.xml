@@ -309,8 +309,16 @@ There is a console command: forcegamestage
 		<gamestage stage="400"><spawn group="ZombieBadassGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 		<gamestage stage="600"><spawn group="ZombieFeralRadiatedGroup" num="1" maxAlive="1" duration="1"/></gamestage>
 	</spawner>
+	
+	<group name="FormerTrader" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="DestroyedTrader" count="10,20"/>
+	</group>
 
 	<!-- spawners -->
+	
+	<spawner name="DestroyedTrader">
+		<gamestage stage="1"><spawn group="ZombieTraders" num="10" maxAlive="20" duration="1"/></gamestage>
+	</spawner>
 
 	<spawner name="FeralZombieHorde">
 		<gamestage stage="1"><spawn group="ZombiesFeral" num="1" maxAlive="1" duration="1"/></gamestage>
