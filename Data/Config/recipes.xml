@@ -3979,6 +3979,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Fishing Mod -->
 
+<recipe name="fishingWeight" count="1" craft_area="forge">
+	<ingredient name="unit_lead" count="5"/>
+</recipe>
+
+<recipe name="fishingWeight" count="1" craft_area="advforge">
+	<ingredient name="unit_lead" count="5"/>
+</recipe>
+
 <recipe name="FishingPole" count="1">
 	<ingredient name="scrapIron" count="1"/>
 	<ingredient name="wood" count="1"/>

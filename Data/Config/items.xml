@@ -6139,7 +6139,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="5"/> <!-- STK medical -->
+	<property name="Stacknumber" value="15"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
@@ -7240,7 +7240,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="15"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property class="Action1">
@@ -10647,7 +10647,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="16"/>
-	<property name="Stacknumber" value="5"/> <!-- STK medical -->
+	<property name="Stacknumber" value="15"/> <!-- STK medical -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="10"/>
@@ -11585,8 +11585,8 @@ Mesh files no longer used:
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
     <property name="Material" value="wood" />
     <property name="HoldType" value="45" />
-	<property name="RepairTools" value="ductTape" />
-	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="RepairTools" value="Maggots" />
+	<property name="DegradationBreaksAfter" value="true"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
     <property name="FuelValue" value="15" />
