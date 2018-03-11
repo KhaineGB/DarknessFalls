@@ -6,7 +6,7 @@
     <property name="RotationToFaceNorth" value="2" />
     <property name="Zoning" value="downtown" />
     <property name="AllowedTownships" value="city" />
-    <property name="AllowedBiomes" value="wasteland_hub" />
+    <property name="AllowedBiomes" value="wasteland_hub,radiated" />
     <property name="TraderArea" value="False" />
     <property name="DistantPOIYOffset" value="0" />
     <property name="SleeperVolumeSize" value="43, 9, 43#43, 8, 43#43, 8, 43#43, 8, 43#43, 8, 11#43, 8, 43#10, 8, 10#15, 9, 15#33, 8, 16#43, 8, 17#43, 8, 15" />

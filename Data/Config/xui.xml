@@ -230,7 +230,8 @@
 		</window_group>
 		
 		<window_group name="ingameMenu">
-			<window name="ingameMenu" />
+			<!-- <window name="ingameMenu" /> -->
+			<window name="DFallsingameMenu" />
 		</window_group>
 		
 		<window_group name="woPropsSleeperVolume">

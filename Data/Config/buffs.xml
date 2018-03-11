@@ -473,11 +473,11 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-150" rate="1"/>
 </buff>
 
-<buff id="radiation" duration="30" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
-	<modify id="0" stat="wellness" amount="-1" rate="10" />
-	<modify id="1" stat="health" amount="-1" rate="3"/>
-	<modify id="2" stat="stamina" amount="-10" rate="3"/>
-	<modify id="3" stat="water" amount="-1" rate="3"/>
+<buff id="radiation" duration="300" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
+	<modify id="0" stat="wellness" amount="-1" rate="60" />
+	<modify id="1" stat="health" amount="-1" rate="30"/>
+	<modify id="2" stat="stamina" amount="-10" rate="10"/>
+	<modify id="3" stat="water" amount="-1" rate="30"/>
 </buff>
 
 <buff id="bloodDrawTrigger" duration="1" actions="increment(BDKbloodLoss, 150, 1, 0, 0)" /> <!-- 1 default game hour = 150s -->

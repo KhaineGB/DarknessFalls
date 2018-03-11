@@ -2917,26 +2917,45 @@
 		<!-- Icon coupled with player level -->
 		<rect pos="-35,12" width="32" height="32" >
 			<sprite depth="3" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_trophy" />
-			<label depth="4" name="levelNumber" pos="2,-4" width="28" height="28" text="{playerlevel}" color="255,255,255,255" justify="center" controller="PlayerStatsWindow" effect="outline" />
+			<label depth="4" name="levelNumber" pos="2,-4" width="28" height="28" text="{playerlevel}" color="255,191,0" justify="center" controller="PlayerStatsWindow" effect="outline" />
 		</rect>
 
 		<!-- Experience bar -->
 		<sprite depth="2" width="603" pos="0, 0" height="10" type="sliced" color="[black]" />
 		<sprite depth="2" width="599" pos="2, -2" height="8" type="sliced" color="120,120,120,120" />
-		<sprite depth="2" width="599" pos="2, -2" height="8" type="filled" color="235,235,235,250" fill="{playerlevelfill}" controller="PlayerStatsWindow" />
+		<sprite depth="2" width="599" pos="2, -2" height="8" type="filled" color="255,191,0" fill="{playerlevelfill}" controller="PlayerStatsWindow" />
 
 		<!-- Toolbelt numbers -->
 		<grid depth="1" rows="1" cols="8" pos="6,-14" cell_width="75" cell_height="75" repeat_content="false">
-				<label depth="50" width="12" height="22" text="1" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="2" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="3" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="4" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="5" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="6" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="7" font_size="22" effect="outline" color="[white]" justify="center" />
-				<label depth="50" width="12" height="22" text="8" font_size="22" effect="outline" color="[white]" justify="center" />
+				<label depth="50" width="12" height="22" text="1" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="2" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="3" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="4" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="5" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="6" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="7" font_size="22" effect="outline" color="255,191,0" justify="center" />
+				<label depth="50" width="12" height="22" text="8" font_size="22" effect="outline" color="255,191,0" justify="center" />
 		</grid>
 
+	</window>
+	
+	<!-- Custom Logo Mod -->
+	
+	<window name="DFalls">
+		<!-- <texture name="DFalls" depth="0" size="100,50" texture="@file:Mods\SDX\Textures\Misc\wwhudlogo.png" material="Materials/Transparent Colored" pos="-500,-6" /> -->
+		<label name="ServerInfo" depth="0" size="100,50" text="V1.5" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
+	</window>
+
+	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
+		<!-- <texture name="DFalls" depth="0" size="999,777" texture="@file:Mods\SDX\Textures\Misc\wwmenulogo.png" material="Materials/Transparent Colored" pos="-268,290" /> -->
+		<label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> 
+		<label name="DFallsVersion" pos="0, -105" depth="0" size="250,33" text="V1.5" font_size="32" effect="outline" color="[white]" justify="center" />
+		<!-- <label name="DFallsVersion" pos="450, -450" depth="0" size="250,33" text="V1.4.2" font_size="32" effect="outline" color="[white]" justify="center" /> --> <!-- SIRILLION: Change version here if needed! -->
+		<grid name="buttons" pos="0, -475" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
+			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
+			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />
+			<simplebutton name="btnExit" depth="3" width="250" height="46" caption_key="xuiMenuExit" font_size="40" />
+		</grid>
 	</window>
 
 

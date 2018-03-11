@@ -6,7 +6,7 @@
     <property name="RotationToFaceNorth" value="2" />
     <property name="Zoning" value="downtown" />
     <property name="AllowedTownships" value="city" />
-    <property name="AllowedBiomes" value="wasteland_hub" />
+    <property name="AllowedBiomes" value="wasteland_hub,radiated" />
     <property name="TraderArea" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />
     <property name="DistantPOIYOffset" value="0" />
