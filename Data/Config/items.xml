@@ -1394,7 +1394,7 @@ Mesh files no longer used:
 	<property name="Extends" value="handZombieStripper"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="500"/>
+		<property name="DamageEntity" value="250"/>
 		<property name="DamageBlock" value="2000"/>
 		<property name="Range" value="4"/>
 		<property name="Sphere" value="2"/>
@@ -1464,14 +1464,6 @@ Mesh files no longer used:
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		<property name="ToolCategory.harvestingTools" value="0.7" param1="1"/> <!-- value = harvest event multiplier, param1 = damage multiplier if matching harvest event present ont he block -->
 	</property>
-	<property class="Action1"> <!-- UseAction -->
-		<property name="Class" value="Repair"/>
-		<property name="Delay" value="0.4"/>
-		<property name="Repair_amount" value="100"/>
-		<property name="Upgrade_hit_offset" value="0"/>
-		<property name="Sound_start" value="repair_block"/>
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
-	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,10"/>
 		<property name="BlockDamage" value="22.8,30"/>
@@ -1482,7 +1474,7 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="stoneAxeDesc"/>
 	<property name="Group" value="Tools/Traps,Basics"/>
-	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -1541,7 +1533,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -2199,7 +2191,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="crossbowBolt,ironCrossbowBolt,steelCrossbowBolt"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2496,7 +2488,9 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<!-- <item id="170" name="crossbowBolt">
+<item id="170" name="crossbowBolt">
+	<property name="CustomIcon" value="crossbowBolt" />
+	<property name="DescriptionKey" value="crossbowBoltDesc" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_stonePrefab"/>
 	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_stonePrefab"/>
@@ -2527,7 +2521,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="Group" value="Ammo/Weapons"/>
-</item> -->
+</item>
 
 <item id="171" name="ironCrossbowBolt">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab"/>
@@ -6997,7 +6991,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="25"/>
+		<property name="Gain_food" value="30"/>
 		<property name="Gain_water" value="10"/>
 		<property name="Gain_wellness" value="6"/>
 		<property name="Sound_start" value="player_drinking"/>
@@ -8987,7 +8981,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="6"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="CraftingIngredientTime" value="9"/>
 	<property class="Action0"> <!-- UseAction -->
 		<property name="Class" value="ExchangeItem"/>
@@ -9944,7 +9938,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="0,0.05"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Axes"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -10098,7 +10092,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="6"/>
+	<property name="EconomicValue" value="5"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property class="Action0"> <!-- UseAction -->
 		<property name="Class" value="ExchangeItem"/>
@@ -10598,7 +10592,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="30"/>
+	<property name="EconomicValue" value="15"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -10623,7 +10617,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="15"/> <!-- STK drink -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="30"/>
+	<property name="EconomicValue" value="15"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -11007,8 +11001,8 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="10"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="13,19"/>
-		<property name="BlockDamage" value="7,13"/>
+		<property name="EntityDamage" value="14,20"/>
+		<property name="BlockDamage" value="8,14"/>
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
 	<property name="EconomicValue" value="512"/>
@@ -12996,8 +12990,8 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="10"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="13,19"/>
-		<property name="BlockDamage" value="7,13"/>
+		<property name="EntityDamage" value="14,20"/>
+		<property name="BlockDamage" value="8,14"/>
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
 	<property name="EconomicValue" value="512"/>
@@ -13420,6 +13414,327 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<!-- Antiradiation Meds -->
+
+<item id="2097" name="antirad">
+	<property name="CustomIcon" value="painkillers"/>
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="antiradDesc"/>
+	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="16"/>
+	<property name="EconomicValue" value="140"/>
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_painkillers"/>
+		<property name="Buff" value="radcured"/>
+		<property name="Debuff" value="radiation"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_painkillers"/>
+		<property name="Buff" value="radcured"/>
+		<property name="Debuff" value="radiation"/>
+	</property>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="Group" value="Science"/>
+	<property name="ActionExp" value="10"/>
+</item>
+
+<!-- Lockpicks -->
+
+<item id="2098" name="Lockpick">
+	<property name="Degradation" value="125" param1="true"/>
+	<property name="DescriptionKey" value="LockpickDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="10"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="1"/>
+		<property name="Upgrade_hit_offset" value="-1"/>
+		<property name="Sound_start" value="UseActions/repair_block"/>
+		<property name="Allowed_upgrade_items" value="Lockpick"/>
+	</property>
+</item>
+
+<item id="2099" name="stoneHammer">
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab"/>
+	<property name="Material" value="stone"/>
+	<property name="RepairTools" value="rockSmall"/>
+	<property name="HoldType" value="32"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="FuelValue" value="12"/>
+	<property class="Action0">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.4"/>
+		<property name="Repair_amount" value="100"/>
+		<property name="Upgrade_hit_offset" value="0"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,10"/>
+		<property name="BlockDamage" value="22.8,30"/>
+		<property name="DegradationMax" value="100,600"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0,0"/>
+		<property name="DismembermentBonus" value="0,0"/>
+	</property>
+	<property name="CustomIcon" value="stoneHammer"/>
+	<property name="DescriptionKey" value="stoneHammerDesc"/>
+	<property name="Group" value="Tools/Traps,Basics"/>
+	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item id="2100" name="skillAxeBook">
+	<property name="CustomIcon" value="skillAxes" />
+	<property name="Extends" value="schematicMaster"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Axes"/>
+	</property>
+</item>
+
+<!-- Combat Axe And New Bows -->
+
+<item id="2101" name="combatAxe">
+	<property name="Extends" value="fireaxeSteel"/>
+	<property name="CustomIcon" value="combatAxe"/>
+	<property name="DescriptionKey" value="combatAxeDesc"/>
+	<property name="FuelValue" value="16"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="3"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="7"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="8"/>
+		<property name="DamageBonus.glass" value="25"/>
+		<property name="DamageBonus.stone" value=".25"/>
+		<property name="DamageBonus.metal" value=".25"/>
+		<property name="DamageBonus.earth" value=".25"/>
+		<property name="ToolCategory.Butcher" value="0.55"/>
+		<property name="ToolCategory.Lumberjack" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="15,35"/>
+		<property name="BlockDamage" value="20,35"/>
+		<property name="DegradationMax" value="400,1200"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.3,0.4"/>
+	</property>
+	<property name="ActionSkillGroup" value="Axes"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+</item>
+
+<item id="2102" name="steelCrossbow">
+	<property name="Extends" value="crossbow"/>
+	<property name="RepairTools" value="forgedIron"/>
+	<property name="CustomIcon" value="ironCrossbow"/>
+	<property name="DescriptionKey" value="steelCrossbowDesc"/>
+	<property name="RepairTools" value="wood"/>
+	<property name="FuelValue" value="40"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Magazine_items" value="steelCrossbowBolt,explodingCrossbowBolt,titaniumCrossbowBolt"/>
+		<property name="Range" value="250"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,10"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DegradationMax" value="50,650"/>
+	</property>
+</item>
+
+<item id="2103" name="crossbowScoped">
+	<property name="Extends" value="crossbow"/>
+	<property name="CustomIcon" value="crossbowScoped"/>
+	<property name="DescriptionKey" value="crossbowScopedDesc"/>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+
+<item id="2104" name="steelCrossbowScoped">
+	<property name="Extends" value="steelCrossbow"/>
+	<property name="CustomIcon" value="ironCrossbowScoped"/>
+	<property name="DescriptionKey" value="steelCrossbowScopedDesc"/>
+		<property class="Action1">
+			<property name="Class" value="Zoom" />
+			<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+			<property name="Zoom_max_out" value="40" />
+			<property name="Zoom_max_in" value="15" />
+		</property>
+</item>
+	
+<item id="2105" name="steelCrossbowSchematic">
+	<property name="CustomIcon" value="ironCrossbowSchematic" />
+	<property name="DescriptionKey" value="steelCrossbowSchematicDesc" />
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="steelCrossbow,steelCrossbowScoped"/>
+	</property>
+</item>
+
+<item id="2106" name="combatAxeSchematic">
+	<property name="CustomIcon" value="combatAxeSchematic" />
+	<property name="DescriptionKey" value="combatAxeSchematicDesc" />
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="combatAxe"/>
+	</property>
+</item>
+
+<item id="2107" name="titaniumCombatAxeSchematic">
+	<property name="CustomIcon" value="combatAxeSchematic" />
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="titaniumCombatAxeSchematicDesc" />
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="500"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="titaniumCombatAxe"/>
+	</property>
+</item>
+
+<item id="2108" name="titaniumCombatAxe">
+	<property name="Extends" value="fireaxeTitanium"/>
+	<property name="CustomIcon" value="combatAxe"/>
+	<property name="CustomIconTint" value="0080ff"/>
+	<property name="DescriptionKey" value="titaniumCombatAxeDesc"/>
+	<property name="FuelValue" value="16"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1.1"/>
+		<property name="Range" value="2"/>
+		<property name="Sphere" value="0.1"/>
+		<property name="Block_range" value="3"/>
+		<property name="DamageEntity" value="20"/>
+		<property name="DamageBlock" value="1"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="Stamina_usage" value="5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="8"/>
+		<property name="DamageBonus.glass" value="25"/>
+		<property name="DamageBonus.stone" value=".25"/>
+		<property name="DamageBonus.metal" value=".25"/>
+		<property name="DamageBonus.earth" value=".25"/>
+		<property name="ToolCategory.Butcher" value="0.55"/>
+		<property name="ToolCategory.Lumberjack" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="20,50"/>
+		<property name="BlockDamage" value="25,46"/>
+		<property name="DegradationMax" value="1000,2800"/>
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DismembermentBaseChance" value="0.3,0.4"/>
+	</property>
+	<property name="CritChance" value="0.4"/>
+	<property name="ActionSkillGroup" value="Axes"/>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
+</item>
+
+<item id="2109" name="handZombieBomber">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="Degradation" value="99999" param1="true"/>
+	<property class="Action0">
+		<property name="Range" value="1.75"/>
+		<property name="DamageEntity" value="10"/>
+		<property name="DamageBlock" value="250"/>
+		<property name="Buff" value="burning,infection,stunned"/>
+		<property name="Buff_chance" value="0.2,0.2,0.4"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Vomit"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Range" value="400"/>
+		<property name="Auto_fire" value="true"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="projectileZombieBomber"/>
+		<property name="Rays_spread" value="0.5"/>
+		<property name="Reload_time" value="2"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_warning" value="hulkvomitwarning"/>
+		<property name="Sound_start" value="hulkvomitattack"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value=""/>
+		<property name="Sound_reload" value=""/>
+		<property name="Buff" value="burning"/>
+		<property name="Buff_chance" value="0.2"/>
+	</property>
+</item>
+
+<item id="2110" name="projectileZombieBomber">
+	<property name="Meshfile" value="ParticleEffects/p_signal_flareprefab"/>
+	<property name="Material" value="organic"/>
+	<property name="CreativeMode" value="None"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="DamageEntity" value="5"/>
+		<property name="DamageBlock" value="250"/>
+		<property name="Explosion.ParticleIndex" value="7"/>
+		<property name="Velocity" value="20"/>
+		<property name="FlyTime" value="0.50"/>
+		<property name="LifeTime" value="4"/>
+		<property name="CollisionRadius" value="0.5"/>
+		<property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.wood" value="3"/>
+		<property name="DamageBonus.metal" value="1.5"/>
+		<property name="DamageBonus.stone" value="1.5"/>
+	</property>
+</item>
+
+<item id="2111" name="runForestrunBook">
+	<property name="CustomIcon" value="runForestrun" />
+	<property name="DescriptionKey" value="runForestrunBookDesc"/>
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="1000"/>
+	<property class="Action1">
+		<property name="Skills_to_gain" value="Run Forest Run"/>
+	</property>
+</item>
 
 <!-- Hornet Mod 
 

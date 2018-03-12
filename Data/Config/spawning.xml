@@ -116,6 +116,10 @@
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="SnowZombiesNight" />
 		<spawn maxcount="2" respawndelay="1" time="Any" entitygroup="SurvivorGroup" />
 	</biome>
+	
+	<biome name="radiated">
+		<spawn maxcount="10" respawndelay="1" time="Any" entitygroup="ZombieFeralRadiatedGroup" />
+	</biome>
 
 
   <!-- Entity spawner classes -->

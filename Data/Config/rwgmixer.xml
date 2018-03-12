@@ -4,7 +4,7 @@
 	<rulesets>
 	<world ruleset="vanilla" />
 	
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="2200" cell_offset="0" generation_distance="15000" terrain_generator="vanilla" biome_generator="vanilla">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="2200" cell_offset="0" generation_distance="25000" terrain_generator="vanilla" biome_generator="vanilla">
 		
 			<cell_rule name="deadCell" prob="0.5"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
 			<cell_rule name="cityCell" prob="0.15"/>
@@ -1477,6 +1477,7 @@
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.01"/>
 			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_TheVillage(by_Stallionsden)" max_count="1" />
 		</prefab_rule>
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for townCells) -->
@@ -1545,6 +1546,7 @@
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.03"/>
 			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.1"/>
+			<prefab name="xcostum_TheVillage(by_Stallionsden)" max_count="1" />
 		</prefab_rule>
 		
 		<!-- Prefabs you'll find in the wilds as dictated by cell area (for ruralCells) -->
@@ -1612,6 +1614,7 @@
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.05"/>
 			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.05"/>
+			<prefab name="xcostum_TheVillage(by_Stallionsden)" max_count="1" />
 		</prefab_rule>
 		
 		<!-- Random filler prefabs in hubs -->
@@ -1938,7 +1941,7 @@
 		</biome_spawn_rule> 
 
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="15000,22500"/>
+			<distance_from_center range="15000,30000"/>
 		</biome_spawn_rule>
 
 		<biome_spawn_rule name="water">

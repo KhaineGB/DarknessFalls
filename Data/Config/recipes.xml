@@ -1812,6 +1812,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapSkill" count="30"/>
 </recipe>
 
+<recipe name="skillAxeBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+</recipe>
+
 <recipe name="skillBladesBook" count="1">
 	<ingredient name="scrapSkill" count="30"/>
 </recipe>
@@ -3359,7 +3363,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="gunPowder" count="8"/>
 	<ingredient name="ductTape" count="1"/>
-	<ingredient name="wood" count="1"/>
+	<ingredient name="stick" count="1"/>
 	<ingredient name="feather" count="1"/>
 </recipe>
 
@@ -3392,7 +3396,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="steelCrossbowBolt" count="1" craft_area="workstationMetal">
 	<ingredient name="steelArrowHead" count="1"/>
-	<ingredient name="wood" count="1"/>
+	<ingredient name="stick" count="1"/>
 	<ingredient name="feather" count="1"/>
 </recipe>
 
@@ -4107,7 +4111,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="titaniumCrossbowBolt" count="1" craft_area="workstationMetal">
 	<ingredient name="titaniumArrowHead" count="1"/>
-	<ingredient name="wood" count="1"/>
+	<ingredient name="stick" count="1"/>
 	<ingredient name="feather" count="1"/>
 </recipe>
 
@@ -4348,6 +4352,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_glass" count="10"/>
 </recipe>
 
+<recipe name="gunScope" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
+	<ingredient name="unit_iron" count="80"/>
+	<ingredient name="unit_clay" count="40"/>
+	<ingredient name="unit_glass" count="20"/>
+</recipe>
+
 <recipe name="gunChokeShort" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">>
 	<ingredient name="shortMetalPipe" count="2"/>
 	<ingredient name="partsPumpShotgun_barrelShort" count="1"/>
@@ -4458,6 +4468,78 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="titaniumSpear" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
 	<ingredient name="titaniumArrowHead" count="1"/>
 	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<!-- Anti radiation medicine -->
+
+<recipe name="antirad" count="1" craft_area="chemistryStation">
+	<ingredient name="potassiumNitratePowder" count="4"/>
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="antirad" count="1" craft_area="chemistryStation">
+	<ingredient name="potassiumNitratePowder" count="4"/>
+	<ingredient name="bowlRiverWater" count="1"/>
+</recipe>
+
+<!-- Lockpicks -->
+
+<recipe name="Lockpick" count="1">
+	<ingredient name="scrapIron" count="10"/>
+</recipe>
+
+<!-- Stone Hammer -->
+
+<recipe name="stoneHammer" count="1">
+	<ingredient name="rockSmall" count="4"/>
+	<ingredient name="yuccaFibers" count="2"/>
+	<ingredient name="wood" count="2"/>
+</recipe>
+
+<!-- Iron Crossbow And Combat Axe -->
+
+<recipe name="steelCrossbow" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedSteel" count="20"/>
+	<ingredient name="leather" count="4"/>
+	<ingredient name="glue" count="2"/>
+	<ingredient name="ductTape" count="1"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="combatAxe" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedSteel" count="20"/>
+	<ingredient name="wood" count="10"/>
+	<ingredient name="leather" count="5" />
+</recipe>
+
+<recipe name="crossbowScoped" count="1">
+	<ingredient name="crossbow" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="ductTape" count="1" />
+</recipe>
+
+<recipe name="steelCrossbowScoped" count="1">
+	<ingredient name="steelCrossbow" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="ductTape" count="1" />
+</recipe>
+
+<recipe name="crossbowBolt" count="1">
+	<ingredient name="sharpRock" count="1"/>
+	<ingredient name="stick" count="1"/>
+	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="crossbowBolt" count="1">
+	<ingredient name="sharpRock" count="1"/>
+	<ingredient name="stick" count="1"/>
+	<ingredient name="cloth" count="1"/>
+</recipe>
+
+<recipe name="titaniumCombatAxe" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+	<ingredient name="leather" count="5" />
 </recipe>
 
 </recipes>

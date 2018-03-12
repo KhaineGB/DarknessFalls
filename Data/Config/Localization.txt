@@ -1042,8 +1042,8 @@ overheated,buffs,Buff,KgNone,Overheated,Hyperthermie,Überhitzt,,Sobrecalentado
 overheatedDesc,buffs,Buff,KgNone,"You're overheating. Rest, find water or shelter. When hot you will dehydrate faster.","Vous souffrez d'hyperthermie. Reposez-vous, trouvez de l'eau ou abritez-vous. Lorsque vous avez chaud, vous vous déshydratez plus rapidement.","Du bist überhitzt. Ruhe dich aus, finde Wasser oder einen Unterschlupf. Wenn dir heiß ist, dehydrierst du schneller.",,Te estás sobrecalentando. Descansa y busca agua o un refugio. Te deshidratas más rápido cuando estás caliente.
 overheatedTooltip,buffs,Buff,KgNone,"You're overheating. Rest, find water or shelter.","Vous souffrez d'hyperthermie. Reposez-vous, trouvez de l'eau ou abritez-vous.","Du bist überhitzt. Ruhe dich aus, finde Wasser oder einen Unterschlupf.",,Te estás sobrecalentando. Descansa y busca agua o un refugio.
 radiation,buffs,Buff,KgNone,Deadly Radiation,Radiations mortelles,Tödliche Strahlung,,Radiación letal
-radiationDesc,buffs,Buff,KgNone,You have entered a Deadly Radiation zone!,Vous pénétrez dans une zone de radiations mortelles !,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
-radiationTooltip,buffs,Buff,KgNone,You have entered a Deadly Radiation zone!,Vous pénétrez dans une zone de radiations mortelles !,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
+radiationDesc,buffs,Buff,KgNone,You have entered a Deadly Radiation zone! Hope you brought anti-rad meds.,Vous pénétrez dans une zone de radiations mortelles !,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
+radiationTooltip,buffs,Buff,KgNone,You have entered a Deadly Radiation zone! Hope you brought anti-rad meds.,Vous pénétrez dans une zone de radiations mortelles !,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
 redTeaCooling,buffs,Buff,KgNone,Cool Drink,Boisson fraîche,Kühles Getränk,,Bebida fría
 redTeaCoolingDesc,buffs,Buff,KgNone,You feel cooler.,Vous avez moins chaud.,Du fühlst dich kühler.,,Te sientes más fresco.
 redTeaCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,Vous avez moins chaud.,Du fühlst dich kühler.,,Te sientes más fresco.
@@ -1784,8 +1784,7 @@ shovelIron,items,Tool,KgNone,Iron Shovel,Pelle en fer,Eisenschaufel,,Pala de hie
 shovelIronDesc,items,Tool,KgNone,"The iron shovel is great for digging through earth, sand or snow.","La pelle en fer est géniale pour creuser la terre, le sable ou la neige.","Die Eisenschaufel ist ein tolles Werkzeug, um sich durch Erde, Sand und Schnee zu graben.",,"La pala de hierro es excelente para cavar en la tierra, arena o nieve."
 shovelSteel,items,Tool,KgNone,Steel Shovel,Pelle en acier,Stahlschaufel,,Pala de acero
 shovelSteelDesc,items,Tool,KgNone,"The steel shovel is very durable and the ideal tool for digging through earth, sand or snow.","La pelle en acier est un outil durable et idéal pour creuser la terre, le sable ou la neige.","Die Stahlschaufel ist sehr robust und das ideale Werkzeug, um sich durch Erde, Sand und Schnee zu graben.",,"La pala de acero es muy duradera y es la herramienta ideal para cavar en la tierra, arena o nieve."
-stoneAxe,items,Tool,KgNone,Stone Axe,Hache de pierre,Steinaxt,,Hacha de piedra
-stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone, repairing & upgrading walls, doors & windows. Not the best weapon.","Un outil primitif pratique pour couper du bois, extraire de la pierre, ainsi que réparer et améliorer les murs, les portes et les fenêtres. Pas ce qui se fait de mieux en matière d'arme.","Ein primitives Werkzeug zum Holzfällen, Abbauen von Stein, Reparieren und Aufwerten von Mauern, Türen und Fenstern. Es gibt bessere Waffen.",,"Una herramienta primitiva para cortar madera, picar piedra y reparar o mejorar paredes, puertas o ventanas. No es la mejor arma."
+
 stoneShovel,items,Tool,KgNone,Stone Shovel,Pelle en pierre,Steinschaufel,,Pala de piedra
 stoneShovelDesc,items,Tool,KgNone,"The stone shovel is a primitive tool useful for digging dirt, sand or snow.","La pelle en pierre est un outil primitif pratique pour creuser la terre, le sable ou la neige.","Die Steinschaufel ist ein primitives Werkzeug, mit dem man in Erde, Sand und Schnee graben kann.",,"La pala de piedra es una herramienta primitiva que se usa para cavar en la tierra, arena o nieve."
 tazasStoneaxe,items,Tool,KgNone,Taza's Stone Axe,Hache de pierre de Taza,Tazas Steinaxt,,Hacha de piedra de Taza
@@ -4947,6 +4946,8 @@ skillArcheryBook,items,Book,New,Archery Notes,,,,
 skillArcheryBookDesc,items,Book,New,Looks like you found some Archery tips and tricks.,,,,
 skillAthleticsBook,items,Book,New,Athletics Notes,,,,
 skillAthleticsBookDesc,items,Book,New,Looks like you found some Athletics tips and tricks.,,,,
+skillAxeBook,items,Book,New,Axe Notes,,,,
+skillAxeBookDesc,items,Book,New,Looks like you found some Axe tips and tricks.,,,,
 skillBarterBook,items,Book,New,Bartering Notes,,,,
 skillBarterBookDesc,items,Book,New,Looks like you found some tips and tricks for Bartering.,,,,
 skillBladesBook,items,Book,New,Bladed Weapon Notes,,,,
@@ -5000,10 +5001,10 @@ medicalDesc,progression,Skill,EnChanged,Unlocks the ability to craft healing ite
 
 forgeperk,progression,Skill,KgNone,Forge,,,
 forgeperkSkillDesc,progression,Skill,EnChanged,Unlocks the ability to craft a Forge and Bellows.,,,,
-advForge,progression,Skill,KgNone,Advanced Forge,,,
-advForgeSkillDesc,progression,Skill,EnChanged,Unlocks the ability to craft the Advanced Forge.,,,,
-advForgeperk,blocks,Workstation,KgNone,Advanced Forge,,,,
-advForgeperkDesc,blocks,Workstation,EnChanged,"Used to specifically craft steel, no anvil or fuel required! Unlock more recipes by adding a crucible or tool and die set.",,,,
+advForgeperk,progression,Skill,KgNone,Advanced Forge,,,
+advForgeperkDesc,progression,Skill,EnChanged,"Unlocks the ability to craft the Advanced Forge. Needed to craft steel.",,,,
+advForge,blocks,Workstation,KgNone,Advanced Forge,,,,
+advForgeDesc,blocks,Workstation,EnChanged,"Used to specifically craft steel, no anvil or fuel required! Unlock more recipes by adding a crucible or tool and die set.",,,,
 PandM,blocks,Workstation,KgNone,Mortar and Pestle,,,,
 PandMDesc,blocks,Workstation,EnChanged,"Reduces costs on crafting seeds and animal feed. Required to make flour and corn meal.",,,,
 
@@ -5441,3 +5442,52 @@ zombieFarmerFeralRadiated,entityclasses,Entity,New,Feral Radiated Zombie Farmer,
 zombieStripperFeralRadiated,entityclasses,Entity,New,Feral Radiated Stripper,,,,
 zombieScreamerRadiated,entityclasses,Entity,New,Radiated Screamer,,,,
 zombieScreamerFeralRadiated,entityclasses,Entity,New,Feral Radiated Screamer,,,,
+
+zombieFemaleFatBomber,entityclasses,Entity,New,Bomber Hungry Zombie,,,,
+zombieMoeBomber,entityclasses,Entity,New,Bomber Bloated Walker,,,,
+zombieFatCopBomber,entityclasses,Entity,New,Bomber Policeman,,,,
+zombieFatHawaiianBomber,entityclasses,Entity,New,Bomber Tourist,,,,
+
+antirad,items,Medical,KgNone,Anti-Radiation Pills,,,,
+antiradDesc,items,Medical,KgNone,Anti-Radiation pills cure deadly radiation and provide protection against it. Can be crafted in the chemistry station.,,,,
+radcured,buffs,Buff,KgNone,Radiation Cured,,,
+radcuredDesc,buffs,Buff,KgNone,You are immune to further radiation.,,,,
+radcuredTooltip,buffs,Buff,KgNone,You are immune to further radiation.,,,,
+
+LockpickDesc,items,Item,KgNone,Used for unlocking safes.,,,,
+
+axes,progression,Skill,KgNone,Axes,,,,
+axesDesc,progression,Skill,KgNone,Harvest faster with axes and train to do more damage. Gain skill by using items from this group.,,,,
+theLumberjack,progression,Perk,KgNone,The Lumberjack,,,,
+theLumberjackDesc,progression,Perk,KgNone,"Reduces stamina usage, increases entity damage and increases harvest yields. Fell trees and zombies!",,,,
+marksman,progression,Perk,KgNone,Marksman,,,,
+marksmanDesc,progression,Perk,KgNone,"You've trained on where to land precision arrow and bolt shots for maximum damage.",,,,
+
+stoneAxe,items,Tool,KgNone,Stone Axe,Hache de pierre,Steinaxt,,Hacha de piedra
+stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone and beating zombies. Not the best weapon, but can do damage with the right perks.",,,,
+stoneHammer,items,Tool,KgNone,Stone Hammer,,,,
+stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for repairing & upgrading walls, doors & windows. Not the best weapon.",,,,
+
+crossbowScoped,items,Item Gun,,Crossbow (Scoped),,,,
+crossbowScopedDesc,items,Item Gun,,A crossbow does more damage than a wooden bow. Good for hunting and not making noise. This one has a scope. Hold reload to use alternate ammo.,,,,
+crossbowBolt,items,Item Gun,,Crossbow Bolt,,,,
+crossbowBoltDesc,items,Item Gun,,Ammo for the crossbow. Hold reload to use alternate ammo.,,,,
+
+steelCrossbow,items,Item Gun,,Steel Crossbow,,,,
+steelCrossbowDesc,items,Item Gun,,"This crossbow deals more damage, has further range and improved durability than a normal crossbow.",,,,
+steelCrossbowScoped,items,Item Gun,,Steel Crossbow (Scoped),,,,
+steelCrossbowScopedDesc,items,Item Gun,,"This crossbow deals more damage, has further range and improved durability than a normal crossbow. This one has a scope.",,,,
+steelCrossbowSchematic,items,Book,New,Steel Crossbow Schematic,,,,
+steelCrossbowSchematicDesc,items,Book,New,Notes on how to build a steel crossbow.,,,,
+
+combatAxe,items,Item Tool,,Combat Axe,,,,
+combatAxeDesc,items,Item Tool,,This axe was designed to be used as a weapon more than a tool.,,,,
+titaniumCombatAxe,items,Item Tool,,Titanium Combat Axe,,,,
+titaniumCombatAxeDesc,items,Item Tool,,The ultimate axe for chopping zombies to bits.,,,,
+combatAxeSchematic,items,Book,New,Combat Axe Schematic,,,,
+combatAxeSchematicDesc,items,Book,New,Notes on how to build a combat axe.,,,,
+titaniumCombatAxeSchematic,items,Book,New,Titanium Combat Axe Schematic,,,,
+titaniumCombatAxeSchematicDesc,items,Book,New,Notes on how to build a titanium combat axe.,,,,
+
+runForestrunBook,items,Book,New,Running For Dumbshits,,,,
+runForestrunBookDesc,items,Book,New,Sometimes you just gotta nope outta there.,,,,

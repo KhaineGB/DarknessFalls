@@ -825,7 +825,7 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieArleneRadiated" extends="zombieTemplateMale">
+<entity_class name="zombieArleneRadiated" extends="zombieArlene">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
@@ -986,7 +986,7 @@
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="LootListOnDeath" value="105"/>
+	<property name="LootListOnDeath" value="106"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -1593,7 +1593,7 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieBurntFeral" extends="zombieTemplateMale">
+<entity_class name="zombieBurntFeral" extends="zombieBurnt">
 	<property name="HandItem" value="handZombieBurningFeral"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1539"/>
@@ -2571,6 +2571,223 @@
 	<property name="LootListOnDeath" value="82"/>
 </entity_class> -->
 
+<!-- Base Breaker Zombies -->
+
+<entity_class name="zombieFemaleFatBomber" extends="zombieFemaleFat">
+	<property name="WalkType" value="1"/>
+	<property name="Buffs" value="zombieonfire"/>
+	<property name="HandItem" value="handZombieBomber"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<!-- Special AI For Ranged -->
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<!-- Zombie Go Boom -->
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="50"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<!-- Radiated zombie decap rules -->
+	<property name="HeadDismemberBaseChance" value="-.15"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.38"/>
+	<property name="LowerLegDismemberThreshold" value="0.325"/>
+	<property name="LowerLegDismemberBaseChance" value="-.15"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.325"/>
+	<property name="UpperLegDismemberBaseChance" value="-.15"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.255"/>
+	<property name="LowerArmDismemberBaseChance" value="-.15"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.255"/>
+	<property name="UpperArmDismemberBaseChance" value="-.15"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="KnockdownProneDamageThreshold" value="0.45"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+	<property name="KnockdownKneelStunDuration" value="5,6"/>
+	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+	<property name="LegsExplosionDamageMultiplier" value=".85"/>
+	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+	<property name="HeadExplosionDamageMultiplier" value=".85"/>
+	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	<!-- Run Fat Fuck Run -->
+	<property name="ApproachSpeed" value="1.75"/>
+	<property name="NightApproachSpeed" value="1.75"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieMoeBomber" extends="zombieMoe">
+	<property name="WalkType" value="1"/>
+	<property name="Buffs" value="zombieonfire"/>
+	<property name="HandItem" value="handZombieBomber"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<!-- Special AI For Ranged -->
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<!-- Zombie Go Boom -->
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="50"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<!-- Radiated zombie decap rules -->
+	<property name="HeadDismemberBaseChance" value="-.15"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.38"/>
+	<property name="LowerLegDismemberThreshold" value="0.325"/>
+	<property name="LowerLegDismemberBaseChance" value="-.15"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.325"/>
+	<property name="UpperLegDismemberBaseChance" value="-.15"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.255"/>
+	<property name="LowerArmDismemberBaseChance" value="-.15"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.255"/>
+	<property name="UpperArmDismemberBaseChance" value="-.15"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="KnockdownProneDamageThreshold" value="0.45"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+	<property name="KnockdownKneelStunDuration" value="5,6"/>
+	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+	<property name="LegsExplosionDamageMultiplier" value=".85"/>
+	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+	<property name="HeadExplosionDamageMultiplier" value=".85"/>
+	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	<!-- Run Fat Fuck Run -->
+	<property name="ApproachSpeed" value="1.75"/>
+	<property name="NightApproachSpeed" value="1.75"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieFatCopBomber" extends="zombieFatCop">
+	<property name="WalkType" value="1"/>
+	<property name="Buffs" value="zombieonfire"/>
+	<property name="HandItem" value="handZombieBomber"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<!-- Special AI For Ranged -->
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<!-- Zombie Go Boom -->
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="50"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<!-- Radiated zombie decap rules -->
+	<property name="HeadDismemberBaseChance" value="-.15"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.38"/>
+	<property name="LowerLegDismemberThreshold" value="0.325"/>
+	<property name="LowerLegDismemberBaseChance" value="-.15"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.325"/>
+	<property name="UpperLegDismemberBaseChance" value="-.15"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.255"/>
+	<property name="LowerArmDismemberBaseChance" value="-.15"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.255"/>
+	<property name="UpperArmDismemberBaseChance" value="-.15"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="KnockdownProneDamageThreshold" value="0.45"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+	<property name="KnockdownKneelStunDuration" value="5,6"/>
+	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+	<property name="LegsExplosionDamageMultiplier" value=".85"/>
+	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+	<property name="HeadExplosionDamageMultiplier" value=".85"/>
+	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	<!-- Run Fat Fuck Run -->
+	<property name="ApproachSpeed" value="1.75"/>
+	<property name="NightApproachSpeed" value="1.75"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<entity_class name="zombieFatHawaiianBomber" extends="zombieFatHawaiian">
+	<property name="WalkType" value="1"/>
+	<property name="Buffs" value="zombieonfire"/>
+	<property name="HandItem" value="handZombieBomber"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<!-- Special AI For Ranged -->
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<!-- Zombie Go Boom -->
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="50"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<!-- Radiated zombie decap rules -->
+	<property name="HeadDismemberBaseChance" value="-.15"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.38"/>
+	<property name="LowerLegDismemberThreshold" value="0.325"/>
+	<property name="LowerLegDismemberBaseChance" value="-.15"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.325"/>
+	<property name="UpperLegDismemberBaseChance" value="-.15"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.255"/>
+	<property name="LowerArmDismemberBaseChance" value="-.15"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.255"/>
+	<property name="UpperArmDismemberBaseChance" value="-.15"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="KnockdownProneDamageThreshold" value="0.45"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+	<property name="KnockdownKneelStunDuration" value="5,6"/>
+	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+	<property name="LegsExplosionDamageMultiplier" value=".85"/>
+	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+	<property name="HeadExplosionDamageMultiplier" value=".85"/>
+	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	<!-- Run Fat Fuck Run -->
+	<property name="ApproachSpeed" value="1.75"/>
+	<property name="NightApproachSpeed" value="1.75"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
 
 <!-- TIMID ANIMALS -->
 <entity_class name="animalTemplateTimid">
@@ -4473,13 +4690,48 @@
 	<property name="NoiseAlertThreshold" value="40"/> <!-- for awake zombies -->
 	<property name="SmellAlertThreshold" value="80"/> <!-- for awake zombies -->
 	<property name="WalkType" value="9"/>
-	<property name="ExperienceGain" value="8982"/>
-	<property name="MaxHealth" value="5000"/>
+	<property name="ExperienceGain" value="4582"/>
+	<property name="MaxHealth" value="3000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="HandItem" value="handZombieBehemoth"/>
+	<property name="HeadDismemberBaseChance" value="-.15"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.38"/>
+	<property name="LowerLegDismemberThreshold" value="0.325"/>
+	<property name="LowerLegDismemberBaseChance" value="-.15"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.325"/>
+	<property name="UpperLegDismemberBaseChance" value="-.15"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.255"/>
+	<property name="LowerArmDismemberBaseChance" value="-.15"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.255"/>
+	<property name="UpperArmDismemberBaseChance" value="-.15"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="KnockdownProneDamageThreshold" value="0.45"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+	<property name="KnockdownKneelStunDuration" value="5,6"/>
+	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+	<property name="LegsExplosionDamageMultiplier" value=".85"/>
+	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+	<property name="HeadExplosionDamageMultiplier" value=".85"/>
+	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	<property name="LootListOnDeath" value="105"/>
+</entity_class>
+
+<entity_class name="ZUMABehemothFemaleRadiated" extends="ZUMABehemothFemale" >
+    <property name="Archetype" value="ZombieBehemothFemaleRad"/>
+	<property name="Buffs" value="zombieRadiatedBuff80"/>
+	<property name="MaxHealth" value="5000"/>
+	<property name="ExperienceGain" value="5582"/>
 </entity_class>
 
 <!-- Zombie Traders -->

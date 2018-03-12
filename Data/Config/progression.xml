@@ -844,7 +844,8 @@
 		<!-- Unlocks for Sulfuric Acid, Engine and Battery -->
 		<recipe name="smallEngine" unlock_level="3"/>
 		<recipe name="carBattery" unlock_level="4"/>
-		<recipe name="sulfuricAcid" unlock_level="5"/>
+		<recipe name="sulfuricAcid" unlock_level="4"/>
+		<recipe name="antirad" unlock_level="5"/>
 	</perk>
 
 	<perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
@@ -1099,13 +1100,13 @@
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	<!-- Removed because it was a ^3 effect. Athletics x Forest Run x Weapon Perk = as low as 16.5% stamina use
-	<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" passive_effect="true" group="health">
-		<requirement perk_level="1" required_player_level="1"/>
-		<requirement perk_level="2" required_player_level="10"/>
-		<requirement perk_level="3" required_player_level="20"/>
-		<requirement perk_level="4" required_player_level="40"/>
-		<requirement perk_level="5" required_player_level="60"/>
+
+	<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="0" passive_effect="true" group="health">
+		<requirement perk_level="1" />
+		<requirement perk_level="2" />
+		<requirement perk_level="3" />
+		<requirement perk_level="4" />
+		<requirement perk_level="5" />
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="0.95"/>
@@ -1115,7 +1116,6 @@
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	-->
 
 	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="4" always_fire="true" group="crafting">
 		<requirement perk_level="1" required_player_level="5"/>
@@ -1309,6 +1309,7 @@
 
 	<perk name="Crossbow" icon="archery" description_key="crossbowperkDesc" title_key="crossbowperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 		<recipe name="crossbow" unlock_level="1"/>
+		<recipe name="crossbowScoped" unlock_level="1"/>
 	</perk>
 
 	<perk name="Pistolperk" icon="pistol" description_key="pistolperkDesc" title_key="pistolperk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
@@ -1381,7 +1382,74 @@
 		<recipe name="titaniumArrow" unlock_level="3"/>
 		<recipe name="titaniumCrossbowBolt" unlock_level="3"/>
 	</perk>
+	
+	<!-- Axe Skill And Perk -->
+	
+	<action_skill name="Axes" exp_to_level="500" icon="mining" description_key="axesDesc" title_key="axes" group="tools">
+		<effect name="BlockDamage">
+			<multiply skill_level="1,10" value="1.00,1.32"/>
+			<multiply skill_level="10,20" value="1.32,1.45"/>
+			<multiply skill_level="20,30" value="1.45,1.55"/>
+			<multiply skill_level="30,40" value="1.55,1.63"/>
+			<multiply skill_level="40,50" value="1.63,1.71"/>
+			<multiply skill_level="50,60" value="1.71,1.77"/>
+			<multiply skill_level="60,70" value="1.77,1.84"/>
+			<multiply skill_level="70,80" value="1.84,1.89"/>
+			<multiply skill_level="80,90" value="1.89,1.95"/>
+			<multiply skill_level="90,100" value="1.95,2.00"/>
+		</effect>
+	</action_skill>
 
+	<perk name="The Lumberjack" icon="mining" description_key="theLumberjackDesc" title_key="theLumberjack" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="tools">
+		<requirement perk_level="1" required_skill_name="Axes" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Axes" required_skill_level="10"/>
+		<requirement perk_level="3" required_skill_name="Axes" required_skill_level="20"/>
+		<requirement perk_level="4" required_skill_name="Axes" required_skill_level="40"/>
+		<requirement perk_level="5" required_skill_name="Axes" required_skill_level="80"/>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.05625"/>
+			<multiply skill_level="2" value="1.11250"/>
+			<multiply skill_level="3" value="1.22500"/>
+			<multiply skill_level="4" value="1.33750"/>
+			<multiply skill_level="5" value="1.56250"/>
+		</effect>
+		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="1" value="0.9"/>
+			<multiply perk_level="2" value="0.8"/>
+			<multiply perk_level="3" value="0.7"/>
+			<multiply perk_level="4" value="0.6"/>
+			<multiply perk_level="5" value="0.5"/>
+		</effect>
+		<effect name="HarvestCount">
+			<multiply perk_level="0" value="1"/>
+			<multiply perk_level="1" value="1.00"/>
+			<multiply perk_level="2" value="1.00"/>
+			<multiply perk_level="3" value="1.10"/>
+			<multiply perk_level="4" value="1.25"/>
+			<multiply perk_level="5" value="1.50"/>
+		</effect>
+	</perk>
+	
+	<!-- Additional Bow Perk -->
+	
+	<perk name="Marksman" icon="archery" description_key="marksmanDesc" title_key="marksman" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="weapons">
+		<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Archery" required_skill_level="10"/>
+		<requirement perk_level="3" required_skill_name="Archery" required_skill_level="20"/>
+		<requirement perk_level="4" required_skill_name="Archery" required_skill_level="40"/>
+		<requirement perk_level="5" required_skill_name="Archery" required_skill_level="60"/>
+		<effect name="EntityDamage">
+			<multiply skill_level="0" value="1"/>
+			<multiply skill_level="1" value="1.05625"/>
+			<multiply skill_level="2" value="1.11250"/>
+			<multiply skill_level="3" value="1.22500"/>
+			<multiply skill_level="4" value="1.33750"/>
+			<multiply skill_level="5" value="1.56250"/>
+		</effect>
+	</perk>
+	
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">
 	</perk>

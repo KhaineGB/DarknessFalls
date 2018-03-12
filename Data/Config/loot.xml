@@ -867,6 +867,7 @@
 	<item name="farmingBook" prob="0.7"/>
 	<item name="skillArcheryBook" prob="0.7"/>
 	<item name="skillAthleticsBook" prob="0.7"/>
+	<item name="skillAxeBook" prob="0.7"/>
 	<item name="skillBarterBook" prob="0.7"/>
 	<item name="skillBladesBook" prob="0.7"/>
 	<item name="skillBluntBook" prob="0.7"/>
@@ -908,10 +909,14 @@
 	<item name="AR15Schematic"/>
 	<item name="CAWSShotgunSchematic"/>
 	<item name="WinchesterRifleSchematic"/>
-	<item name="clubTitaniumSpikedSchematic"/>
-	<item name="titaniumHuntingKnifeSchematic"/>
-	<item name="titaniumSledgehammerSchematic"/>
-	<item name="titaniumSpearSchematic"/>
+	<item name="clubTitaniumSpikedSchematic" prob="0.3"/>
+	<item name="titaniumHuntingKnifeSchematic" prob="0.3"/>
+	<item name="titaniumSledgehammerSchematic" prob="0.3"/>
+	<item name="titaniumSpearSchematic" prob="0.3"/>
+	<item name="steelCrossbowSchematic"/>
+	<item name="combatAxeSchematic"/>
+	<item name="titaniumCombatAxeSchematic" prob="0.3"/>
+	<item name="runForestrunBook" prob="0.3"/>
 	<item name="farmingBook2" prob="0.7"/>
 	<item name="farmingBook3" prob="0.7"/>
 	<item name="skillGenericBook" prob="0.7"/>
@@ -1061,6 +1066,7 @@
 	<item name="electricParts" count="1,2" prob="0.05"/>
 	<item name="potassiumNitratePowder" count="2,6" prob="0.15"/>
 	<item name="paint" count="5,20" prob="0.15"/>
+	<item name="Lockpick" prob="0.15"/>
 </lootgroup>
 
 <lootgroup name="rareOres"> <!-- 907 average -->
@@ -1102,6 +1108,7 @@
 	<item group="treasureMaps" count="1" prob="0.092"/>
 	<item name="femur" count="1,2" prob="0.05"/>
 	<item name="scrapPlastics" count="1,2" prob="0.3"/>
+	<item name="Lockpick" prob="0.15"/>
 </lootgroup>
 
 <lootgroup name="rareAutomotive">
@@ -1318,6 +1325,7 @@
 	<item name="antibiotics"/>
 	<item name="bloodDrawKit"/>
 	<item name="firstAidKitSchematic"/>
+	<item name="antirad"/>
 </lootgroup>
 
 <lootgroup name="medicine" count="1">
@@ -1889,7 +1897,7 @@
 </lootcontainer>
 
 <!-- minibike storage -->
-<lootcontainer id="62" count="0" size="5,9" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<lootcontainer id="62" count="0" size="4,8" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 </lootcontainer>
 
 <!-- mountain man loot -->
@@ -2280,6 +2288,7 @@
 	<item group="banditArmor" count="1,2" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>
+	<item name="cncMachine" prob="0.01"/>
 </lootcontainer>
 
 <!-- cntLootCrateLabEquipment Lab equipment and medical items -->
@@ -2482,6 +2491,20 @@
 	<item group="clothes" prob="0.5"/>
 	<item group="warmClothes" prob="0.5"/>
 	<item group="hats" prob="0.5"/>
+</lootcontainer>
+
+<!-- Insecure Storage Crate Loot -->
+
+<lootcontainer id="115" count="1,2" size="5,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="treasureTemplate">
+	<item group="weaponsMilitaryGuns+ammo" prob="0.8"/>
+	<item group="weaponsBasicGuns+ammo"/>
+	<item name="compoundBow" prob="0.3"/>
+	<item group="rareOres" count="2,5"/>
+	<item group="rareBooks" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+	<item group="heavyArmor" count="1,2" prob="0.5"/>
+	<item group="militaryArmor" count="1,2" prob="0.5"/>
+	<item name="cncMachine" prob="0.03"/>
 </lootcontainer>
 
 </lootcontainers>

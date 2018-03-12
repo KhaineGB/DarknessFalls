@@ -1050,8 +1050,9 @@ If you do not declare them, the decorations of the main biome are used.
 	</biome>
 
 
-	<!-- Radiated Main Biome -->
-	<biome name="radiated" biomemapcolor="#FF0000" radiationlevel="10">
+	<!-- Radiated Main Biome
+	<biome name="radiated" biomemapcolor="#FF0000" radiationlevel="10"> -->
+	<!-- <biome name="radiated" biomemapcolor="#FF0000">
 		<weather>
 			<Temperature min="40" max="50" prob="1"/>
 			<Fog min="10" max="40" prob="1"/>
@@ -1061,11 +1062,13 @@ If you do not declare them, the decorations of the main biome are used.
 			<Wind min="20" max="100" prob="0.1"/>
 		</weather>
 		<layers>
+			<layer depth="3" blockname="destroyedStone" />
 			<layer depth="5" blockname="radiated" />
 			<layer depth="*" blockname="radiated" />
 			<layer depth="3" blockname="bedrock" />
 		</layers>
-		<!-- Decorations Main: Radiated -->
+		<spectrum name="wasteland" />  -->
+		<!-- Decorations Main: Radiated
 		<decorations>
 			<decoration type="block" blockname="treeDeadPineLeaf" prob ="0.020" rotatemax="7"/>
 			<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
@@ -1081,10 +1084,69 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.002" rotatemax="3"/>
 			<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".05" />
 		</decorations>
-		<terrain class="Hills" />
-	</biome>
+		<terrain class="wasteland" />
+	</biome>  -->
 
-
+		<biome name="radiated" biomemapcolor="#FF0000">
+			<weather>
+				<Temperature min="40" max="50" prob="1" />
+				<Fog min="10" max="40" prob="1" />
+				<CloudThickness min="100" max="100" prob="1" />
+				<Precipitation min="100" max="100" prob="1" />
+				<Wind min="10" max="20" prob="0.9" />
+				<Wind min="20" max="100" prob="0.1" />
+			</weather>
+			<subbiome prob="0.2">
+				<layers>
+					<layer depth="5" blockname="radiated" />
+					<layer depth="23" blockname="stone" />
+					<layer depth="*" blockname="stone">
+						<resource blockname="silverOre" cluster="1" prob="0.03000" rwgGenerationType="all" />
+						<resource blockname="goldOre" cluster="1" prob="0.01000" rwgGenerationType="all" />
+						<resource blockname="diamondOre" cluster="1" prob="0.00500" rwgGenerationType="all" />
+					</layer>
+					<layer depth="3" blockname="bedrock" />
+				</layers>
+				<decorations>
+					<decoration type="block" blockname="treeDeadPineLeaf" prob ="0.020" rotatemax="7"/>
+					<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
+					<decoration type="block" blockname="cinderBlocks01" prob=".0065" rotatemax="3"/>
+					<decoration type="block" blockname="cinderBlocks02" prob=".0065" rotatemax="3"/>
+					<decoration type="block" blockname="cinderBlocks03" prob=".0065" rotatemax="3"/>
+					<decoration type="block" blockname="treeBurntPine01" prob="0.001" rotatemax="7"/>
+					<decoration type="block" blockname="treeBurntPine02" prob="0.001" rotatemax="7"/>
+					<decoration type="block" blockname="treeBurntPine03" prob="0.001" rotatemax="7"/>
+					<decoration type="block" blockname="treeMountainPineDry" prob="0.001" rotatemax="7"/>
+					<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7"/>
+					<decoration type="block" blockname="treeDeadTree02" prob="0.003" rotatemax="7"/>
+					<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.002" rotatemax="3"/>
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".05" />
+				</decorations>
+			</subbiome>
+			<layers>
+				<layer depth="5" blockname="radiated" />
+				<layer depth="*" blockname="radiated" />
+				<layer depth="3" blockname="bedrock" />
+			</layers>
+			<spectrum name="wasteland" />
+			<decorations>
+				<decoration type="block" blockname="treeDeadPineLeaf" prob ="0.020" rotatemax="7"/>
+				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
+				<decoration type="block" blockname="cinderBlocks01" prob=".0065" rotatemax="3"/>
+				<decoration type="block" blockname="cinderBlocks02" prob=".0065" rotatemax="3"/>
+				<decoration type="block" blockname="cinderBlocks03" prob=".0065" rotatemax="3"/>
+				<decoration type="block" blockname="treeBurntPine01" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="treeBurntPine02" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="treeBurntPine03" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="treeMountainPineDry" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7"/>
+				<decoration type="block" blockname="treeDeadTree02" prob="0.003" rotatemax="7"/>
+				<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.002" rotatemax="3"/>
+				<decoration type="block" blockname="treeBrownGrassDiagonal" prob =".05" />
+			</decorations>
+			<terrain class="Wasteland" />
+		</biome>
+	
 	<!-- Wasteland Main Biome -->
 	<biome name="wasteland" biomemapcolor="#ffa800" >
 		<weather>
@@ -1403,8 +1465,7 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
-
-
+	
 	<!-- City Main Biome Diersville -->
 	<biome name="city" biomemapcolor="#808080" >
 		<weather>
@@ -1706,7 +1767,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="stalactite04" prob="0.02" rotatemax="7"/>
 		</decorations>
 	</biome>
-
 </biomes>
 
 

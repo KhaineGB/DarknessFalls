@@ -340,8 +340,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-2" rate="1"/>
 </buff>
 
-<buff id="burning" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="15" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
-	<modify id="1" stat="health" amount="-10" rate="1"/>
+<buff id="burning" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="10" stack="reset" ffcheck="true" actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0,1,0,1);damage(0,3,0,0)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip" cures="canBoiledWater,bottledWater,goldenRodTea,redTea">
+	<modify id="1" stat="health" amount="-5" rate="1"/>
 </buff>
 
 <buff id="burningMolotov" mutex="cannotBreath,drowning,extinguishFireBuff" debuffif="+water > 1" duration="16" stack="reset" ffcheck="true"
@@ -447,22 +447,22 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 <buff id="sleepingBagTrigger" duration="1" actions="setvar(CTRbedroll, 10)" />
 <buff id="sleepingBagEffect" duration="0" buffif="CTRbedroll greater 0" debuffif="CTRbedroll less 1" actions="increment(CTRbedroll, -3, 2, 0, 0)"
 	icon="ui_game_symbol_map_bed" name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip">
-	<modify id="0" stat="health" amount="1" rate="30" />
-	<modify id="0" stat="stamina" amount="1" rate="3" />
+	<modify id="0" stat="health" amount="1" rate="60" />
+	<modify id="0" stat="stamina" amount="1" rate="20" />
 </buff>
 
 <buff id="sleepingBedTrigger" duration="1" actions="setvar(CTRbed, 10)" />
 <buff id="sleepingBedEffect" duration="0" buffif="CTRbed greater 0" debuffif="CTRbed less 1" actions="increment(CTRbed, -3, 2, 0, 0)"
 	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
-	<modify id="0" stat="health" amount="1" rate="15" />
-	<modify id="0" stat="stamina" amount="1" rate="3" />
+	<modify id="0" stat="health" amount="1" rate="30" />
+	<modify id="0" stat="stamina" amount="1" rate="10" />
 </buff>
 
 <buff id="sleepingBigBedTrigger" duration="1" actions="setvar(CTRbigbed, 10)" />
 <buff id="sleepingBigBedEffect" duration="0" buffif="CTRbigbed greater 0" debuffif="CTRbigbed less 1" actions="increment(CTRbigbed, -3, 2, 0, 0)"
 	name_key="sleepingAwesome" description_key="sleepingAwesomeDesc" tooltip_key="sleepingAwesomeTooltip" icon="ui_game_symbol_map_bed">
-	<modify id="0" stat="health" amount="1" rate="5" />
-	<modify id="0" stat="stamina" amount="1" rate="3" />
+	<modify id="0" stat="health" amount="1" rate="15" />
+	<modify id="0" stat="stamina" amount="1" rate="5" />
 </buff>
 
 <buff id="critGunMP5" duration="1" castsound="Buffs/critical_blunt" >
@@ -471,13 +471,6 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 
 <buff id="critGunAK47" duration="1" castsound="Buffs/critical_blunt" >
 	<modify id="1" stat="health" amount="-150" rate="1"/>
-</buff>
-
-<buff id="radiation" duration="300" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip">
-	<modify id="0" stat="wellness" amount="-1" rate="60" />
-	<modify id="1" stat="health" amount="-1" rate="30"/>
-	<modify id="2" stat="stamina" amount="-10" rate="10"/>
-	<modify id="3" stat="water" amount="-1" rate="30"/>
 </buff>
 
 <buff id="bloodDrawTrigger" duration="1" actions="increment(BDKbloodLoss, 150, 1, 0, 0)" /> <!-- 1 default game hour = 150s -->
@@ -599,5 +592,22 @@ This requires a 50+ food bar:
 	name_key="sugarRush" description_key="sugarRushDesc" tooltip_key="sugarRushTooltip" causes="coffee">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
+
+<!-- Radiation Stuff -->
+
+<buff id="radiation" mutex="radcured" duration="1800" type="sickness" icon="ui_game_symbol_radiation" name_key="radiation" description_key="radiationDesc" tooltip_key="radiationTooltip" cures="radcured">
+	<modify id="0" stat="wellness" amount="-1" rate="60" />
+	<modify id="1" stat="health" amount="-1" rate="30"/>
+	<modify id="2" stat="stamina" amount="-10" rate="30"/>
+	<modify id="3" stat="water" amount="-1" rate="60"/>
+</buff>
+
+<!-- Antiradiation Stuff -->
+
+<buff id="radcured" stack="extend" duration="1800" icon="ui_game_symbol_pills" name_key="radcured" description_key="radcuredDesc" tooltip_key="radcuredTooltip"/>
+
+<!-- Make Zombies Look on Fire Stuff -->
+
+<buff id="zombieonfire" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/>
 
 </buffs>

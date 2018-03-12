@@ -31,6 +31,33 @@
 		<entity name="ZUMAChildFemale" prob="0.3" />
 		<entity name="ZUMAChildFemale2" prob="0.3" />
 		<entity name="ZUMABikerFemale" prob="0.3"/>
+		<entity name="zombieBoeRadiated" prob="0.07"/>
+		<entity name="zombieFootballPlayerRadiated" prob="0.03"/>
+		<entity name="zombieFemaleFatRadiated" prob="0.07"/>
+		<entity name="zombieJoeRadiated" prob="0.07"/>
+		<entity name="zombieMoeRadiated" prob="0.07" />
+		<entity name="zombieArleneRadiated" prob="0.07"/>
+		<entity name="zombieDarleneRadiated" prob="0.07"/>
+		<entity name="zombieMarleneRadiated" prob="0.07"/>
+		<entity name="zombieYoRadiated" prob="0.07"/>
+		<entity name="zombieSteveRadiated" prob="0.07"/>
+		<entity name="zombieBusinessManRadiated" prob="0.07"/>
+		<entity name="zombieSpiderRadiated" prob="0.07"/>
+		<entity name="zombieNurseRadiated" prob="0.07"/>
+		<entity name="zombieFatHawaiianRadiated" prob="0.07"/>
+		<entity name="zombieFatCopRadiated" prob="0.07"/>
+		<entity name="zombieUtilityWorkerRadiated" prob="0.07"/>
+		<entity name="zombieSoldierRadiated" prob="0.07"/>
+		<entity name="zombieSkateboarderRadiated" prob="0.07"/>
+		<entity name="zombieCheerleaderRadiated" prob="0.07"/>
+		<entity name="zombieOldTimerRadiated" prob="0.07"/>
+		<entity name="zombieBikerRadiated" prob="0.07"/>
+		<entity name="zombieFarmerRadiated" prob="0.07"/>
+		<entity name="zombieStripperRadiated" prob="0.07" />
+		<entity name="zombieFemaleFatBomber" prob="0.1"/>
+		<entity name="zombieMoeBomber" prob="0.1"/>
+		<entity name="zombieFatCopBomber" prob="0.03"/>
+		<entity name="zombieFatHawaiianBomber" prob="0.1"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesNight">
@@ -86,12 +113,10 @@
 		<entity name="zombieMarleneFeral" />
 		<entity name="zombieNurseFeral" />
 		<entity name="animalZombieDog" />
-		<entity name="zombieSteveCrawlerFeral" />
 		<entity name="zombieFatCopFeral" />
 		<entity name="zombieBurnt" />
 		<entity name="animalZombieBear" />
 		<entity name="zombieWightFeral" />
-		<entity name="zombieMaleHazmat" prob="0.1" />
 		<entity name="zombieMaleHazmat" prob="0.1" />
 		<entity name="zombieFatHawaiian" />
 	</entitygroup>
@@ -116,7 +141,6 @@
 		<entity name="zombieFatCop" />
 		<entity name="zombieBurnt" />
 		<entity name="zombieWightFeral" />
-		<entity name="zombieMaleHazmat" prob="0.1" />
 		<entity name="zombieMaleHazmat" prob="0.1" />
 		<entity name="zombieFatHawaiian" />
 	</entitygroup>
@@ -178,7 +202,6 @@
 		<entity name="zombieFatCop" prob="0.05"/>
 		<entity name="animalZombieDog" prob="0.05"/>
 		<entity name="animalZombieBear" prob="0.05"/>
-		<entity name="zombieSteveCrawler" prob="0.1"/>
 		<entity name="ZUMAChildMale" prob="0.3" />
 		<entity name="ZUMAChildMale2" prob="0.3" />
 		<entity name="ZUMAChildMale3" prob="0.3" />
@@ -200,6 +223,7 @@
 		<entity name="zombieSpiderRadiated" prob="0.5"/>
 		<entity name="zombieSpiderFeral" prob="0.3"/>
 		<entity name="zombieSpiderFeralRadiated" prob="0.1"/>
+		<entity name="Kayako" prob="0.05"/>
 	</entitygroup>
 
 	<entitygroup name="ZombiesCrawlers">
@@ -225,7 +249,6 @@
 		<entity name="zombieMarleneFeral" />
 		<entity name="zombieYoFeral" />
 		<entity name="zombieSteveFeral" />
-		<entity name="zombieSteveCrawlerFeral" />
 		<entity name="zombieSnowFeral" />
 		<entity name="zombieSpiderFeral" />
 		<entity name="zombieNurseFeral" />
@@ -354,7 +377,7 @@
 
 	<entitygroup name="ZombieDogGroup">
 		<entity name="animalZombieDog" />
-		<entity name="animalZombieDogRad" prob="0.4"/>
+		<entity name="animalZombieDogRad" prob="0.2"/>
 	</entitygroup>
 
 	<entitygroup name="WolfGroup">
@@ -368,7 +391,7 @@
 
 	<entitygroup name="VultureGroup">
 		<entity name="animalZombieVulture" />
-		<entity name="animalZombieRadVulture" prob="0.4"/>
+		<entity name="animalZombieRadVulture" prob="0.2"/>
 	</entitygroup>
 
 	<entitygroup name="ZombieBusinessManGroup">
@@ -418,27 +441,32 @@
 		<entity name="zombieBurntFeral" />
 		<entity name="zombieMaleHazmatFeral" />
 		<entity name="zombieBikerFeral" />		
-		<entity name="zombieBoeFeralRadiated" />
-		<entity name="zombieFootballPlayerFeralRadiated" />
-		<entity name="zombieFemaleFatFeralRadiated" />
-		<entity name="zombieJoeFeralRadiated" />
-		<entity name="zombieMoeFeralRadiated" />
-		<entity name="zombieArleneFeralRadiated" />
-		<entity name="zombieDarleneFeralRadiated" />
-		<entity name="zombieMarleneFeralRadiated" />
-		<entity name="zombieYoFeralRadiated" />
-		<entity name="zombieSteveFeralRadiated" />
-		<entity name="zombieBusinessManFeralRadiated" />
-		<entity name="zombieNurseFeralRadiated" />
-		<entity name="zombieFatHawaiianFeralRadiated" />
-		<entity name="zombieUtilityWorkerFeralRadiated" />
-		<entity name="zombieSoldierFeralRadiated" />
-		<entity name="zombieSkateboarderFeralRadiated" />
-		<entity name="zombieCheerleaderFeralRadiated" />
-		<entity name="zombieOldTimerFeralRadiated" />
-		<entity name="zombieBikerFeralRadiated" />
-		<entity name="zombieFarmerFeralRadiated" />
-		<entity name="zombieStripperFeralRadiated" />
+		<entity name="zombieBoeFeralRadiated" prob="0.05"/>
+		<entity name="zombieFootballPlayerFeralRadiated" prob="0.05"/>
+		<entity name="zombieFemaleFatFeralRadiated" prob="0.05"/>
+		<entity name="zombieJoeFeralRadiated" prob="0.05"/>
+		<entity name="zombieMoeFeralRadiated" prob="0.05"/>
+		<entity name="zombieArleneFeralRadiated" prob="0.05"/>
+		<entity name="zombieDarleneFeralRadiated" prob="0.05"/>
+		<entity name="zombieMarleneFeralRadiated" prob="0.05"/>
+		<entity name="zombieYoFeralRadiated" prob="0.05"/>
+		<entity name="zombieSteveFeralRadiated" prob="0.05"/>
+		<entity name="zombieBusinessManFeralRadiated" prob="0.05"/>
+		<entity name="zombieNurseFeralRadiated" prob="0.05"/>
+		<entity name="zombieFatHawaiianFeralRadiated" prob="0.05"/>
+		<entity name="zombieUtilityWorkerFeralRadiated" prob="0.05"/>
+		<entity name="zombieSoldierFeralRadiated" prob="0.05"/>
+		<entity name="zombieSkateboarderFeralRadiated" prob="0.05"/>
+		<entity name="zombieCheerleaderFeralRadiated" prob="0.05"/>
+		<entity name="zombieOldTimerFeralRadiated" prob="0.05"/>
+		<entity name="zombieBikerFeralRadiated" prob="0.05"/>
+		<entity name="zombieFarmerFeralRadiated" prob="0.05"/>
+		<entity name="zombieStripperFeralRadiated" prob="0.05"/>
+		<entity name="ZUMABehemothFemale" prob="0.002" />
+		<entity name="zombieFemaleFatBomber" prob="0.1"/>
+		<entity name="zombieMoeBomber" prob="0.1"/>
+		<entity name="zombieFatCopBomber" prob="0.05"/>
+		<entity name="zombieFatHawaiianBomber" prob="0.1"/>
 	</entitygroup>
 
 	<entitygroup name="ZombieFeralRadiatedGroup">
@@ -466,6 +494,7 @@
 		<entity name="zombieBikerFeralRadiated" />
 		<entity name="zombieFarmerFeralRadiated" />
 		<entity name="zombieStripperFeralRadiated" />
+		<entity name="ZUMABehemothFemaleRadiated" prob="0.2" />
 	</entitygroup>
 
 	<entitygroup name="ZombieFarmGroup">
@@ -564,10 +593,10 @@
 		<entity name="BanditRanged2" prob="0.04"/>
 		<entity name="BanditRanged3" prob="0.04"/>
 		<entity name="BanditRanged4" prob="0.04"/>
-		<entity name="BanditFemaleRanged" prob="0.004"/>
-		<entity name="BanditFemaleRanged2" prob="0.004"/>
-		<entity name="BanditFemaleRanged3" prob="0.004"/>
-		<entity name="BanditFemaleRanged4" prob="0.004"/>
+		<entity name="BanditFemaleRanged" prob="0.04"/>
+		<entity name="BanditFemaleRanged2" prob="0.04"/>
+		<entity name="BanditFemaleRanged3" prob="0.04"/>
+		<entity name="BanditFemaleRanged4" prob="0.04"/>
 		<entity name="BanditLeader" prob="0.002"/>
 		<entity name="BanditLeader2" prob="0.002"/>
 		<entity name="BanditFemaleLeader" prob="0.002"/>
@@ -647,29 +676,29 @@
 		<entity name="ZUMABadGirlFeral" />
 		<entity name="ZUMADoctorMaleFeral" />
 		<entity name="ZUMADoctorFemaleFeral" />		
-		<entity name="zombieBoeRadiated" />
-		<entity name="zombieFootballPlayerRadiated" />
-		<entity name="zombieFemaleFatRadiated" />
-		<entity name="zombieJoeRadiated" />
-		<entity name="zombieMoeRadiated" />
-		<entity name="zombieArleneRadiated" />
-		<entity name="zombieDarleneRadiated" />
-		<entity name="zombieMarleneRadiated" />
-		<entity name="zombieYoRadiated" />
-		<entity name="zombieSteveRadiated" />
-		<entity name="zombieBusinessManRadiated" />
-		<entity name="zombieSpiderRadiated" />
-		<entity name="zombieNurseRadiated" />
-		<entity name="zombieFatHawaiianRadiated" />
-		<entity name="zombieFatCopRadiated" />
-		<entity name="zombieUtilityWorkerRadiated" />
-		<entity name="zombieSoldierRadiated" />
-		<entity name="zombieSkateboarderRadiated" />
-		<entity name="zombieCheerleaderRadiated" />
-		<entity name="zombieOldTimerRadiated" />
-		<entity name="zombieBikerRadiated" />
-		<entity name="zombieFarmerRadiated" />
-		<entity name="zombieStripperRadiated" />				
+		<entity name="zombieBoeRadiated" prob="0.1"/>
+		<entity name="zombieFootballPlayerRadiated" prob="0.1"/>
+		<entity name="zombieFemaleFatRadiated" prob="0.1"/>
+		<entity name="zombieJoeRadiated" prob="0.1"/>
+		<entity name="zombieMoeRadiated" prob="0.1" />
+		<entity name="zombieArleneRadiated" prob="0.1"/>
+		<entity name="zombieDarleneRadiated" prob="0.1"/>
+		<entity name="zombieMarleneRadiated" prob="0.1"/>
+		<entity name="zombieYoRadiated" prob="0.1"/>
+		<entity name="zombieSteveRadiated" prob="0.1"/>
+		<entity name="zombieBusinessManRadiated" prob="0.1"/>
+		<entity name="zombieSpiderRadiated" prob="0.1"/>
+		<entity name="zombieNurseRadiated" prob="0.1"/>
+		<entity name="zombieFatHawaiianRadiated" prob="0.1"/>
+		<entity name="zombieFatCopRadiated" prob="0.1"/>
+		<entity name="zombieUtilityWorkerRadiated" prob="0.1"/>
+		<entity name="zombieSoldierRadiated" prob="0.1"/>
+		<entity name="zombieSkateboarderRadiated" prob="0.1"/>
+		<entity name="zombieCheerleaderRadiated" prob="0.1"/>
+		<entity name="zombieOldTimerRadiated" prob="0.1"/>
+		<entity name="zombieBikerRadiated" prob="0.1"/>
+		<entity name="zombieFarmerRadiated" prob="0.1"/>
+		<entity name="zombieStripperRadiated" prob="0.1" />				
 	</entitygroup>
 	
 	<entitygroup name="ZombieTraders">
@@ -691,13 +720,158 @@
 	</entitygroup>
 	
 	<entitygroup name="SnowZombiesNight">
-		<entity name="zombieSnowFeralRadiated" prob="1"/>
+		<entity name="zombieSnowFeralRadiated" prob="0.05"/>
 		<entity name="zombieSnowFeral" prob="1"/>
 	</entitygroup>
 	
 	<entitygroup name="ZombiesBurntForestNight">
 		<entity name="zombieBurntFeral"/>
 		<entity name="zombieSteveCrawler" prob="0.05"/>
+	</entitygroup>
+	
+	<!-- Completely Hand Generated Roaming Horde Groups. Please send me some help as I think I've gone insane. -->
+	
+	<entitygroup name="BaseBreakersNoBears">
+		<entity name="zombieFemaleFatBomber" />
+		<entity name="zombieMoeBomber" />
+		<entity name="zombieFatCopBomber" />
+		<entity name="zombieFatHawaiianBomber" />
+		<entity name="animalZombieDogRad" prob="0.1"/>
+	</entitygroup>
+	
+	<entitygroup name="BaseBreakersBears">
+		<entity name="zombieFemaleFatBomber" />
+		<entity name="zombieMoeBomber" />
+		<entity name="zombieFatCopBomber" />
+		<entity name="zombieFatHawaiianBomber" />
+		<entity name="animalZombieDogRad" prob="0.1"/>
+		<entity name="animalZombieRadBear"  prob="0.5"/>
+	</entitygroup>
+	
+	<entitygroup name="BaseBreakersUlt">
+		<entity name="zombieFemaleFatBomber" />
+		<entity name="zombieMoeBomber" />
+		<entity name="zombieFatCopBomber" />
+		<entity name="ZUMABehemothFemale" prob="0.2" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieRadDogGroup">
+		<entity name="animalZombieDogRad" />
+	</entitygroup>
+	
+	<entitygroup name="ZombieRadGroup">
+		<entity name="zombieBoeRadiated"/>
+		<entity name="zombieFootballPlayerRadiated" />
+		<entity name="zombieFemaleFatRadiated" />
+		<entity name="zombieJoeRadiated" />
+		<entity name="zombieMoeRadiated" />
+		<entity name="zombieArleneRadiated" />
+		<entity name="zombieDarleneRadiated" />
+		<entity name="zombieMarleneRadiated" />
+		<entity name="zombieYoRadiated" />
+		<entity name="zombieSteveRadiated" />
+		<entity name="zombieBusinessManRadiated" />
+		<entity name="zombieSpiderRadiated" />
+		<entity name="zombieNurseRadiated" />
+		<entity name="zombieFatHawaiianRadiated" />
+		<entity name="zombieFatCopRadiated" />
+		<entity name="zombieUtilityWorkerRadiated" />
+		<entity name="zombieSoldierRadiated" />
+		<entity name="zombieSkateboarderRadiated" />
+		<entity name="zombieCheerleaderRadiated" />
+		<entity name="zombieOldTimerRadiated" />
+		<entity name="zombieBikerRadiated" />
+		<entity name="zombieFarmerRadiated" />
+		<entity name="zombieStripperRadiated" />		
+	</entitygroup>
+	
+	<entitygroup name="ZombieFeralWandering">
+		<entity name="zombieArleneFeral" />
+		<entity name="zombieBoeFeral" />
+		<entity name="zombieBusinessManFeral" />
+		<entity name="zombieCheerleaderFeral" />
+		<entity name="zombieDarleneFeral" />
+		<entity name="zombieFarmerFeral" />
+		<entity name="zombieFatCopFeral"  prob="0.05"/>
+		<entity name="zombieFatHawaiianFeral" />
+		<entity name="zombieFemaleFatFeral" />
+		<entity name="zombieJoeFeral" />
+		<entity name="zombieMarleneFeral" />
+		<entity name="zombieMoeFeral" />
+		<entity name="zombieNurseFeral" />
+		<entity name="zombieOldTimerFeral" />
+		<entity name="zombieSkateboarderFeral" />
+		<entity name="zombieSnowFeral" />
+		<entity name="zombieSoldierFeral" />
+		<entity name="zombieSpiderFeral" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="zombieSteveCrawlerFeral" />
+		<entity name="zombieSteveFeral" />
+		<entity name="zombieUtilityWorkerFeral" />
+		<entity name="zombieWightFeral" />
+		<entity name="zombieYoFeral" />
+		<entity name="ZUMABuisnesswomanFeral" />
+		<entity name="ZUMABadGirlFeral" />
+		<entity name="ZUMADoctorMaleFeral" />
+		<entity name="ZUMADoctorFemaleFeral" />	
+	</entitygroup>
+	
+	<entitygroup name="ZombieFeralRadWandering">
+		<entity name="zombieSpiderFeralRadiated" />
+		<entity name="zombieWightFeralRadiated" />
+		<entity name="zombieFatCopFeralRadiated" />
+		<entity name="zombieBoeFeralRadiated" />
+		<entity name="zombieFootballPlayerFeralRadiated" />
+		<entity name="zombieFemaleFatFeralRadiated" />
+		<entity name="zombieJoeFeralRadiated" />
+		<entity name="zombieMoeFeralRadiated" />
+		<entity name="zombieArleneFeralRadiated" />
+		<entity name="zombieDarleneFeralRadiated" />
+		<entity name="zombieMarleneFeralRadiated" />
+		<entity name="zombieYoFeralRadiated" />
+		<entity name="zombieSteveFeralRadiated" />
+		<entity name="zombieBusinessManFeralRadiated" />
+		<entity name="zombieNurseFeralRadiated" />
+		<entity name="zombieFatHawaiianFeralRadiated" />
+		<entity name="zombieUtilityWorkerFeralRadiated" />
+		<entity name="zombieSoldierFeralRadiated" />
+		<entity name="zombieSkateboarderFeralRadiated" />
+		<entity name="zombieCheerleaderFeralRadiated" />
+		<entity name="zombieOldTimerFeralRadiated" />
+		<entity name="zombieBikerFeralRadiated" />
+		<entity name="zombieFarmerFeralRadiated" />
+		<entity name="zombieStripperFeralRadiated" />
+		<entity name="ZUMABehemothFemaleRadiated" prob="0.2" />
+	</entitygroup>
+	
+	<entitygroup name="WanderingBandits">
+		<entity name="BanditMelee" prob="1"/>
+		<entity name="BanditMelee2" prob="1"/>
+		<entity name="BanditMelee3" prob="1"/>
+		<entity name="BanditMelee4" prob="1"/>
+		<entity name="BanditFemaleMelee" prob="1"/>
+		<entity name="BanditFemaleMelee2" prob="1"/>
+		<entity name="BanditFemaleMelee3" prob="1"/>
+		<entity name="BanditFemaleMelee4" prob="1"/>
+		<entity name="BanditRanged" prob="0.05"/>
+		<entity name="BanditRanged2" prob="0.05"/>
+		<entity name="BanditRanged3" prob="0.05"/>
+		<entity name="BanditRanged4" prob="0.05"/>
+		<entity name="BanditFemaleRanged" prob="0.05"/>
+		<entity name="BanditFemaleRanged2" prob="0.05"/>
+		<entity name="BanditFemaleRanged3" prob="0.05"/>
+		<entity name="BanditFemaleRanged4" prob="0.05"/>
+	</entitygroup>
+	
+	<entitygroup name="WanderingBanditsNoGuns">
+		<entity name="BanditMelee" />
+		<entity name="BanditMelee2" />
+		<entity name="BanditMelee3" />
+		<entity name="BanditMelee4" />
+		<entity name="BanditFemaleMelee" />
+		<entity name="BanditFemaleMelee2" />
+		<entity name="BanditFemaleMelee3" />
+		<entity name="BanditFemaleMelee4" />
 	</entitygroup>
 
 	<!-- https://7daystodie.com/forums/showthread.php?56533-Gamestage-Blood-Moon-Horde-generator -->

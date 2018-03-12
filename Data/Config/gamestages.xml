@@ -84,11 +84,11 @@ There is a console command: forcegamestage
 <gamestages>
 	<config
 		startingWeight ="1"
-		scavengerGameDifficultyBonus="0"
-		adventurerGameDifficultyBonus="0.1"
-		nomadGameDifficultyBonus="0.2"
-		warriorGameDifficultyBonus="0.6"
-		survivalistGameDifficultyBonus="1.0"
+		scavengerGameDifficultyBonus="0.25"
+		adventurerGameDifficultyBonus="0.5"
+		nomadGameDifficultyBonus="0.75"
+		warriorGameDifficultyBonus="1.0"
+		survivalistGameDifficultyBonus="1.25"
 		insaneGameDifficultyBonus="1.5"
 		daysAliveDifficultyBonus="0.1"
 		daysAliveChangeWhenKilled ="0"
@@ -97,6 +97,59 @@ There is a console command: forcegamestage
 
 	<spawner name="WanderingHorde"> <!-- These will wrap around at 50. -->
 		<!-- Will probably have to undo that later. Rev 19924 /19944 -->
+		
+		<gamestage stage="01"><spawn group="ZombiesAll"					num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="02"><spawn group="ZombiesAll"					num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="03"><spawn group="ZombiesAll"					num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="04"><spawn group="ZombieDogGroup"				num="05" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="05"><spawn group="ZombieDogGroup"				num="05" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="06"><spawn group="ZombiesAll"					num="16" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="07"><spawn group="ZombiesAll"					num="16" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="08"><spawn group="ZombiesAll"					num="16" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="09"><spawn group="ZombieRadDogGroup"			num="03" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="10"><spawn group="ZombieRadDogGroup"			num="03" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="11"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="12"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="13"><spawn group="ZombieRadGroup"				num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="14"><spawn group="BaseBreakersNoBears"		num="04" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="15"><spawn group="BaseBreakersNoBears"		num="04" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="16"><spawn group="ZombieRadGroup"				num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="17"><spawn group="ZombieRadGroup"				num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="18"><spawn group="ZombieRadGroup"				num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="19"><spawn group="ZombieDogGroup"				num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="20"><spawn group="ZombieDogGroup"				num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="21"><spawn group="ZombieRadGroup"				num="14" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="22"><spawn group="ZombieRadGroup"				num="14" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="23"><spawn group="ZombieRadGroup"				num="14" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="24"><spawn group="BaseBreakersBears"			num="05" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="25"><spawn group="BaseBreakersBears"			num="05" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="26"><spawn group="ZombieFeralWandering"		num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="27"><spawn group="ZombieFeralWandering"		num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="28"><spawn group="ZombieFeralWandering"		num="13" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="29"><spawn group="ZombieDogGroup"				num="07" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="30"><spawn group="ZombieDogGroup"				num="07" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="31"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="32"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="33"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="34"><spawn group="ZombieRadDogGroup"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="35"><spawn group="ZombieRadDogGroup"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="36"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="37"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="38"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="39"><spawn group="ZombieDogGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="40"><spawn group="ZombieDogGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="41"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="42"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="43"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="44"><spawn group="ZombieRadDogGroup"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="45"><spawn group="ZombieRadDogGroup"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="46"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="47"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="48"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="49"><spawn group="BaseBreakersBears"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="50"><spawn group="BaseBreakersBears"			num="08" maxAlive="30" duration="09"/></gamestage>
+		
+		<!-- Original Code
 		<gamestage stage="01"><spawn group="scoutHordeStageGS1"	num="15" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="02"><spawn group="scoutHordeStageGS2"	num="15" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="03"><spawn group="scoutHordeStageGS5"	num="16" maxAlive="30" duration="09"/></gamestage>
@@ -146,7 +199,7 @@ There is a console command: forcegamestage
 		<gamestage stage="47"><spawn group="VultureGroup"			num="10" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="48"><spawn group="feralHordeStageGS59"	num="20" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="49"><spawn group="feralHordeStageGS64"	num="16" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="50"><spawn group="ZombieBearsGroup"		num="04" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="50"><spawn group="ZombieBearsGroup"		num="04" maxAlive="30" duration="09"/></gamestage> -->
 	</spawner>
 
 	<!-- <group name="S_Default_XS" emptyChance="0.5" decoyChance="0.2" decoy1hpChance="0.5">

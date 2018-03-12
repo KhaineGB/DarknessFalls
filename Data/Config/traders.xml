@@ -403,10 +403,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="clubTitaniumSpikedSchematic"/>
 			<item name="titaniumHuntingKnifeSchematic"/>
 			<item name="titaniumSledgehammerSchematic"/>
+			<item name="steelCrossbowSchematic"/>
+			<item name="combatAxeSchematic"/>
+			<item name="titaniumCombatAxeSchematic"/>
 			<item name="farmingBook2" prob="0.7"/>
 			<item name="farmingBook3" prob="0.7"/>
 			<item name="skillGenericBook" prob="0.03"/>
-			<!-- <item name="macDyverBook" prob="1.5"/> -->
+			<item name="macDyverBook" prob="0.7"/>
 		</trader_item_group>
 
 		<trader_item_group name="paintMagazines" count="1">
@@ -644,6 +647,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="fertilizer" count="1,3" prob="0.5"/>
 			<item name="paintTool" prob="0.5"/>
 			<item name="wireTool"/>
+			<item name="Lockpick" count="1,10"/>
 		</trader_item_group>
 
 		<trader_item_group name="minibikeParts" count="1">
@@ -770,6 +774,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="stashOnlyItemsLow" count="1">
 			<item name="beerBook" count="1"/>
+			<item name="runForestrunBook" count="1"/>
 			<item name="plantedHop1" count="1,5"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>

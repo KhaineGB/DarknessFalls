@@ -104,9 +104,11 @@
 
 	<!-- Basic Survival 8 - Build a Campfire /> -->
 	<quest id="quest_BasicSurvival8" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival8" subtitle_key="quest_BasicSurvival8_subtitle" description_key="quest_BasicSurvival8_description" icon="ui_game_symbol_campfire" category_key="quest" difficulty="veryeasy">
-		<objective type="FetchKeep" id="rockSmall" value="8" />
-		<objective type="Craft" id="campfire" value="1" />
-		<objective type="BlockPlace" id="campfire" value="1" />
+		<objective type="FetchKeep" id="rockSmall" value="1" />
+		<objective type="FetchKeep" id="yuccaFibers" value="2" />
+		<objective type="FetchKeep" id="wood" value="2" />
+		
+		<objective type="Craft" id="stoneAxe" value="1" />
 
 		<reward type="SkillPoints" value="5" />
 		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
@@ -356,7 +358,7 @@
 		<objective type="FetchKeep" id="wood" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="4" />
 
-		<objective type="Craft" id="stoneAxe" value="1" />
+		<objective type="Craft" id="stoneHammer" value="1" />
 		
 		<reward type="Item" id="suitPantsBlack" value="50" />
 		<reward type="Item" id="suitJacketBlack" value="50" />
@@ -1052,7 +1054,7 @@
 
 		<objective type="ZombieKill" value="5" />
 
-		<reward type="Item" id="casinoCoin" value="300" />
+		<reward type="Item" id="casinoCoin" value="250" />
 		<reward type="Item" id="scrapSkill" value="1" />
     </quest>
 	
@@ -1061,16 +1063,16 @@
 		<objective type="ZombieKill" value="10"  />
 		<requirement type="Holding" id="clubWood" />
 
-		<reward type="Item" id="casinoCoin" value="350" />
+		<reward type="Item" id="casinoCoin" value="400" />
 		<reward type="Item" id="scrapSkill" value="3" />
 	</quest>
 	
 	<quest id="quest_Trader3" name_key="quest_Trader3" subtitle="Defend the Trader (Hard)" subtitle_key="quest_Trader3_subtitle" description_key="quest_Trader3_description" icon="ui_game_symbol_zombie" category_key="quest" offer_key="quest_Trader3_offer" repeatable="true" difficulty="hard">
 
-		<objective type="ZombieKill" value="20"  />
+		<objective type="ZombieKill" value="15"  />
 		<requirement type="Holding" id="" />
 
-		<reward type="Item" id="casinoCoin" value="400" />
+		<reward type="Item" id="casinoCoin" value="800" />
 		<reward type="Item" id="scrapSkill" value="5" />
 	</quest>
 
