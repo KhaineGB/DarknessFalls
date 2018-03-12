@@ -5466,7 +5466,7 @@ marksmanDesc,progression,Perk,KgNone,"You've trained on where to land precision 
 stoneAxe,items,Tool,KgNone,Stone Axe,Hache de pierre,Steinaxt,,Hacha de piedra
 stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone and beating zombies. Not the best weapon, but can do damage with the right perks.",,,,
 stoneHammer,items,Tool,KgNone,Stone Hammer,,,,
-stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for repairing & upgrading walls, doors & windows. Not the best weapon.",,,,
+stoneHammerDesc,items,Tool,KgNone,"A primitive tool useful for repairing & upgrading walls, doors & windows. Not the best weapon.",,,,
 
 crossbowScoped,items,Item Gun,,Crossbow (Scoped),,,,
 crossbowScopedDesc,items,Item Gun,,A crossbow does more damage than a wooden bow. Good for hunting and not making noise. This one has a scope. Hold reload to use alternate ammo.,,,,
