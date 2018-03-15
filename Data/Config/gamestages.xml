@@ -136,8 +136,8 @@ There is a console command: forcegamestage
 		<gamestage stage="36"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="37"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="38"><spawn group="ZombieFeralWandering"		num="15" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="39"><spawn group="ZombieDogGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="40"><spawn group="ZombieDogGroup"				num="10" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="39"><spawn group="BaseBreakersUlt"			num="10" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="40"><spawn group="BaseBreakersUlt"			num="10" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="41"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="42"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="43"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
@@ -146,8 +146,8 @@ There is a console command: forcegamestage
 		<gamestage stage="46"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="47"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
 		<gamestage stage="48"><spawn group="ZombieFeralRadWandering"	num="12" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="49"><spawn group="BaseBreakersBears"			num="08" maxAlive="30" duration="09"/></gamestage>
-		<gamestage stage="50"><spawn group="BaseBreakersBears"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="49"><spawn group="BaseBreakersUlt"			num="08" maxAlive="30" duration="09"/></gamestage>
+		<gamestage stage="50"><spawn group="BaseBreakersUlt"			num="08" maxAlive="30" duration="09"/></gamestage>
 		
 		<!-- Original Code
 		<gamestage stage="01"><spawn group="scoutHordeStageGS1"	num="15" maxAlive="30" duration="09"/></gamestage>

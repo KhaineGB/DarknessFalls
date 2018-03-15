@@ -641,6 +641,7 @@
 		<entity name="SurvivorFemaleRanged3" prob="0.006"/>
 		<entity name="SurvivorFemaleRanged4" prob="0.006"/>
 		<entity name="SurvivorFemaleRanged5" prob="0.006"/>
+		<entity name="Kickz" prob="0.1"/>
 	</entitygroup>
 
 	<entitygroup name="SupplyCrates_General">
@@ -707,6 +708,7 @@
 		<entity name="ZUMAJimmy" prob="0.1"/>
 		<entity name="ZUMAHugh" prob="0.1"/>
 		<entity name="ZUMARekt" prob="0.1"/>
+		<entity name="Crackpot" prob="0.1"/>
 		<entity name="ZUMAGuardMale" />
 		<entity name="ZUMAGuardMale2" />
 		<entity name="ZUMAGuardMale3" />

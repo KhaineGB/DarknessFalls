@@ -610,4 +610,18 @@ This requires a 50+ food bar:
 
 <buff id="zombieonfire" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/>
 
+<!-- Peruvian Marching Powder... goddamnit kickz -->
+
+<buff id="DodgyWhiteStuff" duration="3600" type="staminaup" icon="ui_game_symbol_drunk" name_key="pmarchp" description_key="pmarchpDesc" tooltip_key="pmarchpTooltip">
+	<modify id="0" stat="stamina" amount="5" rate="1"/>
+	<modify id="0" stat="speedmodifier" setValue="1.50"/>
+</buff>
+
+<buff id="SuperCoffeeStaminaBoost" duration="1800" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
+	name_key="supercaffeineBuzz" description_key="supercaffeineBuzzDesc" tooltip_key="supercaffeineBuzzTooltip" causes="superCoffee">
+	<modify id="0" stat="stamina" amount="2" rate="1"/>
+	<modify id="1" stat="coretemp" modifyValue="10"/>
+</buff>
+
+
 </buffs>

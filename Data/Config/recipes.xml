@@ -4542,6 +4542,38 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="5" />
 </recipe>
 
+<!-- New Bars -->
+
+<recipe name="steelBars" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="75"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="steelBarsCentered" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="75"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<!-- Special Content Creator Recipes -->
+
+<recipe name="superCoffee" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="coffeeBeans" count="20"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="superCoffee" count="1" craft_area="oven">
+	<ingredient name="coffeeBeans" count="10"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="flamethrower" count="1" craft_area="assembly">
+	<ingredient name="flashlight02" count="0"/>
+	<ingredient name="partsflame_stock" count="1"/>
+	<ingredient name="partsflame_receiver" count="1"/>
+	<ingredient name="partsflame_barrel" count="1"/>
+	<ingredient name="partsflame_parts" count="1"/>
+</recipe>
+
 </recipes>
 
 <!-- To do (maybe / later)

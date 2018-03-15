@@ -432,6 +432,14 @@
 	</lootqualitytemplate>
 </lootqualitytemplates>
 
+<lootqualitytemplates>
+	<lootqualitytemplate name="NPCLootTemplate">
+		<qualitytemplate level="0,1" default_quality="498,499">
+			<loot quality="580,600" prob="1"/>
+		</qualitytemplate>
+	</lootqualitytemplate>
+</lootqualitytemplates>
+
 
 <lootgroup name="empty"/>
 
@@ -451,7 +459,10 @@
 	<item name="qc_thatlldopig" count="1"/>
 	<item name="qc_stagparty" count="1"/>
 	<item name="qc_dontfeedthebears" count="1"/>
-	<item name="qc_buythefarm" count="1"/>
+	<item name="qc_foreface" count="1" prob="0.1"/>
+	<item name="qc_dirtybum" count="1" prob="0.1"/>
+	<item name="qc_starbucks" count="1" prob="0.1"/>
+	<item name="qc_behemothhunt" count="1"/>
 </lootgroup>
 
 <lootgroup name="treasureMaps" count="1">
@@ -1496,6 +1507,13 @@
 	<item name="sulfuricAcid" prob="0.15"/>
 </lootgroup>
 
+<lootgroup name="weaponsFlamethrower" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
+	<item name="partsflame_stock"/>
+	<item name="partsflame_receiver"/>
+	<item name="partsflame_parts"/>
+	<item name="partsflame_barrel"/>
+</lootgroup>
+
 
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
@@ -2504,6 +2522,40 @@
 	<item group="rareMedicine" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>
+	<item name="cncMachine" prob="0.03"/>
+</lootcontainer>
+
+<!-- Content Creator Corpse Loot -->
+
+<lootcontainer id="116" count="6" size="6,11" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="NPCLootTemplate">
+	<item name="Charlie" count="1,1" prob="1"/>
+	<item name="breadroll" count="1,1" prob="1"/>
+	<item name="marchingPowder" count="1,1" prob="1"/>
+	<item name="bottledWater" count="1,2" prob="0.15"/>
+	<item group="cannedfood" count="1,2" prob="0.5"/>
+	<item group="medicine" count="1,2" prob="0.1"/>
+</lootcontainer>
+
+<lootcontainer id="117" count="6" size="6,11" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="NPCLootTemplate">
+	<item name="gunPistol" count="1,2" prob="0.15"/>
+	<item name="9mmBullet" count="10,20" prob="0.15"/>
+	<item name="casinoCoin" count="50,1000" prob="0.3"/>
+	<item name="oldCash" count="5,100" prob="0.5"/>
+	<item group="tools" prob="0.1"/>
+	<item group="medicine" prob="0.3"/>
+	<item group="clothes" prob="0.5"/>
+	<item group="warmClothes" prob="0.5"/>
+	<item group="hats" prob="0.5"/>
+</lootcontainer>
+
+<!-- Behemoth Loot -->
+
+<lootcontainer id="118" count="2,6" size="6,11" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="treasureTemplate">
+	<item group="weaponsMilitaryGuns+ammo" prob="0.8"/>
+	<item group="rareBooks" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+	<item group="militaryArmor" count="1,2" prob="0.5"/>
+	<item group="weaponsFlamethrower" count="1,2" prob="0.5"/>
 	<item name="cncMachine" prob="0.03"/>
 </lootcontainer>
 

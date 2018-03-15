@@ -443,3 +443,23 @@ quest_Trader3,,Quest Info,KgNone,Trader Defense (Hard),,,,
 quest_Trader3_offer,,Quest Info,KeyCon KgNone,"Not even the trader is safe against zombies and bandits in this new world. Sometimes it's best not to rely on weapons other than your fists.\n\nGet out there and kill some zombies!",,,,
 quest_Trader3_subtitle,,Quest Info,Reordered,Kill Some Zombies Barehanded,,,,.
 quest_Trader3_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies Barehanded.",,,,
+
+challenge_foreface,,Quest Info,KgNone,Right In The Foreface,,,,
+challenge_foreface_offer,,Quest Info,KeyCon KgNone,"There's some crazy bastard running around, beating up my mates, taking their stuff and yelling 'right in the forecace' when he hits them!.\n\nGet out there take his weapon for me!\n\nI'm slicker than cat shit on linoleum... Willie",,,,
+challenge_foreface_subtitle,,Quest Info,Reordered,Beat up Kickz and take Charlie.,,,,
+challenge_foreface_desc,,Quest Info,Reordered,"Go find Kickz wandering the world and take Charlie from him.",,,,
+
+challenge_dirtybum,,Quest Info,KgNone,"Son of a...",,,,
+challenge_dirtybum_offer,,Quest Info,KeyCon KgNone,"One of my trader colleagues said they had a crazy bastard named Crackpot living with them. He wouldn't leave either, and now they've gone dark after mentioning a horde.\n\nGet out there, find out what happened and remove the pest.\n\n- Trader Rekt.",,,,
+challenge_dirtybum_subtitle,,Quest Info,Reordered,Kill Crackpot Texas,,,,
+challenge_dirtybum_desc,,Quest Info,Reordered,"Check the destroyed trader's to find your target. Kill Crackpot Texas.",,,,
+
+challenge_getthecoffee,,Quest Info,KgNone,Hot Coffee,,,,
+challenge_getthecoffee_offer,,Quest Info,KeyCon KgNone,"Hey there!\n\nThe coffee these days is crap. Barely keeps me awake for 5  minutes, let alone all night like I'm used to. Go find me some coffee beans so I can make a proper brew and I'll give you my special recipe.\n\n- TheMightyChops",,,,
+challenge_getthecoffee_subtitle,,Quest Info,Reordered,Find Some Coffee Beans,,,,
+challenge_getthecoffee_desc,,Quest Info,Reordered,"You're going to need a lot of coffee beans for this brew. Find some coffee beans.",,,,
+
+challenge_biggamehunt,,Quest Info,KgNone,Big Game Hunt,,,,
+challenge_biggamehunt_offer,,Quest Info,KeyCon KgNone,"Greetings!\n\nI was exploring hub city and got jumped by a giant lady! Quite a rude bugger, to be honest with you. Unfortunately I dropped my flamethrower in the fight and I don't want the bandits getting hold of it. If you can find the parts for me, I'll show you how to build it!\n\n- Max_Fox",,,,
+challenge_biggamehunt_subtitle,,Quest Info,Reordered,Find Flamethrower Parts,,,,
+challenge_biggamehunt_desc,,Quest Info,Reordered,"Big lady? Sounds like a behemoth. Find Flamethrower Parts.",,,,

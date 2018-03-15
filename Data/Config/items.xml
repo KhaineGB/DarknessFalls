@@ -1080,7 +1080,7 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="-0.2,-0.2"/>
 		<property name="DismembermentBonus" value="0,0"/>
 	</property>
-	<property name="ActionSkillGroup" value="Athletics"/>
+	<property name="ActionSkillGroup" value="Unarmed"/>
 	<!--use_action class="LiftUpTerrain" delay="1" use_time="..." gain_health="-5"gain_stamina="-20" gain_food="0" gain_water="10" gain_sickness="15" condition_raycast_block="77,78,79,80" sound_start="player_drinking" /-->
 </item>
 
@@ -2386,7 +2386,7 @@ Mesh files no longer used:
 </item>
 
 <item id="161" name="gasCan">
-	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="Meshfile" value="ParticleEffects/p_signal_flareprefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="MFuelBarrel"/>
@@ -2396,6 +2396,38 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="100"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources,Chemicals"/>
+	<property class="Action1">
+        <property name="Class" value="Projectile" />
+        <property name="ActionExp" value="1" />
+        <property name="ActionExpBonusMultiplier" value="1" />
+		<property name="Explosion.BlockDamage" value="5"/>
+		<property name="Explosion.EntityDamage" value="2"/>
+		<property name="Explosion.ParticleIndex" value="10"/>
+		<property name="Explosion.RadiusBlocks" value="3"/>
+		<property name="Explosion.RadiusEntities" value="4"/>
+		<property name="Explosion.DamageBonus.stone" value="0.1"/>
+		<property name="Explosion.DamageBonus.metal" value="0"/>
+		<property name="Explosion.DamageBonus.earth" value="0"/>
+		<property name="Explosion.DamageBonus.water" value="0"/>
+		<property name="Explosion.DamageBonus.wood" value="6"/>
+		<property name="Explosion.DamageBonus.cloth" value="6" />
+        <property name="Explosion.DamageBonus.plants" value="6" />
+        <property name="Explosion.DamageBonus.glass" value="6" />
+        <property name="Explosion.DamageBonus.snow" value="6" />
+		<property name="Explosion.BlastPower" value="70"/>
+		<property name="FuseTime" value="20000"/>
+		<property name="Explosion.Buff" value="burningMolotov"/>
+		<property name="Explosion.Buff_chance" value="1"/>
+		<property name="ExplodeOnHit" value="true"/>
+		<property name="Velocity" value="20" />
+        <property name="FlyTime" value="0.50" />
+        <property name="LifeTime" value="4" />
+        <property name="CollisionRadius" value="0.5" />
+    </property>
+   <property class="Attributes">
+        <property name="GetQualityFromWeapon" value="true" />
+        <property name="ApplyBuff" value="1, 1" param1="burningMolotov" />
+    </property>
 </item>
 
 <item id="164" name="arrow">
@@ -6781,7 +6813,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="2"/>
+		<property name="Gain_food" value="0"/>
 		<property name="Buff" value="eatFood_1_Trigger"/>
 		<property name="Gain_water" value="-10"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -13733,6 +13765,249 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1000"/>
 	<property class="Action1">
 		<property name="Skills_to_gain" value="Run Forest Run"/>
+	</property>
+</item>
+
+<!-- Content Creator Unique Items -->
+
+<item id="2112" name="Charlie">
+	<property name="Extends" value="clubTitanium"/>
+	<property name="CustomIcon" value="clubSpiked" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="DescriptionKey" value="CharlieDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="EconomicValue" value="400"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Candrop" value="false" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="3"/>
+		<property name="Buff" value="bleeding,criticalBlunt"/>
+		<property name="Buff_chance" value="0.6,0.5"/>
+		<property name="DamageBonus.head" value="15"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="15,30"/>
+		<property name="BlockDamage" value="15,30"/>
+		<property name="DegradationMax" value="400,1200"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="CritChance" value="0.4"/>
+</item>
+
+<item id="2113" name="marchingPowder">
+	<property name="CustomIcon" value="potassiumNitratePowder" />
+	<property name="DescriptionKey" value="marchingPowderDesc"/>
+	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
+	<property name="Material" value="coal"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="1"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Buff" value="DodgyWhiteStuff"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="2114" name="flamethrower">
+    <property name="CustomIcon" value="gunMP5" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="DescriptionKey" value="flamethrowerDesc"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
+    <property name="Material" value="metal" />
+    <property name="RepairTools" value="repairKit" />
+	<property name="EconomicValue" value="8460"/>
+    <property name="HoldType" value="6" />
+    <property name="Stacknumber" value="1" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="SoundJammed" value="Weapons/weapon_jam" />
+    <property name="Weight" value="33" />
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property class="Parts">
+		<property name="Stock" value="partsflame_stock"/>
+		<property name="Receiver" value="partsflame_receiver"/>
+		<property name="Pump" value="partsflame_parts"/>
+		<property name="Barrel" value="partsflame_barrel"/>
+	</property>
+    <property class="Action0"> <!-- AttackAction -->
+        <property name="Class" value="Launcher" />
+		<property name="SupportHarvesting" value="true" />
+        <property name="Delay" value="0.10" />
+        <property name="Auto_fire" value="true" />
+        <property name="Crosshair_min_distance" value="5" />
+        <property name="Crosshair_max_distance" value="30" />
+        <property name="Magazine_size" value="200" />
+        <property name="Magazine_items" value="gasCan" />
+        <property name="Magazine_item_ray_counts" value="10" />
+        <property name="Magazine_item_ray_spreads" value="1" />
+        <property name="Reload_time" value="4.1" />
+        <property name="Bullet_icon" value="uzi" />
+        <property name="Sound_start" value="torch_swoosh" />
+        <property name="Sound_repeat" value="torch_swoosh" />
+        <property name="Sound_end" value="torch_swoosh" />
+        <property name="Sound_empty" value="chainsaw_empty" />
+        <property name="Sound_reload" value="chainsaw_reload" />
+		<property name="Horde_meter_rate" value=".275" />
+		<property name="Horde_meter_distance" value="20" />
+        <property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+        <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+    </property>
+    <property class="Action1"> <!-- UseAction -->
+        <property name="Class" value="Zoom" />
+        <property name="Zoom_max_out" value="35" />
+        <property name="Zoom_max_in" value="35" />
+    </property>
+    <property name="Group" value="Ammo/Weapons" />
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+
+<item id="2115" name="superCoffee">
+    <property name="CustomIcon" value="coffee" />
+	<property name="DescriptionKey" value="superCoffeeDesc"/>
+	<property name="Meshfile" value="Items/Food/coffeePrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Weight" value="10"/>
+	<property name="Stacknumber" value="15"/> <!-- STK drink -->
+	<property name="EconomicValue" value="34"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="-10"/>
+		<property name="Gain_stamina" value="100"/>
+		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="SuperCoffeeStaminaBoost,extinguishFireBuff"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="2116" name="partsflame_stock">
+    <property name="CustomIcon" value="partsMP5_stock" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsflameGroupDesc"/>
+	<property name="PartType" value="Stock"/>
+	<property name="Weight" value="25"/>
+	<property class="Attributes">
+		<property name="DegradationRate" value="13,18"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="2125"/>
+</item>
+<item id="2117" name="partsflame_receiver">
+    <property name="CustomIcon" value="partsMP5_receiver" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsflameGroupDesc"/>
+	<property name="PartType" value="Receiver"/>
+	<property name="Weight" value="25"/>
+	<property class="Attributes">
+		<property name="FalloffRange" value="40,72"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="2125"/>
+</item>
+<item id="2118" name="partsflame_parts">
+    <property name="CustomIcon" value="partsMP5_parts" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="CustomIcon" value="parts44Magnum_parts"/> <!-- xxx -->
+	<property name="DescriptionKey" value="partsflameGroupDesc"/>
+	<property name="PartType" value="Pump"/>
+	<property name="Weight" value="15"/>
+	<property class="Attributes">
+		<property name="Accuracy" value="5,5"/> <!-- 10 -->
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="2125"/>
+</item>
+<item id="2119" name="partsflame_barrel">
+    <property name="CustomIcon" value="partsMP5_barrel" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="Extends" value="partsMaster"/>
+	<property name="DescriptionKey" value="partsflameGroupDesc"/>
+	<property name="PartType" value="Barrel"/>
+	<property name="Weight" value="25"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="17,29"/>
+		<property name="BlockDamage" value="3,5"/>
+		<property name="DegradationMax" value="5600,14000"/>
+	</property>
+	<property name="EconomicValue" value="2125"/>
+</item>
+
+<item id="2120" name="flamethrowerSchematics">
+	<property name="DescriptionKey" value="flamethrowerSchematicsDesc"/>
+    <property name="CustomIcon" value="smgSchematics" />
+	<property name="CustomIconTint" value="dd0f0f"/>
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="flamethrower"/>
+	</property>
+	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
+</item>
+
+<item id="2121" name="superCoffeeRecipe">
+	<property name="DescriptionKey" value="superCoffeeRecipeDesc"/>
+    <property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="CustomIconTint" value="7e4f05"/>
+	<property name="Extends" value="schematicMaster"/>
+	<property name="EconomicValue" value="2000"/>
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="superCoffee"/>
+	</property>
+</item>
+
+<item id="2122" name="qc_foreface">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="qc_ForefaceDesc"/>
+    <property name="CustomIcon" value="questMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_foreface"/>
+	</property>
+</item>
+
+<item id="2123" name="qc_dirtybum">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="qc_DirtyBumDesc"/>
+    <property name="CustomIcon" value="questMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_dirtybum"/>
+	</property>
+</item>
+
+<item id="2124" name="qc_starbucks">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="qc_starbucksDesc"/>
+    <property name="CustomIcon" value="questMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_getthecoffee"/>
+	</property>
+</item>
+
+<item id="2125" name="qc_behemothhunt">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="qc_behemothhuntDesc"/>
+    <property name="CustomIcon" value="questMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_biggamehunt"/>
 	</property>
 </item>
 

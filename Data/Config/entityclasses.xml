@@ -4685,11 +4685,11 @@
 
 <entity_class name="ZUMABehemothFemale" extends="zombieUMATemplateFemale" >
     <property name="Archetype" value="ZombieBehemothFemale"/>
-	<property name="SightRange" value="60"/> <!-- distance in m -->
+	<property name="SightRange" value="120"/> <!-- distance in m -->
 	<property name="SightScale" value="-4,50"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
 	<property name="NoiseAlertThreshold" value="40"/> <!-- for awake zombies -->
 	<property name="SmellAlertThreshold" value="80"/> <!-- for awake zombies -->
-	<property name="WalkType" value="9"/>
+	<property name="WalkType" value="2"/>
 	<property name="ExperienceGain" value="4582"/>
 	<property name="MaxHealth" value="3000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
@@ -4724,7 +4724,7 @@
 	<property name="HeadExplosionDamageMultiplier" value=".85"/>
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
-	<property name="LootListOnDeath" value="105"/>
+	<property name="LootListOnDeath" value="118"/>
 </entity_class>
 
 <entity_class name="ZUMABehemothFemaleRadiated" extends="ZUMABehemothFemale" >
@@ -4825,7 +4825,139 @@
 	<property name="WalkType" value="7"/>
 </entity_class>
 
-<!-- Zombie Survivors -->
+<!-- Special NPC's -->
+
+<entity_class name="Kickz">
+    <property name="Faction" value="survivor"/>
+    <property name="Mesh" value="Player/Male/player_maleRagdoll"/>
+    <property name="NPCID" value="survivors"/>
+    <!-- ITEMS -->
+    <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="Charlie"/>
+    <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="Charlie"/>
+    <!-- Avatar -->
+    <property name="Archetype" value="Kickz"/>
+    <property name="Class" value="EntitySurvivor"/>
+    <property name="AvatarController" value="AvatarUMAController"/>
+    <property name="PhysicsBody" value="Player"/>
+    <property name="ModelType" value="NpcUMA"/>
+    <property name="EntityType" value="Player"/>
+    <property name="Prefab" value="NPC"/>
+	<property name="Parent" value="Players"/>
+    <!-- <property name="Parent" value="Enemies"/> -->
+    <property name="HasRagdoll" value="true"/>
+    <property name="IsEnemyEntity" value="false"/>
+    <property name="SurfaceCategory" value="organic"/>
+    <property name="ParticleOnDeath" value="blood_death"/>
+    <!-- AI -->
+	<property name="AITask-1" value="Territorial"/>
+    <property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>
+    <property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityBandit"/>
+    <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityZombie"/>
+    <property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityZombieCop"/>
+    <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog"/>
+    <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombieCrawl"/>
+    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
+    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
+    <property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-11" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
+	<property name="AITask-12" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+    <property name="AITask-13" value="BreakDoor" />
+    <property name="AITask-14" value="BreakBlock" />
+    <property name="AITask-15" value="Swim"/>
+    <property name="AITask-16" value="ApproachSpot"/>
+    <property name="AITask-17" value="Wander"/>
+    <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
+    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieCop"/>
+    <property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieDog"/>
+    <property name="AITarget-4" value="SetAsTargetIfHurt" param1="EntityZombie"/>
+    <property name="AITarget-5" value="SetAsTargetIfHurt" param1="EntityZombieCrawl"/>
+    <property name="AITarget-6" value="SetAsTargetIfHurt" param1="EntityHornet"/>
+    <property name="AITarget-7" value="SetAsTargetIfHurt" param1="EntityAnimalBear"/>
+    <property name="AITarget-8" value="SetAsTargetIfHurt" param1="EntityAnimalStag"/>
+    <property name="AITarget-9" value="SetAsTargetIfHurt" param1="EntityAnimalRabbit"/>
+    <property name="AITarget-10" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
+    <!-- <property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityPlayer"/> -->
+    <property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityZombie"/>
+    <property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityZombieCop"/>
+    <property name="AITarget-14" value="SetNearestEntityAsTarget" param1="EntityZombieDog"/>
+    <property name="AITarget-15" value="SetNearestEntityAsTarget" param1="EntityZombieCrawl"/>
+    <property name="AITarget-16" value="SetNearestEntityAsTarget" param1="EntityHornet"/>
+    <property name="AITarget-17" value="SetNearestEntityAsTarget" param1="EntityAnimalBear"/>
+    <property name="AITarget-18" value="SetNearestEntityAsTarget" param1="EntityAnimalStag"/>
+    <property name="AITarget-19" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit"/>
+    <property name="AITarget-20" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
+    <!-- Movement -->
+    <property name="WanderSpeed" value="1"/>
+	<property name="ApproachSpeed" value="1.35"/>
+    <property name="NightWanderSpeed" value="1"/>
+	<property name="NightApproachSpeed" value="1.35"/>
+    <property name="PanicSpeed" value="1.75"/>
+    <property name="CanClimbLadders" value="true"/>
+    <property name="SwimOffset" value="1.0"/>
+    <!-- Sounds -->
+    <property name="SoundRandomTime" value="200.0"/>
+	<property name="SoundRandom" value="Player_Male/player1stamina"/>
+	<property name="SoundHurt" value="Player_Male/player1painlg"/>
+	<property name="SoundHurtSmall" value="Player_Male/player1painsm"/>
+	<property name="SoundDeath" value="Player_Male/player1death"/>
+	<property name="SoundStamina" value="Player_Male/player1stamina"/>
+	<property name="SoundDrownPain" value="Player_Male/player1drownpain"/>
+	<property name="SoundWaterSurface" value="Player_Male/player1drownsurface"/>
+	<property name="SoundDrownDeath" value="Player_Male/player1drowndeath"/>
+	<property name="SoundJump" value="Player_Male/player1Jump"/>
+	<property name="SoundLandSoft" value="Player_Male/player1LandSoft"/>
+	<property name="SoundLandHard" value="Player_Male/player1LandHard"/>
+	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+    <!-- Stats -->
+    <property name="MaxHealth" value="2000"/>
+    <property name="ExperienceGain" value="2039"/>
+    <property name="CorpseBlock" value="GoreBlockKickz"/>
+	<property name="LootListOnDeath" value="15"/>
+    <property name="CorpseBlockChance" value="1"/>
+    <property name="MaxViewAngle" value="270"/>
+    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="DeadBodyHitPoints" value="20"/>
+    <property name="HasDeathAnim" value="true"/>
+    <property name="Weight" value="70"/>
+    <property name="SightRange" value="100"/>
+    <property name="SightScale" value="-2,50"/>
+</entity_class>
+
+<entity_class name="Crackpot" extends="zombieUMATemplateMale" >
+    <property name="Archetype" value="Crackpot"/>
+	<property name="WalkType" value="2"/>
+    <!-- AI -->
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="60"/>
+	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
+	<property name="AITask-6" value="ApproachSpot"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value="RunawayWhenHurt"/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC"/>
+	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
+	<property name="AITarget-3" value="BlockingTargetTask"/>
+	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
+	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
+    <!-- Movement -->
+    <property name="WanderSpeed" value="0.5"/>
+    <property name="ApproachSpeed" value="1"/>
+    <property name="NightWanderSpeed" value="0.5"/>
+    <property name="NightApproachSpeed" value="1"/>
+    <property name="PanicSpeed" value="1.15"/>
+    <property name="CanClimbLadders" value="true"/>
+    <property name="SwimOffset" value="1.0"/>
+    <!-- Stats -->
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="2000"/>
+	<property name="ExperienceGain" value="2039"/>
+	<property name="LootListOnDeath" value="114"/>
+	<property name="CorpseBlock" value="GoreBlockCP"/>
+    <property name="TimeStayAfterDeath" value="1"/>
+    <property name="DeadBodyHitPoints" value="20"/>
+</entity_class> 
 
 </entity_classes>
 

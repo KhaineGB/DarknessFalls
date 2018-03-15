@@ -1075,5 +1075,40 @@
 		<reward type="Item" id="casinoCoin" value="800" />
 		<reward type="Item" id="scrapSkill" value="5" />
 	</quest>
+	
+<!-- Unique Content Creator Quests -->
+
+	<quest id="challenge_foreface" name_key="challenge_foreface" subtitle_key="challenge_foreface_subtitle" description_key="challenge_foreface_desc" icon="ui_game_symbol_knife"
+	repeatable="false" category_key="challenge" offer_key="challenge_foreface_offer" difficulty="hard">
+		<objective type="FetchKeep" id="Charlie" value="1"/>
+		
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	
+	<quest id="challenge_dirtybum" name_key="challenge_dirtybum" subtitle_key="challenge_dirtybum_subtitle" description_key="challenge_dirtybum_desc" icon="ui_game_symbol_zombie"
+	repeatable="false" category_key="challenge" offer_key="challenge_dirtybum_offer" difficulty="hard">
+		<objective type="ZombieKill" id="Crackpot" value="1"  />
+		
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	
+	<quest id="challenge_getthecoffee" name_key="challenge_getthecoffee" subtitle_key="challenge_getthecoffee_subtitle" description_key="challenge_getthecoffee_desc" icon="ui_game_symbol_coffee"
+	repeatable="false" category_key="challenge" offer_key="challenge_getthecoffee_offer" difficulty="medium">
+		<objective type="FetchKeep" id="coffeeBeans" value="40"/>
+		
+		<reward type="SkillPoints" value="3"/>
+		<reward type="Item" id="superCoffee" value="1"/>
+	</quest>
+	
+	<quest id="challenge_biggamehunt" name_key="challenge_biggamehunt" subtitle_key="challenge_biggamehunt_subtitle" description_key="challenge_biggamehunt_desc" icon="ui_game_symbol_zombie"
+	repeatable="false" category_key="challenge" offer_key="challenge_biggamehunt_offer" difficulty="hard">
+		<objective type="FetchKeep" id="partsflame_stock" value="1"/>
+		<objective type="FetchKeep" id="partsflame_receiver" value="1"/>
+		<objective type="FetchKeep" id="partsflame_barrel" value="1"/>
+		<objective type="FetchKeep" id="partsflame_parts" value="1"/>
+		
+		<reward type="SkillPoints" value="3" />
+		<reward type="Item" id="flamethrowerSchematics" value="1" />
+	</quest>
 
 </quests>

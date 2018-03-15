@@ -2943,13 +2943,13 @@
 	
 	<window name="DFalls">
 		<!-- <texture name="DFalls" depth="0" size="100,50" texture="@file:Mods\SDX\Textures\Misc\wwhudlogo.png" material="Materials/Transparent Colored" pos="-500,-6" /> -->
-		<label name="ServerInfo" depth="0" size="100,50" text="V1.5" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
+		<label name="ServerInfo" depth="0" size="100,50" text="V1.5.1" font_size="20" effect="outline" color="[red]" justify="center" pos="-400,-15" overflow="resizeheight" />
 	</window>
 
 	<window name="DFallsingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<!-- <texture name="DFalls" depth="0" size="999,777" texture="@file:Mods\SDX\Textures\Misc\wwmenulogo.png" material="Materials/Transparent Colored" pos="-268,290" /> -->
 		<label name="DFalls" pos="0, -80" depth="0" size="250,33" text="Darkness Falls" font_size="64" effect="outline" color="[red]" justify="center" /> 
-		<label name="DFallsVersion" pos="0, -105" depth="0" size="250,33" text="V1.5" font_size="32" effect="outline" color="[white]" justify="center" />
+		<label name="DFallsVersion" pos="0, -105" depth="0" size="250,33" text="V1.5.1" font_size="32" effect="outline" color="[white]" justify="center" />
 		<!-- <label name="DFallsVersion" pos="450, -450" depth="0" size="250,33" text="V1.4.2" font_size="32" effect="outline" color="[white]" justify="center" /> --> <!-- SIRILLION: Change version here if needed! -->
 		<grid name="buttons" pos="0, -475" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
