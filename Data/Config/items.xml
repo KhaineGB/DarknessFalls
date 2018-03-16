@@ -1396,7 +1396,7 @@ Mesh files no longer used:
 	<property class="Action0">
 		<property name="DamageEntity" value="250"/>
 		<property name="DamageBlock" value="2000"/>
-		<property name="Range" value="4"/>
+		<property name="Range" value="3"/>
 		<property name="Sphere" value="2"/>
 		<property name="Block_range" value="5"/>
 	</property>
