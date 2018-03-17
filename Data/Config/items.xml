@@ -2386,7 +2386,7 @@ Mesh files no longer used:
 </item>
 
 <item id="161" name="gasCan">
-	<property name="Meshfile" value="ParticleEffects/p_signal_flareprefab"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="MFuelBarrel"/>
@@ -2396,38 +2396,6 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="100"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources,Chemicals"/>
-	<property class="Action1">
-        <property name="Class" value="Projectile" />
-        <property name="ActionExp" value="1" />
-        <property name="ActionExpBonusMultiplier" value="1" />
-		<property name="Explosion.BlockDamage" value="5"/>
-		<property name="Explosion.EntityDamage" value="2"/>
-		<property name="Explosion.ParticleIndex" value="10"/>
-		<property name="Explosion.RadiusBlocks" value="3"/>
-		<property name="Explosion.RadiusEntities" value="4"/>
-		<property name="Explosion.DamageBonus.stone" value="0.1"/>
-		<property name="Explosion.DamageBonus.metal" value="0"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="Explosion.DamageBonus.wood" value="6"/>
-		<property name="Explosion.DamageBonus.cloth" value="6" />
-        <property name="Explosion.DamageBonus.plants" value="6" />
-        <property name="Explosion.DamageBonus.glass" value="6" />
-        <property name="Explosion.DamageBonus.snow" value="6" />
-		<property name="Explosion.BlastPower" value="70"/>
-		<property name="FuseTime" value="20000"/>
-		<property name="Explosion.Buff" value="burningMolotov"/>
-		<property name="Explosion.Buff_chance" value="1"/>
-		<property name="ExplodeOnHit" value="true"/>
-		<property name="Velocity" value="20" />
-        <property name="FlyTime" value="0.50" />
-        <property name="LifeTime" value="4" />
-        <property name="CollisionRadius" value="0.5" />
-    </property>
-   <property class="Attributes">
-        <property name="GetQualityFromWeapon" value="true" />
-        <property name="ApplyBuff" value="1, 1" param1="burningMolotov" />
-    </property>
 </item>
 
 <item id="164" name="arrow">
