@@ -1,5 +1,5 @@
 <xui>
-	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.03">
 	
 		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
 			<window name="windowCraftingList"/>
@@ -182,6 +182,7 @@
 
 		<window_group name="trader" controller="XUiC_TraderWindowGroup">
 			<window name="windowTrader"/>
+			<window name="mapTimeHUD"/>
 			<window name="windowNonPagingHeader" />
 			<window name="serviceInfoPanel"/>
 		</window_group>
@@ -269,19 +270,21 @@
 		<!-- Working Oven Mod -->
 		
 		<window_group name="workstation_workingOven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsCNC" />
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowFuel" />
+			<!-- <window name="windowFuel" /> -->
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
 		<window_group name="workstation_workingWallOven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsCNC" />
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowFuel" />
+			<!-- <window name="windowFuel" /> -->
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -318,6 +321,38 @@
 		
 		<window_group name="workstation_cncMachine" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowToolsCNC" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>	
+		
+		<!-- Oil Pump -->
+		
+		<window_group name="workstation_oilPump" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsOilPump" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<!-- Radio Mod -->
+		
+		<window_group name="workstation_radio" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowRadioTime"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<!-- Writing Desk -->
+		
+		<window_group name="workstation_writingDesk" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>

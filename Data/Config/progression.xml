@@ -3,7 +3,7 @@
 <progression>
 <player
 	max_level="200"
-	exp_to_level="10250"
+	exp_to_level="11250"
 	experience_multiplier="1.0149"
 	skill_points_per_level="4"
 	skill_point_multiplier="0"/>
@@ -855,6 +855,7 @@
 		<recipe name="ceilingLight01_player" unlock_level="1"/>
 		<recipe name="porchLight01_player" unlock_level="1"/>
 		<recipe name="wallLight01_player" unlock_level="1"/>
+		<recipe name="JunctionBox" unlock_level="1"/>
 
 		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="ceilingLight02_player" unlock_level="2"/>
@@ -1212,7 +1213,7 @@
 	<!-- Scrap Iron Tool Crafting -->
 	
 	<perk name="Scrap Iron Tools" icon="tool_smithing" description_key="scrapToolsDesc" title_key="scrapTools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
+		<!-- <requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="1"/> -->
 		<recipe name="fireaxeScrap" unlock_level="1"/>
 		<recipe name="pickaxeScrap" unlock_level="1"/>
 		<recipe name="shovelScrap" unlock_level="1"/>
@@ -1228,22 +1229,18 @@
 		<recipe name="fireaxeIron" unlock_level="1"/>
 		<recipe name="pickaxeIron" unlock_level="1"/>
 		<recipe name="shovelIron" unlock_level="1"/>
-		<recipe name="hoeIron" unlock_level="1"/>
 	</perk>
 	
 	<!-- Farming Perk -->
 	
-	<perk name="Farming" icon="resource" description_key="farmingDesc" title_key="farming" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="crafting">
+	<perk name="Farming" icon="resource" description_key="farmingDesc" title_key="farming" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="crafting">
 		<!-- <requirement skill_level="1" required_skill_name="Scrap Iron Tools" required_skill_level="1"/> -->
 		<recipe name="plantedChrysanthemum1" unlock_level="1"/>
 		<recipe name="plantedCorn1" unlock_level="1"/>
 		<recipe name="waterBarrel1" unlock_level="1"/>
 		<recipe name="plantedBlueberry1" unlock_level="2"/>
 		<recipe name="plantedMushroom1" unlock_level="2"/>
-		<recipe name="seedCarrot" unlock_level="2"/>
-		<recipe name="plantedAloe1" unlock_level="3"/>
-		<recipe name="plantedCoffee1" unlock_level="3"/>
-		<recipe name="seedWheat" unlock_level="3"/>
+		<recipe name="plantedAloe1" unlock_level="2"/>
 	</perk>
 	
 	<!-- Mortar and Pestle Perk -->
@@ -1271,12 +1268,10 @@
 	<!-- Medical Perk -->
 	
 	<perk name="Medical" icon="medical" description_key="medicalDesc" title_key="medical" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="crafting">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="firstAidBandage" unlock_level="1"/>
 		<recipe name="aloeCream" unlock_level="1"/>
 		<recipe name="herbalAntibiotics" unlock_level="2"/>
 		<recipe name="plantedAloe1" unlock_level="3"/>
-		<recipe name="antibiotics" unlock_level="3"/>
 	</perk>
 	
 	<!-- Working Sink Perk -->
@@ -1373,9 +1368,6 @@
 		<requirement skill_level="1" required_skill_name="craftSkillWeapons" required_skill_level="4"/>
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="forgedTitanium" unlock_level="1"/>
-		<recipe name="fireaxeTitanium" unlock_level="1"/>
-		<recipe name="pickaxeTitanium" unlock_level="1"/>
-		<recipe name="shovelTitanium" unlock_level="1"/>
 		<recipe name="clubTitanium" unlock_level="2"/>
 		<recipe name="clubTitaniumBarbed" unlock_level="2"/>
 		<recipe name="titaniumArrowHead" unlock_level="3"/>
@@ -1486,7 +1478,163 @@
 			<multiply perk_level="4" value="0.6"/>
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
+		<effect name="DismembermentChance">
+			<add perk_level="0" value="0"/>
+			<add skill_level="1" value="0.04"/>
+			<add skill_level="2" value="0.08"/>
+			<add skill_level="3" value="0.12"/>
+			<add skill_level="4" value="0.16"/>
+			<add skill_level="5" value="0.2"/>
+		</effect>
 	</perk>
+	
+<!-- Class Completion Perks -->
+
+	<perk name="ClassCivilian" icon="ui_game_symbol_players" description_key="ClassCivilianDesc" title_key="ClassCivilian" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="ClassConstruction" icon="ui_game_symbol_hammer" description_key="ClassConstructionDesc" title_key="ClassConstruction" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="ConstructionMastery" icon="ui_game_symbol_hammer" description_key="ConstructionMasteryDesc" title_key="ConstructionMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassConstruction" required_skill_level="1"/>
+		
+		<recipe name="titaniumFrameBlock" unlock_level="1"/>
+		<recipe name="titaniumFrameCNRInside" unlock_level="1"/>
+		<recipe name="titaniumFramePillar100" unlock_level="1"/>
+		<recipe name="titaniumFrameRamp" unlock_level="1"/>
+		<recipe name="titaniumFrameArch" unlock_level="1"/>
+		<recipe name="titaniumFrameCNRFull" unlock_level="1"/>
+		<recipe name="titaniumFrameCTRPlate" unlock_level="1"/>
+		<recipe name="titaniumFrameCTRPole" unlock_level="1"/>
+		<recipe name="titaniumFrameHalf" unlock_level="1"/>
+		<recipe name="titaniumFramePillar50" unlock_level="1"/>
+		<recipe name="titaniumFramePlate" unlock_level="1"/>
+		<recipe name="titaniumFramePole" unlock_level="1"/>
+		<recipe name="titaniumFrameEighth" unlock_level="1"/>
+		<recipe name="titaniumFrameQuarter" unlock_level="1"/>
+		<recipe name="titaniumFrameCTREighth" unlock_level="1"/>
+		<recipe name="titaniumBars" unlock_level="1"/>
+		<recipe name="titaniumBarsCentered" unlock_level="1"/>
+		<recipe name="titaniumclawHammer" unlock_level="1"/>
+		
+	</perk>
+	
+	<perk name="ClassHunter" icon="ui_game_symbol_rifle" description_key="ClassHunterDesc" title_key="ClassHunter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="HunterMastery" icon="ui_game_symbol_rifle" description_key="HunterMasteryDesc" title_key="HunterMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassHunter" required_skill_level="1"/>
+		
+		<recipe name="titaniumHuntingKnife" unlock_level="1"/>
+		<recipe name="titaniumCombatAxe" unlock_level="1"/>
+		<recipe name="ledAviatorGoggles" unlock_level="1"/>
+		<recipe name="ledGoggles" unlock_level="1"/>	
+		<recipe name="nightvisionGoggles" unlock_level="1"/>			
+		<recipe name="repeatingCrossbow" unlock_level="1"/>
+		<recipe name="repeatingCrossbowScoped" unlock_level="1"/>
+		<recipe name="jerky" unlock_level="1"/>
+		
+	</perk>
+	
+	<perk name="ClassFarmer" icon="ui_game_symbol_hunger" description_key="ClassFarmerDesc" title_key="ClassFarmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	
+			<recipe name="hoeIron" unlock_level="1"/>
+	
+	</perk>
+	
+	<perk name="FarmerMastery" icon="ui_game_symbol_hunger" description_key="FarmerMasteryDesc" title_key="FarmerMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassFarmer" required_skill_level="1"/>
+		
+		<recipe name="seedWheat" unlock_level="1"/>
+		<recipe name="seedCarrot" unlock_level="1"/>
+		<recipe name="plantedHop1" unlock_level="1"/>
+		<recipe name="plantedCoffee1" unlock_level="1"/>
+		<recipe name="fertilizer" unlock_level="1"/>		
+		
+	</perk>
+	
+	<perk name="ClassMiner" icon="ui_game_symbol_mining" description_key="ClassMinerDesc" title_key="ClassMiner" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="MinerMastery" icon="ui_game_symbol_mining" description_key="MinerMasteryDesc" title_key="MinerMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassMiner" required_skill_level="1"/>
+		
+		<recipe name="fireaxeTitanium" unlock_level="1"/>
+		<recipe name="pickaxeTitanium" unlock_level="1"/>
+		<recipe name="shovelTitanium" unlock_level="1"/>
+		<recipe name="augerTitanium" unlock_level="1"/>
+		<recipe name="chainsawTitanium" unlock_level="1"/>	
+		<recipe name="partsHandlebarsTitanium" unlock_level="1"/>	
+		<recipe name="partsAugerTitanium_blade" unlock_level="1"/>	
+		<recipe name="partsAugerTitanium_parts" unlock_level="1"/>	
+		<recipe name="partsChainsawTitanium_blade" unlock_level="1"/>	
+		<recipe name="partsChainsawTitanium_parts" unlock_level="1"/>			
+		
+	</perk>
+	
+	<perk name="ClassMechanic" icon="ui_game_symbol_wrench" description_key="ClassMechanicDesc" title_key="ClassMechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="MechanicMastery" icon="ui_game_symbol_wrench" description_key="MechanicMasteryDesc" title_key="MechanicMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassMechanic" required_skill_level="1"/>
+		
+		<recipe name="partsHandlebarsTitanium" unlock_level="1"/>	
+		<recipe name="TitaniumMinibikeChassis" unlock_level="1"/>	
+		<recipe name="TitaniumMinibikeSeat" unlock_level="1"/>	
+		<recipe name="TitaniumMinibikeHandlebars" unlock_level="1"/>
+		<recipe name="largeEngine" unlock_level="1"/>
+		<recipe name="largeBattery" unlock_level="1"/>		
+		<recipe name="oilPump" unlock_level="1"/>		
+		
+	</perk>
+	
+	<perk name="ClassScientist" icon="ui_game_symbol_science" description_key="ClassScientistDesc" title_key="ClassScientist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="ScientistMastery" icon="ui_game_symbol_science" description_key="ScientistMasteryDesc" title_key="ScientistMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassScientist" required_skill_level="1"/>
+		
+		<recipe name="antibiotics" unlock_level="1"/>
+		<recipe name="paramedicKit" unlock_level="1"/>
+		<recipe name="codeinePills" unlock_level="1"/>
+		<recipe name="painkillers" unlock_level="1"/>
+		<recipe name="steelPolish" unlock_level="1"/>
+		<recipe name="sunblocker" unlock_level="1"/>
+		<recipe name="antirad" unlock_level="1"/>
+		
+	</perk>
+	
+	<perk name="ClassSecurity" icon="ui_game_symbol_armor_iron" description_key="ClassSecurityDesc" title_key="ClassSecurity" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="SecurityMastery" icon="ui_game_symbol_armor_iron" description_key="SecurityMasteryDesc" title_key="SecurityMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassSecurity" required_skill_level="1"/>
+		
+		<recipe name="titaniumBoots" unlock_level="1"/>
+		<recipe name="titaniumChestplate" unlock_level="1"/>
+		<recipe name="titaniumGloves" unlock_level="1"/>
+		<recipe name="titaniumHelmet" unlock_level="1"/>
+		<recipe name="titaniumLegs" unlock_level="1"/>
+		<recipe name="clubTitaniumSpiked" unlock_level="1"/>
+		
+	</perk>
+
+	<perk name="ClassSurvivalist" icon="ui_game_symbol_archery" description_key="ClassSurvivalistDesc" title_key="ClassSurvivalist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="crafting">
+	</perk>
+	
+	<perk name="SurvivalistMastery" icon="ui_game_symbol_archery" description_key="SurvivalistMasteryDesc" title_key="SurvivalistMastery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="crafting">
+		<requirement skill_level="1" required_skill_name="ClassSurvivalist" required_skill_level="1"/>
+		
+		<recipe name="titaniumMacheteBlade" unlock_level="1"/>
+		<recipe name="titaniumMachete" unlock_level="1"/>
+		<recipe name="torchSurvival" unlock_level="1"/>
+		<recipe name="radio" unlock_level="1"/>
+		<recipe name="jerky" unlock_level="1"/>
+		
+	</perk>
+	
+<!-- Class Capstone Perks -->
 	
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">

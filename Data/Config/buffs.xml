@@ -131,7 +131,7 @@ built-in buff variables:
 <!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
 <buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)"/>
 
-<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleeding" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit,sterileBandage">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
@@ -268,21 +268,21 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="smelly" duration="30" smell="largeSmell" icon="ui_game_symbol_dysentery" name_key="smelly" description_key="smellyDesc" tooltip_key="smellyTooltip"/>
 
-<buff id="infection" mutex="cured,infection1,infection2,infection3,infection4" duration="9000" onexpired="infection1" type="sickness"
+<buff id="infection" mutex="cured,infection1,infection2,infection3,infection4" duration="1800" onexpired="infection1" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection" description_key="infectionDesc" tooltip_key="infectionTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
 </buff>
 
-<buff id="infection1" duration="9000" actions="debuff(infection)" onexpired="infection2" type="sickness"
-	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics">
+<buff id="infection1" duration="3600" actions="debuff(infection)" onexpired="infection2" type="sickness"
+	icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antibiotics,herbalAntibiotics">
 	<modify id="0" stat="stamina" amount="-0.3" rate="1"/>
 </buff>
 
-<buff id="infection2" duration="9000" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
+<buff id="infection2" duration="7200" actions="damage(25,2100t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1)" onexpired="infection3" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
 
-<buff id="infection3" duration="3000" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1);debuff(infection2)" onexpired="infection4" type="sickness"
+<buff id="infection3" duration="3600" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infection);debuff(infection1);debuff(infection2)" onexpired="infection4" type="sickness"
 	icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antibiotics">
 	<modify id="0" stat="stamina" amount="-2" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="3"/>
@@ -608,7 +608,8 @@ This requires a 50+ food bar:
 
 <!-- Make Zombies Look on Fire Stuff -->
 
-<buff id="zombieonfire" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/>
+<!-- <buff id="zombieonfire" actions="attach(ParticleEffects/p_onFire, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/> -->
+<buff id="zombieonfire" actions="attach(ParticleEffects/p_signal_flareprefab, @impact)" icon="ui_game_symbol_fire" name_key="burning" description_key="burningDesc" tooltip_key="burningTooltip"/>
 
 <!-- Peruvian Marching Powder... goddamnit kickz -->
 
@@ -623,5 +624,11 @@ This requires a 50+ food bar:
 	<modify id="1" stat="coretemp" modifyValue="10"/>
 </buff>
 
+<!-- Special Cooling Buff for Sunblocker -->
+
+<buff id="sunblockCooling" duration="3600" stack="discard" type="staminaup" icon="ui_game_symbol_cold"
+	name_key="sunblockCooling" description_key="sunblockCoolingDesc" tooltip_key="sunblockCoolingTooltip" causes="sunblocker">
+	<modify id="1" stat="coretemp" modifyValue="-10"/>
+</buff>
 
 </buffs>

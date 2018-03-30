@@ -329,8 +329,8 @@ quest_classtraininghunter6_description,,Quest Info,Reordered,"Oh look! You found
 quest_classtrainingminer,,Quest Info,KgNone,Class Training - Miner,,,,
 quest_classtrainingminer_offer,,Quest Info,KeyCon KgNone,"The various automatic and power tools don't work anymore but mining is even more important these days.\n\nGo craft yourself some tools and hunt those resources!",,,,
 quest_classtrainingminer1,,Quest Info,Reordered,Class Quest - Miner 1/6,,,,
-quest_classtrainingminer1_subtitle,,Quest Info,Reordered,Craft A Stone Axe And Shovel,,,,
-quest_classtrainingminer1_description,,Quest Info,Reordered,"Time to start with the basics. A stone axe will let you cut trees and break open rocks. The shovel will be useful for clay so get to it.",,,,
+quest_classtrainingminer1_subtitle,,Quest Info,Reordered,Craft A Shovel,,,,
+quest_classtrainingminer1_description,,Quest Info,Reordered,"Time to start with the basics. You should already have an axe to cut down tree's and break open rocks. The shovel will be useful for clay, so get to it.",,,,
 quest_classtrainingminer2,,Quest Info,Reordered,Class Quest - Miner 2/6,,,,
 quest_classtrainingminer2_subtitle,,Quest Info,Reordered,Gather Resources,,,,.
 quest_classtrainingminer2_description,,Quest Info,Reordered,"Basic tools are a start. They'll let you gather resources faster to make even better tools. Gather Resources.",,,,
@@ -445,7 +445,7 @@ quest_Trader3_subtitle,,Quest Info,Reordered,Kill Some Zombies Barehanded,,,,.
 quest_Trader3_description,,Quest Info,Reordered,"Help keep the trader safe. Kill Some Zombies Barehanded.",,,,
 
 challenge_foreface,,Quest Info,KgNone,Right In The Foreface,,,,
-challenge_foreface_offer,,Quest Info,KeyCon KgNone,"There's some crazy bastard running around, beating up my mates, taking their stuff and yelling 'right in the forecace' when he hits them!.\n\nGet out there take his weapon for me!\n\nI'm slicker than cat shit on linoleum... Willie",,,,
+challenge_foreface_offer,,Quest Info,KeyCon KgNone,"There's some crazy bastard running around, beating up my mates, taking their stuff and yelling 'right in the foreface' when he hits them!.\n\nGet out there take his weapon for me!\n\nI'm slicker than cat shit on linoleum... Willie",,,,
 challenge_foreface_subtitle,,Quest Info,Reordered,Beat up Kickz and take Charlie.,,,,
 challenge_foreface_desc,,Quest Info,Reordered,"Go find Kickz wandering the world and take Charlie from him.",,,,
 
@@ -463,3 +463,7 @@ challenge_biggamehunt,,Quest Info,KgNone,Big Game Hunt,,,,
 challenge_biggamehunt_offer,,Quest Info,KeyCon KgNone,"Greetings!\n\nI was exploring hub city and got jumped by a giant lady! Quite a rude bugger, to be honest with you. Unfortunately I dropped my flamethrower in the fight and I don't want the bandits getting hold of it. If you can find the parts for me, I'll show you how to build it!\n\n- Max_Fox",,,,
 challenge_biggamehunt_subtitle,,Quest Info,Reordered,Find Flamethrower Parts,,,,
 challenge_biggamehunt_desc,,Quest Info,Reordered,"Big lady? Sounds like a behemoth. Find Flamethrower Parts.",,,,
+
+quest_civilianMastery,,Quest Info,KgNone,Civilian Class Mastery Book,,,,
+quest_civilianMastery_offer,,Quest Info,KeyCon KgNone,"This quest is a workaround to grant you +30 generic skill points as a reward for completing the civilian class. It will auto-complete on acceptance.",,,,
+quest_civilianMastery_subtitle,,Quest Info,Reordered,Gain Many Skill Points!,,,,

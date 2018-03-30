@@ -1137,8 +1137,6 @@ arrowDesc,items,Ammo,KgNone,Ammunition for a bow. Hold reload to use alternate a
 blunderbussAmmo,items,Ammo,KgNone,Blunderbuss Ammo,Munition de tromblon,Donnerbüchsenmunition,,Munición de trabuco
 buckshot,items,Ammo,KgNone,Buckshot,Chevrotine,Grober Schrot,,Perdigón
 buckshotDesc,items,Ammo,KgNone,Buckshot used to make shotgun ammo can be crafted at a forge with clay and lead after buying the shotgun shell perk.,La chevrotine utilisée pour créer des munitions de fusil à pompe peut être fabriquée à la forge avec de l'argile et du plomb une fois que vous avez acheté l'avantage de cartouches de fusil à pompe.,"Nach dem Kauf der Eigenschaft „Flintenmunition“ erfährst du, wie grober Schrot, der für die Fertigung von Schrotflintenmunition nötig ist, in der Schmiede mit Lehm und Blei gefertigt wird.",,"Una vez que hayas comprado el beneficio de cartuchos de escopeta, podrás fabricar perdigones como munición para escopetas a partir de arcilla y plomo en la fragua."
-crossbowBolt,items,Ammo,EnChanged,Crossbow Bolt (Ammo),Carreau d'arbalète,Armbrustbolzen (Mun),,Saeta para ballesta
-crossbowBoltDesc,items,Ammo,KgNone,Ammo for the crossbow. Hold reload to use alternate ammo.,Munition pour l'arbalète. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.,"Munition für Armbrüste. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Munición para la ballesta. Mantén presionado recargar para usar munición alternativa.
 explodingCrossbowBolt,items,Ammo,EnChanged,Exploding Crossbow Bolt (Ammo),Carreau d'arbalète explosif,Armbrust-Sprengbolzen (Mun),,Saeta explosiva para ballesta
 explodingCrossbowBoltDesc,items,Ammo,KgNone,Rifle grenades gone medieval. Ages 6 and up.,Des grenades à fusil au style moyenâgeux. À partir de 6 ans.,Gewehrgranaten aus dem Mittelalter. Für 6-Jährige und älter.,,Lanzagranadas a la antigua. Para mayores de 6.
 flamingArrow,items,Ammo,EnChanged,Flaming Arrow (Ammo),Flèche enflammée,Feuerpfeil (Mun),,Flecha incendiaria
@@ -1241,8 +1239,6 @@ theEnforcerMagazine,items,Book,KgNone,Enforcer Magazine,Magazine Enforcer,Vollst
 theEnforcerMagazineDesc,items,Book,KgNone,Do you feel lucky? You should. Now you can repair and assemble .44 Magnums which will blow a man's head off.,Vous vous sentez en veine ? Eh bien vous devriez. Vous pouvez maintenant réparer et assembler des .44 magnums capables d'exploser la cervelle d'un homme.,"Na, bist du ein Glückskind? Jetzt auf jeden Fall schon. Hiermit kannst du den .44-Magnum-Revolver, mit dem du den Kopf eines Mannes sprengen kannst, reparieren und zusammensetzen.",,"¿Te sientes con suerte hoy? Deberías. Ahora puedes reparar y armar una Magnum 44, capaz de volarle los sesos a cualquiera de un tiro."
 theRiddleOfSteel,items,Book,KgNone,The Riddle of Steel,L'énigme d'acier,Rätsel des Stahls,,El acertijo del acero
 theRiddleOfSteelDesc,items,Book,KgNone,Learn to craft steel if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer de l'acier si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeitsstufe besitzt, kannst du lernen, Stahl zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear este tipo de acero si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
-wrenchSchematic,items,Book,KgNone,Wrench Schematic,Schéma de clé à molette,Bauplan – Schraubenschlüssel,,Esquema de llave inglesa
-wrenchSchematicDesc,items,Book,KgNone,Learn how to craft a wrench which is great for disassembling mechanical devices by reading this schematic.,"Lisez ce schéma pour apprendre à fabriquer une clé à molette, idéale pour désassembler des appareils mécaniques.","In diesem Bauplan erfährst du, wie Schraubenschlüssel gefertigt werden. Schraubenschlüssel eignen sich gut dazu, mechanische Geräte auseinanderzunehmen.",,"Lee este esquema para aprender a fabricar una llave inglesa, ideal para desarmar dispositivos mecánicos."
 animalHideBoots,items,Clothes,KgNone,Animal Hide Boots,Bottes en peau de bête,Tierhautstiefel,,Botas de piel de animal
 animalHideChestArmor,items,Clothes,KgNone,Animal Hide Chest Armor,Plastron en peau de bête,Brustpanzer aus Tierhaut,,Coraza de piel de animal
 animalHideClothesGroupDesc,items,Clothes,KgNone,Animal hide clothing provides sound protection against cold weather and does a fair job against other damage types.,Les vêtements en peau de bête offrent une bonne protection contre le froid et d'autres sortes de dégâts.,Kleidung aus Tierhaut bietet guten Schutz gegen Kälte und schlägt sich gegen andere Schadensarten nicht schlecht.,,La ropa de piel de animal proporciona gran protección frente al frío y hace un buen trabajo frente a otros tipos de daños.
@@ -1544,8 +1540,6 @@ bulletCasing,items,Item,KgNone,Bullet Casing,Douille de balle,Patronenhülse,,Ca
 bulletCasingDesc,items,Item,KgNone,Bullet casings can be crafted at the forge after buying an ammo perk and are used to craft firearm ammunition.,Les douilles de balle peuvent être fabriquées à la forge après avoir acheté un avantage de munitions et servent à fabriquer des munitions pour arme à feu.,"Nachdem eine Munitions-Fertigkeit erworben wurde, können Patronenhülsen in der Schmiede gefertigt werden. Mit ihnen kann dann Munition für Schusswaffen gefertigt werden.",,Se pueden fabricar cartuchos de balas en la fragua tras comprar un beneficio de munición
 bulletTip,items,Item,KgNone,Bullet Tip,Pointe de balle,Geschossspitze,,Punta de bala
 bulletTipDesc,items,Item,KgNone,Bullet tips can be crafted at the forge after buying an ammo perk and are used to craft firearm ammunition.,Les pointes de balle peuvent être fabriquées à la forge après avoir acheté un avantage de munitions et servent à fabriquer des munitions pour arme à feu.,"Nachdem eine Munitions-Fertigkeit erworben wurde, können Geschossspitzen in der Schmiede gefertigt werden. Mit ihnen kann dann Munition für Schusswaffen gefertigt werden.",,Se pueden fabricar puntas de balas en la fragua tras comprar un beneficio de munición
-calipers,items,Item,KgNone,Calipers,Pied à coulisse,Messschieber,,Calibrador
-calipersDesc,items,Item,KgNone,A tool used in the forge to unlock recipes.,Un outil permettant de déverrouiller des compositions dans la forge.,"Ein Werkzeug, mit dem in der Schmiede Rezepte freigeschaltet werden.",,Una herramienta de la fragua para desbloquear recetas.
 candle,items,Item,KgNone,Candle,Bougie,Kerze,,Vela
 candleDesc,items,Item,New,A tallow candle can be carried as a light source or placed on walls. This might attract zombies.,Une bougie faite de suif et de fibres végétales peut être transportée ou placée comme source de lumière.,Eine Talg-Kerze kann als Lichtquelle getragen oder an Wänden plaziert werden. Dies kann Zombies anziehen.,,Se puede llevar o colocar una vela hecha de sebo y fibra vegetal para usarla como fuente de luz.
 candleStick,items,Item,KgNone,Brass Candlestick,Bougeoir en laiton,Kerzenhalter aus Messing,,Candelabro de latón
@@ -4505,7 +4499,6 @@ woodPillar50,blocks,Block,New,Wood Pillar 50,,,,
 concreteTerrain,blocks,Terrain,New,Concrete Terrain (POI),,,,
 terrainFiller,blocks,Terrain,New,Terrain Filler (POI),,,,
 dressShoesBlack,items,Clothes,New,Black Dress Shoes,,,,
-gunPistolSilenced,items,Gun,New,Silenced Pistol,,,,
 gunJustDie,items,Tool,New,Admin: Just Die,,,,
 gunSuperDigger,items,Tool,New,Admin: Super Digger,,,,
 superWrench,items,Tool,New,Admin: Super Wrench,,,,
@@ -5172,7 +5165,7 @@ steelLegs,items,Item Clothes,,Steel Legs,,
 steelChestplate,items,Item Clothes,,Steel Chestplate,,
 steelHelmet,items,Item Clothes,,Steel Helmet,,
 steelGloves,items,Item Clothes,,Steel Gloves,,
-steelClothesGroupDesc,items,Clothes,KgNone,Steel armor is the best you can possibly craft. It grants amazing protection against concussive and puncture damage.,,,,
+steelClothesGroupDesc,items,Clothes,KgNone,Steel armor is the best you can possibly craft without a specific class. It grants amazing protection against concussive and puncture damage.,,,,
 
 HelmetLightDesc,items,Item Clothes,,This head gear has a flashlight taped to its side to double as a headlamp.,,
 ironHelmetLight,items,Item Clothes,,Iron Helmet (Light),,
@@ -5348,9 +5341,9 @@ gun44MagnumSilencedDesc,items,Gun,KgNone,The .44 Magnum is the king of handguns.
 gunScope,items,Item,KgNone,Scope,,,,
 gunScopeDesc,items,Item,KgNone,Scopes can be added to any rifle-style weapon. Handy for making your own sniper rifle.,,,,
 gunAK47Scope,items,Gun,KgNone,AK-47 Assault Rifle (Scoped),,,,
-gunAK47Desc,items,Gun,KgNone,This badass AK-47 Assault Rifle uses 7.62mm ammo. Can be re-assembled and repaired if you read the schematic. This one is scoped.,,,,
+gunAK47ScopeDesc,items,Gun,KgNone,This badass AK-47 Assault Rifle uses 7.62mm ammo. Can be re-assembled and repaired if you read the schematic. This one is scoped.,,,,
 gunAR15Scope,items,Item Gun,KgNone,AR15 Semi-Auto Rifle (Scoped),,,,
-gunAR15Desc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. This one is scoped.,,,,
+gunAR15ScopeDesc,items,Item Gun,KgNone,For when something absolutely has to die in a hail of bullets. This one is scoped.,,,,
 
 gunChokeShort,items,Item,KgNone,Choke (Sawed-Off Shotgun),,,,
 gunChokeLong,items,Item,KgNone,Choke (Shotgun),,,,
@@ -5472,8 +5465,8 @@ stoneHammerDesc,items,Tool,KgNone,"A primitive tool useful for repairing & upgra
 
 crossbowScoped,items,Item Gun,,Crossbow (Scoped),,,,
 crossbowScopedDesc,items,Item Gun,,A crossbow does more damage than a wooden bow. Good for hunting and not making noise. This one has a scope. Hold reload to use alternate ammo.,,,,
-crossbowBolt,items,Item Gun,,Crossbow Bolt,,,,
-crossbowBoltDesc,items,Item Gun,,Ammo for the crossbow. Hold reload to use alternate ammo.,,,,
+crossbowBolt,items,Ammo,EnChanged,Crossbow Bolt,Carreau d'arbalète,Armbrustbolzen,,Saeta para ballesta
+crossbowBoltDesc,items,Ammo,KgNone,Ammo for the crossbow. Hold reload to use alternate ammo.,Munition pour l'arbalète. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.,"Munition für Armbrüste. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Munición para la ballesta. Mantén presionado recargar para usar munición alternativa.
 
 steelCrossbow,items,Item Gun,,Steel Crossbow,,,,
 steelCrossbowDesc,items,Item Gun,,"This crossbow deals more damage, has further range and improved durability than a normal crossbow.",,,,
@@ -5508,7 +5501,7 @@ CharlieDesc,items,Melee,KgNone,"Kickz never goes anywhere without Charlie... so 
 GoreBlockCP,blocks,Block,New,Crackpot Texas,,,,
 
 flamethrower,items,Item,KgNone,"Max's Flamethrower",,,,
-flamethrowerDesc,items,Item,KgNone,"A very rare flamethrower, found on the more difficult zombies. Uses gas cans as ammo.",,,,
+flamethrowerDesc,items,Item,KgNone,"A very rare flamethrower, found on the more difficult zombies.",,,,
 flamethrowerSchematics,items,Book,New,"Max's Flamethrower Schematic",,,,
 flamethrowerSchematicsDesc,items,Book,New,"Read this schematic to learn how to assemble Max's Flamethrower".,,,,
 partsflame_barrel,items,Part,KgNone,"Max's Flamethrower Barrel",,,,
@@ -5545,3 +5538,181 @@ steelBarsDesc,blocks,Block,GrChanged,You can see and shoot through steel bars an
 stainlessSteelBars,blocks,Block,KgNone,Stainless Steel Bars,,,,
 stainlessSteelBarsCentered,blocks,Block,KgNone,Stainless Steel Bars Centered,,,,
 stainlesssteelBarsDesc,blocks,Block,GrChanged,You can see and shoot through stainless steel bars and they offer excellent protection.,,,,
+titaniumBars,blocks,Block,KgNone,Titanium Bars,,,,
+titaniumBarsCentered,blocks,Block,KgNone,Titanium Bars Centered,,,,
+titaniumBarsDesc,blocks,Block,GrChanged,You can see and shoot through titanium bars and they offer the best protection.,,,,
+
+rebarFrameArch,blocks,Block,KgNone,Rebar Arch Frame,,,,
+rebarFrameCNRFull,blocks,Block,KgNone,Rebar Outside Corner Frame,,,,
+rebarFrameCTRPlate,blocks,Block,KgNone,Rebar Plate (Center) Frame,,,,
+rebarFrameCTRPole,blocks,Block,KgNone,Rebar Pole (Center) Frame,,,,
+rebarFrameHalf,blocks,Block,KgNone,Rebar Half Frame,,,,
+rebarFramePillar50,blocks,Block,KgNone,Rebar Pillar 50 Frame,,,,
+rebarFramePlate,blocks,Block,KgNone,Rebar Plate Frame,,,,
+rebarFramePole,blocks,Block,KgNone,Rebar Pole Frame,,,,
+rebarFrameEighth,blocks,Block,KgNone,Rebar Eighth Frame,,,,
+rebarFrameQuarter,blocks,Block,KgNone,Rebar Quarter Frame,,,,
+rebarFrameCTREighth,blocks,Block,KgNone,Rebar Eighth (Center) Frame,,,,
+
+titaniumclawHammer,items,Tool,KgNone,Titanium Claw Hammer,,,,
+titaniumclawHammerDesc,items,Tool,KgNone,The Titanium claw hammer is great for repairing and upgrading base walls and not bad as a weapon. It is the only item that can upgrade from stainless steel to titanium. Unique to the construction class.,,,,
+titaniumBlocksGroupDesc,blocks,Block,KgNone,"Titanium Blocks are the toughest blocks available. Unique to the construction class.",,,,
+titaniumFramesGroupDesc,blocks,Block,KgNone,"Frames built in the advanced forge, then upgraded with forged titanium. Make sure you have your placement right before you upgrade, as the finished blocks are tough. Unique to the construction class.",,,,
+titaniumFrameBlock,blocks,Block,KgNone,Titanium Block Frame,,,,
+titaniumBlock,blocks,Block,KgNone,Titanium Block,,,,
+titaniumFrameRamp,blocks,Block,KgNone,Titanium Ramp Frame,,,,
+titaniumRamp,blocks,Block,KgNone,Titanium Ramp,,,,
+titaniumFrameCNRInside,blocks,Block,KgNone,Titanium Inside Corner Frame,,,,
+titaniumCNRInside,blocks,Block,KgNone,Titanium Inside Corner,,,,
+titaniumFrameArch,blocks,Block,KgNone,Titanium Arch Frame,,,,
+titaniumArch,blocks,Block,KgNone,Titanium Arch,,,,
+titaniumFrameCNRFull,blocks,Block,KgNone,Titanium Outside Corner Frame,,,,
+titaniumCNRFull,blocks,Block,KgNone,Titanium Outside Corner,,,,
+titaniumFrameCTRPlate,blocks,Block,KgNone,Titanium Plate (Center) Frame,,,,
+titaniumCTRPlate,blocks,Block,KgNone,Titanium Plate (Center),,,,
+titaniumFrameCTRPole,blocks,Block,KgNone,Titanium Pole (Center) Frame,,,,
+titaniumCTRPole,blocks,Block,KgNone,Titanium Pole (Center),,,,
+titaniumFrameHalf,blocks,Block,KgNone,Titanium Half Frame,,,,
+titaniumHalf,blocks,Block,KgNone,Titanium Half,,,,
+titaniumFramePillar50,blocks,Block,KgNone,Titanium Pillar 50 Frame,,,,
+titaniumPillar50,blocks,Block,KgNone,Titanium Pillar 50,,,,
+titaniumFramePillar100,blocks,Block,KgNone,Titanium Pillar 100 Frame,,,,
+titaniumPillar100,blocks,Block,KgNone,Titanium Pillar 100,,,,
+titaniumFramePlate,blocks,Block,KgNone,Titanium Plate Frame,,,,
+titaniumPlate,blocks,Block,KgNone,Titanium Plate,,,,
+titaniumFramePole,blocks,Block,KgNone,Titanium Pole Frame,,,,
+titaniumPole,blocks,Block,KgNone,Titanium Pole,,,,
+titaniumFrameEighth,blocks,Block,KgNone,Titanium Eighth Frame,,,,
+titaniumEighth,blocks,Block,KgNone,Titanium Eighth,,,,
+titaniumFrameQuarter,blocks,Block,KgNone,Titanium Quarter Frame,,,,
+titaniumQuarter,blocks,Block,KgNone,Titanium Quarter,,,,
+titaniumFrameCTREighth,blocks,Block,KgNone,Titanium Eighth (Center) Frame,,,,
+titaniumCTREighth,blocks,Block,KgNone,Titanium Eighth (Center),,,,
+
+JunctionBox,blocks,Block,KgNone,Junction Box,,,,
+JunctionBoxDesc,blocks,Block,GrChanged,"The Junction Box is used to route wires invisibly. Attach your power source to the box, then the box to whatever you want to power.",,,,
+
+ClassCivilian,progression,Perk,KgNone,Class - Civilian,,,,
+ClassCivilianDesc,progression,Perk,KgNone,"You have completed the Civilian class chain. Well done!",,,,
+ClassConstruction,progression,Perk,KgNone,Class - Construction,,,,
+ClassConstructionDesc,progression,Perk,KgNone,"You have completed the Construction class chain. Well done!",,,,
+ClassHunter,progression,Perk,KgNone,Class - Hunter,,,,
+ClassHunterDesc,progression,Perk,KgNone,"You have completed the Hunter class chain. Well done!",,,,
+ClassFarmer,progression,Perk,KgNone,Class - Farmer,,,,
+ClassFarmerDesc,progression,Perk,KgNone,"You have completed the Farmer class chain. Well done!",,,,
+ClassMiner,progression,Perk,KgNone,Class - Miner,,,,
+ClassMinerDesc,progression,Perk,KgNone,"You have completed the Miner class chain. Well done!",,,,
+ClassMechanic,progression,Perk,KgNone,Class - Mechanic,,,,
+ClassMechanicDesc,progression,Perk,KgNone,"You have completed the Mechanic class chain. Well done!",,,,
+ClassScientist,progression,Perk,KgNone,Class - Scientist,,,,
+ClassScientistDesc,progression,Perk,KgNone,"You have completed the Scientist class chain. Well done!",,,,
+ClassSecurity,progression,Perk,KgNone,Class - Security,,,,
+ClassSecurityDesc,progression,Perk,KgNone,"You have completed the Security class chain. Well done!",,,,
+ClassSurvivalist,progression,Perk,KgNone,Class - Survivalist,,,,
+ClassSurvivalistDesc,progression,Perk,KgNone,"You have completed the Survivalist class chain. Well done!",,,,
+
+oilPump,blocks,Block,KgNone,Oil Pump,,,,
+oilPumpDesc,blocks,Block,GrChanged,"Being able to extract your own crude oil is pretty useful in the apocalypze. The Oil Pump will do just that.",,,,
+
+playerCabinetSecure,blocks,Block,KgNone,Lockable Storage Cabinet,,,,
+playerCabinetTopSecure,blocks,Block,KgNone,Lockable Storage Cabinet,,,,
+playerCabinetOldBottomSecure,blocks,Block,KgNone,Lockable Storage Cabinet,,,,
+playerCabinetOldTopSecure,blocks,Block,KgNone,Lockable Storage Cabinet,,,,
+playerCabinetInsecure,blocks,Block,KgNone,Insecure Storage Cabinet,,,,
+playerCabinetTopInsecure,blocks,Block,KgNone,Insecure Storage Cabinet,,,,
+playerCabinetOldBottomInsecure,blocks,Block,KgNone,Insecure Storage Cabinet,,,,
+playerCabinetOldTopInsecure,blocks,Block,KgNone,Insecure Storage Cabinet,,,,
+playerCabinetDesc,blocks,Block,GrChanged,"Complete your kitchen with these stylish, lockable cabinets!",,,,
+
+radio,blocks,Block,KgNone,Radio,,,,
+radioDesc,blocks,Block,GrChanged,"This radio will tell you the up to date day and time. It can also be used for crafting quests.",,,,
+
+writingDesk,blocks,Block,KgNone,Writing Desk,,,,
+writingDeskDesc,blocks,Block,GrChanged,"Who doesn't love a stylish desk in the home? Can be used to create skill and class books for less resources.",,,,
+
+largeEngine,items,Item,KgNone,"Large Engine",,,,
+largeEngineDesc,items,Item,KgNone,"Faster version of the standard engine, holds more gasoline but also uses more. Unique to the mechanic class.",,,,
+largeBattery,items,Item,KgNone,"Large Battery",,,,
+largeBatteryDesc,items,Item,KgNone,"Larger version of the standard battery. Holds more charge so you're less likely to wake up with a flat battery. Unique to the mechanic class.",,,,
+OffroadMinibikeWheels,items,Item,KgNone,"Offroad Minibike Wheels",,,,
+OffroadMinibikeWheelsDesc,items,Item,KgNone,"Better grip for greater control while driving the minibike.",,,,
+TitaniumMinibikeChassis,items,Item,KgNone,"Titanium Minibike Chassis",,,,
+TitaniumMinibikeChassisDesc,items,Item,KgNone,"Greater durability than the standard chassis. Unique to the mechanic class.",,,,
+TitaniumMinibikeSeat,items,Item,KgNone,"Titanium Minibike Seat",,,,
+TitaniumMinibikeSeatDesc,items,Item,KgNone,"Greater durability than the standard minibike seat. Unique to the mechanic class.",,,,
+TitaniumMinibikeHandlebars,items,Item,KgNone,"Titanium Minibike Handlebars",,,,
+TitaniumMinibikeHandlebarsDesc,items,Item,KgNone,"Greater durability than the standard handlebars. Unique to the mechanic class.",,,,
+partsHandlebarsTitanium,items,Item,KgNone,"Titanium Handlebars",,,,
+partsHandlebarsTitaniumDesc,items,Item,KgNone,"A part for a chainsaw, auger or minibike handlebars. Assemble with other parts to create a complete tool once you've read the right schematic",,,,
+
+augerTitanium,items,Item,KgNone,"Titanium Auger",,,,
+augerTitaniumDesc,items,Item,KgNone,"Much more durable and upgraded version of the standard auger. Uses gasoline for fuel.",,,,
+partsAugerTitanium_parts,items,Part,KgNone,"Titanium Auger Parts",,,,
+partsAugerTitanium_blade,items,Part,KgNone,"Titanium Auger Blade",,,,
+partsAugerTitaniumGroupDesc,items,Part,KgNone,"A part of the miner-only Auger. Assemble with other parts to create a complete titanium auger.",,,,
+
+chainsawTitanium,items,Item,KgNone,"Titanium Chainsaw",,,,
+chainsawTitaniumDesc,items,Item,KgNone,"Much more durable and upgraded version of the standard chainsaw. Uses gasoline for fuel.",,,,
+partsChainsawTitanium_parts,items,Part,KgNone,"Titanium Chainsaw Parts",,,,
+partsChainsawTitanium_blade,items,Part,KgNone,"Titanium Chainsaw Blade",,,,
+chainsawTitaniumDesc,items,Part,KgNone,"A part of the miner-only Chainsaw. Assemble with other parts to create a complete titanium chainsaw.",,,,
+
+paramedicKit,items,Part,KgNone,"Paramedic Kit",,,,
+paramedicKitDesc,items,Part,KgNone,"A paramedic kit stops bleeding and restores a lot more health than the standard first aid kit. Unique to the scientist class.",,,,
+codeinePills,items,Part,KgNone,"Codeine Pills",,,,
+codeinePillsDesc,items,Part,KgNone,"Much stronger than your standard painkillers. Unique to the scientist class.",,,,
+
+titaniumBoots,items,Item Clothes,,Titanium Boots,,,,
+titaniumLegs,items,Item Clothes,,Titanium Legs,,,,
+titaniumChestplate,items,Item Clothes,,Titanium Chestplate,,,,
+titaniumHelmet,items,Item Clothes,,Titanium Helmet,,,,
+titaniumGloves,items,Item Clothes,,Titanium Gloves,,,,
+titaniumArmorDesc,items,Clothes,KgNone,Titanium armor is the best you can possibly craft. It grants amazing protection against concussive and puncture damage. Unique to the security class.,,,,
+
+torchSurvival,items,Item,KgNone,Survivalist Torch,,,,
+torchSurvivalDesc,items,Item,EnChanged,"This torch can be used as a light source or weapon with a chance to catch enemies on fire. Place with secondary action. Does not attract zombies. Unique to the survivalist class.",,,,
+jerky,items,Item,KgNone,Jerky,,,,
+jerkyDesc,items,Item,EnChanged,"Doesn't give wellness, but does give a good amount of fullness and hydration. Unique to the survivalist class.",,,,
+repeatingCrossbow,items,Item Gun,,Repeating Crossbow,,,,
+repeatingCrossbowDesc,items,Item Gun,,"This crossbow deals more damage, has further range and improved durability than a normal crossbow. It also holds several bolts rather than just one. Unique to the survivalist class.",,,,
+repeatingCrossbowScoped,items,Item Gun,,Repeating Crossbow (Scoped),,,,
+repeatingCrossbowScopedDesc,items,Item Gun,,"This crossbow deals more damage, has further range and improved durability than a normal crossbow. It also holds several bolts rather than just one and is scoped. Unique to the survivalist class.",,,,
+
+quill,items,Item KgNone,,Quill,,,,
+quillDesc,items,Item,KgNone,Used for crafting your own skill books and quests.,,,,
+ink,items,Item KgNone,,Ink,,,,
+inkDesc,items,Item,KgNone,Used for crafting your own skill books and quests.,,,,
+
+sunblockCooling,buffs,Buff,KgNone,Sunblock,,,,
+sunblockCoolingDesc,buffs,Buff,KgNone,"Sunblock is great for keeping you cool and preventing damage to the skin.",,,,
+sunblockCoolingTooltip,buffs,Buff,KgNone,You Feel Cooler,,,,
+
+ClassConstructionBook,items,Book,New,Construction Class Perk Book,,,,
+ClassHunterBook,items,Book,New,Hunter Class Perk Book,,,,
+ClassFarmerBook,items,Book,New,Farmer Class Perk Book,,,,
+ClassMinerBook,items,Book,New,Miner Class Perk Book,,,,
+ClassMechanicBook,items,Book,New,Mechanic Class Perk Book,,,,
+ClassScientistBook,items,Book,New,Scientist Class Perk Book,,,,
+ClassSecurityBook,items,Book,New,Security Class Perk Book,,,,
+ClassSurvivalistBook,items,Book,New,Survivalist Class Perk Book,,,,
+ClassCivilianBook,items,Book,New,Civilian Class Perk Book,,,
+classPerkBookDesc,items,Book,New,"Creative mode only book to fix classes from v1.5.2",,,,
+
+CivilianMasteryBook,items,Book,New,Civilian Mastery Book,,,
+ConstructionMasteryBook,items,Book,New,Construction Mastery Book,,,,
+HunterMasteryBook,items,Book,New,Hunter Mastery Book,,,,
+FarmerMasteryBook,items,Book,New,Farmer Mastery Book,,,,
+MinerMasteryBook,items,Book,New,Miner Mastery Book,,,,
+MechanicMasteryBook,items,Book,New,Mechanic Mastery Book,,,,
+ScientistMasteryBook,items,Book,New,Scientist Mastery Book,,,,
+SecurityMasteryBook,items,Book,New,Security Mastery Book,,,,
+SurvivalistMasteryBook,items,Book,New,Survivalist Mastery Book,,,,
+MasteryBookDesc,items,Book,New,"Unlock the mastery level of your class with this book!",,,,
+
+sulfur,items,Item KgNone,,Sulfur,,,,
+sulfurDesc,items,Item,KgNone,Used for crafting your own gunpowder.,,,,
+
+ironKnuckles,items,Item KgNone,,Iron Knuckles,,,,
+ironKnucklesDesc,items,Item,KgNone,"Bits of metal glued to cloth and then used to augment punches. Better than a bare hand.",,,,
+spikedKnuckles,items,Item KgNone,,Spiked Knuckles,,,,
+spikedKnucklesDesc,items,Item,KgNone,"Now that's more like it! Properly forged, shaped and then had nails stuck to the result. Quite a bit more deadly than the iron knuckles.",,,,

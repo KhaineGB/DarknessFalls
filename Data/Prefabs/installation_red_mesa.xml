@@ -5,6 +5,7 @@
     <property name="YOffset" value="-24" />
     <property name="Zoning" value="industrial" />
     <property name="RotationToFaceNorth" value="2" />
+    <property name="AllowedBiomes" value="radiated"/>
     <property name="AllowedTownships" value="wilderness,rural,town,city" />
     <property name="TraderArea" value="False" />
     <property name="ExcludeDistantPOIMesh" value="False" />

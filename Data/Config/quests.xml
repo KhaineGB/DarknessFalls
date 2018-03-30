@@ -120,7 +120,6 @@
 		<objective type="Goto" id="trader" value="5" />
 
 		<reward type="SkillPoints" value="5" />
-		<!-- <reward type="Item" id="ClassPaper"/> -->
     </quest>
 
 	<!-- CHALLENGES -->
@@ -427,6 +426,7 @@
 		<objective type="Craft" id="arrow" value="2" />
 		
 		<reward type="SkillPoints" value="5" />
+		<reward type="Skill" id="ClassCivilian" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<!-- Construction Class Quest Chain -->
@@ -443,6 +443,7 @@
 		<reward type="Item" id="wornBoots" value="50" />
 		<reward type="Item" id="miningHelmet" value="50" />
 		<reward type="Quest" id="quest_classtrainingconstruction2" />
+		<!-- <reward type="Skill" id="craftSkillTools" value="1" stage="aftercomplete"/> -->
     </quest>
 	
 	<quest id="quest_classtrainingconstruction2" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction2" subtitle="Craft Wood Frames and Flagstone Blocks" subtitle_key="quest_classtrainingconstruction2_subtitle" description_key="quest_classtrainingconstruction2_description"
@@ -455,10 +456,9 @@
 		<objective type="BlockPlace" id="flagstoneBlock" value="50" />
 
 		<reward type="Quest" id="quest_classtrainingconstruction3" />
-		<reward type="Recipe" id="fireaxeScrap"/>
-		<reward type="Recipe" id="pickaxeScrap"/>
 		<reward type="Item" id="canBoiledWater" value="2" />
 		<reward type="Item" id="canBeef" value="2" />
+		<reward type="Skill" id="Scrap Iron Tools" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<quest id="quest_classtrainingconstruction3" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction3" subtitle="Craft Scrap Iron Tools" subtitle_key="quest_classtrainingconstruction3_subtitle" description_key="quest_classtrainingconstruction3_description"
@@ -484,8 +484,7 @@
 		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
 
 		<reward type="Quest" id="quest_classtrainingconstruction5" />
-		<reward type="Recipe" id="bellows"/>
-		<reward type="Recipe" id="forge"/>
+		<reward type="Skill" id="Forge" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<quest id="quest_classtrainingconstruction5" group_name_key="quest_classtrainingconstruction" name_key="quest_classtrainingconstruction5" subtitle="Craft a Forge" subtitle_key="quest_classtrainingconstruction5_subtitle" description_key="quest_classtrainingconstruction5_description"
@@ -504,9 +503,8 @@
 		<objective type="FetchKeep" id="forgedIron" value="16" />
 		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="Craft" id="clubBarbed" value="1" />
-		
-		<reward type="Recipe" id="hoeScrap"/>
-		<reward type="Recipe" id="shovelScrap"/>
+	
+		<reward type="Skill" id="ClassConstruction" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<!-- Hunter Class Quest Chain -->
@@ -532,10 +530,9 @@
 			<requirement type="Holding" id="clubIron" />
 
 		<reward type="Quest" id="quest_classtraininghunter3" />
-		<reward type="Recipe" id="huntingKnife"/>
-		<reward type="Recipe" id="leather"/>
 		<reward type="Item" id="canBoiledWater" value="2" />
 		<reward type="Item" id="canChicken" value="2" />
+		<reward type="Skill" id="Leather Tanning" value="1" stage="aftercomplete"/> 
 
     </quest>
 	
@@ -558,12 +555,8 @@
 		<objective type="FetchKeep" id="animalHide" value="35" />
 
 		<reward type="Quest" id="quest_classtraininghunter5" />
-		<reward type="Recipe" id="leatherBoots"/>
-		<reward type="Recipe" id="leatherGloves"/>
-		<reward type="Recipe" id="leatherHood"/>
-		<reward type="Recipe" id="leatherJacket"/>
-		<reward type="Recipe" id="leatherPants"/>
 		<reward type="Item" id="huntingKnife" value="50" />
+		<reward type="Skill" id="Leather Armor" value="5" stage="aftercomplete"/> 
 
     </quest>
 	
@@ -579,6 +572,7 @@
 		<reward type="Quest" id="quest_classtraininghunter6" />
 		<reward type="Item" id="gunHuntingRifle" value="50" />
 		<reward type="Item" id="762mmBullet" value="75" />
+		<reward type="Skill" id="Hunting Knife" value="1" stage="aftercomplete"/> 
 
     </quest>
 	
@@ -591,9 +585,9 @@
 		<objective type="AnimalKill" value="5" />
 			<requirement type="Holding" id="gunHuntingRifle" />
 				
-		<reward type="Recipe" id="gunHuntingRifle"/>
-		<reward type="Recipe" id="762mmBullet"/>
-
+		<reward type="Skill" id="Hunting Rifle" value="1" stage="aftercomplete"/> 
+		<reward type="Skill" id="ClassHunter" value="1" stage="aftercomplete"/> 
+		
     </quest>
 	
 	<!-- Farmer Class Quest Chain -->
@@ -634,9 +628,7 @@
 		<objective type="BlockPlace" id="plantedYucca1" value="5" />
 
 		<reward type="Quest" id="quest_classtrainingfarmer4" />
-		<reward type="Recipe" id="plantedChrysanthemum1"/>
-		<reward type="Recipe" id="plantedCorn1"/>
-		<reward type="Recipe" id="waterBarrel1"/>
+		<reward type="Skill" id="Farming" value="1" stage="aftercomplete"/> 
 		<reward type="Item" id="firstAidBandage" value="2" />
     </quest>
 	
@@ -644,14 +636,12 @@
 	icon="ui_game_symbol_hunger" category_key="quest" offer_key="quest_classtrainingfarmer_offer" >
 
 		<objective type="FetchKeep" id="chrysanthemumPlant" value="10" />
-		<objective type="FetchKeep" id="corn" value="10" />
+		<objective type="FetchKeep" id="corn" value="26" />
 		<objective type="Craft" id="plantedChrysanthemum1" value="5" />
 		<objective type="Craft" id="plantedCorn1" value="5" />	
 
 		<reward type="Quest" id="quest_classtrainingfarmer5" />
-		<reward type="Recipe" id="animalFeed" unlock_level="1"/> 
-		<reward type="Recipe" id="animalSnare" unlock_level="1"/> 
-		<reward type="Recipe" id="chickenCoop" unlock_level="1"/>
+		<reward type="Skill" id="Animal Coops and Snares" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<quest id="quest_classtrainingfarmer5" group_name_key="quest_classtrainingfarmer" name_key="quest_classtrainingfarmer5" subtitle="Craft an Animal Snare and Coop" subtitle_key="quest_classtrainingfarmer5_subtitle" description_key="quest_classtrainingfarmer5_description"
@@ -665,8 +655,8 @@
 
 		<reward type="Quest" id="quest_classtrainingfarmer6" />
 
-		<reward type="Recipe" id="PandM" unlock_level="1"/>
-		<reward type="Recipe" id="plantedCoffee1" unlock_level="1"/>
+		<reward type="Skill" id="Mortar and Pestle" value="1" stage="aftercomplete"/> 
+		<reward type="Skill" id="Farming" value="1" stage="aftercomplete"/> 
 		<reward type="Item" id="gunSawedOffPumpShotgun" value="50" />
 		<reward type="Item" id="shotgunShell" value="50" />
     </quest>
@@ -677,21 +667,18 @@
 		<objective type="Craft" id="PandM" value="1" />
 		<objective type="BlockPlace" id="PandM" value="1" />
 				
-		<reward type="Recipe" id="plantedBlueberry1" unlock_level="1"/>
-		<reward type="Recipe" id="plantedMushroom1" unlock_level="1"/>
-		<reward type="Recipe" id="plantedAloe1" unlock_level="1"/>
-		<reward type="Recipe" id="seedWheat" unlock_level="1"/>
+		<reward type="Skill" id="Farming" value="1" stage="aftercomplete"/> 
+		<reward type="Skill" id="ClassFarmer" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<!-- Miner Class Quest -->
 	
-	<quest id="quest_classtrainingminer1" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer1" subtitle="Craft A Stone Axe And Shovel" subtitle_key="quest_classtrainingminer1_subtitle" description_key="quest_classtrainingminer1_description"
+	<quest id="quest_classtrainingminer1" group_name_key="quest_classtrainingminer" name_key="quest_classtrainingminer1" subtitle="Craft A Shovel" subtitle_key="quest_classtrainingminer1_subtitle" description_key="quest_classtrainingminer1_description"
 	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
 
-		<objective type="FetchKeep" id="yuccaFibers" value="5" />
-		<objective type="FetchKeep" id="wood" value="5" />
-		<objective type="FetchKeep" id="rockSmall" value="9" />
-		<objective type="Craft" id="stoneAxe" value="1" />
+		<objective type="FetchKeep" id="yuccaFibers" value="3" />
+		<objective type="FetchKeep" id="wood" value="3" />
+		<objective type="FetchKeep" id="rockSmall" value="5" />
 		<objective type="Craft" id="stoneShovel" value="1" />
 		
 		<reward type="Item" id="tshirtBrown" value="50" />
@@ -709,8 +696,7 @@
 		<objective type="FetchKeep" id="ironFragment" value="50" />
 		<objective type="FetchKeep" id="coal" value="50" />
 	
-		<reward type="Recipe" id="shovelScrap"/>
-		<reward type="Recipe" id="pickaxeScrap"/>
+		<reward type="Skill" id="Scrap Iron Tools" value="1" stage="aftercomplete"/> 
 		<reward type="Item" id="firstAidBandage" value="2" />
 		<reward type="Quest" id="quest_classtrainingminer3" />		
 	</quest>
@@ -733,8 +719,7 @@
 		<objective type="FetchKeep" id="leather" value="20" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
 
-		<reward type="Recipe" id="bellows"/>
-		<reward type="Recipe" id="forge"/>
+		<reward type="Skill" id="Forge" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingminer5" />
     </quest>
 	
@@ -745,7 +730,6 @@
 		<objective type="Craft" id="forge" value="1" />
 		<objective type="BlockPlace" id="forge" value="1" />
 
-		<reward type="Recipe" id="leatherStrips"/>
 		<reward type="Quest" id="quest_classtrainingminer6" />
     </quest>
 	
@@ -753,11 +737,12 @@
 	icon="ui_game_symbol_mining" category_key="quest" offer_key="quest_classtrainingminer_offer" >
 
 		<objective type="FetchKeep" id="forgedIron" value="40" />
-		<objective type="FetchKeep" id="leatherStrips" value="10" />
+		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="Craft" id="clubBarbed" value="1" />
 		
 		<reward type="Recipe" id="shovelIron"/>
 		<reward type="Recipe" id="pickaxeIron"/>
+		<reward type="Skill" id="ClassMiner" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<!-- Mechanic Class Quest Chain -->
@@ -784,7 +769,7 @@
 		<objective type="FetchKeep" id="gasCan" value="100"/>
 		<objective type="FetchKeep" id="scrapIron" value="40"/>
 	
-		<reward type="Recipe" id="wrench"/>
+		<reward type="Skill" id="Wrench" value="1" stage="aftercomplete"/> 
 		<reward type="Item" id="firstAidBandage" value="2" />
 		<reward type="Quest" id="quest_classtrainingmechanic3" />		
 	</quest>
@@ -826,6 +811,7 @@
 		<objective type="FetchKeep" id="electronicParts" value="20"/>
 		
 		<reward type="SkillPoints" value="5" />
+		<reward type="Skill" id="ClassMechanic" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<!-- Scientist Class Quest Chain -->
@@ -833,9 +819,9 @@
 	<quest id="quest_classtrainingscientist1" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist1" subtitle="Craft A Splint" subtitle_key="quest_classtrainingscientist1_subtitle" description_key="quest_classtrainingscientist1_description"
 	icon="ui_game_symbol_science" category_key="quest" offer_key="quest_classtrainingscientist_offer" >
 
-		<objective type="FetchKeep" id="cottonPlant" value="4"/>
+		<objective type="FetchKeep" id="cottonPlant" value="8"/>
 		<objective type="FetchKeep" id="wood" value="2"/>
-		<objective type="FetchKeep" id="ductTape" value="1"/>
+		<objective type="FetchKeep" id="yuccaFibers" value="4"/>
 		<objective type="Craft" id="splint" value="1" />
 		
 		<reward type="Item" id="jacketWhite" value="50" />
@@ -852,8 +838,7 @@
 		<objective type="FetchKeep" id="aloePlant" value="16"/>
 		<objective type="FetchKeep" id="cottonPlant" value="16"/>
 	
-		<reward type="Recipe" id="firstAidBandage"/>
-		<reward type="Recipe" id="aloeCream"/>
+		<reward type="Skill" id="Medical" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingscientist3" />		
 	</quest>
 	
@@ -877,6 +862,7 @@
 
 		<reward type="Item" id="huntingKnife" value="50" />
 		<reward type="Quest" id="quest_classtrainingscientist5" />
+		<reward type="Skill" id="Medical" value="1" stage="aftercomplete"/> 
     </quest>
 	
 	<quest id="quest_classtrainingscientist5" group_name_key="quest_classtrainingscientist" name_key="quest_classtrainingscientist5" subtitle="Find Painkillers And Honey" subtitle_key="quest_classtrainingscientist5_subtitle" description_key="quest_classtrainingscientist5_description"
@@ -885,8 +871,7 @@
 		<objective type="FetchKeep" id="painkillers" value="2"/>
 		<objective type="FetchKeep" id="foodHoney" value="1"/>
 	
-		<reward type="Recipe" id="plantedAloe1"/>
-		<reward type="Recipe" id="PandM"/>
+		<reward type="Skill" id="Mortar and Pestle" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingscientist6" />
     </quest>
 	
@@ -896,7 +881,8 @@
 		<objective type="Craft" id="PandM" value="1" />
 		<objective type="BlockPlace" id="PandM" value="1" />
 		
-		<reward type="Recipe" id="antibiotics"/>
+		<reward type="Skill" id="Medical" value="1" stage="aftercomplete"/> 
+		<reward type="Skill" id="ClassScientist" value="1" stage="aftercomplete"/> 
     </quest> 
 	
 	<!-- Security Class Quest Chain -->
@@ -923,7 +909,7 @@
 		<objective type="Craft" id="animalHideGloves" value="1" />
 		<objective type="Craft" id="animalHideBoots" value="1" />
 		
-		<reward type="Item" id="pistolBook" value="1" />
+		<reward type="Skill" id="Pistolperk" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingsecurity3" />		
 	</quest>
 	
@@ -966,6 +952,7 @@
 		<objective type="ZombieKill" value="10" />
 		
 		<reward type="SkillPoints" value="5" />
+		<reward type="Skill" id="ClassSecurity" value="1" stage="aftercomplete"/> 
     </quest> 
 	
 	<!-- Survivalist Class Quest Chain -->
@@ -995,12 +982,10 @@
 		<objective type="FetchKeep" id="femur" value="1" />
 		<objective type="Craft" id="boneShiv" value="1" />
 		
-		<reward type="Item" id="canEmpty" value="1" />
-		<reward type="Item" id="canBeef" value="1" />
+		<reward type="Item" id="canBeef" value="2" />
 		<reward type="Item" id="canMurkyWater" value="2" />
 
-		<reward type="Recipe" id="leather"/>
-		<reward type="Recipe" id="leatherStrips"/>
+		<reward type="Skill" id="Leather Tanning" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingsurvivalist3" />		
 	</quest>
 	
@@ -1017,12 +1002,11 @@
 	<quest id="quest_classtrainingsurvivalist4" group_name_key="quest_classtrainingsurvivalist" name_key="quest_classtrainingsurvivalist4" subtitle="Craft Animal Hide Armor" subtitle_key="quest_classtrainingsurvivalist4_subtitle" description_key="quest_classtrainingsurvivalist4_description"
 	icon="ui_game_symbol_archery" category_key="quest" offer_key="quest_classtrainingsurvivalist_offer" >
 
-		<objective type="FetchKeep" id="animalHide" value="45" />
+		<objective type="FetchKeep" id="animalHide" value="30" />
 		<objective type="Craft" id="animalHideLegArmor" value="1" />
 		<objective type="Craft" id="animalHideChestArmor" value="1" />
 		<objective type="Craft" id="animalHideGloves" value="1" />
 		<objective type="Craft" id="animalHideBoots" value="1" />
-		<objective type="Craft" id="animalHideHood" value="1" />
 		
 		<reward type="Quest" id="quest_classtrainingsurvivalist5" />
     </quest>
@@ -1034,8 +1018,7 @@
 		<objective type="FetchKeep" id="wood" value="20" />
 		<objective type="FetchKeep" id="leather" value="10" />
 
-		<reward type="Recipe" id="fireaxeScrap"/>
-		<reward type="Recipe" id="pickaxeScrap"/>
+		<reward type="Skill" id="Scrap Iron Tools" value="1" stage="aftercomplete"/> 
 		<reward type="Quest" id="quest_classtrainingsurvivalist6" />
     </quest>
 	
@@ -1045,7 +1028,8 @@
 		<objective type="FetchKeep" id="fireaxeScrap" value="1"/>
 		<objective type="FetchKeep" id="pickaxeScrap" value="1" />
 		
-		<reward type="Recipe" id="crossbow"/>
+		<reward type="Skill" id="Crossbow" value="1" stage="aftercomplete"/> 
+		<reward type="Skill" id="ClassSurvivalist" value="1" stage="aftercomplete"/> 
     </quest> 
 	
 <!-- Trader Guard Captain Quests -->
@@ -1110,5 +1094,28 @@
 		<reward type="SkillPoints" value="3" />
 		<reward type="Item" id="flamethrowerSchematics" value="1" />
 	</quest>
+
+<!-- Civilian Class Mastery -->
+
+	<quest id="quest_civilianMastery" name_key="quest_civilianMastery" subtitle_key="quest_civilianMastery_subtitle" description_key="quest_civilianMastery_offer" icon="ui_game_symbol_skills"
+	repeatable="true" category_key="quest" offer_key="quest_civilianMastery_offer" difficulty="easy">
+
+		<reward type="SkillPoints" value="30" />
+	</quest>
+	
+<!-- Quest Test 
+
+	<quest id="quest_testpoi" group_name_key="quest_testpoi" name_key="quest_testpoi" subtitle_key="quest_testpoi_subtitle" description_key="quest_testpoi_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
+		<objective type="Goto" id="DestroyedTrader" value="5" />
+		<objective type="ZombieKill" id="ZUMAGuardMale,ZUMAGuardMale2,ZUMAGuardMale3,ZUMAGuardMale4,ZUMAGuardMale5,ZUMAGuardFemale,ZUMAGuardFemale2,ZUMAGuardFemale3,ZUMAGuardFemale4,ZUMAGuardFemale5" value="10" />
+
+		<reward type="SkillPoints" value="5" />
+    </quest>
+	
+	<quest id="quest_testpoi2" group_name_key="quest_testpoi2" name_key="quest_testpoi2" subtitle_key="quest_testpoi2_subtitle" description_key="quest_testpoi2_description" icon="ui_game_symbol_map_trader" category_key="quest" difficulty="medium">
+		<objective type="Goto" id="store" value="5" />
+
+		<reward type="SkillPoints" value="5" />
+    </quest> -->
 
 </quests>

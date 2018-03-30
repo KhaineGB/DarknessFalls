@@ -129,18 +129,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="20"/>
 </recipe>
 
-<recipe name="antibiotics" count="1" craft_area="chemistryStation">
-	<ingredient name="moldyBread" count="1"/>
-	<ingredient name="potassiumNitratePowder" count="1"/>
-	<ingredient name="bottledRiverWater" count="1"/>
-</recipe>
-
-<recipe name="antibiotics" count="1" craft_area="campfire" craft_tool="beaker">
-	<ingredient name="moldyBread" count="4"/>
-	<ingredient name="potassiumNitratePowder" count="3"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
 <recipe name="anvil" count="1" craft_area="forge" material_based="true">
 	<ingredient name="unit_iron" count="200"/>
 	<ingredient name="unit_clay" count="20"/>
@@ -865,7 +853,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="gunPowder" count="1" craft_area="chemistryStation">
 	<ingredient name="coal" count="1"/>
-	<ingredient name="potassiumNitratePowder" count="1"/>
+	<ingredient name="potassiumNitratePowder" count="2"/>
+	<ingredient name="sulfur" count="1"/>
 </recipe>
 
 <recipe name="gunPumpShotgun" count="1" craft_area="assembly">
@@ -960,8 +949,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="leather" count="1">
+<recipe name="leather" count="1" craft_area="campfire">
 	<ingredient name="animalHide" count="1"/>
+	<ingredient name="animalFat" count="1"/>
 </recipe>
 
 <recipe name="leatherBoots" count="1">
@@ -1368,9 +1358,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="splint" count="1">
-	<ingredient name="cloth" count="2"/>
+	<ingredient name="cloth" count="4"/>
 	<ingredient name="wood" count="2"/>
-	<ingredient name="ductTape" count="1"/>
+	<ingredient name="yuccaFibers" count="4"/>
 </recipe>
 
 <recipe name="stone" count="1" craft_area="cementMixer">
@@ -1790,72 +1780,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<!-- Craftable Skill Points and Class Books -->
-
-<recipe name="ClassPaper" count="1">
-	<ingredient name="scrapSkill" count="120"/>
-</recipe>
-
-<recipe name="skillGenericBook" count="1">
-	<ingredient name="scrapSkill" count="60"/>
-</recipe>
-
-<recipe name="skillBarterBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillArcheryBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillAthleticsBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillAxeBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillBladesBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillBluntBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillCloth-ArmorBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillConstructionBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillMedicineBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillMiningBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillPistolBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillRifleBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillScavengingBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
-<recipe name="skillShotgunBook" count="1">
-	<ingredient name="scrapSkill" count="30"/>
-</recipe>
-
 <!-- Sticks and Sharp Stone Recipes -->
 
 <recipe name="stick" count="2">
@@ -2208,8 +2132,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="rebarFrameBlock" count="1" craft_area="advforge"  material_based="true">
-	<ingredient name="unit_iron" count="3"/>
-	<ingredient name="unit_clay" count="1"/>
+	<ingredient name="unit_iron" count="6"/>
+	<ingredient name="unit_clay" count="2"/>
 </recipe>
 
 <recipe name="rebarFrameCNRInside" count="1" craft_area="advforge"  material_based="true">
@@ -2352,94 +2276,94 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Working Ovens Recipes -->
 
-<recipe name="baconAndEggs" count="1" craft_area="oven">
+<recipe name="baconAndEggs" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="egg" count="2"/>
 	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
-<recipe name="bakedPotato" count="1" craft_area="oven">
+<recipe name="bakedPotato" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="potato" count="1"/>
 </recipe>
 
-<recipe name="blueberryPie" count="1" craft_area="oven">
+<recipe name="blueberryPie" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="blueberries" count="1"/>
 	<ingredient name="animalFat" count="1"/>
 	<ingredient name="Flour" count="1"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="bottledWater" count="1" craft_area="oven">
+<recipe name="bottledWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
 
-<recipe name="bottledWater" count="1" craft_area="oven">
+<recipe name="bottledWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="bottledRiverWater" count="1"/>
 </recipe>
 
-<recipe name="bottledRiverWater" count="1" craft_area="oven">
+<recipe name="bottledRiverWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyJar" count="1"/>
 </recipe>
 
-<recipe name="canBoiledWater" count="1" craft_area="oven">
+<recipe name="canBoiledWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="canMurkyWater" count="1"/>
 </recipe>
 
-<recipe name="canBoiledWater" count="1" craft_area="oven">
+<recipe name="canBoiledWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="canEmpty" count="1"/>
 </recipe>
 
-<recipe name="charredMeat" count="1" craft_area="oven">
+<recipe name="charredMeat" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
-<recipe name="coffee" count="1" craft_area="oven">
+<recipe name="coffee" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="coffeeBeans" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="cornBread" count="1" craft_area="oven">
+<recipe name="cornBread" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="cornMeal" count="1"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="cornOnTheCob" count="1" craft_area="oven">
+<recipe name="cornOnTheCob" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="corn" count="1"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="eggboiled" count="1" craft_area="oven">
+<recipe name="eggboiled" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="egg" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="eggboiled" count="1" craft_area="oven">
+<recipe name="eggboiled" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="egg" count="1"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="glue" count="1" craft_area="oven">
+<recipe name="glue" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="femur" count="2"/>
 	<ingredient name="bottledRiverWater" count="1"/>
 </recipe>
 
-<recipe name="goldenRodTea" count="1" craft_area="oven">
+<recipe name="goldenRodTea" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="goldenrodPlant" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="boiledMeat" count="1" craft_area="oven">
+<recipe name="boiledMeat" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="rawMeat" count="1"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="grilledMeat" count="1" craft_area="oven">
+<recipe name="grilledMeat" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="rawMeat" count="2"/>
 </recipe>
 
-<recipe name="herbalAntibiotics" count="1" craft_area="oven">
+<recipe name="herbalAntibiotics" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="blueberries" count="5"/>
 	<ingredient name="mushrooms" count="3"/>
 	<ingredient name="chrysanthemumPlant" count="3"/>
@@ -2447,45 +2371,45 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="meatStew" count="1" craft_area="oven">
+<recipe name="meatStew" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="rawMeat" count="3"/>
 	<ingredient name="potato" count="3"/>
 	<ingredient name="corn" count="3"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="redTea" count="1" craft_area="oven">
+<recipe name="redTea" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="chrysanthemumPlant" count="1"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="snowberryJuice" count="1" craft_area="oven">
+<recipe name="snowberryJuice" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowberryExtract" count="1"/>
 	<ingredient name="blueberries" count="2"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="tallow" count="1" craft_area="oven">
+<recipe name="tallow" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="animalFat" count="1"/>
 </recipe>
 
-<recipe name="vegetableStew" count="1" craft_area="oven">
+<recipe name="vegetableStew" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="potato" count="3"/>
 	<ingredient name="corn" count="3"/>
 	<ingredient name="mushrooms" count="3"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="bowlWater" count="1" craft_area="oven">
+<recipe name="bowlWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyBowl" count="1"/>
 </recipe>
 
-<recipe name="bowlWater" count="1" craft_area="oven">
+<recipe name="bowlWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="bowlRiverWater" count="1"/>
 </recipe>
 
-<recipe name="bowlRiverWater" count="1" craft_area="oven">
+<recipe name="bowlRiverWater" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="snowBall" count="1"/>
 	<ingredient name="emptyBowl" count="1"/>
 </recipe>
@@ -2586,7 +2510,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="gunPowder" count="1" craft_area="PandM">
 	<ingredient name="coal" count="2"/>
-	<ingredient name="potassiumNitratePowder" count="2"/>
+	<ingredient name="potassiumNitratePowder" count="4"/>
+	<ingredient name="sulfur" count="2"/>
 </recipe>
 
 <!-- Battery and Engine Crafting -->
@@ -2628,7 +2553,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Dough" count="2" />
 </recipe>
 
-<recipe name="Bread" count="1" craft_area="oven">
+<recipe name="Bread" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Dough" count="1" />
 </recipe>
 
@@ -2642,7 +2567,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="grilledMeat" count="1" />
 </recipe>
 
-<recipe name="vegetableSoup" count="1" craft_area="oven">
+<recipe name="vegetableSoup" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="potato" count="5"/>
 	<ingredient name="Carrot" count="5"/>
 	<ingredient name="mushrooms" count="5"/>
@@ -2662,7 +2587,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg" count="1" />
 </recipe>
 
-<recipe name="roastDinner" count="1" craft_area="oven">
+<recipe name="roastDinner" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="potato" count="3"/>
 	<ingredient name="Carrot" count="3"/>
 	<ingredient name="grilledMeat" count="1"/>
@@ -2676,7 +2601,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 
-<recipe name="applePie" count="1" craft_area="oven">
+<recipe name="applePie" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Apple" count="1"/>
 	<ingredient name="animalFat" count="1"/>
 	<ingredient name="Flour" count="1"/>
@@ -2688,7 +2613,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="blueberries" count="2" />
 </recipe>
 
-<recipe name="blueberryPancakes" count="1" craft_area="oven">
+<recipe name="blueberryPancakes" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Batter" count="1" />
 	<ingredient name="blueberries" count="1" />
 </recipe>
@@ -3408,9 +3333,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="partsAuger_blade" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
-	<ingredient name="partsAuger_blade" count="1"/>
 	<ingredient name="repairKit" count="1"/>
-	<ingredient name="forgedSteel" count="2"/>
+	<ingredient name="forgedSteel" count="5"/>
+</recipe>
+
+<recipe name="partsAuger_parts" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedSteel" count="5"/>
 </recipe>
 
 <recipe name="bed01" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
@@ -3440,9 +3369,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="partsChainsaw_blade" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
-	<ingredient name="partsChainsaw_blade" count="1"/>
 	<ingredient name="repairKit" count="1"/>
-	<ingredient name="forgedSteel" count="2"/>
+	<ingredient name="forgedSteel" count="5"/>
+</recipe>
+
+<recipe name="partsChainsaw_parts" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedSteel" count="5"/>
 </recipe>
 
 <recipe name="cntBeerCooler" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
@@ -3566,7 +3499,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="rebarFrameBlock" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
-	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="shortMetalPipe" count="4"/>
 </recipe>
 
 <recipe name="rebarFrameCNRInside" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
@@ -3902,6 +3835,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="leather" count="2" craft_area="workstationTailor" craft_tool="tanningRack">
 	<ingredient name="animalHide" count="1"/>
+	<ingredient name="animalFat" count="1"/>
 </recipe>
 
 <recipe name="leatherStrips" count="4" craft_area="workstationTailor" craft_tool="tanningRack">
@@ -4013,7 +3947,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="Fish" count="2"/>
 </recipe>
 
-<recipe name="grilledFish" count="1" craft_area="oven">
+<recipe name="grilledFish" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Fish" count="1"/>
 </recipe>
 
@@ -4022,7 +3956,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potato" count="4"/>
 </recipe>
 
-<recipe name="fishPie" count="1" craft_area="oven">
+<recipe name="fishPie" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="Fish" count="2"/>
 	<ingredient name="potato" count="2"/>
 </recipe>
@@ -4076,21 +4010,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="10"/>
 </recipe>
 
-<recipe name="titaniumHuntingKnife" count="1" craft_area="workbench" craft_tool="wrench">
-	<ingredient name="forgedTitanium" count="8"/>
-	<ingredient name="wood" count="4"/>
-</recipe>
-
-<recipe name="titaniumMacheteBlade" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
-	<ingredient name="unit_iron" count="200"/>
-	<ingredient name="unit_clay" count="40"/>
-</recipe>
-
-<recipe name="titaniumMachete" count="1" craft_area="workbench" craft_time="60">
-	<ingredient name="titaniumMacheteBlade" count="1"/>
-	<ingredient name="leather" count="1"/>
-</recipe>
-
 <recipe name="titaniumArrowHead" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_titanium" count="4"/>
 	<ingredient name="unit_iron" count="1"/>
@@ -4119,21 +4038,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="titaniumArrowHead" count="1"/>
 	<ingredient name="stick" count="1"/>
 	<ingredient name="cloth" count="1"/>
-</recipe>
-
-<recipe name="fireaxeTitanium" count="1" craft_area="workstationMetal">
-	<ingredient name="forgedTitanium" count="20"/>
-	<ingredient name="wood" count="10"/>
-</recipe>
-
-<recipe name="pickaxeTitanium" count="1" craft_area="workstationMetal">
-	<ingredient name="forgedTitanium" count="20"/>
-	<ingredient name="wood" count="10"/>
-</recipe>
-
-<recipe name="shovelTitanium" count="1" craft_area="workstationMetal">
-	<ingredient name="forgedTitanium" count="20"/>
-	<ingredient name="wood" count="10"/>
 </recipe>
 
 <!-- CNC Gun Recipes. Recipes need adjusting -->
@@ -4561,7 +4465,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="superCoffee" count="1" craft_area="oven">
+<recipe name="superCoffee" count="1" craft_area="oven" craft_tool="carBattery">
 	<ingredient name="coffeeBeans" count="10"/>
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
@@ -4572,6 +4476,909 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsflame_receiver" count="1"/>
 	<ingredient name="partsflame_barrel" count="1"/>
 	<ingredient name="partsflame_parts" count="1"/>
+</recipe>
+
+<recipe name="flamethrowerAmmo" count="1">
+	<ingredient name="gasCan" count="1"/>
+</recipe>
+
+<!-- Extra Rebar Shapes Recipes -->
+
+<recipe name="rebarFrameArch" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameCNRFull" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameCTRPlate" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameCTRPole" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameHalf" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFramePillar50" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFramePlate" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFramePole" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameEighth" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameQuarter" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameCTREighth" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_iron" count="3"/>
+	<ingredient name="unit_clay" count="1"/>
+</recipe>
+
+<recipe name="rebarFrameArch" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameCNRFull" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameCTRPlate" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameCTRPole" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameHalf" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFramePillar50" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFramePlate" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFramePole" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameEighth" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameQuarter" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="rebarFrameCTREighth" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<!-- Invisible Wires Mod -->
+
+<recipe name="JunctionBox" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="electronicParts" count="3"/>
+	<ingredient name="forgedIron" count="4"/>
+</recipe>
+
+<!-- Lockable Player Cabinets -->
+
+<recipe name="padlock" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="forgedIron" count="2"/>
+	<ingredient name="spring" count="1"/>
+	<ingredient name="mechanicalParts" count="1"/>
+</recipe>
+
+<recipe name="playerCabinetSecure" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="padlock" count="1"/>
+	<ingredient name="nail" count="10"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="playerCabinetTopSecure" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="padlock" count="1"/>
+	<ingredient name="nail" count="10"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="playerCabinetOldBottomSecure" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="padlock" count="1"/>
+	<ingredient name="nail" count="10"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="playerCabinetOldTopSecure" count="1" craft_area="workbench" craft_tool="clawHammer">
+	<ingredient name="padlock" count="1"/>
+	<ingredient name="nail" count="10"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<!-- Oil Pump Mod -->
+
+<recipe name="oilShale" count="10" craft_area="oilPump" craft_tool="smallEngine" craft_time="15">
+	<ingredient name="wood" count="50"/>
+</recipe>
+
+<recipe name="oilShale" count="10" craft_area="oilPump" craft_tool="smallEngine" craft_time="15">
+	<ingredient name="coal" count="10"/>
+</recipe>
+
+<recipe name="oilShale" count="10" craft_area="oilPump" craft_tool="smallEngine" craft_time="15">
+	<ingredient name="fuelLog" count="10"/>
+</recipe>
+
+<!-- Construction Class Mastery -->
+
+<recipe name="titaniumclawHammer" count="1" craft_area="workbench"> 
+	<ingredient name="forgedTitanium" count="6"/>
+	<ingredient name="wood" count="3"/>
+</recipe>
+
+<recipe name="titaniumFrameBlock" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="60"/>
+	<ingredient name="unit_iron" count="20"/>
+	<ingredient name="unit_clay" count="40"/>
+</recipe>
+
+<recipe name="titaniumFrameCNRInside" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFramePillar100" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameRamp" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameArch" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameCNRFull" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameCTRPlate" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameCTRPole" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameHalf" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFramePillar50" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFramePlate" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFramePole" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameEighth" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameQuarter" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumFrameCTREighth" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="30"/>
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumBars" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="60"/>
+	<ingredient name="unit_iron" count="30"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="titaniumBarsCentered" count="1" craft_area="advforge"  material_based="true">
+	<ingredient name="unit_titanium" count="60"/>
+	<ingredient name="unit_iron" count="30"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<!-- Hunter Class Mastery -->
+
+<recipe name="titaniumHuntingKnife" count="1" craft_area="workbench" craft_tool="wrench">
+	<ingredient name="forgedTitanium" count="8"/>
+	<ingredient name="wood" count="4"/>
+</recipe>
+
+<recipe name="titaniumMacheteBlade" count="1" craft_area="advforge" craft_tool="forgeCrucible" material_based="true">
+	<ingredient name="unit_iron" count="200"/>
+	<ingredient name="unit_clay" count="40"/>
+</recipe>
+
+<recipe name="titaniumMachete" count="1" craft_area="workbench" craft_time="60">
+	<ingredient name="titaniumMacheteBlade" count="1"/>
+	<ingredient name="leather" count="1"/>
+</recipe>
+
+<recipe name="ledAviatorGoggles" count="1" craft_area="workbench" craft_time="45">
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="chrysanthemumPlant" count="1"/>
+	<ingredient name="forgedIron" count="1"/>
+	<ingredient name="electronicParts" count="10"/>
+	<ingredient name="crushedSand" count="12"/>
+</recipe>
+
+<recipe name="ledGoggles" count="1" craft_area="workbench" craft_time="45">
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="chrysanthemumPlant" count="1"/>
+	<ingredient name="forgedIron" count="1"/>
+	<ingredient name="electronicParts" count="4"/>
+	<ingredient name="crushedSand" count="12"/>
+</recipe>
+
+<recipe name="nightvisionGoggles" count="1" craft_area="workbench" craft_time="45">
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="chrysanthemumPlant" count="1"/>
+	<ingredient name="forgedIron" count="1"/>
+	<ingredient name="electronicParts" count="4"/>
+	<ingredient name="crushedSand" count="12"/>
+</recipe>
+
+<!-- Mechanic Class Mastery -->
+
+<recipe name="oilPump" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="mechanicalParts" count="60"/>
+	<ingredient name="electricParts" count="30"/>
+	<ingredient name="forgedIron" count="25"/>
+	<ingredient name="electronicParts" count="20"/>
+</recipe>
+
+<recipe name="TitaniumMinibikeChassis" count="1" craft_area="advForge" material_based="true">
+	<ingredient name="unit_iron" count="100"/>
+	<ingredient name="unit_titanium" count="100"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="TitaniumMinibikeHandlebars" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="partsHandlebarsTitanium" count="1"/>
+	<ingredient name="ductTape" count="2"/>
+	<ingredient name="headlight" count="1"/>
+	<ingredient name="electricParts" count="5"/>
+	<ingredient name="shortMetalPipe" count="2"/>
+</recipe>
+
+<recipe name="TitaniumMinibikeSeat" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="ductTape" count="4"/>
+	<ingredient name="leather" count="7"/>
+	<ingredient name="cottonPlant" count="3"/>
+	<ingredient name="forgedTitanium" count="10"/>
+</recipe>
+
+<recipe name="largeEngine" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedSteel" count="100"/>
+	<ingredient name="mechanicalParts" count="30"/>
+	<ingredient name="electricParts" count="30"/>
+	<ingredient name="silverNugget" count="5"/>
+</recipe>
+
+<recipe name="largeBattery" count="1" craft_area="workstationMetal">
+	<ingredient name="scrapPlastics" count="40"/>
+	<ingredient name="scrapLead" count="20"/>
+	<ingredient name="scrapBrass" count="20"/>	
+	<ingredient name="sulfuricAcid" count="2" />
+</recipe>
+
+<!-- Miner Class Mastery -->
+
+<recipe name="augerTitanium" count="1" craft_area="assembly">
+	<ingredient name="partsHandlebarsTitanium" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="partsAugerTitanium_parts" count="1"/>
+	<ingredient name="partsAugerTitanium_blade" count="1"/>
+</recipe>
+
+<recipe name="chainsawTitanium" count="1" craft_area="assembly">
+	<ingredient name="partsHandlebarsTitanium" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="partsChainsawTitanium_parts" count="1"/>
+	<ingredient name="partsChainsawTitanium_blade" count="1"/>
+</recipe>
+
+<recipe name="partsHandlebarsTitanium" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="ductTape" count="2"/>
+	<ingredient name="leather" count="2"/>
+	<ingredient name="mechanicalParts" count="1"/>
+	<ingredient name="forgedTitanium" count="3"/>
+</recipe>
+
+<recipe name="partsAugerTitanium_blade" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedTitanium" count="5"/>
+</recipe>
+
+<recipe name="partsAugerTitanium_parts" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedTitanium" count="5"/>
+</recipe>
+
+<recipe name="partsChainsawTitanium_blade" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedTitanium" count="5"/>
+</recipe>
+
+<recipe name="partsChainsawTitanium_parts" count="1" craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="forgedTitanium" count="5"/>
+</recipe>
+
+<recipe name="fireaxeTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="pickaxeTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="shovelTitanium" count="1" craft_area="workstationMetal">
+	<ingredient name="forgedTitanium" count="20"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<!-- Scientist Class Mastery -->
+
+<recipe name="antibiotics" count="1" craft_area="campfire" craft_tool="beaker">
+	<ingredient name="moldyBread" count="4"/>
+	<ingredient name="potassiumNitratePowder" count="3"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="antibiotics" count="1" craft_area="chemistryStation">
+	<ingredient name="moldyBread" count="1"/>
+	<ingredient name="potassiumNitratePowder" count="1"/>
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="steelPolish" count="1" craft_area="chemistryStation">
+	<ingredient name="potassiumNitratePowder" count="5"/>
+	<ingredient name="coal" count="5"/>
+	<ingredient name="ironFragment" count="10"/>
+</recipe>
+
+<recipe name="paramedicKit" count="1" craft_area="chemistryStation">
+	<ingredient name="bloodBag" count="2"/>
+	<ingredient name="grainAlcohol" count="2"/>
+	<ingredient name="bandage" count="2"/>
+	<ingredient name="ductTape" count="2"/>
+</recipe>
+
+<recipe name="codeinePills" count="1" craft_area="chemistryStation">
+	<ingredient name="moldyBread" count="1"/>
+	<ingredient name="potassiumNitratePowder" count="1"/>
+	<ingredient name="animalFat" count="1"/>
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="mushrooms" count="1"/>
+</recipe>
+
+<recipe name="painkillers" count="1" craft_area="chemistryStation">
+	<ingredient name="grainAlcohol" count="1"/>
+	<ingredient name="potassiumNitratePowder" count="1"/>
+	<ingredient name="animalFat" count="1"/>
+</recipe>
+
+<recipe name="sunblocker" count="1" craft_area="chemistryStation">
+	<ingredient name="aloeCream" count="1"/>
+	<ingredient name="animalFat" count="1"/>
+</recipe>
+
+<!-- Security Class Mastery -->
+
+<recipe name="titaniumBoots" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
+	<ingredient name="forgedTitanium" count="20" />
+	<ingredient name="leather" count="6" />
+	<ingredient name="leatherStrips" count="12"/> 
+</recipe>
+
+<recipe name="titaniumChestplate" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
+	<ingredient name="leather" count="10"/>
+	<ingredient name="forgedTitanium" count="30" />
+	<ingredient name="leatherStrips" count="20"/>
+</recipe>
+
+<recipe name="titaniumGloves" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
+	<ingredient name="forgedTitanium" count="20" />
+	<ingredient name="leather" count="6" />
+	<ingredient name="leatherStrips" count="12"/> 
+</recipe>
+	
+<recipe name="titaniumHelmet" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
+	<ingredient name="forgedTitanium" count="20" />
+	<ingredient name="leather" count="6"/>
+	<ingredient name="leatherStrips" count="12"/> 
+</recipe>
+		
+<recipe name="titaniumLegs" count="1" craft_area="workstationTailor" craft_tool="sewingKit" craft_exp_gain="15">
+	<ingredient name="leather" count="10"/>
+	<ingredient name="forgedSteel" count="30"/>
+	<ingredient name="forgedTitanium" count="20"/>
+</recipe>
+
+<!-- Survivalist Class Mastery -->
+
+<recipe name="torchSurvival" count="1">
+	<ingredient name="animalFat" count="1"/>
+	<ingredient name="cloth" count="1"/>
+	<ingredient name="wood" count="1"/>
+</recipe>
+
+<recipe name="radio" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="mechanicalParts" count="20"/>
+	<ingredient name="electricParts" count="10"/>
+	<ingredient name="electronicParts" count="10"/>
+	<ingredient name="forgedSteel" count="10"/>
+</recipe>
+
+<recipe name="jerky" count="2" craft_area="workstationTailor" craft_tool="tanningRack">
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<!-- Hunter Class Mastery -->
+
+<recipe name="repeatingCrossbow" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="forgedSteel" count="20"/>
+	<ingredient name="leather" count="4"/>
+	<ingredient name="glue" count="2"/>
+	<ingredient name="ductTape" count="1"/>
+	<ingredient name="spring" count="4"/>
+</recipe>
+
+<recipe name="steelCrossbowScoped" count="1">
+	<ingredient name="steelCrossbow" count="1"/>
+	<ingredient name="gunScope" count="1"/>
+	<ingredient name="ductTape" count="1" />
+</recipe>
+
+<!-- Quill and Ink -->
+
+<recipe name="quill" count="1">
+	<ingredient name="feather" count="1"/>
+</recipe>
+
+<recipe name="ink" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="goldenrodPlant" count="8"/>
+	<ingredient name="chrysanthemumPlant" count="8"/>
+	<ingredient name="blueberries" count="8"/>
+	<ingredient name="bottledWater" count="2"/>
+</recipe>
+
+<recipe name="ink" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="goldenrodPlant" count="8"/>
+	<ingredient name="chrysanthemumPlant" count="8"/>
+	<ingredient name="blueberries" count="8"/>
+	<ingredient name="bowlWater" count="2"/>
+</recipe>
+
+<recipe name="ink" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="goldenrodPlant" count="4"/>
+	<ingredient name="chrysanthemumPlant" count="4"/>
+	<ingredient name="blueberries" count="4"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="ink" count="1" craft_area="oven" craft_tool="carBattery">
+	<ingredient name="goldenrodPlant" count="4"/>
+	<ingredient name="chrysanthemumPlant" count="4"/>
+	<ingredient name="blueberries" count="4"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<!-- Craftable Skill Points and Class Books -->
+
+<recipe name="ClassPaper" count="1">
+	<ingredient name="scrapSkill" count="120"/>
+	<ingredient name="paper" count="60"/>
+	<ingredient name="ink" count="8"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillGenericBook" count="1">
+	<ingredient name="scrapSkill" count="60"/>
+	<ingredient name="paper" count="30"/>
+	<ingredient name="ink" count="4"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBarterBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillArcheryBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillAthleticsBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillAxeBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBladesBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBluntBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillCloth-ArmorBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillConstructionBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillMedicineBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillMiningBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillPistolBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillRifleBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillScavengingBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillShotgunBook" count="1">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="ClassPaper" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="60"/>
+	<ingredient name="paper" count="30"/>
+	<ingredient name="ink" count="4"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillGenericBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="30"/>
+	<ingredient name="paper" count="15"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBarterBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillArcheryBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillAthleticsBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillAxeBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBladesBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillBluntBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillCloth-ArmorBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillConstructionBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillMedicineBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillMiningBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillPistolBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillRifleBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillScavengingBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="skillShotgunBook" count="1" craft_area="writingDesk">
+	<ingredient name="scrapSkill" count="15"/>
+	<ingredient name="paper" count="8"/>
+	<ingredient name="ink" count="1"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<!-- Writing Desk -->
+
+<recipe name="writingDesk" count="1">
+	<ingredient name="wood" count="20"/>
+	<ingredient name="nail" count="10"/>
+</recipe>
+
+<!-- Craftable Quests -->
+
+<recipe name="qc_silenceofthelambs" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_drunkanddisorderly" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_nurseyoubacktohealth" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_copanattitude" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_dogdaysareover" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_itsbitsyspider" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_ladykiller" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_maneater" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_imalumberjackandimokay" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_killthewabbit" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_nailsomechicks" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_thatlldopig" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_stagparty" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_dontfeedthebears" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="qc_buythefarm" count="1" craft_area="radio">
+	<ingredient name="paper" count="20"/>
+	<ingredient name="ink" count="2"/>
+	<ingredient name="quill" count="1"/>
+</recipe>
+
+<recipe name="sulfur" count="1" craft_area="campfire">
+	<ingredient name="rottingFlesh" count="4"/>
+</recipe>
+
+<recipe name="sulfur" count="1" craft_area="chemistryStation">
+	<ingredient name="rottingFlesh" count="4"/>
+</recipe>
+
+<!-- Knucke Weapons -->
+
+<recipe name="spikedKnuckles" count="1" craft_area="workstationMetal" craft_tool="weldingTorch">
+	<ingredient name="nail" count="4"/>
+	<ingredient name="forgedIron" count="20" />
+</recipe>
+
+<recipe name="ironKnuckles" count="1">
+	<ingredient name="glue" count="1"/>
+	<ingredient name="cloth" count="4"/>
+	<ingredient name="scrapIron" count="10"/>
 </recipe>
 
 </recipes>

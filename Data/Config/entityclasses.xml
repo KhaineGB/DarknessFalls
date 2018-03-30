@@ -97,8 +97,13 @@
 	<property name="AITask-3" value="Territorial"/>
 	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="60"/>
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-	<property name="AITask-6" value="ApproachSpot"/>
-	<property name="AITask-7" value="Wander"/>
+    <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityBandit"/>
+    <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
+    <property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
+    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalRabbit"/>
+    <property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear"/>
+	<property name="AITask-10" value="ApproachSpot"/>
+	<property name="AITask-11" value="Wander"/>
 	<!--Classes for AITarget:
 		<property name="Class" value="EntityDriveableCar"/>
 		<property name="Class" value="EntityAnimalRabbit"/> and chicken
@@ -121,12 +126,17 @@
 	-->
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC"/>
 	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
-	<property name="AITarget-3" value="BlockingTargetTask"/>
-	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
-	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
-	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
-	<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
-	<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
+	<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
+	<property name="AITarget-4" value="SetAsTargetIfHurt" param1="EntityBandit"/>
+	<property name="AITarget-5" value="BlockingTargetTask"/>
+	<property name="AITarget-6" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
+	<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
+	<property name="AITarget-9" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
+	<property name="AITarget-10" value="SetNearestEntityAsTarget" param1="EntityBandit"/>
+	<property name="AITarget-11" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
+	<property name="AITarget-12" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+	<property name="AITarget-13" value="SetNearestEntityAsTarget" param1="EntityAnimalRabbit" />
 	<property name="MaxHealth" value="150"/>
 	<property name="MaxViewAngle" value="180"/>
 	<property name="HandItem" value="handZombie"/>
@@ -174,7 +184,7 @@
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
 	<property name="SoundSleeperSense" value="sleepersense"/>
 	<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
-	<property name="TimeStayAfterDeath" value="15"/>
+	<property name="TimeStayAfterDeath" value="2"/>
 	<property name="AttackTimeoutDay" value="1.5"/> <!-- in s -->
 	<property name="AttackTimeoutNight" value="1.1"/>
 	<property name="LootListOnDeath" value="15"/>
@@ -1513,7 +1523,7 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
-<entity_class name="zombieSpiderRadiated" extends="zombieTemplateMale">
+<entity_class name="zombieSpiderRadiated" extends="zombieSpider">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
@@ -2548,7 +2558,7 @@
 	<property name="AvatarController" value="AvatarZombieUMAController"/>
 	<property name="PhysicsBody" value="zombieUMA"/>
 	<property name="HasDeathAnim" value="false"/>
-	<property name="TimeStayAfterDeath" value="45"/>
+	<property name="TimeStayAfterDeath" value="2"/>
 	<property name="LootListOnDeath" value="15"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
@@ -3075,6 +3085,12 @@
 	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
 	<property name="HeadExplosionDamageMultiplier" value=".85"/>
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	
+	<property name="PhysicsBody" value="zombieDog"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4"/> <!-- animalZombieDog -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 </entity_class>
 
 <entity_class name="animalBear" extends="animalTemplateHostile">
@@ -3186,6 +3202,11 @@
 	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
 	<property name="HeadExplosionDamageMultiplier" value=".85"/>
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
+	<property name="DeadBodyHitPoints" value="600"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="7"/> <!-- animalZombieBear -->
+	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
+	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
 </entity_class>
 
 <entity_class name="animalWolf" extends="animalTemplateHostile">
@@ -3317,12 +3338,15 @@
 </entity_class>
 
 <entity_class name="animalZombieRadVulture" extends="animalZombieVulture">
-	<property name="MaxHealth" value="450"/>
+	<property name="MaxHealth" value="250"/>
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="HandItem" value="handAnimalZombieVulture"/>
 	<property name="RightHandJointName" value="Jaw"/>
-	<property name="ExperienceGain" value="3000"/>
+	<property name="ExperienceGain" value="1500"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="DeadBodyHitPoints" value="250"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="3"/> <!-- animalZombieVulture -->
+	<drop event="Harvest" name="feather" tool_category="Butcher" count="40"/>
 </entity_class>
 
 <entity_class name="animalSnake" extends="animalTemplateHostile">
@@ -3489,9 +3513,7 @@
 		<property name="Explosion.RadiusBlocks"	value="6"/>
 		<property name="Explosion.RadiusEntities"  value="6"/>
 	</entity_class-->
-
-
-
+	
 <!-- CONTAINER AND CRATE ENTITIES -->
 <entity_class name="sc_General">
 	<property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
@@ -3748,7 +3770,7 @@
     <property name="CorpseBlock" value="GoreBlock7Prefab"/>
     <property name="CorpseBlockChance" value="1"/>
     <property name="MaxViewAngle" value="270"/>
-    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="TimeStayAfterDeath" value="1"/>
     <property name="DeadBodyHitPoints" value="20"/>
     <property name="HasDeathAnim" value="true"/>
     <property name="Weight" value="70"/>
@@ -3984,7 +4006,7 @@
 	<!-- <property name="CorpseBlock" value="cntNPCBackpack"/> -->
     <property name="CorpseBlockChance" value="1"/>
     <property name="MaxViewAngle" value="270"/>
-    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="TimeStayAfterDeath" value="1"/>
     <property name="DeadBodyHitPoints" value="20"/>
     <property name="HasDeathAnim" value="true"/>
     <property name="Weight" value="70"/>
@@ -4366,7 +4388,7 @@
     <property name="CorpseBlock" value="GoreBlock1Prefab"/>
     <property name="CorpseBlockChance" value="1"/>
     <property name="MaxViewAngle" value="270"/>
-    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="TimeStayAfterDeath" value="1"/>
     <property name="DeadBodyHitPoints" value="20"/>
     <property name="HasDeathAnim" value="true"/>
     <property name="Weight" value="70"/>
@@ -4693,8 +4715,8 @@
 	<property name="ExperienceGain" value="4582"/>
 	<property name="MaxHealth" value="3000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="1.3"/>
+	<property name="NightApproachSpeed" value="1.3"/>
 	<property name="HandItem" value="handZombieBehemoth"/>
 	<property name="HeadDismemberBaseChance" value="-.15"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
@@ -4915,7 +4937,7 @@
 	<property name="LootListOnDeath" value="15"/>
     <property name="CorpseBlockChance" value="1"/>
     <property name="MaxViewAngle" value="270"/>
-    <property name="TimeStayAfterDeath" value="5"/>
+    <property name="TimeStayAfterDeath" value="3"/>
     <property name="DeadBodyHitPoints" value="20"/>
     <property name="HasDeathAnim" value="true"/>
     <property name="Weight" value="70"/>
@@ -4955,7 +4977,7 @@
 	<property name="ExperienceGain" value="2039"/>
 	<property name="LootListOnDeath" value="114"/>
 	<property name="CorpseBlock" value="GoreBlockCP"/>
-    <property name="TimeStayAfterDeath" value="1"/>
+    <property name="TimeStayAfterDeath" value="3"/>
     <property name="DeadBodyHitPoints" value="20"/>
 </entity_class> 
 

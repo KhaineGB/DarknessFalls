@@ -932,7 +932,16 @@
 	<item name="farmingBook3" prob="0.7"/>
 	<item name="skillGenericBook" prob="0.7"/>
 	<item group="questChallenge" count="1"/>
-	<item name="macDyverBook" prob="1.5"/>
+	<item name="macDyverBook" />
+	<item name="CivilianMasteryBook" prob="0.1"/>
+	<item name="ConstructionMasteryBook" prob="0.1"/>
+	<item name="HunterMasteryBook" prob="0.1"/>
+	<item name="FarmerMasteryBook" prob="0.1"/>
+	<item name="MinerMasteryBook" prob="0.1"/>
+	<item name="MechanicMasteryBook" prob="0.1"/>
+	<item name="ScientistMasteryBook" prob="0.1"/>
+	<item name="SecurityMasteryBook" prob="0.1"/>
+	<item name="SurvivalistMasteryBook" prob="0.1"/>
 	<!-- <item name="handleBarsSchematic"/>
 	<item name="theRiddleOfSteel"/>
 	<item name="setInConcrete"/>
@@ -1316,6 +1325,7 @@
 	<item group="nailgun+parts"/>
 	<item name="calipers" prob="0.67"/>
 	<item name="toolAndDieSet" prob="0.67"/>
+	<item name="weldingTorch" prob="0.67"/>
 	<item group="rareTools"/>
 	<item group="automotive" prob="2"/>
 	<item name="forgedIron" count="1,4" prob="0.31"/> <!-- together 3% per crate -->
@@ -1589,7 +1599,7 @@
 </lootcontainer>
 
 <!-- empty, storage containers the player crafts-->
-<lootcontainer id="10" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+<lootcontainer id="10" count="0" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="1,2"/>
 </lootcontainer>
 
@@ -1926,7 +1936,7 @@
 </lootcontainer>
 
 <!-- gas pump loot -->
-<lootcontainer id="64" count="30,500" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+<lootcontainer id="64" count="15,250" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item group="gasPumps" count="1"/>
 </lootcontainer>
 
@@ -2415,7 +2425,6 @@
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
 	<item group="weaponsMelee" prob="0.03"/>
-	<item name="padlock" prob="0.5"/>	
 	<item group="weaponsCompoundBowParts" prob="0.5"/>
 	<item group="weaponsCommonParts" prob="0.8"/>
 	<item group="weaponsMilitaryParts" prob="0.2"/>
@@ -2423,26 +2432,24 @@
 
 <!-- Rad Zombie Loot -->
 <lootcontainer id="105" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item name="bottledWater" count="1,2" prob="0.5"/>
+	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
-	<item group="weaponsMilitaryGuns+ammo" prob="0.5"/>
 	<item group="weaponsCommonParts" prob="0.2"/>
-	<item group="weaponsMilitaryParts" prob="0.2"/>
 </lootcontainer>
 
 <!-- Feral Rad Zombie Loot -->
 <lootcontainer id="106" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="medicine" prob="0.1"/>
 	<item group="weaponsMilitaryGuns+ammo" prob="0.5"/>
-	<item group="weaponsBasicGuns+ammo" prob="0.9"/>
 	<item group="weaponsCompoundBowParts" prob="0.2"/>
-	<item group="weaponsCommonParts" prob="0.2"/>
 	<item group="weaponsMilitaryParts" prob="0.2"/>
 	<item group="militaryArmor" prob="0.2"/>
 </lootcontainer>
 
 <!-- NPC Ranged Weapon Drops -->
 
-<lootcontainer id="107" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="107" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2450,7 +2457,7 @@
 	<item name="ironCrossbowBolt" prob="0.8" count="1,10"/>	
 </lootcontainer>
 
-<lootcontainer id="108" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="108" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2458,7 +2465,7 @@
 	<item name="44MagBullet" prob="0.8" count="1,10"/>	
 </lootcontainer>
 
-<lootcontainer id="109" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="109" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2466,7 +2473,7 @@
 	<item name="762mmBullet" prob="0.8" count="1,10"/>	
 </lootcontainer>
 
-<lootcontainer id="110" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="110" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2474,7 +2481,7 @@
 	<item name="9mmBulletHP" prob="0.8" count="1,25"/>	
 </lootcontainer>
 
-<lootcontainer id="111" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="111" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2482,7 +2489,7 @@
 	<item name="9mmBullet" prob="0.8" count="1,20"/>	
 </lootcontainer>
 
-<lootcontainer id="112" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="112" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2490,7 +2497,7 @@
 	<item name="762mmBullet" prob="0.8" count="1,30"/>	
 </lootcontainer>
 
-<lootcontainer id="113" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="113" count="0,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item name="bottledWater" count="1,2" prob="0.15"/>
 	<item group="cannedfood" prob="0.5"/>
 	<item group="medicine" prob="0.1"/>
@@ -2557,6 +2564,11 @@
 	<item group="militaryArmor" count="1,2" prob="0.5"/>
 	<item group="weaponsFlamethrower" count="1,2" prob="0.5"/>
 	<item name="cncMachine" prob="0.03"/>
+</lootcontainer>
+
+<!-- extra large storage containers the player crafts-->
+<lootcontainer id="119" count="0" size="9,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+	<item name="cobweb" count="1,2"/>
 </lootcontainer>
 
 </lootcontainers>

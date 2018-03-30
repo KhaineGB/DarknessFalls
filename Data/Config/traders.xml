@@ -360,11 +360,11 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="crossbowSchematic"/>
 			<item name="huntingKnifeBook"/>
 			<item name="huntingRifleSchematic"/>
-			<item name="leatherBootsSchematic"/>
+			<!-- <item name="leatherBootsSchematic"/>
 			<item name="leatherGlovesSchematic"/>
-			<item name="leatherHoodSchematic"/>
+			<item name="leatherHoodSchematic"/> -->
 			<item name="leatherJacketSchematic"/>
-			<item name="leatherPantsSchematic"/>
+			<!-- <item name="leatherPantsSchematic"/> -->
 			<item name="pistolBook"/>
 			<item name="pumpShotgunSchematic"/>
 			<item name="scrapBootsSchematic" prob="0.7"/>
@@ -396,7 +396,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="sniperRifleSchematic"/>
 			<item name="theEnforcerMagazine"/>
 			<item name="compoundBowSchematic"/>
-			<item name="herbalAntibioticsRecipe" prob="0.5"/>
 			<item name="AR15Schematic"/>
 			<item name="CAWSShotgunSchematic"/>
 			<item name="WinchesterRifleSchematic"/>
@@ -408,7 +407,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="titaniumCombatAxeSchematic"/>
 			<item name="farmingBook2" prob="0.7"/>
 			<item name="farmingBook3" prob="0.7"/>
-			<item name="skillGenericBook" prob="0.03"/>
+			<item name="skillGenericBook" prob="0.1"/>
 			<item name="macDyverBook" prob="0.7"/>
 		</trader_item_group>
 
@@ -724,7 +723,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="traderGeneral" count="1">
-			<item name="beerBook" count="1" prob="0.3"/>
+			<!-- <item name="beerBook" count="1" prob="0.3"/> -->
 			<item name="plantedHop1" count="1,5" prob="0.3"/>
 			<item name="paint" count="1,12"/> <!-- 50 -->
 			<item group="clothes" count="2,4"/>
@@ -773,7 +772,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="stashOnlyItemsLow" count="1">
-			<item name="beerBook" count="1"/>
+			<!-- <item name="beerBook" count="1"/> -->
 			<item name="runForestrunBook" count="1"/>
 			<item name="plantedHop1" count="1,5"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
@@ -783,13 +782,22 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="stashOnlyItemsHigh" count="1">
-			<item name="beerBook" count="1"/>
+			<!-- <item name="beerBook" count="1"/> -->
 			<item name="plantedHop1" count="2,8"/>
 			<item name="solarCell" count="1,2"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,3" prob="0.7"/>
-			<item name="cncMachine" prob="0.5"/>
+			<item name="cncMachine" prob="0.05"/>
+			<item name="CivilianMasteryBook" prob="0.1"/>
+			<item name="ConstructionMasteryBook" prob="0.1"/>
+			<item name="HunterMasteryBook" prob="0.1"/>
+			<item name="FarmerMasteryBook" prob="0.1"/>
+			<item name="MinerMasteryBook" prob="0.1"/>
+			<item name="MechanicMasteryBook" prob="0.1"/>
+			<item name="ScientistMasteryBook" prob="0.1"/>
+			<item name="SecurityMasteryBook" prob="0.1"/>
+			<item name="SurvivalistMasteryBook" prob="0.1"/>
 		</trader_item_group>
 
 	</trader_item_groups>
@@ -925,7 +933,7 @@ workstations
 			<item name="miningHelmet"/>
 			<item group="minibikeParts" count="2,3"/>
 			<item name="nightvisionGoggles" count="1"/>
-			<item name="beerBook" count="1"/>
+			<!-- <item name="beerBook" count="1"/> -->
 			<item name="plantedHop1" count="1,8"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3"/>
