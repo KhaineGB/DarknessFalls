@@ -5360,12 +5360,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="quill" count="1"/>
 </recipe>
 
-<recipe name="sulfur" count="1" craft_area="campfire">
-	<ingredient name="rottingFlesh" count="4"/>
+<recipe name="sulfur" count="1" craft_area="campfire" craft_time = "30">
+	<ingredient name="rottingFlesh" count="2"/>
 </recipe>
 
-<recipe name="sulfur" count="1" craft_area="chemistryStation">
-	<ingredient name="rottingFlesh" count="4"/>
+<recipe name="sulfur" count="1" craft_area="chemistryStation" craft_time = "15">
+	<ingredient name="rottingFlesh" count="1"/>
 </recipe>
 
 <!-- Knucke Weapons -->

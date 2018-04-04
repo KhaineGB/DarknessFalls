@@ -933,7 +933,7 @@
 	<item name="skillGenericBook" prob="0.7"/>
 	<item group="questChallenge" count="1"/>
 	<item name="macDyverBook" />
-	<item name="CivilianMasteryBook" prob="0.1"/>
+	<!-- <item name="CivilianMasteryBook" prob="0.1"/> -->
 	<item name="ConstructionMasteryBook" prob="0.1"/>
 	<item name="HunterMasteryBook" prob="0.1"/>
 	<item name="FarmerMasteryBook" prob="0.1"/>

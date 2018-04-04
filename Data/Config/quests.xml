@@ -427,6 +427,7 @@
 		
 		<reward type="SkillPoints" value="5" />
 		<reward type="Skill" id="ClassCivilian" value="1" stage="aftercomplete"/> 
+		<reward type="Item" id="CivilianMasteryBook" value="1" />
     </quest>
 	
 	<!-- Construction Class Quest Chain -->

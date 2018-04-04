@@ -11814,6 +11814,7 @@ Mesh files no longer used:
 	<!-- 5 -->
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
+	<property name="Infinite_ammo" value="true" />
 	<property name="Magazine_size" value="15"/>
 	<property name="Magazine_items" value="npc9mmBullet"/>
 	<property name="Magazine_item_ray_counts" value="1"/>
@@ -11874,6 +11875,7 @@ Mesh files no longer used:
 		<property name="Delay" value="0.5"/>
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Infinite_ammo" value="true" />
 		<property name="Magazine_size" value="1"/>
 		<property name="Magazine_items" value="npc762mmBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
@@ -11929,6 +11931,7 @@ Mesh files no longer used:
 		<property name="Delay" value="0.8"/>
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
+		<property name="Infinite_ammo" value="true" />
 		<property name="Magazine_size" value="1"/>
 		<property name="Magazine_items" value="npcironCrossbowBolt"/>
 		<property name="Rays_spread" value="0.012"/>
@@ -11982,6 +11985,7 @@ Mesh files no longer used:
 		<property name="Auto_fire" value="true"/>
 		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
 		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
+		<property name="Infinite_ammo" value="true" />
 		<property name="Magazine_size" value="30"/>
 		<property name="Magazine_items" value="npc762mmBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
@@ -12049,6 +12053,7 @@ Mesh files no longer used:
 	<!-- 5 -->
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
+	<property name="Infinite_ammo" value="true" />
 	<property name="Magazine_size" value="20"/>
 	<property name="Magazine_items" value="npc9mmBulletHP"/>
 	<property name="Magazine_item_ray_counts" value="1"/>
@@ -12110,6 +12115,7 @@ Mesh files no longer used:
 		<property name="Delay" value="0.34"/>
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
+		<property name="Infinite_ammo" value="true" />
 		<property name="Magazine_size" value="15"/>
 		<property name="Magazine_items" value="npc44MagBulletHP"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
