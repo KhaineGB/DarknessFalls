@@ -13520,6 +13520,26 @@ Mesh files no longer used:
 	</property>
 </item>
 
+<item id="2176" name="Lockpick2">
+	<property name="CustomIcon" value="Lockpick"/>
+	<property name="Degradation" value="125" param1="true"/>
+	<property name="DescriptionKey" value="Lockpick2Desc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="12"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Repair_amount" value="100" />
+		<property name="Upgrade_hit_offset" value="-1"/>
+		<property name="Sound_start" value="UseActions/repair_block"/>
+		<property name="Allowed_upgrade_items" value="Lockpick"/>
+	</property>
+</item>
+
 <item id="2099" name="stoneHammer">
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab"/>
 	<property name="Material" value="stone"/>

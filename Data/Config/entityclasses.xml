@@ -3481,6 +3481,7 @@
 	<property name="Parent" value="Cars"/>
 	<property name="Prefab" value="Minibike"/>
 	<property name="MaxHealth" value="1000000"/>
+	<property name="Immunity" value="sickness;disease;bleeding"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
 	<property name="LootListAlive" value="62"/>

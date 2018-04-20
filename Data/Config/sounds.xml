@@ -4765,4 +4765,67 @@
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Electricity/Turret/Spinup"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="6"/> <MaxRepeatRate name="0.001"/> </SoundDataNode>
+	
+<!-- Titanium Sound Test -->
+
+<SoundDataNode name="titaniumhitcloth"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitcloth3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitearth"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitearth3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitmetal"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitmetal3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitglass"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitglass3"/>
+  <AudioClip ClipName="Sounds/ImpactSurface/metalhitglass4"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitorganic"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="1" range="4" volume="7" time="5" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitorganic3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitplant"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitplant1"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitstone"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitstone3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitwater"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwater1"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="titaniumhitwood"> <AudioSource name="Sounds/AudioSource_Impact"/>
+	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood1"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood2"/>
+	<AudioClip ClipName="Sounds/ImpactSurface/metalhitwood3"/>
+	<LocalCrouchVolumeScale name="0.3"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+	
 </Sounds>

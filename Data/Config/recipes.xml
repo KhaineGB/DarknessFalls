@@ -3245,13 +3245,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="6"/>
 </recipe>
 
-<recipe name="forgeCrucible" count="1" craft_area="workbench" craft_tool="wrench">
-	<ingredient name="forgedIron" count="40"/>
-	<ingredient name="mechanicalParts" count="10"/>
-	<ingredient name="rockSmall" count="1200"/>
-	<ingredient name="clayLump" count="900"/>
-</recipe>
-
 <!-- Metal Workbench Recipes -->
 
 <recipe name="44MagBullet" count="1" craft_area="workstationMetal" craft_tool="calipers">
@@ -4392,6 +4385,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapIron" count="10"/>
 </recipe>
 
+<recipe name="Lockpick2" count="1"  craft_area="workstationMetal" craft_tool="calipers">
+	<ingredient name="forgedIron" count="1"/>
+</recipe>
+
 <!-- Stone Hammer -->
 
 <recipe name="stoneHammer" count="1">
@@ -4995,8 +4992,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="spring" count="4"/>
 </recipe>
 
-<recipe name="steelCrossbowScoped" count="1">
-	<ingredient name="steelCrossbow" count="1"/>
+<recipe name="repeatingCrossbowScoped" count="1">
+	<ingredient name="repeatingCrossbow" count="1"/>
 	<ingredient name="gunScope" count="1"/>
 	<ingredient name="ductTape" count="1" />
 </recipe>

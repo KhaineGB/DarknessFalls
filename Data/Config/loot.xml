@@ -920,13 +920,10 @@
 	<item name="AR15Schematic"/>
 	<item name="CAWSShotgunSchematic"/>
 	<item name="WinchesterRifleSchematic"/>
-	<item name="clubTitaniumSpikedSchematic" prob="0.3"/>
-	<item name="titaniumHuntingKnifeSchematic" prob="0.3"/>
 	<item name="titaniumSledgehammerSchematic" prob="0.3"/>
 	<item name="titaniumSpearSchematic" prob="0.3"/>
 	<item name="steelCrossbowSchematic"/>
 	<item name="combatAxeSchematic"/>
-	<item name="titaniumCombatAxeSchematic" prob="0.3"/>
 	<item name="runForestrunBook" prob="0.3"/>
 	<item name="farmingBook2" prob="0.7"/>
 	<item name="farmingBook3" prob="0.7"/>

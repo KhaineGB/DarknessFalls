@@ -7083,6 +7083,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock1Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16839,6 +16840,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock2Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16861,6 +16863,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock3Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16883,6 +16886,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock4Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16905,6 +16909,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock5Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16927,6 +16932,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock6Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -16949,6 +16955,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlock7Prefab" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -17131,6 +17138,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlockKickz" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
@@ -17153,6 +17161,7 @@ kind of free
 	<drop event="Harvest" name="femur" count="1,2" prob="0.4" tool_category="Butcher"/>
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
+	<drop event="Fall" name="GoreBlockCP" count="1" prob="0.75" stick_chance="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>

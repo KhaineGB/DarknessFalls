@@ -1146,6 +1146,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="titanium">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
+	<property name="particle_category" value="metal" />
+	<property name="particle_destroy_category" value="metal" />
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
@@ -1158,6 +1160,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="titanium_light">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
+	<property name="particle_category" value="metal" />
+	<property name="particle_destroy_category" value="metal" />
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
@@ -1170,6 +1174,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="titanium_medium">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
+	<property name="particle_category" value="metal" />
+	<property name="particle_destroy_category" value="metal" />
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
@@ -1182,6 +1188,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="titanium_hard">
 	<property name="damage_category" value="metal" />
 	<property name="surface_category" value="metal" />
+	<property name="particle_category" value="metal" />
+	<property name="particle_destroy_category" value="metal" />
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
