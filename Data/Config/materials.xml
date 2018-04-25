@@ -1151,9 +1151,9 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
-	<property name="stability_glue" value="360" />
-	<property name="Mass" type="int" value="30" />
-	<property name="explosionresistance" value=".6" />
+	<property name="stability_glue" value="400" />
+	<property name="Mass" type="int" value="15" />
+	<property name="explosionresistance" value="2" />
 	<property name="MaxDamage" value="1250" />
 </material>
    
@@ -1165,9 +1165,9 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
-	<property name="stability_glue" value="360" />
-	<property name="Mass" type="int" value="30" />
-	<property name="explosionresistance" value=".75" />
+	<property name="stability_glue" value="400" />
+	<property name="Mass" type="int" value="15" />
+	<property name="explosionresistance" value="2" />
 	<property name="MaxDamage" value="7500" />
 </material>
    
@@ -1179,9 +1179,9 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="titanium" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
-	<property name="stability_glue" value="380" />
-	<property name="Mass" type="int" value="30" />
-	<property name="explosionresistance" value=".8" />
+	<property name="stability_glue" value="400" />
+	<property name="Mass" type="int" value="15" />
+	<property name="explosionresistance" value="2" />
 	<property name="MaxDamage" value="10000" />
 </material>
    
@@ -1194,8 +1194,8 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="400" />
-	<property name="Mass" type="int" value="30" />
-	<property name="explosionresistance" value=".85" />
+	<property name="Mass" type="int" value="15" />
+	<property name="explosionresistance" value="2" />
 	<property name="MaxDamage" value="12500" />
 </material>
 
